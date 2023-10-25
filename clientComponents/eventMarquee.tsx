@@ -20,7 +20,7 @@ const EVENTMARQUEE = () => {
   return (
     <>
       <div className="whitespace-nowrap w-full  flex justify-center  ">
-        <Marquee autoFill={true} speed={70}>
+        <Marquee  autoFill={true} speed={70}>
           {eventName.map((event, index) => (
             <div key={index} className="flex gap-5 items-center mr-[20px]">
               <div className="text-[28px]  font-bold tracking-tighter py-[20px]  ">

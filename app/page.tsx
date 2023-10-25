@@ -11,9 +11,7 @@ import {
   TYPINGTEXT,
   VIDEOBLOCK,
 } from "@/clientComponents/motionDiv";
-import COUNTDOWN from "@/clientComponents/countdown";
-import { pravah2023 } from "@/assets";
-import CoverflowEffect from "@/clientComponents/imageSwiper";
+import IMAGEGALLERY from "@/clientComponents/imageGallery";
 
 const HOME = () => {
   return (
@@ -48,14 +46,8 @@ const HOME = () => {
       </div>
       <div className="mt-[50px]">
         <div>
-          <TYPINGTEXT title="| Pravah'23 Highlights" />
+          <IMAGEGALLERY />
         </div>
-        <div>
-          <ANIMATEDTEXT2 />
-        </div>
-          <div>
-            <CoverflowEffect/>
-          </div>
       </div>
 
       <div>

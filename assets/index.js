@@ -8,6 +8,7 @@ import wingTwo from "./wingTwo.png"
 import sponsorOne from "./sponsorOne.png"
 import cursor from "./cursor.png"
 import pravah2023 from "./pravah2023.png"
+import testImage from "./testImage.png"
 
 export {
     background,
@@ -19,6 +20,7 @@ export {
     wingTwo,
     sponsorOne,
     cursor,
-    pravah2023
+    pravah2023,
+    testImage
 
 }
