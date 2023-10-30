@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,19 +6,35 @@ import Link from "next/link";
 import {
   ANIMATEDTEXT1,
   ANIMATEDTEXT2,
+  ANIMATEDTEXT3,
+  ANIMATEDTEXT4,
+  ANIMATEDTEXT5,
+  ANIMATEDTEXT6,
+  ANIMATEDTEXT7,
+  GALLERY,
   MARQUEEMOTION,
+  STATS,
   TIMER,
   TITLEIMAGE,
   TYPINGTEXT,
   VIDEOBLOCK,
 } from "@/clientComponents/motionDiv";
-import IMAGEGALLERY from "@/clientComponents/imageGallery";
+
+import { map, pravahmap, sponsorOne, testImage } from "@/assets";
+import MAJOREVENTS from "@/clientComponents/majorCard";
+import MAP from "@/app/map/page";
+import CELEBRITYCARD from "@/clientComponents/celebrityCard";
 
 const HOME = () => {
   return (
     <>
-      <div className="w-full h-fit flex justify-center pt-[50px]">
-        <div className="text-center w-full ">
+      <div className="hidden md:block fixed bottom-5 right-5 z-50">
+        <Link href="/map">
+          <Image src={map} alt="map" className="w-[100px]" />
+        </Link>
+      </div>
+      <div className="w-full h-fit flex justify-center pt-[50px]   ">
+        <div className="text-center w-full  ">
           <div>
             <TITLEIMAGE />
           </div>
@@ -35,7 +52,7 @@ const HOME = () => {
       </div>
       <div className="mt-[50px]">
         <div>
-          <TYPINGTEXT title="| Pravah'24 Teaser" />
+          <TYPINGTEXT title="| Pravah'24 Trailer" />
         </div>
         <div className="text-center">
           <ANIMATEDTEXT1 />
@@ -46,75 +63,37 @@ const HOME = () => {
       </div>
       <div className="mt-[50px]">
         <div>
-          <IMAGEGALLERY />
+          <TYPINGTEXT title="| Flashback" />
+          <div className="block max-[450px]:hidden">
+            <ANIMATEDTEXT3 />
+          </div>
+          <div className="hidden max-[450px]:block">
+            <ANIMATEDTEXT6 />
+            <ANIMATEDTEXT7 />
+          </div>
         </div>
-      </div>
-
-      <div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div>
+          <STATS />
+        </div>
+        {/* <div className="mt-[50px]">
+          <ANIMATEDTEXT2 />
+        </div> */}
+        <div className="m-[20px] mt-[50px]">
+          <GALLERY />
+        </div>
+        <div className="px-[20px]">
+          <ANIMATEDTEXT5 />
+          <MAJOREVENTS />
+        </div>
+        <div className="mt-[50px]">
+          <ANIMATEDTEXT4 />
+        </div>
+        <div>
+          <CELEBRITYCARD />
+        </div>
       </div>
     </>
   );
 };
 
 export default HOME;
-
-{
-  /* <div className=" absolute flex justify-between w-full -z-50">
-          <motion.div
-            variants={fadeUp("tween", 0.2, 0.75)}
-            initial="hidden"
-            whileInView="show"
-          >
-            <Image src={wingOne} alt="wingOne" className="w-[350px]" />
-          </motion.div>
-          <motion.div
-            variants={fadeUp("tween", 0.2, 0.75)}
-            initial="hidden"
-            whileInView="show"
-          >
-            <Image src={wingTwo} alt="wingTwo" className="w-[350px]" />
-          </motion.div>
-        </div> */
-}

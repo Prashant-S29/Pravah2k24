@@ -20,18 +20,22 @@ const EVENTMARQUEE = () => {
   return (
     <>
       <div className="whitespace-nowrap w-full  flex justify-center  ">
-        <Marquee  autoFill={true} speed={70}>
+        <Marquee autoFill={true} speed={70}>
           {eventName.map((event, index) => (
-            <div key={index} className="flex gap-5 items-center mr-[20px]">
-              <div className="text-[28px]  font-bold tracking-tighter py-[20px]  ">
-                <span>{event}</span>
+            <Link key={index} href="/events">
+              <div className="flex gap-5 items-center mr-[20px]">
+                <div className="text-[22px] md:text-[28px]  font-bold tracking-tighter py-[20px]  ">
+                  <span>{event}</span>
+                </div>
+                <div>
+                  <Image
+                    src={cursor}
+                    alt="cursor"
+                    className="w-[40px] md:w-[60px] aspect-square"
+                  />
+                </div>
               </div>
-              <div className=" -rotate-45">
-                <span className="text-[18px] p-[18px] bg-black rounded-full  font-semibold  leading-none text-white  ">
-                  &rarr;
-                </span>
-              </div>
-            </div>
+            </Link>
           ))}
         </Marquee>
       </div>

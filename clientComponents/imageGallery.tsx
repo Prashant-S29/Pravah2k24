@@ -1,130 +1,136 @@
 "use client";
 
-import { testImage } from "@/assets";
-import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
-import { ANIMATEDTEXT2, TYPINGTEXT } from "./motionDiv";
+import React from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+import {
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+} from "@/assets";
+import Image from "next/image";
+
+const allImages = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+];
 
 const IMAGEGALLERY = () => {
   return (
-    <div>
-      <HorizontalScrollCarousel />
-    </div>
-  );
-};
-
-const HorizontalScrollCarousel = () => {
-  const targetRef = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
-
-  return (
-    <section ref={targetRef} className="relative h-[300vh] ">
-      <div className="z-50">
-        <TYPINGTEXT title="| Pravah'23 Highlights" />
+    <>
+      <div className="hidden lg:block">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={20}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {allImages.map((images, index) => (
+            <SwiperSlide key={index} className="  ">
+              <Image
+                src={images}
+                alt={index.toString()}
+                className="w-full h-[300px] object-cover mb-[50px] object-top rounded-[20px] "
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      <div>
-        <ANIMATEDTEXT2 />
-      </div>
-      <div className="sticky top-0 flex py-[100px] items-center overflow-hidden ">
-        <motion.div style={{ x }} className="flex gap-4">
-          {cards.map((card, index) => {
-            return <Card card={card} key={index} />;
-          })}
-        </motion.div>
-      </div>
-    </section>
-  );
-};
 
-const Card = ({ card }: { card: CardType }) => {
-  return (
-    <div className="group relative w-full h-auto md:h-[350px] md:w-[350px] overflow-hidden rounded-[20px]  ">
-      <div
-        style={{
-          backgroundImage: `url(${card.url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="absolute inset-0 z-0 transition-transform "
-      ></div>
-    </div>
+      <div className="hidden md:block lg:hidden">
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={20}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper "
+        >
+          {allImages.map((images, index) => (
+            <SwiperSlide key={index} className="  ">
+              <Image
+                src={images}
+                alt={index.toString()}
+                className="w-full h-[250px] object-cover mb-[50px] object-top rounded-[20px] "
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="block md:hidden">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={20}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper "
+        >
+          {allImages.map((images, index) => (
+            <SwiperSlide key={index} className="  ">
+              <Image
+                src={images}
+                alt={index.toString()}
+                className="w-full h-[220px] object-cover mb-[50px] object-top rounded-[20px] "
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </>
   );
 };
 
 export default IMAGEGALLERY;
-
-type CardType = {
-  url: string;
-  title: string;
-};
-
-const cards: CardType[] = [
-  {
-    url: testImage.src,
-    title: "Title 1",
-  },
-  {
-    url: testImage.src,
-    title: "Title 2",
-  },
-  {
-    url: testImage.src,
-    title: "Title 3",
-  },
-  {
-    url: testImage.src,
-    title: "Title 4",
-  },
-  {
-    url: testImage.src,
-    title: "Title 5",
-  },
-  {
-    url: testImage.src,
-    title: "Title 6",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-  {
-    url: testImage.src,
-    title: "Title 7",
-  },
-];
