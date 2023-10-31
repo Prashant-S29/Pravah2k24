@@ -27,47 +27,47 @@ const DROPDOWNPAGE = () => {
               href="events"
               navlink="EVENTS"
               linkinfo="Variety of events from endless domains."
-              linkColor="#000000"
-              linkInfoColor="#adadad"
+              linkColor="#A2F1F4"
+              linkInfoColor="#ffffff"
               lineColor="#ffffff"
             />
           </span>
         </div>
-        <div className="w-full h-[0.5px] bg-white my-[10px]" />
+        <div className="w-full h-[0.5px] bg-[#838383] my-[10px]" />
         <div>
           <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
               href="aaveg"
               navlink="AAVEG"
               linkinfo="Real games on live ground."
-              linkColor="#000000"
-              linkInfoColor="#adadad"
+              linkColor="#A2F1F4"
+              linkInfoColor="#ffffff"
               lineColor="#ffffff"
             />
           </span>
         </div>
-        <div className="w-full h-[0.5px] bg-[#ffffff] my-[10px]" />
+        <div className="w-full h-[0.5px] bg-[#838383] my-[10px]" />
         <div>
           <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
               href="sponsor"
               navlink="SPONSORS"
               linkinfo="Supporters of Pravah'24."
-              linkColor="#000000"
-              linkInfoColor="#adadad"
+              linkColor="#A2F1F4"
+              linkInfoColor="#ffffff"
               lineColor="#ffffff"
             />
           </span>
         </div>
-        <div className="w-full h-[0.5px] bg-white my-[10px]" />
+        <div className="w-full h-[0.5px] bg-[#838383] my-[10px]" />
         <div>
           <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
               href="team"
               navlink="OUR TEAM"
               linkinfo="Members behind the curtains."
-              linkColor="#000000"
-              linkInfoColor="#adadad"
+              linkColor="#A2F1F4"
+              linkInfoColor="#ffffff"
               lineColor="#ffffff"
             />
           </span>
