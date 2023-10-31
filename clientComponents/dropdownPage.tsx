@@ -22,7 +22,7 @@ const DROPDOWNPAGE = () => {
         style={dropDown ? { top: "0px" } : { top: "-100vh" }}
       >
         <div>
-          <span>
+          <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
               href="events"
               navlink="EVENTS"
@@ -35,7 +35,7 @@ const DROPDOWNPAGE = () => {
         </div>
         <div className="w-full h-[0.5px] bg-white my-[10px]" />
         <div>
-          <span>
+          <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
               href="aaveg"
               navlink="AAVEG"
@@ -48,7 +48,7 @@ const DROPDOWNPAGE = () => {
         </div>
         <div className="w-full h-[0.5px] bg-[#ffffff] my-[10px]" />
         <div>
-          <span>
+          <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
               href="sponsor"
               navlink="SPONSORS"
@@ -61,7 +61,7 @@ const DROPDOWNPAGE = () => {
         </div>
         <div className="w-full h-[0.5px] bg-white my-[10px]" />
         <div>
-          <span>
+          <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
               href="team"
               navlink="OUR TEAM"
