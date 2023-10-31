@@ -25,7 +25,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-6 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] ">
+      <div className="absolute descBoxAnimation     bottom-0 p-6 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] ">
         <span className="font-bold sm:text-[32px]  text-[18px] text-white">
           {title}
         </span>

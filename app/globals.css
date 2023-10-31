@@ -24,7 +24,6 @@ button {
   cursor: none;
 }
 
-
 .btn_active {
   background-color: #ff583e;
   color: white;
@@ -37,13 +36,11 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 .button {
   padding: 5px 10px;
   margin-right: 10px;
   cursor: pointer;
 }
-
 
 .active-div {
   display: block;
@@ -51,4 +48,18 @@ button {
 
 .deactive-div {
   display: none;
+}
+
+.descBoxAnimation {
+  animation: fadeInOut 1s linear linear;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
