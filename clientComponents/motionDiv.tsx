@@ -34,7 +34,7 @@ const TITLEIMAGE = () => {
         <Image
           src={textTwo}
           alt="textTwo"
-          className="w-[300px] md:w-[350px] lg:w-[450px]  drop-shadow-xl  "
+          className="w-[300px] md:w-[350px] lg:w-[450px] xl:[550px]  drop-shadow-xl  "
         />
       </motion.div>
     </>
