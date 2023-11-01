@@ -1,9 +1,12 @@
-import React from "react";
+"use client";
 
-const AAVEG = () => {
+import React from "react";
+import TRANSITION_WRAPPER from "../../clientComponents/transition";
+
+const AAVEG_OBJECT = () => {
   return (
     <>
-      <div className="w-full min-h-screen flex justify-center items-center  ">
+      <div className="w-full min-h-screen flex justify-center items-center">
         <div className="text-center">
           <div className="leading-tight">
             <span className="font-black text-[64px]">Coming Soon.</span>
@@ -15,6 +18,10 @@ const AAVEG = () => {
       </div>
     </>
   );
+};
+
+const AAVEG = () => {
+  return TRANSITION_WRAPPER(AAVEG_OBJECT);
 };
 
 export default AAVEG;

@@ -24,7 +24,7 @@ const NAVLINK = ({
           <div className="flex" style={{ color: linkColor }}>
             <div>
               <div>
-                <span className="font-bold text-[16px]">{navlink}</span>
+                <span className="font-bold text-[16px] leading-tight md:leading-normal ">{navlink}</span>
               </div>
               <div
                 className={`h-[1.5px] rounded-full bg-[${lineColor}] duration-150`}
@@ -37,10 +37,10 @@ const NAVLINK = ({
             </div>
           </div>
           <div
-            className="leading-tight w-[160px] "
+            className="leading-tight w-full md:w-[160px] "
             style={{ color: linkInfoColor }}
           >
-            <span>{linkinfo}</span>
+            <span className="text-[12px] md:text-[14px]" >{linkinfo}</span>
           </div>
         </Link>
       </div>

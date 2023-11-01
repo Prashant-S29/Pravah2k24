@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
 
-const SPONSOR = () => {
+import React from "react";
+import TRANSITION_WRAPPER from "../../clientComponents/transition";
+
+const SPONSOR_OBJECT = () => {
   return (
     <>
       <div className="w-full min-h-screen flex justify-center items-center  ">
@@ -15,6 +18,10 @@ const SPONSOR = () => {
       </div>
     </>
   );
+};
+
+const SPONSOR = () => {
+  return TRANSITION_WRAPPER(SPONSOR_OBJECT);
 };
 
 export default SPONSOR;

@@ -1,6 +1,9 @@
+"use client";
+
+import TRANSITION_WRAPPER from "@/clientComponents/transition";
 import React from "react";
 
-const TEAM = () => {
+const TEAM_OBJECT = () => {
   return (
     <>
       <div className="w-full min-h-screen flex justify-center items-center  ">
@@ -15,6 +18,10 @@ const TEAM = () => {
       </div>
     </>
   );
+};
+
+const TEAM = () => {
+  return TRANSITION_WRAPPER(TEAM_OBJECT);
 };
 
 export default TEAM;

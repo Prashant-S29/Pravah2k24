@@ -49,6 +49,14 @@ import jassigill from "./jassigil.png"
 import kumarvishwas from "./kumarvishwas.png"
 import jassigil from "./jassigill.png"
 
+import sp1 from "./priorSponsors/sp1.png"
+import sp2 from "./priorSponsors/sp2.png"
+import sp3 from "./priorSponsors/sp3.png"
+import sp4 from "./priorSponsors/sp4.png"
+import sp5 from "./priorSponsors/sp5.png"
+import sp6 from "./priorSponsors/sp6.png"
+import sp7 from "./priorSponsors/sp7.png"
+
 export {
     background,
     textOne,
@@ -93,6 +101,7 @@ export {
     dj,
     jassigill,
     kumarvishwas,
-    jassigil
+    jassigil,
+    sp1, sp2, sp3, sp4, sp5, sp6, sp7
 
 }
