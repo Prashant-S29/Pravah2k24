@@ -6,7 +6,6 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
-
 import { textOne } from "@/assets";
 import DROPDOWNPAGE from "@/clientComponents/dropdownPage";
 import NAVLINK from "@/clientComponents/navlinks";
