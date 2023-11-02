@@ -15,6 +15,10 @@ import {
   sponsorOne,
   textOne,
   textTwo,
+  logo,
+  pravah2023,
+  skit_logo,
+  naac_logo,
 } from "../assets/index";
 
 import EVENTMARQUEE from "./eventMarquee";
@@ -29,13 +33,28 @@ const TITLEIMAGE = () => {
         variants={fadeUp("tween", 0.2, 0.75)}
         initial="hidden"
         whileInView="show"
-        className="mt-[30px] w-full flex justify-center"
+        className=" w-full flex justify-center"
       >
-        <Image
-          src={textTwo}
-          alt="textTwo"
-          className="w-[300px] md:w-[350px] lg:w-[450px] xl:[550px]  drop-shadow-xl  "
-        />
+        <div>
+          {/* <div className="flex gap-3 justify-center items-center">
+            <div>
+              <Image src={skit_logo} alt="skit_logo" className="w-[80px]" />
+            </div>
+            <div>
+              <Image src={naac_logo} alt="naac_logo" className="w-[100px]" />
+            </div>
+            <div>
+              <Image src={logo} alt="logo" className="w-[100px]" />
+            </div>
+          </div> */}
+          <div className="mt-[20px]">
+            <Image
+              src={textTwo}
+              alt="textTwo"
+              className="w-[300px] md:w-[350px] lg:w-[450px] 2xl:w-[550px] grayscale hover:grayscale-0 duration-300  drop-shadow-xl  "
+            />
+          </div>
+        </div>
       </motion.div>
     </>
   );
@@ -239,7 +258,9 @@ const STATS = () => {
       <div className="flex flex-wrap text-center justify-center gap-3 md:gap-5 items-center mt-[20px]">
         <div className="p-[15px] md:p-[20px] w-[120px] md:w-[150px] bg-black text-white rounded-[20px]">
           <div>
-            <span className="font-black text-[18px] md:text-[22px] lg:text-[28px]">100+</span>
+            <span className="font-black text-[18px] md:text-[22px] lg:text-[28px]">
+              100+
+            </span>
           </div>
           <div>
             <span className="text-[14px] md:text-[16px]">Events</span>
@@ -247,7 +268,9 @@ const STATS = () => {
         </div>
         <div className="p-[15px] md:p-[20px] w-[120px] md:w-[150px] bg-black text-white rounded-[20px]">
           <div>
-            <span className="font-black text-[18px] md:text-[22px] lg:text-[28px]">4000+</span>
+            <span className="font-black text-[18px] md:text-[22px] lg:text-[28px]">
+              4000+
+            </span>
           </div>
           <div>
             <span className="text-[14px] md:text-[16px]">Registration</span>

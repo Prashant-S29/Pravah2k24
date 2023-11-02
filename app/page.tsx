@@ -79,8 +79,8 @@ const HOME_OBJECT = () => {
           <STATS />
         </div>
         <div className="m-[20px] mt-[50px]">
-          <GALLERY />
-          {/* <PRIORSPONSORS/> */}
+          {/* <GALLERY /> */}
+          <PRIORSPONSORS/>
         </div>
         <div className="px-[20px]">
           <ANIMATEDTEXT5 />

@@ -19,7 +19,7 @@ const PRIORSPONSORS = () => {
               <Image
                 src={sponsorImage}
                 alt={index.toString()}
-                className="w-[100px] md:w-[150px] "
+                className="w-[100px] md:w-[150px] grayscale hover:grayscale-0 duration-200 "
               />
             </div>
           ))}

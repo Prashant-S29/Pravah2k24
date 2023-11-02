@@ -57,6 +57,11 @@ import sp5 from "./priorSponsors/sp5.png"
 import sp6 from "./priorSponsors/sp6.png"
 import sp7 from "./priorSponsors/sp7.png"
 
+import skit_logo from "./skit_logo.png"
+import naac_logo from "./naac_logo.png"
+
+
+
 export {
     background,
     textOne,
@@ -102,6 +107,8 @@ export {
     jassigill,
     kumarvishwas,
     jassigil,
-    sp1, sp2, sp3, sp4, sp5, sp6, sp7
+    sp1, sp2, sp3, sp4, sp5, sp6, sp7,
+    skit_logo,
+    naac_logo
 
 }

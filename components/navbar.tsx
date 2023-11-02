@@ -7,7 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 
-import { textOne } from "@/assets";
+import { skit_logo, textOne } from "@/assets";
 import DROPDOWNPAGE from "@/clientComponents/dropdownPage";
 import NAVLINK from "@/clientComponents/navlinks";
 
@@ -46,7 +46,7 @@ const NAVBAR = () => {
             </span>
           </div>
           <div>
-            <Link href="/">
+            <Link href="/" className="flex gap-3">
               <Image
                 src={textOne}
                 alt="textTwo"
@@ -80,11 +80,10 @@ const NAVBAR = () => {
           </div>
         </div>
       </motion.div>
-      <div className="block lg:hidden" >
+      <div className="block lg:hidden">
         <DROPDOWNPAGE />
       </div>
-        {/* <DROPDOWNPAGE /> */}
-
+      {/* <DROPDOWNPAGE /> */}
     </>
   );
 };
