@@ -50,10 +50,6 @@ import jassigill from "./jassigil.png"
 import kumarvishwas from "./kumarvishwas.png"
 import jassigil from "./jassigill.png"
 
-import celebrity3 from "./pravah23Images/celebrity3.png.jpg"
-import celebrity4 from "./pravah23Images/celebrity4.png.jpg"
-import ravindraUpadhay from "./pravah23Images/RavindraUpadhay.png"
-import sunielshetty from "./pravah23Images/sunilShetty.jpg"
 
 export {
     background,
@@ -100,9 +96,5 @@ export {
     jassigill,
     kumarvishwas,
     jassigil,
-    celebrity3,
-    celebrity4,
-    ravindraUpadhay,
-    sunielshetty
 
 }

@@ -14,6 +14,8 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
       active === id ? "lg:-flex-[3.5] flex-[10]" : "lg-flex-[0.5] flex-[2]"
     }  items-center justify-center min-w-[150px] h-[500px] transition-[flex] duration-[0.7s] ease-out flex cursor-none`}
     onClick={() => handleClick(id)}
+    data-cursor-text="view"
+    data-cursor-size="70px"
   >
     <Image
       src={imgUrl}

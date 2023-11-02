@@ -8,6 +8,7 @@ import { background } from "@/assets";
 import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
 import CURSOR from "@/clientComponents/cursor";
+import PAGEWRAPPER from "./pageWrapper";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="hidden lg:block" >
+        <div className="hidden lg:block">
           <CURSOR />
         </div>
         <div className="w-full min-h-screen object-cover object-center fixed -z-50">
@@ -36,7 +37,7 @@ export default function RootLayout({
         </div>
         <div>
           <NAVBAR />
-          {children}
+          <PAGEWRAPPER>{children}</PAGEWRAPPER>
           <FOOTER />
         </div>
       </body>

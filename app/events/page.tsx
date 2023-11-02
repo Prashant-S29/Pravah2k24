@@ -1,6 +1,10 @@
+
+"use client";
+
+import TRANSITION_WRAPPER from "../../clientComponents/transition";
 import React from "react";
 
-const EVENTS = () => {
+const EVENTS_OBJECT = () => {
   return (
     <>
       <div className="w-full min-h-screen flex justify-center items-center  ">
@@ -15,6 +19,10 @@ const EVENTS = () => {
       </div>
     </>
   );
+};
+
+const EVENTS = () => {
+  return TRANSITION_WRAPPER(EVENTS_OBJECT);
 };
 
 export default EVENTS;

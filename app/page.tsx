@@ -25,7 +25,10 @@ import MAJOREVENTS from "@/clientComponents/majorCard";
 import MAP from "@/app/map/page";
 import CELEBRITYCARD from "@/clientComponents/celebrityCard";
 
-const HOME = () => {
+import TRANSITION_WRAPPER from "@/clientComponents/transition";
+import PRIORSPONSORS from "@/clientComponents/priorSponsor";
+
+const HOME_OBJECT = () => {
   return (
     <>
       <div className="hidden md:block fixed bottom-5 right-5 z-50">
@@ -75,11 +78,9 @@ const HOME = () => {
         <div>
           <STATS />
         </div>
-        {/* <div className="mt-[50px]">
-          <ANIMATEDTEXT2 />
-        </div> */}
         <div className="m-[20px] mt-[50px]">
           <GALLERY />
+          {/* <PRIORSPONSORS/> */}
         </div>
         <div className="px-[20px]">
           <ANIMATEDTEXT5 />
@@ -94,6 +95,10 @@ const HOME = () => {
       </div>
     </>
   );
+};
+
+const HOME = () => {
+  return TRANSITION_WRAPPER(HOME_OBJECT);
 };
 
 export default HOME;
