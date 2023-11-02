@@ -37,8 +37,8 @@ const NAVBAR = () => {
             <span>
               <NAVLINK
                 href="aaveg"
-                navlink="AAVEG"
-                linkinfo="Real games on live ground."
+                navlink="ABOUT"
+                linkinfo="Know more about SKIT."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
