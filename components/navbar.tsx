@@ -45,7 +45,7 @@ const NAVBAR = () => {
               />
             </span>
           </div>
-          {/* <div>
+          <div>
             <Link href="/" className="flex gap-3">
               <Image
                 src={textOne}
@@ -53,7 +53,7 @@ const NAVBAR = () => {
                 className="w-[130px] md:w-[180px]"
               />
             </Link>
-          </div> */}
+          </div>
           <div className="hidden lg:block">
             <span>
               <NAVLINK
