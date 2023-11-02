@@ -48,6 +48,9 @@ import jassigill from "./jassigil.png"
 
 import kumarvishwas from "./kumarvishwas.png"
 import jassigil from "./jassigill.png"
+import shruti from "./pravah23Images/shruti.jpeg"
+import ravindra from "./pravah23Images/ravindra.jpg"
+import gajendra from "./pravah23Images/gajendra.jpg"
 
 import sp1 from "./priorSponsors/sp1.png"
 import sp2 from "./priorSponsors/sp2.png"
@@ -109,6 +112,9 @@ export {
     jassigil,
     sp1, sp2, sp3, sp4, sp5, sp6, sp7,
     skit_logo,
-    naac_logo
+    naac_logo,
+    gajendra,
+    shruti,
+    ravindra
 
 }

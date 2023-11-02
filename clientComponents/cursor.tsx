@@ -12,8 +12,8 @@ const CURSOR = () => {
         isGelly={true}
         gellyAnimationAmount={80}
         cursorSize={20}
-        sizeAnimationDuration={0.7}
-        textAnimationDuration={0.7}
+        sizeAnimationDuration={1}
+        textAnimationDuration={1}
       />
     </>
   );
