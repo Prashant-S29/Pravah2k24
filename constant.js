@@ -1,11 +1,26 @@
 import {
-    jassigil, kumarvishwas, instagram, youtube, twitter, facebook,
+    jassigil, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra,
 } from "./assets/index"
 
 const previousCelebrities = [
     {
-        celebrityName: "jassigil",
-        celebrityPhoto: jassigil,
+        celebrityName: "Gajendra Verma",
+        celebrityPhoto: gajendra,
+        celebrityYear: "",
+    },
+    {
+        celebrityName: "Shruti Haasan",
+        celebrityPhoto: shruti,
+        celebrityYear: "",
+    },
+    {
+        celebrityName: "Kumar Vishwas",
+        celebrityPhoto: kumarvishwas,
+        celebrityYear: "",
+    },
+    {
+        celebrityName: "Ravindra Upadhyay",
+        celebrityPhoto: ravindra,
         celebrityYear: "",
     },
     {
@@ -25,21 +40,6 @@ const previousCelebrities = [
     },
     {
         celebrityName: "jassigil",
-        celebrityPhoto: kumarvishwas,
-        celebrityYear: "",
-    },
-    {
-        celebrityName: "jassigil",
-        celebrityPhoto: kumarvishwas,
-        celebrityYear: "",
-    },
-    {
-        celebrityName: "jassigil",
-        celebrityPhoto: kumarvishwas,
-        celebrityYear: "",
-    },
-    {
-        celebrityName: "jassigil",
         celebrityPhoto: jassigil,
         celebrityYear: "",
     },
@@ -53,21 +53,7 @@ const previousCelebrities = [
         celebrityPhoto: jassigil,
         celebrityYear: "",
     },
-    {
-        celebrityName: "jassigil",
-        celebrityPhoto: jassigil,
-        celebrityYear: "",
-    },
-    {
-        celebrityName: "jassigil",
-        celebrityPhoto: jassigil,
-        celebrityYear: "",
-    },
-    {
-        celebrityName: "jassigil",
-        celebrityPhoto: jassigil,
-        celebrityYear: "",
-    },
+  
 
 ]
 
