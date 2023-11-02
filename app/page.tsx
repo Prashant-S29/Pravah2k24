@@ -11,6 +11,7 @@ import {
   ANIMATEDTEXT5,
   ANIMATEDTEXT6,
   ANIMATEDTEXT7,
+  ANIMATEDTEXT8,
   GALLERY,
   MARQUEEMOTION,
   STATS,
@@ -79,8 +80,9 @@ const HOME_OBJECT = () => {
           <STATS />
         </div>
         <div className="m-[20px] mt-[50px]">
-          {/* <GALLERY /> */}
-          <PRIORSPONSORS/>
+          <GALLERY />
+          <ANIMATEDTEXT8 />
+          <PRIORSPONSORS />
         </div>
         <div className="px-[20px]">
           <ANIMATEDTEXT5 />
