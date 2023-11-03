@@ -51,8 +51,8 @@ const DROPDOWNPAGE = () => {
           <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
               href="about"
-              navlink="AAVEG"
-              linkinfo="Real games on live ground."
+              navlink="ABOUT"
+              linkinfo="Know more about SKIT, Jaipur."
               linkColor="#A2F1F4"
               linkInfoColor="#ffffff"
               lineColor="#ffffff"
