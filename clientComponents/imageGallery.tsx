@@ -8,21 +8,19 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import { glimpse1, glimpse10, glimpse11, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9 } from "@/assets";
+import { glimpse1, glimpse10,  glimpse11,  glimpse12,  glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9 } from "@/assets";
 import Image from "next/image";
 
 const allImages = [
-  glimpse1,
-  glimpse2,
-  glimpse3,
-  glimpse4,
-  glimpse5,
-  glimpse6,
-  glimpse7,
-  glimpse8,
-  glimpse9,
-  glimpse10,
-  glimpse11
+glimpse1,
+glimpse2,
+glimpse3,
+glimpse4,
+glimpse5,
+glimpse6,
+glimpse7,
+glimpse8,
+glimpse9,glimpse10,glimpse11,glimpse12
 ]
 
 const IMAGEGALLERY = () => {
