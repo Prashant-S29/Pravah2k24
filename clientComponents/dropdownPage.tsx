@@ -50,7 +50,7 @@ const DROPDOWNPAGE = () => {
         <div>
           <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
-              href="aaveg"
+              href="about"
               navlink="AAVEG"
               linkinfo="Real games on live ground."
               linkColor="#A2F1F4"
