@@ -1,5 +1,5 @@
 import {
-    jassigil, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra,
+    jassigil, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, shruti2,
 } from "./assets/index"
 
 const previousCelebrities = [
@@ -10,7 +10,7 @@ const previousCelebrities = [
     },
     {
         celebrityName: "Shruti Haasan",
-        celebrityPhoto: shruti,
+        celebrityPhoto: shruti2,
         celebrityYear: "",
     },
     {
@@ -23,11 +23,7 @@ const previousCelebrities = [
         celebrityPhoto: ravindra,
         celebrityYear: "",
     },
-    {
-        celebrityName: "jassigil",
-        celebrityPhoto: kumarvishwas,
-        celebrityYear: "",
-    },
+  
     {
         celebrityName: "jassigil",
         celebrityPhoto: kumarvishwas,
@@ -44,8 +40,8 @@ const previousCelebrities = [
         celebrityYear: "",
     },
     {
-        celebrityName: "jassigil",
-        celebrityPhoto: jassigil,
+        celebrityName: "Naushad Ali kawa",
+        celebrityPhoto: naushad,
         celebrityYear: "",
     },
     {

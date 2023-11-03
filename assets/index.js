@@ -51,6 +51,8 @@ import jassigil from "./jassigill.png"
 import shruti from "./pravah23Images/shruti.jpeg"
 import ravindra from "./pravah23Images/ravindra.jpg"
 import gajendra from "./pravah23Images/gajendra.jpg"
+import naushad from "./pravah23Images/naushad.jpg"
+import shruti2 from "./pravah23Images/shruti2.jpg"
 
 import sp1 from "./priorSponsors/sp1.png"
 import sp2 from "./priorSponsors/sp2.png"
@@ -62,6 +64,21 @@ import sp7 from "./priorSponsors/sp7.png"
 
 import skit_logo from "./skit_logo.png"
 import naac_logo from "./naac_logo.png"
+
+import glimpse1 from "./pravah23Images/glimpse1.jpg"
+import glimpse2 from "./pravah23Images/glimpse10.jpg"
+import glimpse3 from "./pravah23Images/glimpse3.jpg"
+import glimpse4 from "./pravah23Images/glimpse4.jpg"
+import glimpse5 from "./pravah23Images/glimpse5.jpg"
+import glimpse6 from "./pravah23Images/glimpse6.jpg"
+import glimpse7 from "./pravah23Images/glimpse7.jpg"
+import glimpse8 from "./pravah23Images/glimpse8.jpg"
+import glimpse9 from "./pravah23Images/glimpse9.jpg"
+import glimpse10 from "./pravah23Images/glimpse12.jpg"
+import glimpse11 from "./pravah23Images/glimpse2.jpg"
+
+
+
 
 
 
@@ -115,6 +132,9 @@ export {
     naac_logo,
     gajendra,
     shruti,
-    ravindra
+    ravindra,
+    naushad,
+    shruti2,
+    glimpse1,glimpse2,glimpse3,glimpse4,glimpse5,glimpse6,glimpse7,glimpse8,glimpse9,glimpse10,glimpse11
 
 }
