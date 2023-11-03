@@ -61,6 +61,8 @@ import sp4 from "./priorSponsors/sp4.png"
 import sp5 from "./priorSponsors/sp5.png"
 import sp6 from "./priorSponsors/sp6.png"
 import sp7 from "./priorSponsors/sp7.png"
+import sp8 from "./priorSponsors/sp8.png"
+import sp9 from "./priorSponsors/sp9.png"
 
 import skit_logo from "./skit_logo.png"
 import naac_logo from "./naac_logo.png"
@@ -127,7 +129,7 @@ export {
     jassigill,
     kumarvishwas,
     jassigil,
-    sp1, sp2, sp3, sp4, sp5, sp6, sp7,
+    sp1, sp2, sp3, sp4, sp5, sp6, sp7,sp8,sp9,
     skit_logo,
     naac_logo,
     gajendra,

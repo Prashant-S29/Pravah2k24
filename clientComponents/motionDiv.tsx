@@ -179,6 +179,20 @@ const ANIMATEDTEXT4 = () => {
   );
 };
 
+const ANIMATEDTEXT8 = () => {
+  const placeholderText = [{ type: "heading1", text: "Prior Sponsors" }];
+
+  return (
+    <motion.div initial="hidden" whileInView="visible">
+      <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
+        {placeholderText.map((item, index) => (
+          <AnimatedCharacters {...item} key={index} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
 const ANIMATEDTEXT5 = () => {
   const placeholderText = [{ type: "heading1", text: "Major Events" }];
 
@@ -322,4 +336,5 @@ export {
   ANIMATEDTEXT5,
   ANIMATEDTEXT6,
   ANIMATEDTEXT7,
+  ANIMATEDTEXT8,
 };

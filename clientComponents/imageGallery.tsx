@@ -48,7 +48,7 @@ const IMAGEGALLERY = () => {
               <Image
                 src={images}
                 alt={index.toString()}
-                className="w-full h-[300px] object-cover mb-[50px] object-top rounded-[20px] "
+                className="w-full h-[300px] object-cover    mb-[50px] object-top rounded-[20px] "
               />
             </SwiperSlide>
           ))}
