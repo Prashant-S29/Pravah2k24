@@ -12,7 +12,7 @@ const TEAM_OBJECT = () => {
             <span className="font-black text-[64px]">Coming Soon.</span>
           </div>
           <div>
-            <span className="text-[32px] font-black">Stay Tuned!!</span>
+            <span className="text-[32px] font-black"></span>
           </div>
         </div>
       </div>
