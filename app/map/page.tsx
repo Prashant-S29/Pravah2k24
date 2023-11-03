@@ -3,13 +3,12 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { pravahmap } from "@/assets";
+import { map } from "@/assets";
 import { saveAs } from "file-saver";
 import TRANSITION_WRAPPER from "../../clientComponents/transition";
 
 const saveFile = () => {
-  saveAs(pravahmap.src, "map.png");
+  saveAs(map.src, "map.png");
 };
 
 const MAP_OBEJCT = () => {
@@ -19,8 +18,8 @@ const MAP_OBEJCT = () => {
         <div>
           <div className="top-5 flex justify-center">
             <Image
-              src={pravahmap}
-              alt="pravahmap"
+              src={map}
+              alt="map"
               className="w-full rounded-[20px]"
               data-cursor-text="Download"
               data-cursor-size="100px"

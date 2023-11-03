@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "@/utils/motion";
 
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
+const MajorEventCard = ({ id, imgUrl, title, index, active, handleClick }) => (
   <motion.div
     variants={fadeIn("right", "spring", index * 0.2, 0.75)}
     className={`relative ${
@@ -41,4 +41,4 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
   </motion.div>
 );
 
-export default ExploreCard;
+export default MajorEventCard;

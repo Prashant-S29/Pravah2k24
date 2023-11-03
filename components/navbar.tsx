@@ -7,8 +7,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 
-import { skit_logo, textOne } from "@/assets";
+import { navbarText } from "@/assets";
 import DROPDOWNPAGE from "@/clientComponents/dropdownPage";
+
 import NAVLINK from "@/clientComponents/navlinks";
 
 const NAVBAR = () => {
@@ -36,7 +37,7 @@ const NAVBAR = () => {
           <div className="hidden lg:block">
             <span>
               <NAVLINK
-                href="aaveg"
+                href="about"
                 navlink="ABOUT"
                 linkinfo="Know more about SKIT, Jaipur."
                 linkColor="#000000"
@@ -48,8 +49,8 @@ const NAVBAR = () => {
           <div>
             <Link href="/" className="flex gap-3">
               <Image
-                src={textOne}
-                alt="textTwo"
+                src={navbarText}
+                alt="navbarText"
                 className="w-[130px] md:w-[180px]"
               />
             </Link>

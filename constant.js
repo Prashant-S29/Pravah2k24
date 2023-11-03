@@ -1,6 +1,7 @@
 import {
-    jassigil, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra,
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight
 } from "./assets/index"
+
 
 const previousCelebrities = [
     {
@@ -23,37 +24,33 @@ const previousCelebrities = [
         celebrityPhoto: ravindra,
         celebrityYear: "",
     },
+
     {
-        celebrityName: "jassigil",
+        celebrityName: "jassigill",
         celebrityPhoto: kumarvishwas,
         celebrityYear: "",
     },
     {
-        celebrityName: "jassigil",
+        celebrityName: "jassigill",
         celebrityPhoto: kumarvishwas,
         celebrityYear: "",
     },
     {
-        celebrityName: "jassigil",
-        celebrityPhoto: kumarvishwas,
+        celebrityName: "jassigill",
+        celebrityPhoto: jassigill,
         celebrityYear: "",
     },
     {
-        celebrityName: "jassigil",
-        celebrityPhoto: jassigil,
+        celebrityName: "Naushad Ali kawa",
+        celebrityPhoto: naushad,
         celebrityYear: "",
     },
     {
-        celebrityName: "jassigil",
-        celebrityPhoto: jassigil,
+        celebrityName: "jassigill",
+        celebrityPhoto: jassigill,
         celebrityYear: "",
     },
-    {
-        celebrityName: "jassigil",
-        celebrityPhoto: jassigil,
-        celebrityYear: "",
-    },
-  
+
 
 ]
 
@@ -80,7 +77,37 @@ const socialContact = [
     },
 ]
 
+
+const majorEvents = [
+    {
+        id: 'eventOne',
+        imgUrl: thirak,
+        title: 'Thirak',
+    },
+    {
+        id: 'eventTwo',
+        imgUrl: dj,
+        title: 'DJ Night',
+    },
+    {
+        id: 'eventThree',
+        imgUrl: rawaz,
+        title: 'Rawaz',
+    },
+    {
+        id: 'eventFour',
+        imgUrl: sur,
+        title: 'Sur',
+    },
+    {
+        id: 'eventFive',
+        imgUrl: celebrityNight,
+        title: 'Celebrity Night',
+    },
+];
+
 export {
     previousCelebrities,
-    socialContact
+    socialContact,
+    majorEvents
 }

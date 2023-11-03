@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,11 +22,10 @@ import {
   VIDEOBLOCK,
 } from "@/clientComponents/motionDiv";
 
-import { map, pravahmap, sponsorOne, testImage } from "@/assets";
-import MAJOREVENTS from "@/clientComponents/majorCard";
-import MAP from "@/app/map/page";
-import CELEBRITYCARD from "@/clientComponents/celebrityCard";
+import { map } from "@/assets";
 
+import MAJOREVENTS from "@/clientComponents/majorCard";
+import CELEBRITYCARD from "@/clientComponents/celebrityCard";
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
 import PRIORSPONSORS from "@/clientComponents/priorSponsor";
 

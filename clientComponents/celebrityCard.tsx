@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import { previousCelebrities } from "../constant";
-import { testImage } from "@/assets";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -22,7 +21,7 @@ const CELEBRITYCARD = () => {
             dynamicBullets: true,
           }}
           autoplay={{
-            delay: 2500,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           loop={true}
