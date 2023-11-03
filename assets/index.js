@@ -65,6 +65,17 @@ import sp9 from "./priorSponsors/sp9.png"
 import skit_logo from "./skit_logo.png"
 import naac_logo from "./naac_logo.png"
 
+import text1 from "./text/text1.png"
+import text2 from "./text/text2.png"
+import text3 from "./text/text3.png"
+import text4 from "./text/text4.png"
+import text5 from "./text/text5.png"
+import text6 from "./text/text6.png"
+import text7 from "./text/text7.png"
+import text8 from "./text/text8.png"
+import text9 from "./text/text9.png"
+import text10 from "./text/text10.png"
+
 
 
 export {
@@ -112,11 +123,12 @@ export {
     jassigill,
     kumarvishwas,
     jassigil,
-    sp1, sp2, sp3, sp4, sp5, sp6, sp7,sp8,sp9,
+    sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9,
     skit_logo,
     naac_logo,
     gajendra,
     shruti,
-    ravindra
+    ravindra,
+    text1, text2, text3, text4, text5, text6, text7, text8, text9,text10
 
 }

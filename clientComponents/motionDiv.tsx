@@ -1,30 +1,17 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 import { motion } from "framer-motion";
-import { fadeIn, fadeUp, staggerContainer } from "@/utils/motion";
+import { fadeUp, staggerContainer } from "@/utils/motion";
 
 import AnimatedCharacters from "@/clientComponents/animateText";
-
-import {
-  box,
-  wingOne,
-  wingTwo,
-  sponsorOne,
-  textOne,
-  textTwo,
-  logo,
-  pravah2023,
-  skit_logo,
-  naac_logo,
-} from "../assets/index";
 
 import EVENTMARQUEE from "./eventMarquee";
 import COUNTDOWN from "./countdown";
 import { TypingTextEffect } from "./customText";
 import IMAGEGALLERY from "./imageGallery";
+import TITLETEXTANIMATION from "./titleTextAnimation";
 
 const TITLEIMAGE = () => {
   return (
@@ -33,28 +20,9 @@ const TITLEIMAGE = () => {
         variants={fadeUp("tween", 0.2, 0.75)}
         initial="hidden"
         whileInView="show"
-        className=" w-full flex justify-center"
+        className=" w-full flex justify-center px-[20px]   "
       >
-        <div>
-          {/* <div className="flex gap-3 justify-center items-center">
-            <div>
-              <Image src={skit_logo} alt="skit_logo" className="w-[80px]" />
-            </div>
-            <div>
-              <Image src={naac_logo} alt="naac_logo" className="w-[100px]" />
-            </div>
-            <div>
-              <Image src={logo} alt="logo" className="w-[100px]" />
-            </div>
-          </div> */}
-          <div className="mt-[20px]">
-            <Image
-              src={textTwo}
-              alt="textTwo"
-              className="w-[300px] md:w-[350px] lg:w-[450px] 2xl:w-[550px] grayscale hover:grayscale-0 duration-300  drop-shadow-xl  "
-            />
-          </div>
-        </div>
+        <TITLETEXTANIMATION />
       </motion.div>
     </>
   );
