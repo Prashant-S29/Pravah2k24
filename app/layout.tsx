@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import { background } from "@/assets";
 
 import NAVBAR from "@/components/navbar";
@@ -37,7 +39,10 @@ export default function RootLayout({
         </div>
         <div>
           <NAVBAR />
-          <PAGEWRAPPER>{children}</PAGEWRAPPER>
+          <PAGEWRAPPER>
+            {children}
+            <Analytics />
+          </PAGEWRAPPER>
           <FOOTER />
         </div>
       </body>
