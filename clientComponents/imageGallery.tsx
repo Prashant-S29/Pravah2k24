@@ -39,12 +39,32 @@ const ImageGalleryItem = ({
       }
       onClick={() => resetDisplayState()}
     >
-      <Marquee autoFill={true} speed={50} direction={marqueeDirection}>
+      {/* Desktop */}
+      <Marquee autoFill={true} speed={50} direction={marqueeDirection} className="hidden sm:block">
         <div className=" flex gap-3 text-[32px] sm:text-[48px] md:text-[62px] px-[20px] items-center">
           <div>
             <span>{title}</span>
           </div>
-          <div className="text-[30px] pl-[20px]">
+          <div className="text-[20px] sm:text-[30px] pl-[20px]">
+            <div
+              className={`leading-none flex items-center  ${
+                marqueeDirection === "right"
+                  ? "animate-spin-one"
+                  : "animate-spin-two"
+              }`}
+            >
+              <span>&#9733;</span>
+            </div>
+          </div>
+        </div>
+      </Marquee>
+      {/* Phone */}
+      <Marquee autoFill={true} speed={30} direction={marqueeDirection} className="block sm:hidden">
+        <div className=" flex gap-3 text-[32px] sm:text-[48px] md:text-[62px]  items-center">
+          <div>
+            <span>{title}</span>
+          </div>
+          <div className="text-[20px] sm:text-[30px]">
             <div
               className={`leading-none flex items-center  ${
                 marqueeDirection === "right"
@@ -60,7 +80,9 @@ const ImageGalleryItem = ({
       <div className="flex justify-center ">
         <div
           className={`w-[250px] sm:w-[350px] md:w-[400px] lg:w-[450px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] rounded-[20px] z-10 bg-slate-600 duration-300  shadow-2xl shadow-black ${
-            displayState == true ? `-mt-[80px] sm:-mt-[120px] md:-mt-[200px] ` : "mt-[50px] rotate-12"
+            displayState == true
+              ? `-mt-[110px] sm:-mt-[120px] md:-mt-[200px] `
+              : "mt-[50px] rotate-12"
           } ${
             displayState == true && marqueeDirection == "right"
               ? "-rotate-12"
@@ -75,7 +97,7 @@ const ImageGalleryItem = ({
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="rounded-[20px]"
-          ></iframe> */}  
+          ></iframe> */}
         </div>
       </div>
     </div>
