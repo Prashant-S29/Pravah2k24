@@ -13,7 +13,7 @@ const PRIORSPONSORS = () => {
   return (
     <>
       <div className="whitespace-nowrap w-full  flex justify-center   ">
-        <Marquee autoFill={true} speed={50}>
+        <Marquee autoFill={true} speed={50} direction="right">
           {priorSponsors.map((sponsorImage, index) => (
             <div
               key={index}

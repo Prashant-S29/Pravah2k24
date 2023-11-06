@@ -80,7 +80,10 @@ const HOME_OBJECT = () => {
           <STATS />
         </div>
         <div className="m-[20px] mt-[50px]">
-          <GALLERY />
+          <ANIMATEDTEXT2 />
+        </div>
+        <GALLERY />
+        <div className="m-[20px] mt-[50px]">
           <ANIMATEDTEXT8 />
           <PRIORSPONSORS />
         </div>

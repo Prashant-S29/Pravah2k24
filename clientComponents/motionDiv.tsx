@@ -73,7 +73,7 @@ const ANIMATEDTEXT1 = () => {
 };
 
 const ANIMATEDTEXT2 = () => {
-  const placeholderText = [{ type: "heading1", text: "Glimpses." }];
+  const placeholderText = [{ type: "heading1", text: "Glimpses" }];
 
   return (
     <motion.div initial="hidden" whileInView="visible">

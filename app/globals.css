@@ -83,3 +83,21 @@ button {
   background:rgb(0, 0, 0);
   transform-origin: left;
 }
+
+
+.animate-spin-one {
+  animation: spinOne 3s linear infinite;
+}
+@keyframes spinOne {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-spin-two {
+  animation: spinTwo 3s linear infinite;
+}
+@keyframes spinTwo {
+  to {
+      transform: rotate(-360deg);
+  }
+}
