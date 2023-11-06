@@ -15,18 +15,6 @@ type ImageGalleryItemProps = {
   resetDisplayState: () => void;
 };
 
-const getScreenSize = () => {
-  // Logic to determine screen size based on window width
-  const width = window.innerWidth;
-  if (width >= 720) {
-    return "lg";
-  } else {
-    return "md";
-  }
-};
-
-const screenSize = getScreenSize();
-
 const ImageGalleryItem = ({
   title,
   index,
