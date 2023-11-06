@@ -15,7 +15,7 @@ const CELEBRITYCARD = () => {
     <>
       <div className="w-full hidden md:flex justify-center items-center px-[20px] ">
         <Swiper
-          slidesPerView={5}
+          slidesPerView={4}
           spaceBetween={20}
           pagination={{
             dynamicBullets: true,
@@ -36,7 +36,7 @@ const CELEBRITYCARD = () => {
                     <Image
                       src={celebrityDetails.celebrityPhoto}
                       alt={index.toString()}
-                      className="w-[250px] aspect-square object-cover rounded-full "
+                      className="w-[250px] aspect-square object-cover object-top rounded-full "
                     />
                   </div>
                   <div className="text-center mt-[10px]">

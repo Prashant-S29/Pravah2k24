@@ -13,6 +13,7 @@ import {
   ANIMATEDTEXT6,
   ANIMATEDTEXT7,
   ANIMATEDTEXT8,
+  ANIMATEDTEXT9,
   GALLERY,
   MARQUEEMOTION,
   STATS,
@@ -43,7 +44,20 @@ const HOME_OBJECT = () => {
             <TITLEIMAGE />
           </div>
           <div className="my-[50px]">
-            <TIMER />
+            {/* <TIMER /> */}
+            {/* <ANIMATEDTEXT9 /> */}
+            <div className="text-center flex justify-center mt-[30px]">
+              <div>
+                <div>
+                  <span className="font-bold">Scroll Down</span>
+                </div>
+                <div className="animate-bounce mt-[10px]">
+                  <div className="rotate-90 ">
+                    <span>&rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             className="flex justify-center wx-full "

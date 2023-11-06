@@ -7,14 +7,14 @@ const TRANSITION_WRAPPER = (ParentComponent: any) => {
     <>
       <ParentComponent />
       <motion.div
-        className="slide-in"
+        className="slide-in z-50"
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0 }}
         exit={{ scaleX: 1 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       ></motion.div>
       <motion.div
-        className="slide-out"
+        className="slide-out z-50"
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0 }}
         exit={{ scaleX: 1 }}

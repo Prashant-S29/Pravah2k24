@@ -7,7 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 
-import { navbarText } from "@/assets";
+import { naac_logo, navbarText, pravah2024, skit_logo } from "@/assets";
 import DROPDOWNPAGE from "@/clientComponents/dropdownPage";
 
 import NAVLINK from "@/clientComponents/navlinks";
@@ -46,14 +46,43 @@ const NAVBAR = () => {
               />
             </span>
           </div>
-          <div>
-            <Link href="/" className="flex gap-3">
-              <Image
-                src={navbarText}
-                alt="navbarText"
-                className="w-[130px] md:w-[180px]"
-              />
-            </Link>
+          <div className="flex gap-3 justify-center items-center">
+            {/* <div>
+              <Link href="/" className="flex gap-3">
+                <Image
+                  src={skit_logo}
+                  alt="skit_logo"
+                  className="w-[80px] md:w-[80px]"
+                />
+              </Link>
+            </div> */}
+            {/* <div>
+              <Link href="/" className="flex gap-3">
+                <Image
+                  src={pravah2024}
+                  alt="pravah2024"
+                  className="w-[80px] md:w-[80px]"
+                />
+              </Link>
+            </div> */}
+            <div>
+              <Link href="/" className="flex gap-3">
+                <Image
+                  src={navbarText}
+                  alt="navbarText"
+                  className="w-[130px] md:w-[180px]"
+                />
+              </Link>
+            </div>
+            {/* <div>
+              <Link href="/" className="flex gap-3">
+                <Image
+                  src={naac_logo}
+                  alt="naac_logo"
+                  className="w-[80px] md:w-[90px]"
+                />
+              </Link>
+            </div> */}
           </div>
           <div className="hidden lg:block">
             <span>

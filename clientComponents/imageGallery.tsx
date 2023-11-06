@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
+import { glimpsesCard } from "@/constant";
+
 
 type ImageGalleryItemProps = {
   title: string;
@@ -81,7 +83,7 @@ const ImageGalleryItem = ({
         <div
           className={`w-[250px] sm:w-[350px] md:w-[400px] lg:w-[450px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] rounded-[20px] z-10 bg-slate-600 duration-300  shadow-2xl shadow-black ${
             displayState == true
-              ? `-mt-[110px] sm:-mt-[120px] md:-mt-[200px] `
+              ? `-mt-[110px] sm:-mt-[120px] md:-mt-[230px] `
               : "mt-[50px] rotate-12"
           } ${
             displayState == true && marqueeDirection == "right"
@@ -89,7 +91,7 @@ const ImageGalleryItem = ({
               : "rotate-12"
           } `}
         >
-          {/* <iframe
+          <iframe
             width="100%"
             height="100%"
             src={youtubeLink}
@@ -97,7 +99,7 @@ const ImageGalleryItem = ({
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="rounded-[20px]"
-          ></iframe> */}
+          ></iframe>
         </div>
       </div>
     </div>
@@ -105,43 +107,7 @@ const ImageGalleryItem = ({
 );
 
 const IMAGEGALLERY = () => {
-  const [galleryItems, setGalleryItems] = useState([
-    {
-      title: "Pravah 23 After Story",
-      displayState: false,
-      marqueeDirection: "left",
-      youtubeLink:
-        "https://www.youtube.com/embed/nzBm77PZ_BI?si=0XNw8q2sUexKj6Hs",
-    },
-    {
-      title: "Aaveg",
-      displayState: false,
-      marqueeDirection: "right",
-      youtubeLink:
-        "https://www.youtube.com/embed/V-094flkqjI?si=_K4SvOox1AP4bTYh",
-    },
-    {
-      title: "Crowd Work",
-      displayState: false,
-      marqueeDirection: "left",
-      youtubeLink:
-        "https://www.youtube.com/embed/V-094flkqjI?si=_K4SvOox1AP4bTYh",
-    },
-    {
-      title: "Developers",
-      displayState: true,
-      marqueeDirection: "right",
-      youtubeLink:
-        "https://www.youtube.com/embed/V-094flkqjI?si=_K4SvOox1AP4bTYh",
-    },
-    {
-      title: "Behind the sense",
-      displayState: false,
-      marqueeDirection: "left",
-      youtubeLink:
-        "https://www.youtube.com/embed/V-094flkqjI?si=_K4SvOox1AP4bTYh",
-    },
-  ]);
+  const [galleryItems, setGalleryItems] = useState(glimpsesCard);
 
   const resetDisplayState = (index: number) => {
     const updatedGalleryItems = galleryItems.map((item, i) => ({

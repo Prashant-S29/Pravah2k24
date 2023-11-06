@@ -64,33 +64,32 @@ button {
   }
 }
 
-.slide-in{
+.slide-in {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background:rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
   transform-origin: right;
 }
 
-.slide-out{
+.slide-out {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background:rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
   transform-origin: left;
 }
-
 
 .animate-spin-one {
   animation: spinOne 3s linear infinite;
 }
 @keyframes spinOne {
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .animate-spin-two {
@@ -98,6 +97,46 @@ button {
 }
 @keyframes spinTwo {
   to {
-      transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
+
+.burger {
+  width: 100%;
+}
+
+.burger::after,
+.burger::before {
+  content: "";
+  display: block;
+  width: 30%;
+  background-color: #fff;
+  height: 1px;
+  margin: auto;
+  position: relative;
+}
+
+.burger::after {
+  top: -3px;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.burger::before {
+  top: 3px;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.burgerActive::after {
+  top: -1px;
+  transform: rotate(-45deg);
+
+}
+
+.burgerActive::before {
+  top: 1px;
+  transform: rotate(45deg);
+
+}
+
