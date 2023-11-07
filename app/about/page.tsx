@@ -18,7 +18,7 @@ const ABOUT_OBJECT = () => {
               <TYPINGTEXT title="About Pravah" />
               <ANIMATEDTEXT10 />
             </div>
-            <div className="mx-[20px] lg:mx-[200px] text-[14px] sm:text-[16px]">
+            <div className="mx-[20px] lg:mx-[200px] text-[15px] sm:text-[16px]">
               <span>
                 The Annual College Fest PRAVAH is a culmination of this humble
                 aspiration. This prolific extravaganza has been organized since
@@ -49,7 +49,7 @@ const ABOUT_OBJECT = () => {
             <TYPINGTEXT title="About SKIT" />
             <ANIMATEDTEXT11 />
           </div>
-          <div className="mx-[20px] lg:mx-[200px] text-[14px] sm:text-[16px]">
+          <div className="mx-[20px] lg:mx-[200px] text-[15px] sm:text-[16px]">
             <span>
               Inspired by the timeless wisdom of Swami Keshvanand, embarked on
               its academic journey in the year 2000, thanks to the visionaries
@@ -69,7 +69,7 @@ const ABOUT_OBJECT = () => {
                   VISION
                 </span>
               </div>
-              <div className="text-[14px] sm:text-[16px] w-full mt-[10px] h-fit sm:h-[250px] overflow-y-scroll">
+              <div className="text-[15px] sm:text-[16px] w-full mt-[10px] h-fit sm:h-[250px] overflow-y-scroll">
                 <span>
                   PRAVAH aspires to manifest the ultimate human experience where
                   bonds to friendships begin and memories are created and
@@ -85,7 +85,7 @@ const ABOUT_OBJECT = () => {
                   MISSION
                 </span>
               </div>
-              <div className="text-[14px] sm:text-[16px]  w-full mt-[10px]  h-fit sm:h-[250px] overflow-y-scroll">
+              <div className="text-[15px] sm:text-[16px]  w-full mt-[10px]  h-fit sm:h-[250px] overflow-y-scroll">
                 <span>
                   PRAVAH strive to make it a platform to showcase talent in most
                   of the fields where the journey of learning and growing
@@ -101,7 +101,7 @@ const ABOUT_OBJECT = () => {
                   OBJECTIVES
                 </span>
               </div>
-              <div className="text-[14px] sm:text-[16px] w-full mt-[10px]  h-fit sm:h-[250px] overflow-y-scroll">
+              <div className="text-[15px] sm:text-[16px] w-full mt-[10px]  h-fit sm:h-[250px] overflow-y-scroll">
                 <span>
                   To provide a congenial environment for all to interact and
                   celebrate amusedly. To promote the cultural diversity and
