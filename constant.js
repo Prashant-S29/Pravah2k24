@@ -178,42 +178,34 @@ const priorEvents = [
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     }
 ]
 

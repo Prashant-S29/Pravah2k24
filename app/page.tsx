@@ -70,7 +70,7 @@ const HOME_OBJECT = () => {
       </div>
       <div className="mt-[50px]">
         <div>
-          <TYPINGTEXT title="| Pravah'24 Trailer" />
+          <TYPINGTEXT title="Pravah'24 Trailer" />
         </div>
         <div className="text-center">
           <ANIMATEDTEXT1 />
@@ -81,7 +81,7 @@ const HOME_OBJECT = () => {
       </div>
       <div className="mt-[50px]">
         <div>
-          <TYPINGTEXT title="| Flashback" />
+          <TYPINGTEXT title="Flashback" />
           <div className="block max-[450px]:hidden">
             <ANIMATEDTEXT3 />
           </div>

@@ -16,7 +16,7 @@ const EVENTS_OBJECT = () => {
   return (
     <>
       <div
-        className="fixed top-0 left-0 m-[20px] w-[60px] aspect-square rounded-full flex justify-start gap-3 items-center duration-300
+        className="fixed top-0 left-0 m-[20px] mt-[40px] w-[60px] aspect-square rounded-full flex justify-start gap-3 items-center duration-300
          bg-[#000000] z-10"
         onClick={() => {
           setIsActive(!isActive);
@@ -82,7 +82,7 @@ const EVENTS_OBJECT = () => {
         {priorEvents.map((eventDetail, index) => (
           <div
             key={index}
-            className="w-full sm:w-[600px] shadow-md h-fit block sm:flex gap-5 bg-white rounded-[20px] border border-black p-[10px]"
+            className="w-full sm:w-fit h-fit block gap-5 bg-white rounded-[20px] border border-black p-[10px]"
           >
             <div className="flex justify-center">
               <Image
@@ -91,30 +91,16 @@ const EVENTS_OBJECT = () => {
                 className="object-cover object-top rounded-[17px] w-full sm:w-[250px] h-[200px]"
               />
             </div>
-            <div className="mt-[10px]  text-center sm:text-left">
+            <div className="mt-[10px]  text-center  ">
               <div>
                 <span className="text-[24px] font-bold">
                   {eventDetail.eventName}
                 </span>
               </div>
-              <div className="mt-[20px] leading-none">
-                <span className="text-[14px] font-medium">
-                  Last Year Registrations
-                </span>
-              </div>
-              <div className="leading-tight">
-                <span className="text-[32px] sm:text-[42px]  font-black">
-                  {eventDetail.eventRegistration}+
-                </span>
-              </div>
-              {/* <button className="w-full text-[14px] bg-black text-white rounded-full py-[10px]">
-                Register
-              </button> */}
             </div>
           </div>
         ))}
       </div>
-      {/* <EVENTMENU /> */}
     </>
   );
 };

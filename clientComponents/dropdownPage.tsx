@@ -11,15 +11,15 @@ const DROPDOWNPAGE = () => {
   return (
     <>
       <div
-        className="fixed right-[20px] -top-[20px]   duration-200 z-50"
+        className="fixed right-[20px] -top-[20px]   duration-200 z-40"
         onClick={(e) => setDropDown(!dropDown)}
-        style={dropDown == false ? { top: "-20px" } : { top: "0px" }}
+        style={dropDown == false ? { top: "10px" } : { top: "30px" }}
       >
         <Image src={dropdown} alt="dropdown" className="w-[30px] md:w-[40px]" />
       </div>
       <div
         className="fixed w-full h-fit bg-[#405656]  z-30 duration-200 p-[20px] rounded-b-[20px] shadow-lg  "
-        style={dropDown ? { top: "0px" } : { top: "-100vh" }}
+        style={dropDown ? { top: "30px" } : { top: "-100vh" }}
       >
         <div>
           <span onClick={(e) => setDropDown(!dropDown)}>
