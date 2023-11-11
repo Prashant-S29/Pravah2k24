@@ -209,11 +209,87 @@ const priorEvents = [
     }
 ]
 
+
+const team = [
+    {
+      id: 1,
+      img: 'https://randomuser.me/api/portraits/men/1.jpg',
+      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      name: 'John Doe',
+      speciality: 'Physics Teacher',
+    },
+    {
+      id: 2,
+      img: 'https://randomuser.me/api/portraits/women/2.jpg',
+      quote: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: 'Jane Smith',
+      speciality: 'Mathematics Teacher',
+    },
+    {
+      id: 3,
+      img: 'https://randomuser.me/api/portraits/men/3.jpg',
+      quote: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'Bob Johnson',
+      speciality: 'Computer Science Teacher',
+    },
+    {
+      id: 4,
+      img: 'https://randomuser.me/api/portraits/women/4.jpg',
+      quote: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      name: 'Alice Williams',
+      speciality: 'English Teacher',
+    },
+    {
+      id: 5,
+      img: 'https://randomuser.me/api/portraits/men/5.jpg',
+      quote: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      name: 'Charlie Davis',
+      speciality: 'History Teacher',
+    },
+    {
+      id: 6,
+      img: 'https://randomuser.me/api/portraits/women/6.jpg',
+      quote: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.',
+      name: 'Eva Rodriguez',
+      speciality: 'Chemistry Teacher',
+    },
+    {
+      id: 7,
+      img: 'https://randomuser.me/api/portraits/men/7.jpg',
+      quote: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.',
+      name: 'Michael Brown',
+      speciality: 'Biology Teacher',
+    },
+    {
+      id: 8,
+      img: 'https://randomuser.me/api/portraits/women/8.jpg',
+      quote: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.',
+      name: 'Sophia Martinez',
+      speciality: 'Physical Education Teacher',
+    },
+    {
+      id: 9,
+      img: 'https://randomuser.me/api/portraits/men/9.jpg',
+      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      name: 'Daniel Lee',
+      speciality: 'Coordinator',
+    },
+    {
+      id: 10,
+      img: 'https://randomuser.me/api/portraits/women/10.jpg',
+      quote: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: 'Emily Taylor',
+      speciality: 'Coordinator',
+    },
+  ];
+  
+
 export {
     previousCelebrities,
     socialContact,
     majorEvents,
     glimpsesCard,
     EventMenuLinks,
-    priorEvents
+    priorEvents,
+    team
 }
