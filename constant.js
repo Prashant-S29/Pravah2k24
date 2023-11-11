@@ -269,6 +269,48 @@ const sponsorFormFields = [
     },
 ];
 
+// eventCategory = non_tect, tect, cultural, literary, social, esports
+// eventType = Team, Individual
+
+const testEventDetails = [
+    {
+        eventName: "Paintball Arena",
+        eventPhotoLink: celebrityNight,
+        eventCategory: "non_tech",
+        eventType:"Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventMaxParicipationLimit: 80,
+        eventCurrentParticipation: 10
+    },
+    {
+        eventName: "Master Chef SKIT",
+        eventPhotoLink: dj,
+        eventCategory: "non_tech",
+        eventType:"Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventMaxParicipationLimit: 80,
+        eventCurrentParticipation: 80
+    },
+    {
+        eventName: "Master Chef SKIT",
+        eventPhotoLink: dj,
+        eventCategory: "non_tech",
+        eventType:"Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventMaxParicipationLimit: 80,
+        eventCurrentParticipation: 2
+    }
+]
+
 export {
     previousCelebrities,
     socialContact,
@@ -276,6 +318,7 @@ export {
     glimpsesCard,
     EventMenuLinks,
     priorEvents,
-    sponsorFormFields
+    sponsorFormFields,
+    testEventDetails
 }
 

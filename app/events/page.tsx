@@ -32,7 +32,7 @@ const EVENTS_OBJECT = () => {
               animate="enter"
               exit="exit"
               initial="initial"
-              className="w-full sm:w-[300px] p-[10px] fixed top-0"
+              className="w-full sm:w-[300px] p-[10px] fixed top-0 "
               style={{ height: window.innerHeight }}
             >
               <div className="w-full h-full bg-[#ffffff] border border-black  backdrop-blur-sm rounded-[20px] flex justify-center items-center right-0 ">
@@ -76,6 +76,14 @@ const EVENTS_OBJECT = () => {
       <div className="text-center">
         <span className="text-[30px] sm:text-[32px] md:text-[48px] lg:text-[64px] font-black">
           Previous year events
+        </span>
+      </div>
+      <div className="font-medium text-center my-[10px] mx-[20px]">
+        <span>
+          Event Page for Pravah 2024. <br />
+          <Link href="/events/testEvent">
+            <span className="underline font-bold">Click Here</span>
+          </Link>
         </span>
       </div>
       <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
