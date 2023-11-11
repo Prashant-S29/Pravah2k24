@@ -9,7 +9,7 @@ const LATESTNEWS = () => {
       <div className="z-50 sticky top-0 w-full py-[5px] bg-yellow-300 font-semibold">
         <div className="hidden md:block">
           <Marquee autoFill={true}>
-            <Link href="/">
+            <Link href="https://forms.gle/1sAvMsYrGm9M7zpm9" target="blank">
               <div className="px-[30px] text-[14px] sm:text-[16px]">
                 <span>
                   Event suggestion form is live.{" "}
@@ -22,7 +22,7 @@ const LATESTNEWS = () => {
         </div>
         <div className="block md:hidden">
           <Marquee autoFill={true} speed={40}>
-            <Link href="/">
+            <Link href="https://forms.gle/1sAvMsYrGm9M7zpm9" target="blank">
               <div className="px-[30px] text-[14px] sm:text-[16px]">
                 <span>
                   Event suggestion form is live.{" "}

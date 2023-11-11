@@ -2,9 +2,6 @@ import {
     jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12
 } from "./assets/index"
 
-
-
-
 const previousCelebrities = [
     {
         celebrityName: "Gajendra Verma",
@@ -60,12 +57,12 @@ const socialContact = [
     {
         socialName: "Twitter",
         socialIcon: twitter,
-        socialLink: ""
+        socialLink: "https://twitter.com/@pravah_skit"
     },
     {
         socialName: "Instagram",
         socialIcon: instagram,
-        socialLink: ""
+        socialLink: "https://www.instagram.com/skitpravah/"
     },
     {
         socialName: "Facebook",
@@ -75,7 +72,7 @@ const socialContact = [
     {
         socialName: "YouTube",
         socialIcon: youtube,
-        socialLink: ""
+        socialLink: "https://www.youtube.com/@skitpravah4946"
     },
 ]
 
@@ -209,11 +206,76 @@ const priorEvents = [
     }
 ]
 
+const sponsorFormFields = [
+    {
+        fieldName: 'firstName',
+        fieldLabel: 'First name',
+        fieldType: 'text',
+        fieldPlaceholder: 'First Name'
+    },
+    {
+        fieldName: 'lastName',
+        fieldLabel: 'Last name',
+        fieldType: 'text',
+        fieldPlaceholder: 'Last Name'
+    },
+    {
+        fieldName: 'email',
+        fieldLabel: 'Email',
+        fieldType: 'email',
+        fieldPlaceholder: 'Email id'
+    },
+    {
+        fieldName: 'companyPost',
+        fieldLabel: 'Company Post',
+        fieldType: 'text',
+        fieldPlaceholder: 'Company Post'
+    },
+    {
+        fieldName: 'queries',
+        fieldLabel: 'Queries',
+        fieldType: 'textarea',
+        fieldPlaceholder: 'Queries'
+    },
+    {
+        fieldName: 'designation',
+        fieldLabel: 'Designation',
+        fieldType: 'text',
+        fieldPlaceholder: 'Designation'
+    },
+    {
+        fieldName: 'mobileNo',
+        fieldLabel: 'Mobile No',
+        fieldType: 'tel',
+        fieldPlaceholder: 'Mobile No'
+    },
+    {
+        fieldName: 'whereAreYouFrom',
+        fieldLabel: 'Where are you from',
+        fieldType: 'text',
+        fieldPlaceholder: 'Where are you from'
+    },
+    {
+        fieldName: 'companyAddress',
+        fieldLabel: 'Company Address',
+        fieldType: 'text',
+        fieldPlaceholder: 'Company Address'
+    },
+    {
+        fieldName: 'whatYouGonnaSponsor',
+        fieldLabel: 'What you gonna Sponsor',
+        fieldType: 'textarea',
+        fieldPlaceholder: 'What you gonna Sponsor'
+    },
+];
+
 export {
     previousCelebrities,
     socialContact,
     majorEvents,
     glimpsesCard,
     EventMenuLinks,
-    priorEvents
+    priorEvents,
+    sponsorFormFields
 }
+
