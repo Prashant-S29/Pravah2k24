@@ -27,6 +27,8 @@ import shruti from "./priorCelebrity/shruti.jpg"
 import ravindra from "./priorCelebrity/ravindra.jpg"
 import gajendra from "./priorCelebrity/gajendra.webp"
 import naushad from "./priorCelebrity/naushad.webp"
+import nora from "./priorCelebrity/nora (1).webp"
+import suniel from "./priorCelebrity/suniel.webp"
 
 import sp1 from "./priorSponsors/sp1.png"
 import sp2 from "./priorSponsors/sp2.png"
@@ -95,7 +97,7 @@ export {
     ravindra,
     text1, text2, text3, text4, text5, text6, text7, text8, text9, text10,
     naushad,
-    glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12
+    glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12,suniel,nora
 
 
 }

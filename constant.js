@@ -1,5 +1,7 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, 
+    thirak, dj, sur, celebrityNight, 
+    glimpse1, glimpse4, glimpse7, glimpse12, nora, suniel
 } from "./assets/index"
 
 
@@ -27,14 +29,11 @@ const previousCelebrities = [
         celebrityYear: "",
     },
 
+    
+  
     {
-        celebrityName: "jassigill",
-        celebrityPhoto: kumarvishwas,
-        celebrityYear: "",
-    },
-    {
-        celebrityName: "jassigill",
-        celebrityPhoto: kumarvishwas,
+        celebrityName: "Suniel Shetty",
+        celebrityPhoto: suniel,
         celebrityYear: "",
     },
     {
@@ -48,8 +47,8 @@ const previousCelebrities = [
         celebrityYear: "",
     },
     {
-        celebrityName: "jassigill",
-        celebrityPhoto: jassigill,
+        celebrityName: "Nora Fatehi",
+        celebrityPhoto: nora,
         celebrityYear: "",
     },
 

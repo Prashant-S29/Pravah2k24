@@ -10,7 +10,7 @@ const ABOUT_OBJECT = () => {
         <div className="text-center">
           <div className="leading-tight">
             <span className="font-black text-[38px] sm:text-[48px] md:text-[64px]">
-              RTU #1 for 6 consicutive yrs.
+              RTU #1 for 6 consecutive yrs.
             </span>
           </div>
           <div>
