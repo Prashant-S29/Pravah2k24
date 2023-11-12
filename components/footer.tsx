@@ -28,7 +28,7 @@ const FOOTER = () => {
             <ul className=" flex gap-5 md:block">
               {socialContact.map((constDetails, index) => (
                 <li key={index} className="">
-                  <Link href={constDetails.socialLink}>
+                  <Link href={constDetails.socialLink} target="blank">
                     <div className=" gap-3 items-center hidden md:flex">
                       <div>
                         <Image

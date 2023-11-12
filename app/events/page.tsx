@@ -177,131 +177,101 @@ const EVENTS_OBJECT = () => {
 
   return (
     <>
-      <div className="text-center text-[30px] md:text-[36px] font-extrabold mt-[20px]">
-        <span>
-          {" "}
-         CATEGORY<span className="text-[#ff583e]"></span>
+      <div
+        className="fixed top-0 left-0 m-[20px] w-[60px] aspect-square rounded-full flex justify-start gap-3 items-center duration-300
+         bg-[#000000] z-10"
+        onClick={() => {
+          setIsActive(!isActive);
+        }}
+      >
+        <div className={`burger ${isActive ? "burgerActive" : ""}`}></div>
+      </div>
+      <AnimatePresence mode="wait">
+        {isActive && (
+          <>
+            <motion.div
+              variants={eventMenuSlide}
+              animate="enter"
+              exit="exit"
+              initial="initial"
+              className="w-full sm:w-[300px] p-[10px] fixed top-0"
+              style={{ height: window.innerHeight }}
+            >
+              <div className="w-full h-full bg-[#ffffff] border border-black  backdrop-blur-sm rounded-[20px] flex justify-center items-center right-0 ">
+                <div className=" text-black w-full">
+                  <div className="p-[20px]">
+                    <span className="font-black text-[32px]">Events List</span>
+                  </div>
+                  <div>
+                    {EventMenuLinks.map((menuLinks, index) => (
+                      <motion.div
+                        key={index}
+                        custom={index}
+                        variants={eventMenuLinkslide}
+                        animate="enter"
+                        exit="exit"
+                        initial="initial"
+                      >
+                        {/* <Link
+                  href={`/event`}
+                  className="my-[10px]"
+                > */}
+                        <div
+                          onClick={() => setIsActive(false)}
+                          className="hover:bg-slate-300 py-[7px] p-[20px]"
+                        >
+                          <span className="text-[20px] font-bold">
+                            {menuLinks.navLinkInfo}
+                          </span>
+                        </div>
+                        {/* <div className="w-full h-[1px] my-[5px] " /> */}
+                        {/* </Link> */}
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+      <div className="text-center">
+        <span className="text-[30px] sm:text-[32px] md:text-[48px] lg:text-[64px] font-black">
+          Previous year events
         </span>
       </div>
-
-
-      <div className="flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]">
-        <div>
-          <button
-            className={`${
-              activeButton === 0 ? "btn_active" : "btn_deactive"
-            } 'btn_active' : 'btn_deactive'} tracking-wide px-[30px] py-[14px] btn_active font-extrabold text-[16px] rounded-full `}
-            onClick={() => handleButtonClick(0)}
+      <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
+        {priorEvents.map((eventDetail, index) => (
+          <div
+            key={index}
+            className="w-full sm:w-[600px] shadow-md h-fit block sm:flex gap-5 bg-white rounded-[20px] border border-black p-[10px]"
           >
-           CULTURAL
-          </button>
-        </div>
-
-        <div>
-          <button
-            className={`${
-              activeButton === 1 ? "btn_active" : "btn_deactive"
-            } 'btn_active' : 'btn_deactive'} bg-image-button tracking-wide px-[30px] py-[14px] btn_active font-extrabold text-[16px] rounded-full `}
-            onClick={() => handleButtonClick(1)}
-            style={{backgroundImage: "url('assets/otherAssets/background.png')"}}
-          >
-           SOCIAL
-          </button>
-        </div>
-
-        <div>
-          <button
-            className={`${
-              activeButton === 2 ? "btn_active" : "btn_deactive"
-            } 'btn_active' : 'btn_deactive'} tracking-wide px-[30px] py-[14px] btn_active font-extrabold text-[16px] rounded-full `}
-            onClick={() => handleButtonClick(2)}
-          >
-           TECHNICAL
-          </button>
-        </div>
-      </div>
-      <div className="text-center text-[30px] md:text-[36px] font-extrabold mt-[20px]">
-        <span>
-          {" "}
-        Previous Year Events<span className="text-[#ff583e]"></span>
-        </span>
-      </div>
-
-      <div className="flex justify-center mt-[20px]">
-        <div
-          className={`${
-            activeButton === 0 ? "active-div" : "deactive-div"
-          } text-[18px] `}
-        >
-          {Cultural.map((item, index) => (
-            <div className="flex justify-center" key={index}>
-              <div
-                className="block md:flex justify-center items-center border-2 px-[30px] py-[20px] md:px-[40px] md:py-[20px] rounded-[20px] gap-[50px]
-              border-[#ff583e] mb-[10px]"
-              >
-                <div className="max-[320px]:w-[210px] w-[250px] md:w-[250px]">
-                  {Object.keys(item.Event).map((key, index) => (
-                    <div key={index}>
-                      <span className="font-bold">{item.Event[key]}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="max-[320px]:w-[210px] w-[250px] md:w-[200px]">
-                  <span className="">{item.Timing}</span>
-                </div>
-              </div>
+            <div className="flex justify-center">
+              <Image
+                src={eventDetail.eventPhoto}
+                alt={eventDetail.eventName}
+                className="object-cover object-top rounded-[17px] w-full sm:w-[250px] h-[200px]"
+              />
             </div>
-          ))}
-        </div>
-
-        <div
-          className={`${
-            activeButton === 1 ? "active-div" : "deactive-div"
-          } text-[18px] `}
-        >
-          {Social.map((item, index) => (
-            <div className="flex justify-center" key={index}>
-              <div
-                className="block md:flex justify-center items-center border-2 px-[40px] py-[20px] rounded-[20px] gap-[50px]
-              border-[#ff583e] mb-[10px]"
-              >
-                <div className="max-[320px]:w-[210px] w-[250px] md:w-[250px]">
-                  {Object.keys(item.Event).map((key, index) => (
-                    <div key={index}>
-                      <span className="font-bold">{item.Event[key]}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="max-[320px]:w-[210px] w-[250px] md:w-[200px]">
-                  <span className="">{item.Timing}</span>
-                </div>
+            <div className="mt-[10px]  text-center sm:text-left">
+              <div>
+                <span className="text-[24px] font-bold">
+                  {eventDetail.eventName}
+                </span>
               </div>
-            </div>
-          ))}
-        </div>
-
-        <div
-          className={`${
-            activeButton === 2 ? "active-div" : "deactive-div"
-          } text-[18px] `}
-        >
-          {Technical.map((item, index) => (
-            <div className="flex justify-center" key={index}>
-              <div
-                className="block md:flex justify-center items-center border-2 px-[40px] py-[20px] rounded-[20px] gap-[50px]
-              border-[#ff583e] mb-[10px]"
-              >
-                <div className="max-[320px]:w-[210px] w-[250px] md:w-[250px]">
-                  {Object.keys(item.Event).map((key, index) => (
-                    <div key={index}>
-                      <span className="font-bold">{item.Event[key]}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="max-[320px]:w-[210px] w-[250px] md:w-[200px]">
-                  <span className="">{item.Timing}</span>
-                </div>
+              <div className="mt-[20px] leading-none">
+                <span className="text-[14px] font-medium">
+                  Last Year Registrations
+                </span>
               </div>
+              <div className="leading-tight">
+                <span className="text-[32px] sm:text-[42px]  font-black">
+                  {eventDetail.eventRegistration}+
+                </span>
+              </div>
+              {/* <button className="w-full text-[14px] bg-black text-white rounded-full py-[10px]">
+                Register
+              </button> */}
             </div>
           ))}
         </div>

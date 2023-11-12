@@ -8,7 +8,7 @@ import { fadeIn, textContainer, textVariant2 } from "../utils/motion";
 export const TypingTextEffect = ({ title, textStyles }) => (
   <motion.p
     variants={textContainer}
-    className={`font-normal text-[18px] text-secondary-white ${textStyles}`}
+    className={`font-normal text-[14px] sm:text-[16px] md:text-[18px] text-secondary-white ${textStyles}`}
   >
     {Array.from(title).map((letter: any, index) => (
       <motion.span variants={textVariant2} key={index}>

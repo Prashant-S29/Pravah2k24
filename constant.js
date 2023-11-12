@@ -4,9 +4,6 @@ import {
     glimpse1, glimpse4, glimpse7, glimpse12, nora, suniel
 } from "./assets/index"
 
-
-
-
 const previousCelebrities = [
     {
         celebrityName: "Gajendra Verma",
@@ -59,12 +56,12 @@ const socialContact = [
     {
         socialName: "Twitter",
         socialIcon: twitter,
-        socialLink: ""
+        socialLink: "https://twitter.com/@pravah_skit"
     },
     {
         socialName: "Instagram",
         socialIcon: instagram,
-        socialLink: ""
+        socialLink: "https://www.instagram.com/skitpravah/"
     },
     {
         socialName: "Facebook",
@@ -74,7 +71,7 @@ const socialContact = [
     {
         socialName: "YouTube",
         socialIcon: youtube,
-        socialLink: ""
+        socialLink: "https://www.youtube.com/@skitpravah4946"
     },
 ]
 
@@ -177,42 +174,139 @@ const priorEvents = [
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
     },
     {
         eventName: "Paintball Arena",
         eventPhoto: celebrityNight,
-        eventRegistration: "250"
+    }
+]
+
+const sponsorFormFields = [
+    {
+        fieldName: 'firstName',
+        fieldLabel: 'First name',
+        fieldType: 'text',
+        fieldPlaceholder: 'First Name'
+    },
+    {
+        fieldName: 'lastName',
+        fieldLabel: 'Last name',
+        fieldType: 'text',
+        fieldPlaceholder: 'Last Name'
+    },
+    {
+        fieldName: 'email',
+        fieldLabel: 'Email',
+        fieldType: 'email',
+        fieldPlaceholder: 'Email id'
+    },
+    {
+        fieldName: 'companyPost',
+        fieldLabel: 'Company Post',
+        fieldType: 'text',
+        fieldPlaceholder: 'Company Post'
+    },
+    {
+        fieldName: 'queries',
+        fieldLabel: 'Queries',
+        fieldType: 'textarea',
+        fieldPlaceholder: 'Queries'
+    },
+    {
+        fieldName: 'designation',
+        fieldLabel: 'Designation',
+        fieldType: 'text',
+        fieldPlaceholder: 'Designation'
+    },
+    {
+        fieldName: 'mobileNo',
+        fieldLabel: 'Mobile No',
+        fieldType: 'tel',
+        fieldPlaceholder: 'Mobile No'
+    },
+    {
+        fieldName: 'whereAreYouFrom',
+        fieldLabel: 'Where are you from',
+        fieldType: 'text',
+        fieldPlaceholder: 'Where are you from'
+    },
+    {
+        fieldName: 'companyAddress',
+        fieldLabel: 'Company Address',
+        fieldType: 'text',
+        fieldPlaceholder: 'Company Address'
+    },
+    {
+        fieldName: 'whatYouGonnaSponsor',
+        fieldLabel: 'What you gonna Sponsor',
+        fieldType: 'textarea',
+        fieldPlaceholder: 'What you gonna Sponsor'
+    },
+];
+
+// eventCategory = non_tect, tect, cultural, literary, social, esports
+// eventType = Team, Individual
+
+const testEventDetails = [
+    {
+        eventName: "Paintball Arena",
+        eventPhotoLink: celebrityNight,
+        eventCategory: "non_tech",
+        eventType:"Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventMaxParicipationLimit: 80,
+        eventCurrentParticipation: 10
+    },
+    {
+        eventName: "Master Chef SKIT",
+        eventPhotoLink: dj,
+        eventCategory: "non_tech",
+        eventType:"Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventMaxParicipationLimit: 80,
+        eventCurrentParticipation: 80
+    },
+    {
+        eventName: "Master Chef SKIT",
+        eventPhotoLink: dj,
+        eventCategory: "non_tech",
+        eventType:"Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventMaxParicipationLimit: 80,
+        eventCurrentParticipation: 2
     }
 ]
 
@@ -222,5 +316,8 @@ export {
     majorEvents,
     glimpsesCard,
     EventMenuLinks,
-    priorEvents
+    priorEvents,
+    sponsorFormFields,
+    testEventDetails
 }
+

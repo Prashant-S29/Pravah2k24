@@ -38,12 +38,12 @@ export default function RootLayout({
           />
         </div>
         <div>
-          <NAVBAR />
           <PAGEWRAPPER>
+            <NAVBAR />
             {children}
             <Analytics />
+            <FOOTER />
           </PAGEWRAPPER>
-          <FOOTER />
         </div>
       </body>
     </html>
