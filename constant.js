@@ -1,5 +1,5 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal
 } from "./assets/index"
 
 const previousCelebrities = [
@@ -110,36 +110,40 @@ const glimpsesCard = [
         title: "Pravah 23 After Story",
         displayState: false,
         marqueeDirection: "left",
-        youtubeLink:
-            "https://www.youtube.com/embed/DZ6q5X7fAmU?si=k3Mmbb5kRc9_E5yv",
+        thumbnail: aftermovie,
+        youtubeLink: "https://youtu.be/V-094flkqjI?si=3I2KrRDReWjNbfxq",
     },
     {
         title: "Aaveg",
         displayState: false,
         marqueeDirection: "right",
-        youtubeLink:
-            "https://www.youtube.com/embed/R5MGusrjK1Q?si=FF26GAvO3VK5nmDg",
+        thumbnail: aaveg,
+        youtubeLink: "",
+
     },
     {
         title: "Crowd Work",
         displayState: false,
         marqueeDirection: "left",
-        youtubeLink:
-            "https://www.youtube.com/embed/uOAHix3zF-Q?si=ekOWBoCUF4eawF4m",
+        thumbnail: aaveg,
+        youtubeLink: "",
+
     },
     {
         title: "Pravah 2024 Logo Reveal",
         displayState: true,
         marqueeDirection: "right",
-        youtubeLink:
-            "https://www.youtube.com/embed/DZ6q5X7fAmU?si=k3Mmbb5kRc9_E5yv",
+        thumbnail: logoreveal,
+        youtubeLink: "",
+
     },
     {
         title: "Pravah Tralier",
         displayState: false,
         marqueeDirection: "left",
-        youtubeLink:
-            "https://www.youtube.com/embed/DZ6q5X7fAmU?si=k3Mmbb5kRc9_E5yv",
+        thumbnail: aaveg,
+        youtubeLink: "https://youtu.be/DyuUx1obJ_M?si=uOPCONycuEP8fEnW",
+
     },
 ]
 
@@ -269,45 +273,120 @@ const sponsorFormFields = [
     },
 ];
 
-// eventCategory = non_tect, tect, cultural, literary, social, esports
+// eventCategory = non_tect, tech, cultural, literary, social, esports
 // eventType = Team, Individual
+
+const eventCategoryDesc = [ 
+    {
+        eventCategoryName: "Non Technical Events",
+        eventCategoryID: "non_tech"
+    },
+    {
+        eventCategoryName: "Technical Events",
+        eventCategoryID: "tech"
+    },
+    {
+        eventCategoryName: "Cultural Events",
+        eventCategoryID: "cultural"
+    },
+    {
+        eventCategoryName: "Literary Events",
+        eventCategoryID: "literary"
+    },
+    {
+        eventCategoryName: "Social Events",
+        eventCategoryID: "social"
+    },
+    {
+        eventCategoryName: "Esports Events",
+        eventCategoryID: "esports"
+    },
+]
 
 const testEventDetails = [
     {
-        eventName: "Paintball Arena",
+        eventName: "Paintball Battleground",
         eventPhotoLink: celebrityNight,
-        eventCategory: "non_tech",
-        eventType:"Team",
+        eventCategoryID: "non_tech",
+        eventType: "Team",
         eventRegistrationFee: "200",
         eventDate: "20th November, 2023",
         eventTime: "06:00 PM - 08:00 PM",
         eventVenue: "Football Ground",
+        eventCurrentParticipation: 10,
         eventMaxParicipationLimit: 80,
-        eventCurrentParticipation: 10
     },
     {
-        eventName: "Master Chef SKIT",
-        eventPhotoLink: dj,
-        eventCategory: "non_tech",
-        eventType:"Team",
+        eventName: "Paintball Battleground",
+        eventPhotoLink: celebrityNight,
+        eventCategoryID: "non_tech",
+        eventType: "Team",
         eventRegistrationFee: "200",
         eventDate: "20th November, 2023",
         eventTime: "06:00 PM - 08:00 PM",
         eventVenue: "Football Ground",
+        eventCurrentParticipation: 80,
         eventMaxParicipationLimit: 80,
-        eventCurrentParticipation: 80
     },
     {
-        eventName: "Master Chef SKIT",
+        eventName: "Startup Expo",
         eventPhotoLink: dj,
-        eventCategory: "non_tech",
-        eventType:"Team",
+        eventCategoryID: "tech",
+        eventType: "Team",
         eventRegistrationFee: "200",
         eventDate: "20th November, 2023",
         eventTime: "06:00 PM - 08:00 PM",
         eventVenue: "Football Ground",
+        eventCurrentParticipation: 80,
         eventMaxParicipationLimit: 80,
-        eventCurrentParticipation: 2
+    },
+    {
+        eventName: "Sur",
+        eventPhotoLink: dj,
+        eventCategoryID: "cultural",
+        eventType: "Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventCurrentParticipation: 2,
+        eventMaxParicipationLimit: 80
+    },
+    {
+        eventName: "TOGGLE",
+        eventPhotoLink: dj,
+        eventCategoryID: "literary",
+        eventType: "Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventCurrentParticipation: 2,
+        eventMaxParicipationLimit: 80
+    },
+    {
+        eventName: "Bhagirath",
+        eventPhotoLink: dj,
+        eventCategoryID: "social",
+        eventType: "Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventCurrentParticipation: 2,
+        eventMaxParicipationLimit: 80
+    },
+    {
+        eventName: "Valorant",
+        eventPhotoLink: dj,
+        eventCategoryID: "esports",
+        eventType: "Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventCurrentParticipation: 2,
+        eventMaxParicipationLimit: 80
     }
 ]
 
@@ -319,6 +398,7 @@ export {
     EventMenuLinks,
     priorEvents,
     sponsorFormFields,
-    testEventDetails
+    testEventDetails,
+    eventCategoryDesc
 }
 

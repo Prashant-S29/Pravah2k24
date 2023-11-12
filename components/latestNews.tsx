@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 const LATESTNEWS = () => {
   return (
     <>
-      <div className="z-50 sticky top-0 w-full py-[5px] bg-yellow-300 font-semibold">
+      <div className="z-40 sticky top-0 w-full py-[5px] bg-yellow-300 font-semibold">
         <div className="hidden md:block">
           <Marquee autoFill={true}>
             <Link href="https://forms.gle/1sAvMsYrGm9M7zpm9" target="blank">

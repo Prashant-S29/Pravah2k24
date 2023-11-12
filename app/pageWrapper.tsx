@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 
 import { AnimatePresence } from "framer-motion";
+import INTROPAGE from "@/clientComponents/introPage";
+import CURSOR from "@/clientComponents/cursor";
 
 const PAGEWRAPPER = ({ children }) => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -12,7 +14,13 @@ const PAGEWRAPPER = ({ children }) => {
   return (
     <>
       <AnimatePresence mode="wait">
-        <div className={videoEnded?"hidden":"w-full h-screen z-50 flex justify-center items-center bg-black"}>
+        <div
+          className={
+            videoEnded
+              ? "hidden"
+              : "w-full h-screen z-50 flex justify-center items-center bg-black"
+          }
+        >
           <video
             onEnded={handelVideoEnded}
             playsInline
@@ -26,7 +34,12 @@ const PAGEWRAPPER = ({ children }) => {
             />
           </video>
         </div>
-        {videoEnded && children}
+        {videoEnded && <INTROPAGE />}
+        <div className="hidden lg:block">
+          <CURSOR />
+        </div>
+
+        {children}
       </AnimatePresence>
     </>
   );

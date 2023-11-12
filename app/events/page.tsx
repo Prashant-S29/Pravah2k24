@@ -15,64 +15,7 @@ const EVENTS_OBJECT = () => {
 
   return (
     <>
-      <div
-        className="fixed top-0 left-0 m-[20px] mt-[40px] w-[60px] aspect-square rounded-full flex justify-start gap-3 items-center duration-300
-         bg-[#000000] z-10"
-        onClick={() => {
-          setIsActive(!isActive);
-        }}
-      >
-        <div className={`burger ${isActive ? "burgerActive" : ""}`}></div>
-      </div>
-      <AnimatePresence mode="wait">
-        {isActive && (
-          <>
-            <motion.div
-              variants={eventMenuSlide}
-              animate="enter"
-              exit="exit"
-              initial="initial"
-              className="w-full sm:w-[300px] p-[10px] fixed top-0 "
-              style={{ height: window.innerHeight }}
-            >
-              <div className="w-full h-full bg-[#ffffff] border border-black  backdrop-blur-sm rounded-[20px] flex justify-center items-center right-0 ">
-                <div className=" text-black w-full">
-                  <div className="p-[20px]">
-                    <span className="font-black text-[32px]">Events List</span>
-                  </div>
-                  <div>
-                    {EventMenuLinks.map((menuLinks, index) => (
-                      <motion.div
-                        key={index}
-                        custom={index}
-                        variants={eventMenuLinkslide}
-                        animate="enter"
-                        exit="exit"
-                        initial="initial"
-                      >
-                        {/* <Link
-                  href={`/event`}
-                  className="my-[10px]"
-                > */}
-                        <div
-                          onClick={() => setIsActive(false)}
-                          className="hover:bg-slate-300 py-[7px] p-[20px]"
-                        >
-                          <span className="text-[20px] font-bold">
-                            {menuLinks.navLinkInfo}
-                          </span>
-                        </div>
-                        {/* <div className="w-full h-[1px] my-[5px] " /> */}
-                        {/* </Link> */}
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+      
       <div className="text-center">
         <span className="text-[30px] sm:text-[32px] md:text-[48px] lg:text-[64px] font-black">
           Previous year events

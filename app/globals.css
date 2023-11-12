@@ -15,7 +15,7 @@ body {
 }
 
 .navbg {
-  background-image: url("../assets//otherAssets/background.png");
+  background-image: url("../assets/otherAssets/background.png");
 }
 
 body,
@@ -26,30 +26,10 @@ textarea {
   cursor: none;
 }
 
-.btn_active {
-  background-color: #3e48ff;
-  color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn_deactive {
-  background-color: rgb(220, 220, 220);
-  color: grey;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 .button {
   padding: 5px 10px;
   margin-right: 10px;
   cursor: pointer;
-}
-
-.active-div {
-  display: block;
-}
-
-.deactive-div {
-  display: none;
 }
 
 .descBoxAnimation {
@@ -169,5 +149,18 @@ textarea {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.introText-animation{
+  animation: scaleUp 5s linear linear;
+}
+
+@keyframes scaleUp {
+  0%{
+    scale: 0;
+  }
+  100%{
+    scale: 1;
   }
 }

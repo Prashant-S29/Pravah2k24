@@ -12,6 +12,8 @@ import DROPDOWNPAGE from "@/clientComponents/dropdownPage";
 
 import NAVLINK from "@/clientComponents/navlinks";
 import LATESTNEWS from "@/components/latestNews";
+import INTROPAGE from "@/clientComponents/introPage";
+
 
 const NAVBAR = () => {
   return (
@@ -23,6 +25,7 @@ const NAVBAR = () => {
         whileInView="show"
         className="w-full  top-0   z-50"
       >
+        {/* <INTROPAGE /> */}
         <div className=" sticky top-0 flex justify-evenly items-center py-[20px] text-[14px]">
           <div className="hidden lg:block">
             <span>
