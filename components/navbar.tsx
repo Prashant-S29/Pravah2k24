@@ -11,10 +11,12 @@ import { naac_logo, navbarText, pravah2024, skit_logo } from "@/assets";
 import DROPDOWNPAGE from "@/clientComponents/dropdownPage";
 
 import NAVLINK from "@/clientComponents/navlinks";
+import LATESTNEWS from "@/components/latestNews";
 
 const NAVBAR = () => {
   return (
     <>
+      <LATESTNEWS />
       <motion.div
         variants={navVariants}
         initial="hidden"

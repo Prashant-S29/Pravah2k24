@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+
 import TRANSITION_WRAPPER from "../../clientComponents/transition";
 
 const SPONSOR_OBJECT = () => {
@@ -16,6 +18,16 @@ const SPONSOR_OBJECT = () => {
           <div>
             <span className="text-[18px] sm:text-[24px] md:text-[32px] font-black">
               Coming Soon
+            </span>
+          </div>
+          <div className="px-[20px] mt-[20px]">
+            <span className="font-medium">
+              Donate some money to Pravah.{" "}
+              <Link href={"/sponsor/sponsorForm"}>
+                <span className="underline font-bold">Click Here</span>
+              </Link>{" "}
+              Your donation is valuable to us.
+              <br /> Every rupees counts
             </span>
           </div>
         </div>

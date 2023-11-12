@@ -20,7 +20,9 @@ body {
 
 body,
 a,
-button {
+button,
+input,
+textarea {
   cursor: none;
 }
 
@@ -119,24 +121,53 @@ button {
 .burger::after {
   top: -3px;
   transition: all 0.2s ease-in-out;
-
 }
 
 .burger::before {
   top: 3px;
   transition: all 0.2s ease-in-out;
-
 }
 
 .burgerActive::after {
   top: -1px;
   transform: rotate(-45deg);
-
 }
 
 .burgerActive::before {
   top: 1px;
   transform: rotate(45deg);
-
 }
 
+.message-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.success-message,
+.error-message {
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  animation: pop-up 0.5s ease-in-out;
+}
+
+.error-message {
+  background-color: #f44336;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

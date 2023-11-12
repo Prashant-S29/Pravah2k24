@@ -175,6 +175,34 @@ const ANIMATEDTEXT9 = () => {
   );
 };
 
+const ANIMATEDTEXT10 = () => {
+  const placeholderText = [{ type: "heading1", text: "Annual Fest Pravah" }];
+
+  return (
+    <motion.div initial="hidden" whileInView="visible">
+      <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
+        {placeholderText.map((item, index) => (
+          <AnimatedCharacters {...item} key={index} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+const ANIMATEDTEXT11 = () => {
+  const placeholderText = [{ type: "heading1", text: "SKIT, Jaipur" }];
+
+  return (
+    <motion.div initial="hidden" whileInView="visible">
+      <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
+        {placeholderText.map((item, index) => (
+          <AnimatedCharacters {...item} key={index} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
 const ANIMATEDTEXT5 = () => {
   const placeholderText = [{ type: "heading1", text: "Major Events" }];
 
@@ -320,4 +348,6 @@ export {
   ANIMATEDTEXT7,
   ANIMATEDTEXT8,
   ANIMATEDTEXT9,
+  ANIMATEDTEXT10,
+  ANIMATEDTEXT11,
 };

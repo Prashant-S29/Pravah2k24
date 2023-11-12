@@ -29,10 +29,12 @@ import MAJOREVENTS from "@/clientComponents/majorCard";
 import CELEBRITYCARD from "@/clientComponents/celebrityCard";
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
 import PRIORSPONSORS from "@/clientComponents/priorSponsor";
+import LOGOSECTION from "@/clientComponents/logoSection";
 
 const HOME_OBJECT = () => {
   return (
     <>
+      {/* <LOGOSECTION /> */}
       <div className="hidden md:block fixed bottom-5 right-5 z-50">
         <Link href="/map">
           <Image src={map} alt="map" className="w-[100px]" />
@@ -70,7 +72,7 @@ const HOME_OBJECT = () => {
       </div>
       <div className="mt-[50px]">
         <div>
-          <TYPINGTEXT title="| Pravah'24 Trailer" />
+          <TYPINGTEXT title="Pravah'24 Trailer" />
         </div>
         <div className="text-center">
           <ANIMATEDTEXT1 />
@@ -81,7 +83,7 @@ const HOME_OBJECT = () => {
       </div>
       <div className="mt-[50px]">
         <div>
-          <TYPINGTEXT title="| Flashback" />
+          <TYPINGTEXT title="Flashback" />
           <div className="block max-[450px]:hidden">
             <ANIMATEDTEXT3 />
           </div>
