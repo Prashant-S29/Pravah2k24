@@ -1,25 +1,38 @@
 "use client";
 
-import { naac_logo, skit_logo, swamiji_logo, text3 } from "@/assets";
+import { cursorTwo, naac_logo, skit_logo, swamiji_logo, text3 } from "@/assets";
 import Image from "next/image";
 import React, { useState } from "react";
 import { TITLEIMAGE } from "./motionDiv";
 
 const INTROPAGE = () => {
   const [pageDisplay, setPageDisplay] = useState(false);
+  const [buttonArrow, setButtonArrow] = useState(false);
 
   return (
     <>
       <div
         className="w-full min-h-screen fixed flex justify-center items-center z-50 top-0 left-0 bg-white duration-500 "
-        style={pageDisplay ? { top: "-150%" } : { display: "top-[0px]" }}
+        style={pageDisplay ? { top: "-130%" } : { display: "top-[0px]" }}
       >
         <div className="text-center my-[20px]">
           <div className="flex justify-center">
             <div className=" w-full sm:w-[400px]">
-              <div className=" flex justify-center ">
+              <div className=" flex justify-center items-center ">
                 <div>
-                  <Image src={skit_logo} alt="skitlogo" className="w-[80px]" />
+                  <Image src={naac_logo} alt="skitlogo" className="w-[70px] sm:w-[80px]" />
+                </div>
+                <div className="w-[1px] h-[20px] mx-[10px] bg-black" />
+                <div>
+                  <Image src={skit_logo} alt="skitlogo" className="w-[70px] sm:w-[80px]" />
+                </div>
+                <div className="w-[1px] h-[20px] mx-[10px] bg-black" />
+                <div>
+                  <Image
+                    src={swamiji_logo}
+                    alt="skitlogo"
+                    className="w-[55px] sm:w-[65px]"
+                  />
                 </div>
               </div>
               <div className="leading-tight sm:leading-normal">
@@ -38,18 +51,27 @@ const INTROPAGE = () => {
           </div>
           <div className="flex justify-center my-[50px]">
             <button
-              className="px-[20px] py-[12px] text-[13px] sm:text-[14px] rounded-full duration-200 shadow-[#787878] font-semibold bg-black
+              className="pr-[14px] py-[12px] pl-[24px] text-[13px] sm:text-[14px] rounded-full duration-200 shadow-[#787878] font-semibold bg-black
                text-white"
               onClick={() => {
                 setPageDisplay(!pageDisplay);
               }}
+              onMouseEnter={() => setButtonArrow(!buttonArrow)}
+              onMouseLeave={() => setButtonArrow(!buttonArrow)}
             >
-              <div className="flex items-center gap-2">
+              <div className="flex justify-center items-center gap-2">
                 <div>
                   <span>Explore</span>
                 </div>
-                <div className="text-[16px]">
-                  <span> &rarr;</span>
+                <div className="w-[20px] lg:w-0 block lg:hidden rounded-full overflow-hidden duration-300">
+                  <Image src={cursorTwo} alt="cursorTwo" />
+                </div>
+                <div
+                  className={`hidden lg:block rounded-full overflow-hidden duration-300 ${
+                    buttonArrow ? "w-[20px] " : "w-0 "
+                  } `}
+                >
+                  <Image src={cursorTwo} alt="cursorTwo" />
                 </div>
               </div>
             </button>

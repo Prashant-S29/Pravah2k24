@@ -1,8 +1,8 @@
 import background from "./otherAssets/background.png"
-import pravahmap from "./otherAssets/campusMap.png"
 
 import dropdown from "./logo/dropdown.png"
 import cursor from "./logo/cursor.png"
+import cursorTwo from "./logo/cursorTwo.png"
 import facebook from "./logo/facebook.png"
 import twitter from "./logo/twitter.png"
 import youtube from "./logo/youtube.png"
@@ -10,7 +10,6 @@ import instagram from "./logo/instagram.png"
 import person from "./logo/person.png"
 import mail from "./logo/mail.png"
 import whatsapp from "./logo/whatsapp.png"
-import map from "./logo/map.png"
 import pravah2024 from "./logo/pravah2024.png"
 import skit_logo from "./logo/skit_logo.png"
 import naac_logo from "./logo/naac_logo.png"
@@ -74,6 +73,7 @@ export {
     navbarText,
     dropdown,
     cursor,
+    cursorTwo,
     instagram,
     twitter,
     whatsapp,
@@ -81,8 +81,6 @@ export {
     person,
     mail,
     youtube,
-    map,
-    pravahmap,
     pravah2024,
     rawaz,
     thirak,

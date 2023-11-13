@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 
 import {
   ANIMATEDTEXT1,
@@ -13,7 +11,6 @@ import {
   ANIMATEDTEXT6,
   ANIMATEDTEXT7,
   ANIMATEDTEXT8,
-  ANIMATEDTEXT9,
   GALLERY,
   MARQUEEMOTION,
   STATS,
@@ -23,23 +20,14 @@ import {
   VIDEOBLOCK,
 } from "@/clientComponents/motionDiv";
 
-import { map } from "@/assets";
-
 import MAJOREVENTS from "@/clientComponents/majorCard";
 import CELEBRITYCARD from "@/clientComponents/celebrityCard";
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
 import PRIORSPONSORS from "@/clientComponents/priorSponsor";
-import INTROPAGE from "@/clientComponents/introPage";
 
 const HOME_OBJECT = () => {
   return (
     <>
-      {/* <INTROPAGE /> */}
-      <div className="hidden md:block fixed bottom-5 right-5 z-50">
-        <Link href="/map">
-          <Image src={map} alt="map" className="w-[100px]" />
-        </Link>
-      </div>
       <div className="w-full h-fit flex justify-center pt-[50px]   ">
         <div className="text-center w-full  ">
           <div>
@@ -47,7 +35,6 @@ const HOME_OBJECT = () => {
           </div>
           <div className="my-[50px]">
             {/* <TIMER /> */}
-            {/* <ANIMATEDTEXT9 /> */}
             <div className="text-center flex justify-center mt-[30px]">
               <div>
                 <div>
