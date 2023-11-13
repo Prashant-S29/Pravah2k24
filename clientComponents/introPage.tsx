@@ -11,8 +11,8 @@ const INTROPAGE = () => {
   return (
     <>
       <div
-        className="w-full min-h-screen fixed flex justify-center items-center z-50 top-0 left-0 bg-white"
-        style={pageDisplay ? { display: "none" } : { display: "block" }}
+        className="w-full min-h-screen fixed flex justify-center items-center z-50 top-0 left-0 bg-white duration-500 "
+        style={pageDisplay ? { top: "-100%" } : { display: "top-[0px]" }}
       >
         <div className="text-center my-[20px]">
           <div className="flex justify-center">

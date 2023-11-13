@@ -18,7 +18,7 @@ const PAGEWRAPPER = ({ children }) => {
           className={
             videoEnded
               ? "hidden"
-              : "w-full h-screen z-50 flex justify-center items-center bg-black"
+              : "w-full h-screen z-[9999] flex justify-center items-center bg-black"
           }
         >
           <video
@@ -34,12 +34,15 @@ const PAGEWRAPPER = ({ children }) => {
             />
           </video>
         </div>
-        {videoEnded && <INTROPAGE />}
-        <div className="hidden lg:block">
-          <CURSOR />
-        </div>
-
-        {children}
+        {videoEnded && (
+          <div>
+            <INTROPAGE />
+            <div className="hidden lg:block">
+              <CURSOR />
+            </div>
+            {children}
+          </div>
+        )}
       </AnimatePresence>
     </>
   );

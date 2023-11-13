@@ -2,13 +2,10 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 
-import { EventMenuLinks, priorEvents } from "@/constant";
-import { eventMenuSlide, eventMenuLinkslide } from "@/utils/motion";
+import {  priorEvents } from "@/constant";
 import TRANSITION_WRAPPER from "../../clientComponents/transition";
 import Image from "next/image";
-import { celebrityNight } from "@/assets";
 
 const EVENTS_OBJECT = () => {
   const [isActive, setIsActive] = useState(false);
