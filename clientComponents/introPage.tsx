@@ -12,7 +12,7 @@ const INTROPAGE = () => {
     <>
       <div
         className="w-full min-h-screen fixed flex justify-center items-center z-50 top-0 left-0 bg-white duration-500 "
-        style={pageDisplay ? { top: "-100%" } : { display: "top-[0px]" }}
+        style={pageDisplay ? { top: "-150%" } : { display: "top-[0px]" }}
       >
         <div className="text-center my-[20px]">
           <div className="flex justify-center">
@@ -44,11 +44,11 @@ const INTROPAGE = () => {
                 setPageDisplay(!pageDisplay);
               }}
             >
-              <div className="flex gap-2">
+              <div className="flex items-center gap-2">
                 <div>
                   <span>Explore</span>
                 </div>
-                <div>
+                <div className="text-[16px]">
                   <span> &rarr;</span>
                 </div>
               </div>
