@@ -101,7 +101,7 @@ export {
     text1, text2, text3, text4, text5, text6, text7, text8, text9, text10,
     naushad,
     glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12,
-    aftermovie, aaveg, logoreveal
+    aftermovie, aaveg, logoreveal,suniel,nora
 
 
 }
