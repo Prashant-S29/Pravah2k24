@@ -1,143 +1,343 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-
+import Link from "next/link";
 import {
+  pravah2024,
+  help_icon,
+  contact_icon,
+  reachus_icon,
+  quicklink_icon,
   instagram,
-  youtube,
-  whatsapp,
-  person,
   twitter,
   facebook,
-  mail,
+  whatsapp,
 } from "@/assets";
-
-import { socialContact } from "@/constant";
 
 const FOOTER = () => {
   return (
     <>
-      <div className="block md:flex flex-wrap gap-5 md:justify-evenly justify-center items-start py-[50px] px-[20px]">
-        <div>
-          <div className="text-center">
-            <span className="text-[18px] lg:text-[22px] font-bold  ">
-              Get in Touch
-            </span>
+      <div
+        className="w-full p-[20px] sm:p-[40px] pb-0 sm:pb-0 mt-[30px] bg-black text-white "
+        data-cursor-exclusion
+      >
+        <div className="block sm:flex justify-evenly my-[20px] xl:hidden">
+          <div className="flex gap-3 items-center xl:hidden justify-center ">
+            <div>
+              <Image src={pravah2024} alt="pravah2024" className="w-[80px]" />
+            </div>
+            <div>
+              <div className="leading-none">
+                <button className="text-[26px] font-bold ">
+                  Pravah{"'"}24
+                </button>
+              </div>
+              <div className="leading-tight">
+                <button className="text-[13px] sm:text-[14px] ">
+                  SKIT, Jaipur
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="my-[10px] flex justify-center md:justify-start ">
-            <ul className=" flex gap-5 md:block">
-              {socialContact.map((constDetails, index) => (
-                <li key={index} className="">
-                  <Link href={constDetails.socialLink} target="blank">
-                    <div className=" gap-3 items-center hidden md:flex">
-                      <div>
-                        <Image
-                          src={constDetails.socialIcon}
-                          alt={constDetails.socialName}
-                          className="w-[24px] lg:w-[36px] aspect-square"
-                        />
-                      </div>
-                      <div>
-                        <span className="text-[14px] lg:text-[16px]">
-                          {constDetails.socialName}
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link
-                    href={constDetails.socialLink}
-                    className="flex md:hidden gap-3"
-                  >
-                    <div>
+          <div className="flex xl:hidden justify-center items-center my-[10px] ">
+            <div className="p-[5px]">
+              <button>
+                <Link href="/">
+                  <Image
+                    src={instagram}
+                    alt="instagram"
+                    className="w-[25px] aspect-square"
+                  />
+                </Link>
+              </button>
+            </div>
+            <div className="p-[5px]">
+              <button>
+                <Link href="/">
+                  <Image
+                    src={twitter}
+                    alt="twitter"
+                    className="w-[25px] aspect-square"
+                  />
+                </Link>
+              </button>
+            </div>
+            <div className="p-[5px]">
+              <button>
+                <Link href="/">
+                  <Image
+                    src={facebook}
+                    alt="facebook"
+                    className="w-[25px] aspect-square"
+                  />
+                </Link>
+              </button>
+            </div>
+            <div className="p-[5px]">
+              <button>
+                <Link href="/">
+                  <Image
+                    src={whatsapp}
+                    alt="whatsapp"
+                    className="w-[25px] aspect-square"
+                  />
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="w-full  block sm:flex text-center sm:text-left justify-evenly flex-wrap  gap-[60px] items-start   ">
+          <div className="hidden gap-3 items-center xl:flex">
+            <div>
+              <Image src={pravah2024} alt="pravah2024" className="w-[80px]" />
+            </div>
+            <div>
+              <div className="leading-none">
+                <button className="text-[26px] font-bold ">
+                  Pravah{"'"}24
+                </button>
+              </div>
+              <div className="leading-tight">
+                <button className="text-[13px] sm:text-[14px] ">
+                  SKIT, Jaipur
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-center w-full">
+              <div className="">
+                <button className="font-bold flex justify-center  items-center">
+                  <div>
+                    <div className="-ml-[30px] -rotate-45">
                       <Image
-                        src={constDetails.socialIcon}
-                        alt={constDetails.socialName}
-                        className="w-[24px] lg:w-[36px] aspect-square"
+                        src={quicklink_icon}
+                        alt="quicklink"
+                        className="w-[20px] sm:w-[25px]"
                       />
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-[15px] sm:text-[16px]">
+                      Quick Links
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
+              <ul>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Team Pravah</button>
                     </div>
                   </Link>
                 </li>
-              ))}
-            </ul>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>AAVEG</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Events</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Sponsor Us</button>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="">
-          <div className=" text-center md:text-left">
-            <span className="text-[18px] lg:text-[22px] font-bold">
-              Reach to Us
-            </span>
-          </div>
-          <div className="mt-[10px]">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11689.078745296856!2d75.86723376782382!3d26.823301100896874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db770070b115f%3A0x6f306afd08a3e737!2sSwami%20Keshvanand%20Institute%20of%20Technology%2C%20Management%20%26%20Gramothan%20(SKIT)!5e0!3m2!1sen!2sin!4v1698323305432!5m2!1sen!2sin"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full md:w-[250px] xl:w-[450px]  h-[150px] rounded-[15px]"
-            ></iframe>
-          </div>
-        </div>
-        <div className="my-[20px] md:my-0 ">
-          <div className="text-center md:text-left">
-            <span className="text-[18px] lg:text-[22px] font-bold ">
-              Contact Us
-            </span>
-          </div>
-          <div className="mt-[10px] flex justify-center">
-            <div>
+          <div>
+            <div className="w-full flex sm:block justify-center mt-[20px] sm:mt-0">
               <div>
-                <Link href="/" className="flex gap-2 items-center">
+                <button className="font-bold flex  items-center">
                   <div>
-                    <Image
-                      src={person}
-                      alt="person"
-                      className="w-[24px] lg:w-[36px] aspect-square"
-                    />
+                    <div className="-ml-[30px]">
+                      <Image
+                        src={help_icon}
+                        alt="helpicon"
+                        className="w-[20px] sm:w-[25px]"
+                      />
+                    </div>
                   </div>
                   <div>
-                    <span className="text-[14px] lg:text-[16px]">
-                      Mr. Abhishek Gupta, <br />
-                      Associate Professor, EE Department
-                      <br />
-                      (Chief Coordinator, PRAVAH 2024)
+                    <span className="text-[15px] sm:text-[16px]">
+                      Help and Policies
                     </span>
                   </div>
-                </Link>
-              </div>
-              <div className="my-[10px]">
-                <Link href="/" className="flex gap-2 items-center">
-                  <div>
-                    <Image
-                      src={whatsapp}
-                      alt="whatsapp"
-                      className="w-[24px] lg:w-[36px] aspect-square"
-                    />
-                  </div>
-                  <div>
-                    <span className="text-[14px] lg:text-[16px]">
-                      9462326804
-                    </span>
-                  </div>
-                </Link>
-              </div>
-              <div>
-                <Link href="/" className="flex gap-2 items-center">
-                  <div>
-                    <Image
-                      src={mail}
-                      alt="mail"
-                      className="w-[24px] lg:w-[36px] aspect-square"
-                    />
-                  </div>
-                  <div>
-                    <span className="text-[14px] lg:text-[16px]">
-                      pravah@skit.ac.in
-                    </span>
-                  </div>
-                </Link>
+                </button>
               </div>
             </div>
+            <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
+              <ul>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Technical Assistance</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Bug Report</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Privacy Policy</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Refund Policy</button>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="hidden xl:block">
+            <div className="">
+              <div>
+                <button className="font-bold flex  items-center">
+                  <div>
+                    <div className="-ml-[30px]">
+                      <Image
+                        src={reachus_icon}
+                        alt="reachusLogo"
+                        className="w-[20px] sm:w-[25px]"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-[15px] sm:text-[16px]">Reach Us</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
+              <ul>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Instagram</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Facebook</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Twitter</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Youtube</button>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div className="w-full flex sm:block justify-center mt-[20px] sm:mt-0">
+              <div>
+                <button className="font-bold flex  items-center">
+                  <div>
+                    <div className="-ml-[30px] ">
+                      <Image
+                        src={contact_icon}
+                        alt="contact_icon"
+                        className="w-[20px] sm:w-[25px]"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-[15px] sm:text-[16px]">
+                      Contact Us
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            {/* <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
+              <div>
+                <div>
+                  <span className="font-bold">Mr. Abhishek Gupta</span>
+                </div>
+                <div>
+                  <span>Associate Prof. EE Department</span>
+                </div>
+                <div>
+                  <span>Chief Coordinator, Pravah{"'"}24</span>
+                </div>
+              </div>
+              <div className="mt-[5px]">
+                <span>9462326804</span>
+              </div>
+            </div> */}
+            <div className="text-[#b8b8b8]">
+              <div className=" mt-[5px]">
+                <div>
+                  <span className="text-[13px] font-semibold">
+                    Chief Coordinator, Pravah{"'"}24
+                  </span>
+                </div>
+                <div className="leading-none text-[13px] sm:text-[15px]">
+                  <span>Mr. Abhishek Gupta - 9462326804</span>
+                </div>
+              </div>
+              <div className="mt-[10px]">
+                <div>
+                  <span className="text-[13px] font-semibold">
+                    Website Head
+                  </span>
+                </div>
+                <div className="leading-none text-[13px] sm:text-[15px]">
+                  <span>Chinmay Bhatnagar - 7976227748</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-[0.2px] bg-[#424242] my-[10px]" />
+        <div className="text-center pb-[10px] text-[12px] text-[#b8b8b8] sm:text-[13px]">
+          <Link href="https://skit.ac.in" target="blank">
+            <div className=" ">
+              <button>Copyright &copy; SKIT, Jaipur</button>
+            </div>
+          </Link>
+          <div>
+            Made with ❤️ by{" "}
+            <Link href="/webTeam">
+              <button className="text-[#359aff] font-semibold">
+                Pravah Web Team
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -76,7 +76,7 @@ const SPONSORUSFORM = () => {
       <div className="mx-[20px]">
         <div className="text-center text-[20px] md:text-[28px] lg:text-[32px] font-black leading-tight">
           <span>
-            Thankyou for being a valuable sponsor of Pravah 2024.
+            Thankyou for being a sponsor for Pravah 2024.
             <br /> Pls fill out the below form to be a part for this mega event.
           </span>
         </div>

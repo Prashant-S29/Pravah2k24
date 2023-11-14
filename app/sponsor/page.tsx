@@ -4,11 +4,22 @@ import React from "react";
 import Link from "next/link";
 
 import TRANSITION_WRAPPER from "../../clientComponents/transition";
+import PRIORSPONSORS from "@/clientComponents/priorSponsor";
 
 const SPONSOR_OBJECT = () => {
   return (
     <>
-      <div className="w-full min-h-screen flex justify-center items-center  ">
+      <div className="mt-[50px]">
+        <div className="text-center">
+          <span className="text-[18px] sm:text-[24px] md:text-[32px] font-black">
+            Pravah 2023 Sponsors
+          </span>
+        </div>
+        <div className="my-[30px]">
+          <PRIORSPONSORS />
+        </div>
+      </div>
+      <div className="w-full min-h-[350px] flex justify-center  ">
         <div className="text-center">
           <div className="leading-tight">
             <span className="font-black text-[38px] sm:text-[48px] md:text-[64px]">
@@ -22,12 +33,11 @@ const SPONSOR_OBJECT = () => {
           </div>
           <div className="px-[20px] mt-[20px]">
             <span className="font-medium">
-              Donate some money to Pravah.{" "}
+              Want to be a valuable sponsor of Pravah{"'"}24?<br/>
               <Link href={"/sponsor/sponsorForm"}>
                 <span className="underline font-bold">Click Here</span>
               </Link>{" "}
-              Your donation is valuable to us.
-              <br /> Every rupees counts
+              to fill the sponsorship form.
             </span>
           </div>
         </div>

@@ -50,6 +50,19 @@ const DROPDOWNPAGE = () => {
         <div>
           <span onClick={(e) => setDropDown(!dropDown)}>
             <NAVLINK
+              href="aaveg"
+              navlink="AAVEG"
+              linkinfo="Sports Battle on real ground."
+              linkColor="#A2F1F4"
+              linkInfoColor="#ffffff"
+              lineColor="#ffffff"
+            />
+          </span>
+        </div>
+        <div className="w-full h-[0.5px] bg-[#838383] my-[10px]" />
+        <div>
+          <span onClick={(e) => setDropDown(!dropDown)}>
+            <NAVLINK
               href="about"
               navlink="ABOUT"
               linkinfo="Know more about SKIT, Jaipur."

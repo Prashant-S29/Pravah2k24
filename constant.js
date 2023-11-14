@@ -1,5 +1,5 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton
 } from "./assets/index"
 
 const previousCelebrities = [
@@ -82,26 +82,31 @@ const majorEvents = [
         id: 'eventOne',
         imgUrl: thirak,
         title: 'Thirak',
+        titleInfo: "Energetic dance competition following the theme 'Time Traverse'",
     },
     {
         id: 'eventTwo',
         imgUrl: dj,
         title: 'DJ Night',
+        titleInfo: "bla bla bla. give me description. it's not my responsibility",
     },
     {
         id: 'eventThree',
         imgUrl: rawaz,
         title: 'Rawaz',
+        titleInfo: "RAWAZ is an adorable Fashion Competion where fashion and theme collides.",
     },
     {
         id: 'eventFour',
         imgUrl: sur,
         title: 'Sur',
+        titleInfo: "bla bla bla. give me description. it's not my responsibility",
     },
     {
         id: 'eventFive',
         imgUrl: celebrityNight,
         title: 'Celebrity Night',
+        titleInfo: "bla bla bla. give me description. it's not my responsibility",
     },
 ];
 
@@ -276,7 +281,7 @@ const sponsorFormFields = [
 // eventCategory = non_tect, tech, cultural, literary, social, esports
 // eventType = Team, Individual
 
-const eventCategoryDesc = [ 
+const eventCategoryDesc = [
     {
         eventCategoryName: "Non Technical Events",
         eventCategoryID: "non_tech"
@@ -390,6 +395,72 @@ const testEventDetails = [
     }
 ]
 
+// eventRegStatus - live, closed
+const aavegEventDetails = [
+    {
+        eventName: "Badminton",
+        eventPhotoLink: badminton,
+        eventRegStatus: "closed",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Basketball",
+        eventPhotoLink: basketball,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Chess",
+        eventPhotoLink: chess,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Carrom",
+        eventPhotoLink: carrom,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Football",
+        eventPhotoLink: football,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Gully Circket",
+        eventPhotoLink: cricket,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Table Tennis",
+        eventPhotoLink: tabletennis,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Tug of War",
+        eventPhotoLink: tugofwar,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Volleyball",
+        eventPhotoLink: volleyball,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    },
+    {
+        eventName: "Kabbadi",
+        eventPhotoLink: kabbadi,
+        eventRegStatus: "live",
+        eventBrochureLink: "/",
+    }
+
+]
+
+
 export {
     previousCelebrities,
     socialContact,
@@ -399,6 +470,8 @@ export {
     priorEvents,
     sponsorFormFields,
     testEventDetails,
-    eventCategoryDesc
+    eventCategoryDesc,
+    aavegEventDetails
 }
+
 

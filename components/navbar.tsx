@@ -14,7 +14,6 @@ import NAVLINK from "@/clientComponents/navlinks";
 import LATESTNEWS from "@/components/latestNews";
 import INTROPAGE from "@/clientComponents/introPage";
 
-
 const NAVBAR = () => {
   return (
     <>
@@ -42,9 +41,9 @@ const NAVBAR = () => {
           <div className="hidden lg:block">
             <span>
               <NAVLINK
-                href="about"
-                navlink="ABOUT"
-                linkinfo="Know more about SKIT, Jaipur."
+                href="aaveg"
+                navlink="AAVEG"
+                linkinfo="Sports Battle on real ground."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
@@ -52,24 +51,6 @@ const NAVBAR = () => {
             </span>
           </div>
           <div className="flex gap-3 justify-center items-center">
-            {/* <div>
-              <Link href="/" className="flex gap-3">
-                <Image
-                  src={skit_logo}
-                  alt="skit_logo"
-                  className="w-[80px] md:w-[80px]"
-                />
-              </Link>
-            </div> */}
-            {/* <div>
-              <Link href="/" className="flex gap-3">
-                <Image
-                  src={pravah2024}
-                  alt="pravah2024"
-                  className="w-[80px] md:w-[80px]"
-                />
-              </Link>
-            </div> */}
             <div>
               <Link href="/" className="flex gap-3">
                 <Image
@@ -79,22 +60,13 @@ const NAVBAR = () => {
                 />
               </Link>
             </div>
-            {/* <div>
-              <Link href="/" className="flex gap-3">
-                <Image
-                  src={naac_logo}
-                  alt="naac_logo"
-                  className="w-[80px] md:w-[90px]"
-                />
-              </Link>
-            </div> */}
           </div>
           <div className="hidden lg:block">
             <span>
               <NAVLINK
-                href="sponsor"
-                navlink="SPONSORS"
-                linkinfo="Supporters of Pravah'24."
+                href="about"
+                navlink="ABOUT"
+                linkinfo="Know more about SKIT, Jaipur."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
@@ -104,9 +76,9 @@ const NAVBAR = () => {
           <div className="hidden lg:block">
             <span>
               <NAVLINK
-                href="team"
-                navlink="OUR TEAM"
-                linkinfo="Members behind the curtains."
+                href="sponsor"
+                navlink="SPONSORS"
+                linkinfo="Supporters of Pravah'24."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"

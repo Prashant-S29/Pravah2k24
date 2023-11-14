@@ -20,11 +20,11 @@ const MAJOREVENTS = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={` mx-auto flex flex-col`}
       >
-        <div className="nt-0 md:mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5 ">
-          {majorEvents.map((world, index) => (
+        <div className="flex lg:flex-row flex-col h-[70vh] lg:h-fit gap-5 ">
+          {majorEvents.map((eventDetail, index) => (
             <MajorEventCard
-              key={world.id}
-              {...world}
+              key={eventDetail.id}
+              {...eventDetail}
               index={index}
               active={active}
               handleClick={setActive}
