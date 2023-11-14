@@ -1,8 +1,8 @@
 import background from "./otherAssets/background.png"
-import pravahmap from "./otherAssets/campusMap.png"
 
 import dropdown from "./logo/dropdown.png"
 import cursor from "./logo/cursor.png"
+import cursorTwo from "./logo/cursorTwo.png"
 import facebook from "./logo/facebook.png"
 import twitter from "./logo/twitter.png"
 import youtube from "./logo/youtube.png"
@@ -10,10 +10,10 @@ import instagram from "./logo/instagram.png"
 import person from "./logo/person.png"
 import mail from "./logo/mail.png"
 import whatsapp from "./logo/whatsapp.png"
-import map from "./logo/map.png"
 import pravah2024 from "./logo/pravah2024.png"
 import skit_logo from "./logo/skit_logo.png"
 import naac_logo from "./logo/naac_logo.png"
+import swamiji_logo from "./logo/swamiji.png"
 
 import rawaz from "./majorEvents/rawaz.webp"
 import thirak from "./majorEvents/thirak.webp"
@@ -66,12 +66,16 @@ import glimpse10 from "./glimpses/glimpse12.webp"
 import glimpse11 from "./glimpses/glimpse16.webp"
 import glimpse12 from "./glimpses/glimpse18.webp"
 
+import aftermovie from "./gallery/aftermovie.png"
+import logoreveal from "./gallery/logoreveal.png"
+import aaveg from "./gallery/aaveg.png"
 
 export {
     background,
     navbarText,
     dropdown,
     cursor,
+    cursorTwo,
     instagram,
     twitter,
     whatsapp,
@@ -79,8 +83,6 @@ export {
     person,
     mail,
     youtube,
-    map,
-    pravahmap,
     pravah2024,
     rawaz,
     thirak,
@@ -92,12 +94,14 @@ export {
     sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10,
     skit_logo,
     naac_logo,
+    swamiji_logo,
     gajendra,
     shruti,
     ravindra,
     text1, text2, text3, text4, text5, text6, text7, text8, text9, text10,
     naushad,
-    glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12,suniel,nora
+    glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12,
+    aftermovie, aaveg, logoreveal
 
 
 }

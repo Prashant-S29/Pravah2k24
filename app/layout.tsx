@@ -27,9 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="hidden lg:block">
-          <CURSOR />
-        </div>
+       
         <div className="w-full min-h-screen object-cover object-center fixed -z-50">
           <Image
             src={background}

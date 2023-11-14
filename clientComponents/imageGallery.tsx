@@ -1,17 +1,20 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import { glimpsesCard } from "@/constant";
-
 
 type ImageGalleryItemProps = {
   title: string;
   index: number;
   displayState: boolean;
   marqueeDirection: any;
+  thumbnail: any;
   youtubeLink: string;
   setDisplayState?: (value: boolean) => void;
   resetDisplayState: () => void;
@@ -22,6 +25,7 @@ const ImageGalleryItem = ({
   index,
   displayState,
   marqueeDirection,
+  thumbnail,
   youtubeLink,
   resetDisplayState,
 }: ImageGalleryItemProps) => (
@@ -42,7 +46,12 @@ const ImageGalleryItem = ({
       onClick={() => resetDisplayState()}
     >
       {/* Desktop */}
-      <Marquee autoFill={true} speed={50} direction={marqueeDirection} className="hidden sm:block">
+      <Marquee
+        autoFill={true}
+        speed={50}
+        direction={marqueeDirection}
+        className="hidden sm:block"
+      >
         <div className=" flex gap-3 text-[32px] sm:text-[48px] md:text-[62px] px-[20px] items-center">
           <div>
             <span>{title}</span>
@@ -61,7 +70,12 @@ const ImageGalleryItem = ({
         </div>
       </Marquee>
       {/* Phone */}
-      <Marquee autoFill={true} speed={30} direction={marqueeDirection} className="block sm:hidden">
+      <Marquee
+        autoFill={true}
+        speed={30}
+        direction={marqueeDirection}
+        className="block sm:hidden"
+      >
         <div className=" flex gap-3 text-[32px] sm:text-[48px] md:text-[62px]  items-center">
           <div>
             <span>{title}</span>
@@ -91,7 +105,7 @@ const ImageGalleryItem = ({
               : "rotate-12"
           } `}
         >
-          <iframe
+          {/* <iframe
             width="100%"
             height="100%"
             src={youtubeLink}
@@ -99,7 +113,16 @@ const ImageGalleryItem = ({
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="rounded-[20px]"
-          ></iframe>
+          ></iframe> */}
+          <div>
+            <Link href={youtubeLink} target="blank" data-cursor-text="Play" data-cursor-size="70px">
+              <Image
+                src={thumbnail}
+                alt={title}
+                className="rounded-[20px] object-cover"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

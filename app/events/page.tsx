@@ -4,15 +4,10 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 
-import { EventMenuLinks, priorEvents } from "@/constant";
-import { eventMenuSlide, eventMenuLinkslide } from "@/utils/motion";
+import {  priorEvents } from "@/constant";
 import TRANSITION_WRAPPER from "../../clientComponents/transition";
 import Image from "next/image";
-import { celebrityNight } from "@/assets";
-import "./style.css"
-
 
 const EVENTS_OBJECT = () => {
   const [isActive, setIsActive] = useState(false);
@@ -177,48 +172,11 @@ const EVENTS_OBJECT = () => {
 
   return (
     <>
-      <div className="text-center text-[30px] md:text-[36px] font-extrabold mt-[20px]">
-        <span>
-          {" "}
-         CATEGORY<span className="text-[#ff583e]"></span>
+      
+      <div className="text-center">
+        <span className="text-[30px] sm:text-[32px] md:text-[48px] lg:text-[64px] font-black">
+          Previous year events
         </span>
-      </div>
-
-
-      <div className="flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]">
-        <div>
-          <button
-            className={`${
-              activeButton === 0 ? "btn_active" : "btn_deactive"
-            } 'btn_active' : 'btn_deactive'} tracking-wide px-[30px] py-[14px] btn_active font-extrabold text-[16px] rounded-full `}
-            onClick={() => handleButtonClick(0)}
-          >
-           CULTURAL
-          </button>
-        </div>
-
-        <div>
-          <button
-            className={`${
-              activeButton === 1 ? "btn_active" : "btn_deactive"
-            } 'btn_active' : 'btn_deactive'} bg-image-button tracking-wide px-[30px] py-[14px] btn_active font-extrabold text-[16px] rounded-full `}
-            onClick={() => handleButtonClick(1)}
-            style={{backgroundImage: "url('assets/otherAssets/background.png')"}}
-          >
-           SOCIAL
-          </button>
-        </div>
-
-        <div>
-          <button
-            className={`${
-              activeButton === 2 ? "btn_active" : "btn_deactive"
-            } 'btn_active' : 'btn_deactive'} tracking-wide px-[30px] py-[14px] btn_active font-extrabold text-[16px] rounded-full `}
-            onClick={() => handleButtonClick(2)}
-          >
-           TECHNICAL
-          </button>
-        </div>
       </div>
       <div className="text-center text-[30px] md:text-[36px] font-extrabold mt-[20px]">
         <span>

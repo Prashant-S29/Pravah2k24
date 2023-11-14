@@ -4,7 +4,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { EventMenuLinks, testEventDetails } from "@/constant";
+import {
+  EventMenuLinks,
+  eventCategoryDesc,
+  testEventDetails,
+} from "@/constant";
 import { eventMenuSlide, eventMenuLinkslide } from "@/utils/motion";
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
 import Image from "next/image";
@@ -32,7 +36,7 @@ const EVENTCARDS = ({ index, eventDetail }) => {
                 }
           }
         >
-          <div >
+          <div>
             <Image
               src={eventDetail.eventPhotoLink}
               alt="lol"
@@ -127,12 +131,20 @@ const EVENTCARDS = ({ index, eventDetail }) => {
 
 const TESTEVENTS_OBJECT = () => {
   const [isActive, setIsActive] = useState(false);
+  const [activeLink, setActiveLink] = useState(0);
+
+  // const handleLinkClick =
+
+  const handleActiveLink = (index: number) => {
+    setIsActive(false);
+    setActiveLink(index);
+  };
 
   return (
     <>
       <div
-        className="fixed top-0 left-0 m-[20px] mt-[40px] w-[60px] aspect-square rounded-full flex justify-start gap-3 items-center duration-300
-         bg-[#000000] z-20  "
+        className="fixed top-0 left-0 m-[20px] mt-[50px] w-[60px] aspect-square rounded-full flex justify-start gap-3 items-center duration-300
+         bg-[#000000] z-[15]  "
         onClick={() => {
           setIsActive(!isActive);
         }}
@@ -160,25 +172,24 @@ const TESTEVENTS_OBJECT = () => {
                       <motion.div
                         key={index}
                         custom={index}
-                        variants={eventMenuLinkslide}
+                        variants={eventMenuLinkslide} 
                         animate="enter"
                         exit="exit"
                         initial="initial"
                       >
-                        {/* <Link
-                  href={`/event`}
-                  className="my-[10px]"
-                > */}
                         <div
-                          onClick={() => setIsActive(false)}
-                          className="hover:bg-slate-300 py-[7px] p-[20px]"
+                          onClick={() => handleActiveLink(index)}
+                          className={`py-[7px] p-[20px] ${activeLink===index?"":"hover:bg-slate-300"} `}
+                          style={
+                            activeLink === index
+                              ? { backgroundColor: "rgb(148 163 184 )" }
+                              : {}
+                          }
                         >
                           <span className="text-[18px] font-bold">
                             {menuLinks.navLinkInfo}
                           </span>
                         </div>
-                        {/* <div className="w-full h-[1px] my-[5px] " /> */}
-                        {/* </Link> */}
                       </motion.div>
                     ))}
                   </div>
@@ -188,20 +199,32 @@ const TESTEVENTS_OBJECT = () => {
           </>
         )}
       </AnimatePresence>
-      <div className="text-center">
-        <span className="text-[30px] sm:text-[32px] md:text-[48px] lg:text-[64px] font-black">
-          Non Technical Events
-        </span>
-      </div>
-      <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
-        {testEventDetails.map((eventDetail, index) =>
-          eventDetail.eventCategory === "non_tech" ? (
-            <EVENTCARDS key={index} index={index} eventDetail={eventDetail} />
-          ) : (
-            ""
-          )
-        )}
-      </div>
+
+      {eventCategoryDesc.map((categoryDetail, index) => (
+        <div
+          key={index}
+          className={`${activeLink === index ? "block" : "hidden"}`}
+        >
+          <div className="text-center mx-[20px] leading-tight">
+            <span className="text-[26px] sm:text-[24px] md:text-[32px] lg:text-[48px] font-black">
+              {categoryDetail.eventCategoryName}
+            </span>
+          </div>
+          <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
+            {testEventDetails.map((eventDetail, index) =>
+              eventDetail.eventCategoryID === categoryDetail.eventCategoryID ? (
+                <EVENTCARDS
+                  key={index}
+                  index={index}
+                  eventDetail={eventDetail}
+                />
+              ) : (
+                ""
+              )
+            )}
+          </div>
+        </div>
+      ))}
     </>
   );
 };
