@@ -76,6 +76,8 @@ const HOME_OBJECT = () => {
           </div>
           <div className="hidden max-[450px]:block">
             <ANIMATEDTEXT6 />
+          </div>
+          <div className="hidden max-[450px]:block">
             <ANIMATEDTEXT7 />
           </div>
         </div>

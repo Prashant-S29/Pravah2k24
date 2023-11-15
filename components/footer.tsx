@@ -11,6 +11,7 @@ import {
   twitter,
   facebook,
   whatsapp,
+  youtube,
 } from "@/assets";
 
 const FOOTER = () => {
@@ -41,7 +42,10 @@ const FOOTER = () => {
           <div className="flex xl:hidden justify-center items-center my-[10px] ">
             <div className="p-[5px]">
               <button>
-                <Link href="/">
+                <Link
+                  href="https://www.instagram.com/skitpravah/"
+                  target="blank"
+                >
                   <Image
                     src={instagram}
                     alt="instagram"
@@ -52,7 +56,7 @@ const FOOTER = () => {
             </div>
             <div className="p-[5px]">
               <button>
-                <Link href="/">
+                <Link href="https://twitter.com/@pravah_skit" target="blank">
                   <Image
                     src={twitter}
                     alt="twitter"
@@ -63,7 +67,7 @@ const FOOTER = () => {
             </div>
             <div className="p-[5px]">
               <button>
-                <Link href="/">
+                <Link href="https://www.facebook.com/pravah2016" target="blank">
                   <Image
                     src={facebook}
                     alt="facebook"
@@ -74,10 +78,13 @@ const FOOTER = () => {
             </div>
             <div className="p-[5px]">
               <button>
-                <Link href="/">
+                <Link
+                  href="https://www.youtube.com/@skitpravah4946"
+                  target="blank"
+                >
                   <Image
-                    src={whatsapp}
-                    alt="whatsapp"
+                    src={youtube}
+                    alt="youtube"
                     className="w-[25px] aspect-square"
                   />
                 </Link>
@@ -127,28 +134,28 @@ const FOOTER = () => {
             <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
               <ul>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  <Link href="/team">
                     <div>
                       <button>Team Pravah</button>
                     </div>
                   </Link>
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  <Link href="/aaveg">
                     <div>
                       <button>AAVEG</button>
                     </div>
                   </Link>
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  <Link href="/events">
                     <div>
                       <button>Events</button>
                     </div>
                   </Link>
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  <Link href="/sponsor">
                     <div>
                       <button>Sponsor Us</button>
                     </div>
@@ -172,7 +179,7 @@ const FOOTER = () => {
                   </div>
                   <div>
                     <span className="text-[15px] sm:text-[16px]">
-                      Help and Policies
+                      Help Desk and Quires
                     </span>
                   </div>
                 </button>
@@ -183,7 +190,21 @@ const FOOTER = () => {
                 <li className="mt-[5px]">
                   <Link href="/">
                     <div>
-                      <button>Technical Assistance</button>
+                      <button>Website Help Desk</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Events Help Desk</button>
+                    </div>
+                  </Link>
+                </li>
+                <li className="mt-[5px]">
+                  <Link href="/">
+                    <div>
+                      <button>Accomodation Quires</button>
                     </div>
                   </Link>
                 </li>
@@ -191,20 +212,6 @@ const FOOTER = () => {
                   <Link href="/">
                     <div>
                       <button>Bug Report</button>
-                    </div>
-                  </Link>
-                </li>
-                <li className="mt-[5px]">
-                  <Link href="/">
-                    <div>
-                      <button>Privacy Policy</button>
-                    </div>
-                  </Link>
-                </li>
-                <li className="mt-[5px]">
-                  <Link href="/">
-                    <div>
-                      <button>Refund Policy</button>
                     </div>
                   </Link>
                 </li>
@@ -233,28 +240,37 @@ const FOOTER = () => {
             <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
               <ul>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  <Link
+                    href="https://www.instagram.com/skitpravah/"
+                    target="blank"
+                  >
                     <div>
                       <button>Instagram</button>
                     </div>
                   </Link>
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  <Link
+                    href="https://www.facebook.com/pravah2016"
+                    target="blank"
+                  >
                     <div>
                       <button>Facebook</button>
                     </div>
                   </Link>
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  <Link href="https://twitter.com/@pravah_skit" target="blank">
                     <div>
                       <button>Twitter</button>
                     </div>
                   </Link>
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  <Link
+                    href="https://www.youtube.com/@skitpravah4946"
+                    target="blank"
+                  >
                     <div>
                       <button>Youtube</button>
                     </div>

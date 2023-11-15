@@ -19,6 +19,9 @@ const AAVEG_OBJECT = () => {
           <div>
             <TYPINGTEXT title="Sports Event" />
             <ANIMATEDTEXT12 />
+            {/* <div>
+              <span className="font-bold">17th - 19th April, 2023</span>
+            </div> */}
           </div>
           <div className="mx-[20px]  lg:mx-[200px]   text-[14px] sm:text-[16px] mt-[10px]">
             <span>

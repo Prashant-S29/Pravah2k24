@@ -233,10 +233,6 @@ const TYPINGTEXT = ({ title }: any) => {
 const VIDEOBLOCK = () => {
   return (
     <motion.div
-      variants={fadeUp("tween", 0.1, 0.55)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.1 }}
     >
       <div className="flex justify-center px-[20px]">
         <div className="w-full md:w-[550px] h-[200px] md:h-[300px]">

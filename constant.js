@@ -1,5 +1,5 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer
 } from "./assets/index"
 
 const previousCelebrities = [
@@ -100,7 +100,7 @@ const majorEvents = [
         id: 'eventFour',
         imgUrl: sur,
         title: 'Sur',
-        titleInfo: "bla bla bla. give me description. it's not my responsibility",
+        titleInfo: "Amazing singing competition with best vocals of all times.",
     },
     {
         id: 'eventFive',
@@ -127,14 +127,6 @@ const glimpsesCard = [
 
     },
     {
-        title: "Crowd Work",
-        displayState: false,
-        marqueeDirection: "left",
-        thumbnail: aaveg,
-        youtubeLink: "",
-
-    },
-    {
         title: "Pravah 2024 Logo Reveal",
         displayState: true,
         marqueeDirection: "right",
@@ -146,7 +138,7 @@ const glimpsesCard = [
         title: "Pravah Tralier",
         displayState: false,
         marqueeDirection: "left",
-        thumbnail: aaveg,
+        thumbnail: trailer,
         youtubeLink: "https://youtu.be/DyuUx1obJ_M?si=uOPCONycuEP8fEnW",
 
     },
@@ -182,36 +174,40 @@ const EventMenuLinks = [
 
 const priorEvents = [
     {
-        eventName: "Paintball Arena",
-        eventPhoto: celebrityNight,
+        eventName: "Rawaz",
+        eventPhoto: rawaz,
     },
     {
-        eventName: "Paintball Arena",
-        eventPhoto: celebrityNight,
+        eventName: "Thirak",
+        eventPhoto: thirak,
     },
     {
-        eventName: "Paintball Arena",
-        eventPhoto: celebrityNight,
+        eventName: "Sur",
+        eventPhoto: sur,
     },
     {
-        eventName: "Paintball Arena",
-        eventPhoto: celebrityNight,
+        eventName: "Clash of Bands",
+        eventPhoto: clashofband,
     },
     {
-        eventName: "Paintball Arena",
-        eventPhoto: celebrityNight,
+        eventName: "Cosplay",
+        eventPhoto: cosplay,
     },
     {
-        eventName: "Paintball Arena",
-        eventPhoto: celebrityNight,
+        eventName: "Bhagirath",
+        eventPhoto: bhagirath,
     },
     {
-        eventName: "Paintball Arena",
-        eventPhoto: celebrityNight,
+        eventName: "Paintball",
+        eventPhoto: paintball,
     },
     {
-        eventName: "Paintball Arena",
-        eventPhoto: celebrityNight,
+        eventName: "Kavyanjali",
+        eventPhoto: kavyanjali,
+    },
+    {
+        eventName: "Masterchef",
+        eventPhoto: masterchef,
     }
 ]
 
@@ -395,66 +391,66 @@ const testEventDetails = [
     }
 ]
 
-// eventRegStatus - live, closed
+// eventRegStatus - live, closed, upcoming
 const aavegEventDetails = [
     {
         eventName: "Badminton",
         eventPhotoLink: badminton,
-        eventRegStatus: "closed",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Basketball",
         eventPhotoLink: basketball,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Chess",
         eventPhotoLink: chess,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Carrom",
         eventPhotoLink: carrom,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Football",
         eventPhotoLink: football,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Gully Circket",
         eventPhotoLink: cricket,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Table Tennis",
         eventPhotoLink: tabletennis,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Tug of War",
         eventPhotoLink: tugofwar,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Volleyball",
         eventPhotoLink: volleyball,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     },
     {
         eventName: "Kabbadi",
         eventPhotoLink: kabbadi,
-        eventRegStatus: "live",
+        eventRegStatus: "upcoming",
         eventBrochureLink: "/",
     }
 

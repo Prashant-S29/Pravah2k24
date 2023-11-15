@@ -40,7 +40,6 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
                 <Link href="/">
                   <button className="w-full  px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
                     Brochure & Guideline{" "}
-                    
                   </button>
                 </Link>
               </div>
@@ -58,27 +57,7 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
       <div className="text-center duration-300 "></div>
 
       <div className="w-full flex  justify-center gap-2 mt-[10px]">
-        {eventDetail.eventRegStatus == "live" ? (
-          <>
-            <div className="w-full">
-              <Link href="/">
-                <button className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
-                  Register
-                </button>
-              </Link>
-            </div>
-            <div className="w-full">
-              <button
-                className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
-                onClick={(e) => {
-                  setDetailDisplay(!detailDisplay);
-                }}
-              >
-                {detailDisplay ? "Hide Details" : "Show Details"}
-              </button>
-            </div>
-          </>
-        ) : (
+        {eventDetail.eventRegStatus === "upcoming" ? (
           <div className="w-full">
             <button
               className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
@@ -86,11 +65,46 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
                 setDetailDisplay(!detailDisplay);
               }}
             >
-              {detailDisplay
-                ? "Registration Closed (Hide Details)"
-                : "Registration Closed (Show Details)"}
+              {detailDisplay ? "Hide Details" : "Show Details"}
             </button>
           </div>
+        ) : (
+          <>
+            {eventDetail.eventRegStatus == "live" ? (
+              <>
+                <div className="w-full">
+                  <Link href="/">
+                    <button className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
+                      Register
+                    </button>
+                  </Link>
+                </div>
+                <div className="w-full">
+                  <button
+                    className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
+                    onClick={(e) => {
+                      setDetailDisplay(!detailDisplay);
+                    }}
+                  >
+                    {detailDisplay ? "Hide Details" : "Show Details"}
+                  </button>
+                </div>
+              </>
+            ) : (
+              <div className="w-full">
+                <button
+                  className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
+                  onClick={(e) => {
+                    setDetailDisplay(!detailDisplay);
+                  }}
+                >
+                  {detailDisplay
+                    ? "Registration Closed (Hide Details)"
+                    : "Registration Closed (Show Details)"}
+                </button>
+              </div>
+            )}
+          </>
         )}
       </div>
     </div>

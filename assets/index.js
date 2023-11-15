@@ -74,6 +74,7 @@ import glimpse12 from "./glimpses/glimpse18.webp"
 import aftermovie from "./gallery/aftermovie.png"
 import logoreveal from "./gallery/logoreveal.png"
 import aaveg from "./gallery/aaveg.png"
+import trailer from "./gallery/trailer.png"
 
 import aavegOne from "./gallery/aavegOne.png"
 import aavegTwo from "./gallery/aavegTwo.png"
@@ -92,6 +93,13 @@ import tabletennis from "./gallery/tabletennis.png"
 import carrom from "./gallery/carrom.png"
 import cricket from "./gallery/cricket.png"
 import kabbadi from "./gallery/kabbadi.png"
+
+import cosplay from "./priorEvents/cosplay.png"
+import clashofband from "./priorEvents/clashofband.png"
+import paintball from "./priorEvents/paintball.png"
+import kavyanjali from "./priorEvents/kavyanjali.png"
+import masterchef from "./priorEvents/masterchef.png"
+import bhagirath from "./priorEvents/bhagirath.png"
 
 export {
     background,
@@ -127,5 +135,6 @@ export {
     aftermovie, aaveg, logoreveal,
     help_icon, quicklink_icon, reachus_icon, contact_icon,
     aavegOne,aavegTwo,aavegThree,aavegFour,aavegFive,aavegSix,
-    football,volleyball,basketball,chess,carrom,cricket,tabletennis,tugofwar,kabbadi,badminton,download,downarrow
+    football,volleyball,basketball,chess,carrom,cricket,tabletennis,tugofwar,kabbadi,badminton,download,downarrow,
+    cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer
 }

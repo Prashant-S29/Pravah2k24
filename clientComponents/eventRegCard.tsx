@@ -69,7 +69,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
       </div>
       <div className="mt-[10px]  text-center  ">
         <div>
-          <span className="text-[18px] sm:text-[22px] font-bold">
+          <span className="text-[20px] font-extrabold">
             {eventDetail.eventName}
           </span>
         </div>

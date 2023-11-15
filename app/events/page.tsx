@@ -1,31 +1,31 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 
-import {  priorEvents } from "@/constant";
+import { priorEvents } from "@/constant";
 import TRANSITION_WRAPPER from "../../clientComponents/transition";
 import Image from "next/image";
 
 const EVENTS_OBJECT = () => {
-  const [isActive, setIsActive] = useState(false);
-
   return (
     <>
-      
-      <div className="text-center">
+      <div className="font-medium text-center my-[10px] mx-[20px] text-[14px] sm:text-[16px]">
+        <span>Previous Year Highlights</span>
+      </div>
+      <div className="text-center leading-none">
         <span className="text-[30px] sm:text-[32px] md:text-[48px] lg:text-[64px] font-black">
-          Previous year events
+          Pravah{"'"}23 Events
         </span>
       </div>
-      <div className="font-medium text-center my-[10px] mx-[20px]">
+      {/* <div className="font-medium text-center my-[10px] mx-[20px]">
         <span>
           Event Page for Pravah 2024. <br />
           <Link href="/events/testEvent">
             <span className="underline font-bold">Click Here</span>
           </Link>
         </span>
-      </div>
+      </div> */}
       <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
         {priorEvents.map((eventDetail, index) => (
           <div
@@ -41,7 +41,7 @@ const EVENTS_OBJECT = () => {
             </div>
             <div className="mt-[10px]  text-center  ">
               <div>
-                <span className="text-[24px] font-bold">
+                <span className="text-[20px] font-extrabold">
                   {eventDetail.eventName}
                 </span>
               </div>

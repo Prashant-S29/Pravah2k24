@@ -1,8 +1,10 @@
 "use client";
 
-import { cursorTwo, naac_logo, skit_logo, swamiji_logo, text3 } from "@/assets";
-import Image from "next/image";
 import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+import { cursorTwo, naac_logo, skit_logo, swamiji_logo, text3 } from "@/assets";
 import { TITLEIMAGE } from "./motionDiv";
 
 const INTROPAGE = () => {
@@ -20,19 +22,33 @@ const INTROPAGE = () => {
             <div className=" w-full sm:w-[400px]">
               <div className=" flex justify-center items-center ">
                 <div>
-                  <Image src={naac_logo} alt="skitlogo" className="w-[70px] sm:w-[80px]" />
+                  <Link href="https://skit.ac.in" target="blank">
+                    <Image
+                      src={naac_logo}
+                      alt="skitlogo"
+                      className="w-[70px] sm:w-[80px]"
+                    />
+                  </Link>
                 </div>
                 <div className="w-[1px] h-[20px] mx-[10px] bg-black" />
                 <div>
-                  <Image src={skit_logo} alt="skitlogo" className="w-[70px] sm:w-[80px]" />
+                  <Link href="https://skit.ac.in" target="blank">
+                    <Image
+                      src={skit_logo}
+                      alt="skitlogo"
+                      className="w-[70px] sm:w-[80px]"
+                    />
+                  </Link>
                 </div>
                 <div className="w-[1px] h-[20px] mx-[10px] bg-black" />
                 <div>
-                  <Image
-                    src={swamiji_logo}
-                    alt="skitlogo"
-                    className="w-[55px] sm:w-[65px]"
-                  />
+                  <Link href="https://skit.ac.in" target="blank">
+                    <Image
+                      src={swamiji_logo}
+                      alt="skitlogo"
+                      className="w-[55px] sm:w-[65px]"
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="leading-tight sm:leading-normal">
