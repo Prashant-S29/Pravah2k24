@@ -175,6 +175,60 @@ const ANIMATEDTEXT10 = () => {
   );
 };
 
+const ANIMATEDTEXT13 = () => {
+  const placeholderText = [{ type: "heading1", text: "Central Working Committee" }];
+
+  return (
+    <motion.div initial="hidden" whileInView="visible">
+      <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
+        {placeholderText.map((item, index) => (
+          <AnimatedCharacters {...item} key={index} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+const ANIMATEDTEXT14 = () => {
+  const placeholderText = [{ type: "heading1", text: "Central Working " }];
+
+  return (
+    <motion.div initial="hidden" whileInView="visible">
+      <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
+        {placeholderText.map((item, index) => (
+          <AnimatedCharacters {...item} key={index} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+const ANIMATEDTEXT15 = () => {
+  const placeholderText = [{ type: "heading1", text: " Committee" }];
+
+  return (
+    <motion.div initial="hidden" whileInView="visible">
+      <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
+        {placeholderText.map((item, index) => (
+          <AnimatedCharacters {...item} key={index} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+const ANIMATEDTEXT16 = () => {
+  const placeholderText = [{ type: "heading1", text: "Core Team" }];
+
+  return (
+    <motion.div initial="hidden" whileInView="visible">
+      <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
+        {placeholderText.map((item, index) => (
+          <AnimatedCharacters {...item} key={index} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
 const ANIMATEDTEXT11 = () => {
   const placeholderText = [{ type: "heading1", text: "SKIT, Jaipur" }];
 
@@ -345,5 +399,9 @@ export {
   ANIMATEDTEXT8,
   ANIMATEDTEXT10,
   ANIMATEDTEXT11,
-  ANIMATEDTEXT12
+  ANIMATEDTEXT12,
+  ANIMATEDTEXT13,
+  ANIMATEDTEXT14,
+  ANIMATEDTEXT15,
+  ANIMATEDTEXT16
 };

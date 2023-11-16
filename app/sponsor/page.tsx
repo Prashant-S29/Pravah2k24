@@ -12,7 +12,7 @@ const SPONSOR_OBJECT = () => {
       <div className="mt-[50px]">
         <div className="text-center">
           <span className="text-[18px] sm:text-[24px] md:text-[32px] font-black">
-            Pravah 2023 Sponsors
+            Prior Sponsors
           </span>
         </div>
         <div className="my-[30px]">

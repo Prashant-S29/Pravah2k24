@@ -513,6 +513,85 @@ const pravahWebTeam = [
     },
 ]
 
+const centralWorkingCommittee = [
+    {
+        memberName: "Mr. Abhishek Gupta",
+        memberPhoto: jassigill,
+        memberPost: "Associate Professor",
+        memberDepartment: "EE Department",
+        memberPhone: "9079215052"
+    },
+    {
+        memberName: "Mr. Abhishek Gupta",
+        memberPhoto: jassigill,
+        memberPost: "Associate Professor",
+        memberDepartment: "EE Department",
+        memberPhone: "9079215052"
+    },
+    {
+        memberName: "Mr. Abhishek Gupta",
+        memberPhoto: jassigill,
+        memberPost: "Associate Professor",
+        memberDepartment: "EE Department",
+        memberPhone: "9079215052"
+    },
+    {
+        memberName: "Mr. Abhishek Gupta",
+        memberPhoto: jassigill,
+        memberPost: "Associate Professor",
+        memberDepartment: "EE Department",
+        memberPhone: "9079215052"
+    },
+    {
+        memberName: "Mr. Abhishek Gupta",
+        memberPhoto: jassigill,
+        memberPost: "Associate Professor",
+        memberDepartment: "EE Department",
+        memberPhone: "9079215052"
+    }
+]
+
+const coreTeam = [
+    {
+        memberName: "Prashant Singh",
+        memberPhoto: jassigill,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "9079215052"
+    },
+    {
+        memberName: "Prashant Singh",
+        memberPhoto: jassigill,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "9079215052"
+    },
+    {
+        memberName: "Prashant Singh",
+        memberPhoto: jassigill,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "9079215052"
+    },
+    {
+        memberName: "Prashant Singh",
+        memberPhoto: jassigill,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "9079215052"
+    },
+    {
+        memberName: "Prashant Singh",
+        memberPhoto: jassigill,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "9079215052"
+    },
+]
+
+
+
+
 export {
 
     previousCelebrities,
@@ -525,7 +604,9 @@ export {
     testEventDetails,
     eventCategoryDesc,
     aavegEventDetails,
-    pravahWebTeam
+    pravahWebTeam,
+    centralWorkingCommittee,
+    coreTeam
 }
 
 
