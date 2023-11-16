@@ -34,7 +34,7 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
           >
             <Marquee
               autoFill={true}
-              speed={window.innerWidth > 650 ? 50 : 20}
+              speed={window.innerWidth > 650 ? 50 : 30}
               direction={index % 2 == 0 ? "right" : "left"}
             >
               <div className="px-[10px]  ">
@@ -45,7 +45,7 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
             </Marquee>
           </div>
           <div className="  w-[300px] h-[70px] sm:h-[100px]   rounded-[20px] ">
-            <div className="absolute  rounded-[20px] max-[320px]:-mt-[120px]  -mt-[130px] sm:-mt-[130px] md:-mt-[180px] lg:-mt-[200px] z-20">
+            <div className="absolute  rounded-[20px] max-[320px]:-mt-[120px]  -mt-[130px] sm:-mt-[130px] md:-mt-[180px] lg:-mt-[200px] z-[2]">
               <Image
                 src={memberDetail.memberPhoto}
                 alt={memberDetail.memberName}
