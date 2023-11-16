@@ -49,7 +49,7 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
       </div>
       <div className="mt-[10px]  text-center  ">
         <div>
-          <span className="text-[18px] sm:text-[22px] font-bold">
+          <span className="text-[20px] font-extrabold">
             {eventDetail.eventName}
           </span>
         </div>
@@ -57,18 +57,7 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
       <div className="text-center duration-300 "></div>
 
       <div className="w-full flex  justify-center gap-2 mt-[10px]">
-        {eventDetail.eventRegStatus === "upcoming" ? (
-          <div className="w-full">
-            <button
-              className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
-              onClick={(e) => {
-                setDetailDisplay(!detailDisplay);
-              }}
-            >
-              {detailDisplay ? "Hide Details" : "Show Details"}
-            </button>
-          </div>
-        ) : (
+        {eventDetail.eventRegStatus === "upcoming" ? ("") : (
           <>
             {eventDetail.eventRegStatus == "live" ? (
               <>

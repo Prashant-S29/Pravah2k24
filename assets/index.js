@@ -16,6 +16,8 @@ import naac_logo from "./logo/naac_logo.png"
 import swamiji_logo from "./logo/swamiji.png"
 import download from "./logo/download.png"
 import downarrow from "./logo/downarrow.png"
+import github from "./logo/github.png"
+import linkedin from "./logo/linkedin.png"
 
 import help_icon from "./logo/help_icon.png"
 import contact_icon from "./logo/contact_icon.png"
@@ -100,6 +102,12 @@ import paintball from "./priorEvents/paintball.png"
 import kavyanjali from "./priorEvents/kavyanjali.png"
 import masterchef from "./priorEvents/masterchef.png"
 import bhagirath from "./priorEvents/bhagirath.png"
+import startupexpo from "./priorEvents/satrtupexpo.png"
+import rapbazzi from "./priorEvents/rapbazzi.png"
+import artexhi from "./priorEvents/artexhi.png"
+
+import personOne from "./webTeam/personOne.png"
+
 
 export {
     background,
@@ -136,5 +144,5 @@ export {
     help_icon, quicklink_icon, reachus_icon, contact_icon,
     aavegOne,aavegTwo,aavegThree,aavegFour,aavegFive,aavegSix,
     football,volleyball,basketball,chess,carrom,cricket,tabletennis,tugofwar,kabbadi,badminton,download,downarrow,
-    cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer
+    cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer, startupexpo, artexhi, rapbazzi, personOne, linkedin,github
 }

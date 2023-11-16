@@ -190,7 +190,7 @@ const ANIMATEDTEXT11 = () => {
 };
 
 const ANIMATEDTEXT12 = () => {
-  const placeholderText = [{ type: "paragraph", text: "AAVEG" }];
+  const placeholderText = [{ type: "paragraph", text: "AAVEG'23" }];
 
   return (
     <motion.div initial="hidden" whileInView="visible">

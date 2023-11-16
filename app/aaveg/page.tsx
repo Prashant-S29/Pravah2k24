@@ -62,7 +62,7 @@ const AAVEG_OBJECT = () => {
               ...read {showText ? "less" : "more"}
             </span>
           </div>
-          <div className=" my-[20px] flex justify-center">
+          {/* <div className=" my-[20px] flex justify-center">
             <Link href="/">
               <button className=" px-[20px] flex items-center gap-1  py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
                 AAVEG Schedule
@@ -73,10 +73,10 @@ const AAVEG_OBJECT = () => {
                 />
               </button>
             </Link>
-          </div>{" "}
-          <div className="mt-[10px] text-[28px] md:text-[36px] lg:text-[42px] font-black px-[20px] leading-tight ">
+          </div> */}
+          {/* <div className="mt-[10px] text-[28px] md:text-[36px] lg:text-[42px] font-black px-[20px] leading-tight ">
             <span>GAMES & ACTIVITIES</span>
-          </div>
+          </div> */}
           <div>
             <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
               {aavegEventDetails.map((eventDetail, index) => (

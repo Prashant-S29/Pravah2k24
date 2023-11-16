@@ -1,5 +1,5 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, personOne
 } from "./assets/index"
 
 const previousCelebrities = [
@@ -190,6 +190,10 @@ const priorEvents = [
         eventPhoto: clashofband,
     },
     {
+        eventName: "Startup Expo",
+        eventPhoto: startupexpo,
+    },
+    {
         eventName: "Cosplay",
         eventPhoto: cosplay,
     },
@@ -198,8 +202,16 @@ const priorEvents = [
         eventPhoto: bhagirath,
     },
     {
-        eventName: "Paintball",
+        eventName: "Rap'arazzi",
+        eventPhoto: rapbazzi,
+    },
+    {
+        eventName: "Paintball Battleground",
         eventPhoto: paintball,
+    },
+    {
+        eventName: "Art Exibition",
+        eventPhoto: artexhi,
     },
     {
         eventName: "Kavyanjali",
@@ -208,6 +220,14 @@ const priorEvents = [
     {
         eventName: "Masterchef",
         eventPhoto: masterchef,
+    },
+    {
+        eventName: "DJ Night",
+        eventPhoto: dj,
+    },
+    {
+        eventName: "Celebrity Night",
+        eventPhoto: celebrityNight,
     }
 ]
 
@@ -456,8 +476,51 @@ const aavegEventDetails = [
 
 ]
 
+const pravahWebTeam = [
+    {
+        memberName: "@ChinmayBhatnagar",
+        memberPhoto:personOne,
+        memberIntroStack:"Frontend Developer",
+        memberGithub:"",
+        memberLinkedIn:"",
+        memberPhone:"",
+    },
+    {
+        memberName: "@PrashantSingh",
+        memberPhoto:personOne,
+        memberIntroStack:"MERN Stack Developer",
+        memberGithub:"",
+        memberLinkedIn:"",
+        memberPhone:"",
+    },
+    {
+        memberName: "@Jashan",
+        memberPhoto:personOne,
+        memberIntroStack:"Frontend Developer",
+        memberGithub:"",
+        memberLinkedIn:"",
+        memberPhone:"",
+    },
+    {
+        memberName: "@VishalKhandelwal",
+        memberPhoto:personOne,
+        memberIntroStack:"Backend Developer",
+        memberGithub:"",
+        memberLinkedIn:"",
+        memberPhone:"",
+    },
+    {
+        memberName: "@GauravSharma",
+        memberPhoto:personOne,
+        memberIntroStack:"Frontend Developer",
+        memberGithub:"",
+        memberLinkedIn:"",
+        memberPhone:"",
+    },
+]
 
 export {
+
     previousCelebrities,
     socialContact,
     majorEvents,
@@ -467,7 +530,9 @@ export {
     sponsorFormFields,
     testEventDetails,
     eventCategoryDesc,
-    aavegEventDetails
+    aavegEventDetails,
+    pravahWebTeam
 }
+
 
 
