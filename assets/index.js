@@ -36,6 +36,8 @@ import shruti from "./priorCelebrity/shruti.jpg"
 import ravindra from "./priorCelebrity/ravindra.jpg"
 import gajendra from "./priorCelebrity/gajendra.webp"
 import naushad from "./priorCelebrity/naushad.webp"
+import nora from "./priorCelebrity/nora.png"
+import sunil from "./priorCelebrity/sunil.png"
 
 import sp1 from "./priorSponsors/sp1.png"
 import sp2 from "./priorSponsors/sp2.png"
@@ -144,5 +146,6 @@ export {
     help_icon, quicklink_icon, reachus_icon, contact_icon,
     aavegOne,aavegTwo,aavegThree,aavegFour,aavegFive,aavegSix,
     football,volleyball,basketball,chess,carrom,cricket,tabletennis,tugofwar,kabbadi,badminton,download,downarrow,
-    cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer, startupexpo, artexhi, rapbazzi, personOne, linkedin,github
+    cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer, startupexpo, artexhi, rapbazzi, personOne, linkedin,github,
+    nora, sunil
 }

@@ -1,5 +1,5 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, personOne
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, personOne, nora, sunil
 } from "./assets/index"
 
 const previousCelebrities = [
@@ -23,30 +23,24 @@ const previousCelebrities = [
         celebrityPhoto: ravindra,
         celebrityYear: "",
     },
-
     {
-        celebrityName: "jassigill",
-        celebrityPhoto: kumarvishwas,
+        celebrityName: "Nora Fatehi",
+        celebrityPhoto: nora,
         celebrityYear: "",
     },
     {
-        celebrityName: "jassigill",
-        celebrityPhoto: kumarvishwas,
+        celebrityName: "Sunil Sethi",
+        celebrityPhoto: sunil,
         celebrityYear: "",
     },
     {
-        celebrityName: "jassigill",
+        celebrityName: "Jassi Gill",
         celebrityPhoto: jassigill,
         celebrityYear: "",
     },
     {
         celebrityName: "Naushad Ali kawa",
         celebrityPhoto: naushad,
-        celebrityYear: "",
-    },
-    {
-        celebrityName: "jassigill",
-        celebrityPhoto: jassigill,
         celebrityYear: "",
     },
 
@@ -479,43 +473,43 @@ const aavegEventDetails = [
 const pravahWebTeam = [
     {
         memberName: "@ChinmayBhatnagar",
-        memberPhoto:personOne,
-        memberIntroStack:"Frontend Developer",
-        memberGithub:"",
-        memberLinkedIn:"",
-        memberPhone:"",
+        memberPhoto: personOne,
+        memberIntroStack: "Frontend Developer",
+        memberGithub: "",
+        memberLinkedIn: "",
+        memberPhone: "",
     },
     {
         memberName: "@PrashantSingh",
-        memberPhoto:personOne,
-        memberIntroStack:"MERN Stack Developer",
-        memberGithub:"",
-        memberLinkedIn:"",
-        memberPhone:"",
+        memberPhoto: personOne,
+        memberIntroStack: "MERN Stack Developer",
+        memberGithub: "",
+        memberLinkedIn: "",
+        memberPhone: "",
     },
     {
         memberName: "@Jashan",
-        memberPhoto:personOne,
-        memberIntroStack:"Frontend Developer",
-        memberGithub:"",
-        memberLinkedIn:"",
-        memberPhone:"",
+        memberPhoto: personOne,
+        memberIntroStack: "Frontend Developer",
+        memberGithub: "",
+        memberLinkedIn: "",
+        memberPhone: "",
     },
     {
         memberName: "@VishalKhandelwal",
-        memberPhoto:personOne,
-        memberIntroStack:"Backend Developer",
-        memberGithub:"",
-        memberLinkedIn:"",
-        memberPhone:"",
+        memberPhoto: personOne,
+        memberIntroStack: "Backend Developer",
+        memberGithub: "",
+        memberLinkedIn: "",
+        memberPhone: "",
     },
     {
         memberName: "@GauravSharma",
-        memberPhoto:personOne,
-        memberIntroStack:"Frontend Developer",
-        memberGithub:"",
-        memberLinkedIn:"",
-        memberPhone:"",
+        memberPhoto: personOne,
+        memberIntroStack: "Frontend Developer",
+        memberGithub: "",
+        memberLinkedIn: "",
+        memberPhone: "",
     },
 ]
 
