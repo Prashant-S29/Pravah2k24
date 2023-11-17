@@ -9,10 +9,9 @@ import { background } from "@/assets";
 
 import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
-import CURSOR from "@/clientComponents/cursor";
 import PAGEWRAPPER from "./pageWrapper";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["cyrillic"] });
 
 export const metadata: Metadata = {
   title: "Pravah | SKIT Jaipur",

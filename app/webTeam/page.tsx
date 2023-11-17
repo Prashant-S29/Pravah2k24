@@ -7,7 +7,7 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
-import { instagram, personOne, github, linkedin, contact_icon } from "@/assets";
+import {  github, linkedin, contact_icon } from "@/assets";
 import { pravahWebTeam } from "@/constant";
 
 const WEBTEAM_CARD = ({ memberDetail, index }) => {
@@ -19,18 +19,10 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
         <div
           className={`  mt-[50px] sm:mt-[70px] max-[320px]:w-[300px] w-[350px] sm:w-[500px] md:w-[600px] 
                   lg:w-[800px]  rounded-t-[20px] rounded-[20px] duration-200  border border-black bg-white`}
-          // onMouseEnter={() => {
-          //   setShowColor(!showColor);
-          // }}
-          // onMouseLeave={() => {
-          //   setShowColor(!showColor);
-          // }}
-          // onClick={() => {
-          //   setShowColor(!showColor);
-          // }}
+      
         >
           <div
-            className={`mt-[30px]  sm:mt-[50px] overflow-hidden bg-black duration-200 `}
+            className={`mt-[30px]  sm:mt-[50px] overflow-hidden  duration-200 `}
           >
             <Marquee
               autoFill={true}
@@ -38,7 +30,7 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
               direction={index % 2 == 0 ? "right" : "left"}
             >
               <div className="px-[10px]  ">
-                <span className="text-[50px] text-white sm:text-[40px]  md:text-[60px] lg:text-[80px]  font-black">
+                <span className="text-[50px]  sm:text-[40px]  md:text-[60px] lg:text-[80px]  font-black">
                   {memberDetail.memberIntroStack} &#x2022;
                 </span>
               </div>
