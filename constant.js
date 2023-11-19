@@ -1,5 +1,5 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, glimpse1, glimpse4, glimpse7, glimpse12, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, personOne, nora, sunil
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant
 } from "./assets/index"
 
 const previousCelebrities = [
@@ -108,14 +108,12 @@ const glimpsesCard = [
     {
         title: "Pravah 23 After Story",
         displayState: false,
-        marqueeDirection: "left",
         thumbnail: aftermovie,
         youtubeLink: "https://youtu.be/V-094flkqjI?si=3I2KrRDReWjNbfxq",
     },
     {
         title: "Aaveg",
         displayState: false,
-        marqueeDirection: "right",
         thumbnail: aaveg,
         youtubeLink: "",
 
@@ -123,7 +121,6 @@ const glimpsesCard = [
     {
         title: "Pravah 2024 Logo Reveal",
         displayState: true,
-        marqueeDirection: "right",
         thumbnail: logoreveal,
         youtubeLink: "",
 
@@ -131,7 +128,6 @@ const glimpsesCard = [
     {
         title: "Pravah Tralier",
         displayState: false,
-        marqueeDirection: "left",
         thumbnail: trailer,
         youtubeLink: "https://youtu.be/DyuUx1obJ_M?si=uOPCONycuEP8fEnW",
 
@@ -473,43 +469,43 @@ const aavegEventDetails = [
 const pravahWebTeam = [
     {
         memberName: "@ChinmayBhatnagar",
-        memberPhoto: personOne,
+        memberPhoto: chinmay,
         memberIntroStack: "Frontend Developer",
-        memberGithub: "",
-        memberLinkedIn: "",
-        memberPhone: "",
+        memberGithub: "https://github.com/ChinmayBhatnagar",
+        memberLinkedIn: "https://www.linkedin.com/in/chinmay-bhatnagar-4140a424a/",
+        memberPhone: "7976227748",
     },
     {
         memberName: "@PrashantSingh",
-        memberPhoto: personOne,
+        memberPhoto: prashant,
         memberIntroStack: "MERN Stack Developer",
-        memberGithub: "",
-        memberLinkedIn: "",
-        memberPhone: "",
+        memberGithub: "https://github.com/Prashant-S29",
+        memberLinkedIn: "https://www.linkedin.com/in/prashant-singh-529391250/",
+        memberPhone: "9079215052",
     },
     {
         memberName: "@Jashan",
-        memberPhoto: personOne,
+        memberPhoto: prashant,
         memberIntroStack: "Frontend Developer",
-        memberGithub: "",
-        memberLinkedIn: "",
-        memberPhone: "",
+        memberGithub: "https://github.com/jashan-bhayana",
+        memberLinkedIn: "https://www.linkedin.com/in/jashan-bhayana-6b1348226/",
+        memberPhone: "9680433825",
     },
     {
         memberName: "@VishalKhandelwal",
-        memberPhoto: personOne,
+        memberPhoto: prashant,
         memberIntroStack: "Backend Developer",
-        memberGithub: "",
-        memberLinkedIn: "",
-        memberPhone: "",
+        memberGithub: "https://github.com/Vicky2114",
+        memberLinkedIn: "https://www.linkedin.com/in/vishal-rawat-13739823a",
+        memberPhone: "9376744239",
     },
     {
         memberName: "@GauravSharma",
-        memberPhoto: personOne,
+        memberPhoto: gaurav,
         memberIntroStack: "Frontend Developer",
-        memberGithub: "",
-        memberLinkedIn: "",
-        memberPhone: "",
+        memberGithub: "https://github.com/gauravsharma25404",
+        memberLinkedIn: "https://www.linkedin.com/in/gaurav-sharma-476173229/",
+        memberPhone: "8690574054",
     },
 ]
 

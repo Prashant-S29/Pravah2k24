@@ -36,6 +36,8 @@ const EVENTS_OBJECT = () => {
               <Image
                 src={eventDetail.eventPhoto}
                 alt={eventDetail.eventName}
+                blurDataURL={eventDetail.eventPhoto.src}
+                placeholder="blur"
                 className="object-cover object-top rounded-[17px] w-full sm:w-[250px] h-[200px]"
               />
             </div>

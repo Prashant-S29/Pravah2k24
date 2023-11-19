@@ -13,7 +13,6 @@ type ImageGalleryItemProps = {
   title: string;
   index: number;
   displayState: boolean;
-  marqueeDirection: any;
   thumbnail: any;
   youtubeLink: string;
   setDisplayState?: (value: boolean) => void;
@@ -24,7 +23,6 @@ const ImageGalleryItem = ({
   title,
   index,
   displayState,
-  marqueeDirection,
   thumbnail,
   youtubeLink,
   resetDisplayState,
@@ -49,7 +47,7 @@ const ImageGalleryItem = ({
       <Marquee
         autoFill={true}
         speed={50}
-        direction={marqueeDirection}
+        direction={index % 2 === 0 ? "left" : "right"}
         className="hidden sm:block"
       >
         <div className=" flex gap-3 text-[32px] sm:text-[48px] md:text-[62px] px-[20px] items-center">
@@ -59,9 +57,7 @@ const ImageGalleryItem = ({
           <div className="text-[20px] sm:text-[30px] pl-[20px]">
             <div
               className={`leading-none flex items-center  ${
-                marqueeDirection === "right"
-                  ? "animate-spin-one"
-                  : "animate-spin-two"
+                index % 2 === 0 ? "animate-spin-one" : "animate-spin-two"
               }`}
             >
               <span>&#9733;</span>
@@ -73,7 +69,7 @@ const ImageGalleryItem = ({
       <Marquee
         autoFill={true}
         speed={30}
-        direction={marqueeDirection}
+        direction={index % 2 === 0 ? "left" : "right"}
         className="block sm:hidden"
       >
         <div className=" flex gap-3 text-[32px] sm:text-[48px] md:text-[62px]  items-center">
@@ -83,10 +79,9 @@ const ImageGalleryItem = ({
           <div className="text-[20px] sm:text-[30px]">
             <div
               className={`leading-none flex items-center  ${
-                marqueeDirection === "right"
-                  ? "animate-spin-one"
-                  : "animate-spin-two"
-              }`}
+                index % 2 === 0 ? "animate-spin-one" : "animate-spin-two"
+              }
+               `}
             >
               <span>&#9733;</span>
             </div>
@@ -99,23 +94,15 @@ const ImageGalleryItem = ({
             displayState == true
               ? `-mt-[110px] sm:-mt-[120px] md:-mt-[230px] `
               : "mt-[50px] rotate-12"
-          } ${
-            displayState == true && marqueeDirection == "right"
-              ? "-rotate-12"
-              : "rotate-12"
-          } `}
+          } ${index % 2 === 0 ? "rotate-12" : "-rotate-12"} `}
         >
-          {/* <iframe
-            width="100%"
-            height="100%"
-            src={youtubeLink}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="rounded-[20px]"
-          ></iframe> */}
           <div>
-            <Link href={youtubeLink} target="blank" data-cursor-text="Play" data-cursor-size="70px">
+            <Link
+              href={youtubeLink}
+              target="blank"
+              data-cursor-text="Play"
+              data-cursor-size="70px"
+            >
               <Image
                 src={thumbnail}
                 alt={title}

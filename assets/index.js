@@ -108,7 +108,9 @@ import startupexpo from "./priorEvents/satrtupexpo.png"
 import rapbazzi from "./priorEvents/rapbazzi.png"
 import artexhi from "./priorEvents/artexhi.png"
 
-import personOne from "./webTeam/personOne.png"
+import prashant from "./webTeam/prashant.png"
+import chinmay from "./webTeam/chinmay.png"
+import gaurav from "./webTeam/gaurav.png"
 
 
 export {
@@ -146,6 +148,6 @@ export {
     help_icon, quicklink_icon, reachus_icon, contact_icon,
     aavegOne,aavegTwo,aavegThree,aavegFour,aavegFive,aavegSix,
     football,volleyball,basketball,chess,carrom,cricket,tabletennis,tugofwar,kabbadi,badminton,download,downarrow,
-    cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer, startupexpo, artexhi, rapbazzi, personOne, linkedin,github,
-    nora, sunil
+    cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer, startupexpo, artexhi, rapbazzi, linkedin,github,
+    nora, sunil, chinmay, gaurav, prashant
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 import {
@@ -11,7 +10,6 @@ import {
 } from "@/constant";
 import { eventMenuSlide, eventMenuLinkslide } from "@/utils/motion";
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
-import Image from "next/image";
 
 import EVENT_REG_CARDS from "@/clientComponents/eventRegCard";
 

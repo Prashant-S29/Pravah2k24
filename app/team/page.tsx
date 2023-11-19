@@ -73,8 +73,11 @@ const TEAM_PRAVAH_CARD = ({ memberDetail, index }) => {
 const TEAM_OBJECT = () => {
   return (
     <>
-      <div className="w-full min-h-screen flex justify-center   ">
-        <div className="text-center">
+      <div className="w-full min-h-[80vh] flex  justify-center   items-center  ">
+        <div className="text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
+          <span>COMING SOON</span>
+        </div>
+        <div className="text-center hidden">
           <div className="mt-[50px]">
             <div>
               <TYPINGTEXT title="Faculty Team" />

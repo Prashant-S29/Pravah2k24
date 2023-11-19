@@ -7,7 +7,7 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
-import {  github, linkedin, contact_icon } from "@/assets";
+import { github, linkedin, whatsapp } from "@/assets";
 import { pravahWebTeam } from "@/constant";
 
 const WEBTEAM_CARD = ({ memberDetail, index }) => {
@@ -18,8 +18,7 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
       <div key={index}>
         <div
           className={`  mt-[50px] sm:mt-[70px] max-[320px]:w-[300px] w-[350px] sm:w-[500px] md:w-[600px] 
-                  lg:w-[800px]  rounded-t-[20px] rounded-[20px] duration-200  border border-black bg-white`}
-      
+                  lg:w-[800px]  rounded-t-[20px] rounded-[20px] duration-200  border border-black bg-white   `}
         >
           <div
             className={`mt-[30px]  sm:mt-[50px] overflow-hidden  duration-200 `}
@@ -36,14 +35,12 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
               </div>
             </Marquee>
           </div>
-          <div className="  w-[300px] h-[70px] sm:h-[100px]   rounded-[20px] ">
-            <div className="absolute  rounded-[20px] max-[320px]:-mt-[120px]  -mt-[130px] sm:-mt-[130px] md:-mt-[180px] lg:-mt-[200px] z-[2]">
+          <div className=" w-[300px] h-[70px] sm:h-[100px]    ">
+            <div className="absolute   max-[320px]:-mt-[120px]  -mt-[130px] sm:-mt-[130px] md:-mt-[180px] lg:-mt-[200px] z-[2]">
               <Image
                 src={memberDetail.memberPhoto}
                 alt={memberDetail.memberName}
-                className={`  rounded-[20px]  max-[320px]:w-[180px] w-[190px] sm:w-[220px] md:w-[280px] lg:w-[300px] aspect-square object-cover object-top  duration-200 ${
-                  showColor ? "grayscale-0" : "grayscale"
-                }`}
+                className={` max-[320px]:w-[180px] w-[190px] sm:w-[220px] md:w-[280px] lg:w-[300px] aspect-square object-cover object-top  duration-200 rounded-bl-[20px] drop-shadow-[0_2px_13px_rgba(0,0,0,0.25)]    `}
               />
             </div>
           </div>
@@ -59,24 +56,27 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
               </div>
               <div className="flex justify-end">
                 <div className="bg-black px-[10px]  sm:px-[15px] py-[5px] sm:py-[8px] flex gap-2 sm:gap-3 w-fit rounded-full ">
-                  <Link href={memberDetail.memberGithub}>
+                  <Link href={memberDetail.memberGithub} target="blank">
                     <Image
                       src={github}
                       alt="github"
                       className="w-[14px] sm:w-[18px] md:w-[25px]  aspect-square"
                     />
                   </Link>
-                  <Link href={memberDetail.memberLinkedIn}>
+                  <Link href={memberDetail.memberLinkedIn} target="blank">
                     <Image
                       src={linkedin}
                       alt="linkedin"
                       className="w-[14px] sm:w-[18px] md:w-[25px]  aspect-square"
                     />
                   </Link>
-                  <Link href={memberDetail.memberPhone}>
+                  <Link
+                    href={`https://wa.me/91${memberDetail.memberPhone}`}
+                    target="blank"
+                  >
                     <Image
-                      src={contact_icon}
-                      alt="contact_icon"
+                      src={whatsapp}
+                      alt="whatsapp"
                       className="w-[14px] sm:w-[18px] md:w-[25px]  aspect-square"
                     />
                   </Link>
