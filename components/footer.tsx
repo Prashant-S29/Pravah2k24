@@ -179,7 +179,7 @@ const FOOTER = () => {
                   </div>
                   <div>
                     <span className="text-[15px] sm:text-[16px]">
-                      Help Desk and Quires
+                      Help Desk and Queries
                     </span>
                   </div>
                 </button>
@@ -204,7 +204,7 @@ const FOOTER = () => {
                 <li className="mt-[5px]">
                   <Link href="/">
                     <div>
-                      <button>Accomodation Quires</button>
+                      <button>Accomodation Quiries</button>
                     </div>
                   </Link>
                 </li>

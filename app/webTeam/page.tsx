@@ -40,7 +40,7 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
               <Image
                 src={memberDetail.memberPhoto}
                 alt={memberDetail.memberName}
-                className={` max-[320px]:w-[180px] w-[190px] sm:w-[220px] md:w-[280px] lg:w-[300px] aspect-square object-cover object-top  duration-200 rounded-bl-[20px] drop-shadow-[0_2px_13px_rgba(0,0,0,0.25)]    `}
+                className={` max-[320px]:w-[180px] w-[190px] sm:w-[220px] md:w-[280px] lg:w-[300px] aspect-square object-cover object-top  duration-200 rounded-bl-[20px] drop-shadow-[0_2px_13px_rgba(0,0,0,0.20)]    `}
               />
             </div>
           </div>

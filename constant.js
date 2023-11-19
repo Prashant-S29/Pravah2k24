@@ -470,7 +470,7 @@ const pravahWebTeam = [
     {
         memberName: "@ChinmayBhatnagar",
         memberPhoto: chinmay,
-        memberIntroStack: "Frontend Developer",
+        memberIntroStack: "Full Stack Developer",
         memberGithub: "https://github.com/ChinmayBhatnagar",
         memberLinkedIn: "https://www.linkedin.com/in/chinmay-bhatnagar-4140a424a/",
         memberPhone: "7976227748",
