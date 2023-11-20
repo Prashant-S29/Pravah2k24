@@ -9,11 +9,11 @@ import { cursor } from "@/assets/index";
 
 const eventName = [
   "Technical Events",
-  "Non Technical Events",
+  "Non-Technical Events",
   "Cultural Events",
   "Literary Events",
   "Social Events",
-  "E Sports",
+  "e-Sports",
 ];
 
 const EVENTMARQUEE = () => {

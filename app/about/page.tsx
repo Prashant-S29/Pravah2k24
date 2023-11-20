@@ -7,6 +7,7 @@ import {
   ANIMATEDTEXT11,
   TYPINGTEXT,
 } from "@/clientComponents/motionDiv";
+import Link from "next/link";
 
 const ABOUT_OBJECT = () => {
   return (
@@ -20,25 +21,30 @@ const ABOUT_OBJECT = () => {
             </div>
             <div className="mx-[20px] lg:mx-[200px] text-[15px] sm:text-[16px]">
               <span>
-                The Annual College Fest PRAVAH is a culmination of this humble
-                aspiration. This prolific extravaganza has been organized since
-                the inception and is all set to complete 16 glorious years of
-                celebrating creativity, vigor and aesthetics in the field of
-                Sports, Technical, Non-Technical and Cultural events. Over one
-                hundred events assorted under the above mentioned areas, PRAVAH
-                hosts several intra and inter collegiate competitions. In all
-                domains of events, we expect a foot fall of about 7-8 thousand
-                students from all over India. In continuance of the same
-                tradition, PRAVAH 2023 envisages a flow of talents from
-                different corners of India and aims to foster the literary,
-                technical, cultural and social skills.
+                PRAVAH, the Annual College Fest, embodies the realization of a
+                modest dream. This vibrant extravaganza has been meticulously
+                organized since its inception and is now gearing up to
+                commemorate 17 years of honoring creativity, vitality, and
+                aesthetics in the realms of Sports, Technical, Non-Technical,
+                and Cultural events. With a diverse array of over one hundred
+                events falling under these categories, PRAVAH serves as the
+                platform for numerous intra and inter-collegiate competitions.
+                Envisaging a significant turnout of approximately 7-8 thousand
+                students from all corners of India across various event domains,
+                PRAVAH continues to uphold its tradition of attracting talent on
+                a national scale. Keeping in line with this rich legacy, PRAVAH
+                2024 aspires to draw forth talents from different corners of
+                India, fostering growth in literary, technical, cultural, and
+                social skills.
               </span>
             </div>
           </div>
           <div className="flex justify-center gap-3 mt-[20px] sm:mt-[50px]">
-            <button className="px-[15px] py-[8px] rounded-[10px] bg-black  border-black text-white text-[14px] font-semibold">
-              Explore Pravah 2024
-            </button>
+            <Link href="/events">
+              <button className="px-[15px] py-[8px] rounded-[10px] bg-black  border-black text-white text-[14px] font-semibold">
+                Explore Pravah 2024
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -71,11 +77,12 @@ const ABOUT_OBJECT = () => {
               </div>
               <div className="text-[15px] sm:text-[16px] w-full mt-[10px] h-fit sm:h-[250px] overflow-y-scroll">
                 <span>
-                  PRAVAH aspires to manifest the ultimate human experience where
-                  bonds to friendships begin and memories are created and
-                  glorified. To be the grandest fest of India which effectuates
-                  the spirit of participation and celebration with the vigor of
-                  the young brigade of the National institutes.
+                  PRAVAH aspires to craft the quintessential human experience,
+                  where the seeds of lasting friendships are sown, and memories
+                  are not just made but exalted. It envisions itself as the
+                  premier festival in India, embodying the very essence of
+                  spirited participation and joyous celebration, fueled by the
+                  energy of the dynamic young minds from national institutes.
                 </span>
               </div>
             </div>
@@ -87,11 +94,13 @@ const ABOUT_OBJECT = () => {
               </div>
               <div className="text-[15px] sm:text-[16px]  w-full mt-[10px]  h-fit sm:h-[250px] overflow-y-scroll">
                 <span>
-                  PRAVAH strive to make it a platform to showcase talent in most
-                  of the fields where the journey of learning and growing
-                  together takes place. To provide an experience for lifetime by
-                  showcasing a stunning set of cultural, technical,
-                  non-technical, sports, and social events.
+                  PRAVAH endeavors to establish itself as a versatile platform,
+                  a canvas where talents across diverse fields converge to
+                  embark on a shared journey of learning and collective growth.
+                  Through an array of captivating cultural, technical,
+                  non-technical, sports, and social events, PRAVAH seeks to
+                  curate an unforgettable experience, leaving participants with
+                  memories that resonate for a lifetime.
                 </span>
               </div>
             </div>
@@ -103,13 +112,13 @@ const ABOUT_OBJECT = () => {
               </div>
               <div className="text-[15px] sm:text-[16px] w-full mt-[10px]  h-fit sm:h-[250px] overflow-y-scroll">
                 <span>
-                  To provide a congenial environment for all to interact and
-                  celebrate amusedly. To promote the cultural diversity and
-                  upscale the knowledge and skills of an individual. To promote
-                  human values, social skills and ethics through various social
-                  events. To provide a getaway from monotony of academics. To
-                  promote leadership, managerial and entrepreneurship skills
-                  among students.
+                  To foster a welcoming atmosphere that encourages interaction
+                  and joyful celebration. To champion cultural diversity and
+                  elevate the knowledge and skills of each individual. To
+                  advocate for human values, social skills, and ethics through a
+                  variety of engaging social events. To offer a respite from the
+                  monotony of academic pursuits. To cultivate leadership,
+                  managerial, and entrepreneurship skills among students.
                 </span>
               </div>
             </div>

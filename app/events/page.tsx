@@ -11,11 +11,11 @@ const EVENTS_OBJECT = () => {
   return (
     <>
       <div className="font-medium text-center my-[10px] mx-[20px] text-[14px] sm:text-[16px]">
-        <span>Previous Year Highlights</span>
+        <span>Highlights</span>
       </div>
       <div className="text-center leading-none">
         <span className="text-[30px] sm:text-[32px] md:text-[48px] lg:text-[64px] font-black">
-          Pravah{"'"}23 Events
+          Prior Events
         </span>
       </div>
       {/* <div className="font-medium text-center my-[10px] mx-[20px]">

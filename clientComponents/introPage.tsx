@@ -53,7 +53,7 @@ const INTROPAGE = () => {
               </div>
               <div className="leading-tight sm:leading-normal">
                 <span className="font-semibold text-[14px]   sm:text-[16px]">
-                  Swami Keshvanad Institute of Technology, Management and
+                  Swami Keshvanand Institute of Technology, Management and
                   Gramothan, Jaipur
                 </span>
               </div>

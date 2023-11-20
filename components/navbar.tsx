@@ -66,7 +66,7 @@ const NAVBAR = () => {
               <NAVLINK
                 href="about"
                 navlink="ABOUT"
-                linkinfo="Know more about SKIT, Jaipur."
+                linkinfo="Know more about SKIT M&G, Jaipur."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"

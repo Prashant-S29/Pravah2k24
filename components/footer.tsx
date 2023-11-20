@@ -204,7 +204,7 @@ const FOOTER = () => {
                 <li className="mt-[5px]">
                   <Link href="/">
                     <div>
-                      <button>Accomodation Quiries</button>
+                      <button>Accomodation Queries</button>
                     </div>
                   </Link>
                 </li>

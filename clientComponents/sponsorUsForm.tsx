@@ -3,7 +3,10 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-import { sponsorFormFields } from "@/constant";
+import { sponsorFormContact, sponsorFormFields } from "@/constant";
+import Image from "next/image";
+import { contact_icon, instagram, jashan, jassigill, linkedin } from "@/assets";
+import Link from "next/link";
 
 const SPONSORUSFORM = () => {
   const [formData, setFormData] = useState(
@@ -76,8 +79,7 @@ const SPONSORUSFORM = () => {
       <div className="mx-[20px]">
         <div className="text-center text-[20px] md:text-[28px] lg:text-[32px] font-black leading-tight">
           <span>
-            Thankyou for being a sponsor for Pravah 2024.
-            <br /> Pls fill out the below form to be a part for this mega event.
+            Please fill out the below form to be a part of Pravah{"'"}24.
           </span>
         </div>
         <form onSubmit={handleSubmit}>
@@ -169,7 +171,7 @@ const SPONSORUSFORM = () => {
                 ))}
             </div>
           </div>
-          <div className="w-full flex justify-center">
+          <div className="w-full my-[20px] flex justify-center">
             <button
               type="submit"
               disabled={!isFormValid()}
@@ -188,6 +190,42 @@ const SPONSORUSFORM = () => {
             </button>
           </div>
         </form>
+        <div className="text-center">
+          <span className="font-semibold">For more information contact</span>
+        </div>
+        <div className="flex flex-wrap mt-[10px] justify-center gap-[20px]">
+          <div className="flex flex-wrap justify-evenly w-full text-center mt-[10px] gap-y-[30px]">
+            {sponsorFormContact.map((details, index) => (
+              <div
+                key={index}
+                className="p-[15px] border border-black rounded-[15px] w-[300px] bg-white"
+              >
+                <div>
+                  <span className="font-bold">{details.memberName}</span>
+                </div>
+                <div>
+                  <span>Sponsor Committee</span>
+                </div>
+                <div className="w-full flex justify-center gap-[30px] mt-[10px]  -mb-[35px]">
+                  <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
+                    <Image
+                      src={contact_icon}
+                      alt="contact_icon"
+                      className="w-[20px] aspect-square"
+                    />
+                  </div>
+                  <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
+                    <Image
+                      src={linkedin}
+                      alt="linkedin"
+                      className="w-[21px] aspect-square"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         {successMessage && (
           <div className="message-container">
             <div className="success-message">{successMessage}</div>

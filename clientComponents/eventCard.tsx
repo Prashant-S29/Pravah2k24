@@ -40,7 +40,12 @@ const MajorEventCard = ({
             {title}
           </h3>
         ) : (
-          <div className="absolute leading-tight  bottom-0 p-4 lg:p-6 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] ">
+          <div
+            className="absolute leading-tight  bottom-0 p-4  lg:p-6 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] "
+            onClick={() => {
+              setShowDetails(!showDetails);
+            }}
+          >
             <span className="font-bold items-center  sm:text-[32px] flex gap-2  text-[18px] text-white">
               {title}
               <Image
@@ -49,15 +54,11 @@ const MajorEventCard = ({
                 className={`flex lg:hidden font-medium text-[13px] w-[15px] sm:text-[14px] duration-200  leading-tight text-white overflow-hidden ${
                   showDetails ? "rotate-180 " : "rotate-0"
                 }`}
-                onClick={() => {
-                  setShowDetails(!showDetails);
-                }}
               />
             </span>
             <p
-              className={`font-medium pt-[5px] lg:pt-0 text-[13px] sm:text-[14px] leading-tight text-white overflow-hidden duration-200 ${
-                showDetails ? "h-[40px]" : "h-0"
-              } lg:h-fit`}
+              className={`font-medium pt-[5px] lg:pt-0 text-[13px] sm:text-[14px] leading-tight text-white overflow-scroll
+               duration-200 ${showDetails ? "h-[50px]" : "h-0"} lg:h-fit`}
             >
               {titleInfo}
             </p>

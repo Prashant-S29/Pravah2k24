@@ -111,6 +111,8 @@ import artexhi from "./priorEvents/artexhi.png"
 import prashant from "./webTeam/prashant.png"
 import chinmay from "./webTeam/chinmay.png"
 import gaurav from "./webTeam/gaurav.png"
+import jashan from "./webTeam/jashan.png"
+import vishal from "./webTeam/vishal.png"
 
 
 export {
@@ -149,5 +151,5 @@ export {
     aavegOne,aavegTwo,aavegThree,aavegFour,aavegFive,aavegSix,
     football,volleyball,basketball,chess,carrom,cricket,tabletennis,tugofwar,kabbadi,badminton,download,downarrow,
     cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer, startupexpo, artexhi, rapbazzi, linkedin,github,
-    nora, sunil, chinmay, gaurav, prashant
+    nora, sunil, chinmay, gaurav, prashant, jashan, vishal
 }

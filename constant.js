@@ -1,5 +1,5 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant, jashan, vishal
 } from "./assets/index"
 
 const previousCelebrities = [
@@ -29,12 +29,12 @@ const previousCelebrities = [
         celebrityYear: "",
     },
     {
-        celebrityName: "Sunil Sethi",
+        celebrityName: "Sunil Shetty",
         celebrityPhoto: sunil,
         celebrityYear: "",
     },
     {
-        celebrityName: "Jassi Gill",
+        celebrityName: "Jassie Gill",
         celebrityPhoto: jassigill,
         celebrityYear: "",
     },
@@ -76,19 +76,19 @@ const majorEvents = [
         id: 'eventOne',
         imgUrl: thirak,
         title: 'Thirak',
-        titleInfo: "Energetic dance competition following the theme 'Time Traverse'",
+        titleInfo: "Colleges collide in a rhythmic battleground, an electrifying dance competition that captivates with unparalleled talent.",
     },
     {
         id: 'eventTwo',
         imgUrl: dj,
         title: 'DJ Night',
-        titleInfo: "bla bla bla. give me description. it's not my responsibility",
+        titleInfo: "Dive into euphoria at our DJ Night—an unforgettable nocturnal symphony of beats and brilliance",
     },
     {
         id: 'eventThree',
         imgUrl: rawaz,
         title: 'Rawaz',
-        titleInfo: "RAWAZ is an adorable Fashion Competion where fashion and theme collides.",
+        titleInfo: "Rawaz: A runway transformed into a poetic symphony of avant-garde elegance.",
     },
     {
         id: 'eventFour',
@@ -100,7 +100,7 @@ const majorEvents = [
         id: 'eventFive',
         imgUrl: celebrityNight,
         title: 'Celebrity Night',
-        titleInfo: "bla bla bla. give me description. it's not my responsibility",
+        titleInfo: "Celebrity Night: A dazzling rendezvous with stardom, where glamour meets charisma in an electrifying spectacle.",
     },
 ];
 
@@ -126,7 +126,7 @@ const glimpsesCard = [
 
     },
     {
-        title: "Pravah Tralier",
+        title: "Pravah Trailer",
         displayState: false,
         thumbnail: trailer,
         youtubeLink: "https://youtu.be/DyuUx1obJ_M?si=uOPCONycuEP8fEnW",
@@ -229,28 +229,40 @@ const sponsorFormFields = [
         fieldPlaceholder: 'First Name'
     },
     {
+        fieldName: 'mobileNo',
+        fieldLabel: 'Mobile No',
+        fieldType: 'tel',
+        fieldPlaceholder: 'Mobile No'
+    },
+    {
+        fieldName: 'companyName',
+        fieldLabel: 'Company Name',
+        fieldType: 'text',
+        fieldPlaceholder: 'Company Name'
+    },
+    {
+        fieldName: 'companyAddress',
+        fieldLabel: 'Company Full Address',
+        fieldType: 'text',
+        fieldPlaceholder: 'Company Full Address'
+    },
+    {
+        fieldName: 'queries',
+        fieldLabel: 'Queries',
+        fieldType: 'textarea',
+        fieldPlaceholder: 'Describe your Queries'
+    },
+    {
         fieldName: 'lastName',
         fieldLabel: 'Last name',
         fieldType: 'text',
         fieldPlaceholder: 'Last Name'
     },
     {
-        fieldName: 'email',
-        fieldLabel: 'Email',
-        fieldType: 'email',
-        fieldPlaceholder: 'Email id'
-    },
-    {
-        fieldName: 'companyPost',
-        fieldLabel: 'Company Post',
+        fieldName: 'emailID',
+        fieldLabel: 'Email ID',
         fieldType: 'text',
-        fieldPlaceholder: 'Company Post'
-    },
-    {
-        fieldName: 'queries',
-        fieldLabel: 'Queries',
-        fieldType: 'textarea',
-        fieldPlaceholder: 'Queries'
+        fieldPlaceholder: 'Email ID'
     },
     {
         fieldName: 'designation',
@@ -259,30 +271,41 @@ const sponsorFormFields = [
         fieldPlaceholder: 'Designation'
     },
     {
-        fieldName: 'mobileNo',
-        fieldLabel: 'Mobile No',
-        fieldType: 'tel',
-        fieldPlaceholder: 'Mobile No'
-    },
-    {
-        fieldName: 'whereAreYouFrom',
-        fieldLabel: 'Where are you from',
+        fieldName: 'monetaryOption',
+        fieldLabel: 'Monetary / Non Monetary',
         fieldType: 'text',
-        fieldPlaceholder: 'Where are you from'
+        fieldPlaceholder: 'Monetary / Non Monetary'
     },
     {
-        fieldName: 'companyAddress',
-        fieldLabel: 'Company Address',
-        fieldType: 'text',
-        fieldPlaceholder: 'Company Address'
-    },
-    {
-        fieldName: 'whatYouGonnaSponsor',
-        fieldLabel: 'What you gonna Sponsor',
+        fieldName: 'queries',
+        fieldLabel: 'Queries',
         fieldType: 'textarea',
-        fieldPlaceholder: 'What you gonna Sponsor'
+        fieldPlaceholder: 'Describe your Queries'
     },
 ];
+
+const sponsorFormContact = [
+    {
+        memberName: "Devik Rathore",
+        memberPhoto: jassigill,
+        memberPhone: "8000342116"
+    },
+    {
+        memberName: "Avantika Bansal",
+        memberPhoto: jassigill,
+        memberPhone: "9571050287"
+    },
+    {
+        memberName: "Archi Rathore",
+        memberPhoto: jassigill,
+        memberPhone: "6375061517"
+    },
+    {
+        memberName: "Aman Joshi",
+        memberPhoto: jassigill,
+        memberPhone: "8764401145"
+    },
+]
 
 // eventCategory = non_tect, tech, cultural, literary, social, esports
 // eventType = Team, Individual
@@ -315,30 +338,6 @@ const eventCategoryDesc = [
 ]
 
 const testEventDetails = [
-    {
-        eventName: "Paintball Battleground",
-        eventPhotoLink: celebrityNight,
-        eventCategoryID: "non_tech",
-        eventType: "Team",
-        eventRegistrationFee: "200",
-        eventDate: "20th November, 2023",
-        eventTime: "06:00 PM - 08:00 PM",
-        eventVenue: "Football Ground",
-        eventCurrentParticipation: 10,
-        eventMaxParicipationLimit: 80,
-    },
-    {
-        eventName: "Paintball Battleground",
-        eventPhotoLink: celebrityNight,
-        eventCategoryID: "non_tech",
-        eventType: "Team",
-        eventRegistrationFee: "200",
-        eventDate: "20th November, 2023",
-        eventTime: "06:00 PM - 08:00 PM",
-        eventVenue: "Football Ground",
-        eventCurrentParticipation: 80,
-        eventMaxParicipationLimit: 80,
-    },
     {
         eventName: "Startup Expo",
         eventPhotoLink: dj,
@@ -458,7 +457,7 @@ const aavegEventDetails = [
         eventBrochureLink: "/",
     },
     {
-        eventName: "Kabbadi",
+        eventName: "Kabbaddi",
         eventPhotoLink: kabbadi,
         eventRegStatus: "upcoming",
         eventBrochureLink: "/",
@@ -485,15 +484,15 @@ const pravahWebTeam = [
     },
     {
         memberName: "@Jashan",
-        memberPhoto: prashant,
+        memberPhoto: jashan,
         memberIntroStack: "Frontend Developer",
         memberGithub: "https://github.com/jashan-bhayana",
         memberLinkedIn: "https://www.linkedin.com/in/jashan-bhayana-6b1348226/",
         memberPhone: "9680433825",
     },
     {
-        memberName: "@VishalKhandelwal",
-        memberPhoto: prashant,
+        memberName: "@VishalRawat",
+        memberPhoto: vishal,
         memberIntroStack: "Backend Developer",
         memberGithub: "https://github.com/Vicky2114",
         memberLinkedIn: "https://www.linkedin.com/in/vishal-rawat-13739823a",
@@ -589,7 +588,7 @@ const coreTeam = [
 
 
 export {
-
+    sponsorFormContact,
     previousCelebrities,
     socialContact,
     majorEvents,

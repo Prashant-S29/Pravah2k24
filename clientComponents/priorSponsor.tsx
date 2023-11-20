@@ -12,8 +12,8 @@ const priorSponsors = [sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9];
 const PRIORSPONSORS = () => {
   return (
     <>
-      <div className="whitespace-nowrap w-full  flex justify-center   ">
-        <Marquee autoFill={true} speed={50} direction="right">
+      <div className="whitespace-nowrap w-full overflow-x-scroll  flex justify-center ">
+        <Marquee autoFill={true} speed={50} direction="right" >
           {priorSponsors.map((sponsorImage, index) => (
             <div
               key={index}
