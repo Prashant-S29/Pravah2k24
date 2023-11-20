@@ -13,7 +13,7 @@ const eventName = [
   "Cultural Events",
   "Literary Events",
   "Social Events",
-  "e-Sports",
+  "E-Sports",
 ];
 
 const EVENTMARQUEE = () => {

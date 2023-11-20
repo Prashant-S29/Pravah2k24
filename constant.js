@@ -88,19 +88,19 @@ const majorEvents = [
         id: 'eventThree',
         imgUrl: rawaz,
         title: 'Rawaz',
-        titleInfo: "Rawaz: A runway transformed into a poetic symphony of avant-garde elegance.",
+        titleInfo: "A runway transformed into a poetic symphony of avant-garde elegance.",
     },
     {
         id: 'eventFour',
         imgUrl: sur,
         title: 'Sur',
-        titleInfo: "Amazing singing competition with best vocals of all times.",
+        titleInfo: "Ignite passion in a dazzling vocal symphony, as the stage transforms into an exhilarating arena for musical prowess.",
     },
     {
         id: 'eventFive',
         imgUrl: celebrityNight,
         title: 'Celebrity Night',
-        titleInfo: "Celebrity Night: A dazzling rendezvous with stardom, where glamour meets charisma in an electrifying spectacle.",
+        titleInfo: "A dazzling rendezvous with stardom, where glamour meets charisma in an electrifying spectacle.",
     },
 ];
 
@@ -457,7 +457,7 @@ const aavegEventDetails = [
         eventBrochureLink: "/",
     },
     {
-        eventName: "Kabbaddi",
+        eventName: "Kabaddi",
         eventPhotoLink: kabbadi,
         eventRegStatus: "upcoming",
         eventBrochureLink: "/",
