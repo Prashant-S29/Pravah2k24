@@ -16,7 +16,7 @@ const ABOUT_OBJECT = () => {
         <div>
           <div>
             <div>
-              <TYPINGTEXT title="About Pravah" />
+              <TYPINGTEXT title="Annual Techno Cultural Fest" />
               <ANIMATEDTEXT10 />
             </div>
             <div className="mx-[20px] lg:mx-[200px] text-[15px] sm:text-[16px]">

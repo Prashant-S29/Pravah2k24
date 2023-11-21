@@ -162,11 +162,11 @@ const ANIMATEDTEXT8 = () => {
 };
 
 const ANIMATEDTEXT10 = () => {
-  const placeholderText = [{ type: "heading1", text: "Annual Fest Pravah" }];
+  const placeholderText = [{ type: "heading1", text: "Pravah" }];
 
   return (
     <motion.div initial="hidden" whileInView="visible">
-      <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
+      <div className="text-center  text-[48px] md:text-[64px] lg:text-[72px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
         ))}
