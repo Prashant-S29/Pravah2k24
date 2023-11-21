@@ -188,32 +188,32 @@ const FOOTER = () => {
             <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
               <ul>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  {/* <Link href="/"> */}
                     <div>
                       <button>Website Help Desk</button>
                     </div>
-                  </Link>
+                  {/* </Link> */}
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  {/* <Link href="/"> */}
                     <div>
                       <button>Events Help Desk</button>
                     </div>
-                  </Link>
+                  {/* </Link> */}
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  {/* <Link href="/"> */}
                     <div>
                       <button>Accomodation Queries</button>
                     </div>
-                  </Link>
+                  {/* </Link> */}
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/">
+                  {/* <Link href="/"> */}
                     <div>
                       <button>Bug Report</button>
                     </div>
-                  </Link>
+                  {/* </Link> */}
                 </li>
               </ul>
             </div>
@@ -251,7 +251,7 @@ const FOOTER = () => {
                 </li>
                 <li className="mt-[5px]">
                   <Link
-                    href="https://www.facebook.com/pravah2016"
+                    href="https://www.facebook.com/pravah.skit?mibextid=rS40aB7S9Ucbxw6v"
                     target="blank"
                   >
                     <div>

@@ -5,10 +5,13 @@ import emailjs from "emailjs-com";
 
 import { sponsorFormContact, sponsorFormFields } from "@/constant";
 import Image from "next/image";
-import { contact_icon, instagram, jashan, jassigill, linkedin } from "@/assets";
+import { contact_icon, linkedin, mail, whatsapp } from "@/assets";
 import Link from "next/link";
 
 const SPONSORUSFORM = () => {
+  const [mailStatus, setMailStatus] = useState(false);
+  const [submitButtonText, setSubmitButtonText] = useState("Send");
+
   const [formData, setFormData] = useState(
     Object.fromEntries(sponsorFormFields.map((field) => [field.fieldName, ""]))
   );
@@ -21,7 +24,7 @@ const SPONSORUSFORM = () => {
     setErrorMessage("");
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -50,10 +53,14 @@ const SPONSORUSFORM = () => {
         "j8BVPFwHK0CqY3uvy"
       )
       .then((response) => {
+        // console.log(response);
         setSuccessMessage("Mail sent successfully!");
+        setMailStatus(false);
         resetForm();
+        setSubmitButtonText("Sending....");
         setTimeout(() => {
           hideMessage();
+          setSubmitButtonText("Send");
         }, 2000);
       })
       .catch((error) => {
@@ -66,9 +73,10 @@ const SPONSORUSFORM = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    setMailStatus(true);
+    setSubmitButtonText("sending....");
     if (isFormValid()) {
       sendEmail();
-      resetForm();
     } else {
       setErrorMessage("Please fill out all required fields.");
     }
@@ -83,92 +91,64 @@ const SPONSORUSFORM = () => {
           </span>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="w-full block md:flex justify-center my-[20px] gap-[30px]">
-            <div>
-              {sponsorFormFields
-                .slice(0, Math.ceil(sponsorFormFields.length / 2))
-                .map((formField, index) => (
-                  <div key={index} className="w-full md:w-[350px]">
-                    <div className="mt-[15px] mb-[5px]">
-                      <span className="font-bold text-[14px] md:text-[16px]">
-                        {formField.fieldLabel}
-                      </span>
-                    </div>
-                    {formField.fieldType === "textarea" ? (
-                      <textarea
-                        name={formField.fieldName}
-                        placeholder={formField.fieldPlaceholder}
-                        value={formData[formField.fieldName]}
-                        onChange={handleInputChange}
-                        required
-                        className="outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full  h-[100px] focus:bg-white  duration-200 "
-                        style={
-                          formData[formField.fieldName] === ""
-                            ? {}
-                            : { backgroundColor: "white" }
-                        }
-                      ></textarea>
-                    ) : (
-                      <input
-                        type="text"
-                        name={formField.fieldName}
-                        placeholder={formField.fieldPlaceholder}
-                        value={formData[formField.fieldName]}
-                        onChange={handleInputChange}
-                        required
-                        className="outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full focus:bg-white  duration-200 "
-                        style={
-                          formData[formField.fieldName] === ""
-                            ? {}
-                            : { backgroundColor: "white" }
-                        }
-                      />
-                    )}
+          <div className="w-full px-0 sm:px-[100px] md:px-[150px] lg:px-[100px] xl:px-[300px] block md:flex justify-center my-[20px] gap-[30px]">
+            <div className="flex flex-wrap justify-center gap-x-[20px]">
+              {sponsorFormFields.map((formField, index) => (
+                <div key={index} className="w-full md:w-[350px]">
+                  <div className="my-[5px]">
+                    <span className="font-bold text-[14px] md:text-[16px]">
+                      {formField.fieldLabel}
+                    </span>
                   </div>
-                ))}
-            </div>
-            <div>
-              {sponsorFormFields
-                .slice(Math.ceil(sponsorFormFields.length / 2))
-                .map((formField, index) => (
-                  <div key={index} className="w-full md:w-[350px]">
-                    <div className="mt-[15px] mb-[5px]">
-                      <span className="font-bold text-[14px] md:text-[16px]">
-                        {formField.fieldLabel}
-                      </span>
-                    </div>
-                    {formField.fieldType === "textarea" ? (
-                      <textarea
-                        name={formField.fieldName}
-                        placeholder={formField.fieldPlaceholder}
-                        value={formData[formField.fieldName]}
-                        onChange={handleInputChange}
-                        required
-                        className="outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full h-[100px] focus:bg-white  duration-200 "
-                        style={
-                          formData[formField.fieldName] === ""
-                            ? {}
-                            : { backgroundColor: "white" }
-                        }
-                      ></textarea>
-                    ) : (
-                      <input
-                        type="text"
-                        name={formField.fieldName}
-                        placeholder={formField.fieldPlaceholder}
-                        value={formData[formField.fieldName]}
-                        onChange={handleInputChange}
-                        required
-                        className="outline-none bg-transparent  border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full focus:bg-white  duration-200 "
-                        style={
-                          formData[formField.fieldName] === ""
-                            ? {}
-                            : { backgroundColor: "white" }
-                        }
-                      />
-                    )}
-                  </div>
-                ))}
+                  {formField.fieldType === "textarea" ? (
+                    <textarea
+                      name={formField.fieldName}
+                      placeholder={formField.fieldPlaceholder}
+                      value={formData[formField.fieldName]}
+                      onChange={handleInputChange}
+                      required
+                      disabled={mailStatus}
+                      // {mailStatus && dis}
+                      className={`outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full  h-[100px] focus:bg-white  duration-200
+                       `}
+                      style={
+                        formData[formField.fieldName] === ""
+                          ? {}
+                          : { backgroundColor: "white" }
+                      }
+                    ></textarea>
+                  ) : formField.fieldType === "dropdown" ? (
+                    <select
+                      name={formField.fieldName}
+                      onChange={handleInputChange}
+                      disabled={mailStatus}
+                      className={`outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] 
+                      rounded-[10px] placeholder:text-black w-full focus:bg-white  duration-200 cursor-none 
+                     `}
+                    >
+                      <option value="select">Select</option>
+                      <option value="Monetary">Monetary</option>
+                      <option value="Non Monetary">Non Monetary</option>
+                    </select>
+                  ) : (
+                    <input
+                      type={formField.fieldType}
+                      name={formField.fieldName}
+                      placeholder={formField.fieldPlaceholder}
+                      value={formData[formField.fieldName]}
+                      onChange={handleInputChange}
+                      required
+                      disabled={mailStatus}
+                      className={`outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full focus:bg-white  duration-200  `}
+                      style={
+                        formData[formField.fieldName] === ""
+                          ? {}
+                          : { backgroundColor: "white" }
+                      }
+                    />
+                  )}
+                </div>
+              ))}
             </div>
           </div>
           <div className="w-full my-[20px] flex justify-center">
@@ -186,7 +166,7 @@ const SPONSORUSFORM = () => {
                     }
               }
             >
-              Submit
+              {submitButtonText}
             </button>
           </div>
         </form>
@@ -203,23 +183,30 @@ const SPONSORUSFORM = () => {
                 <div>
                   <span className="font-bold">{details.memberName}</span>
                 </div>
-                <div>
-                  <span>Sponsor Committee</span>
+                <div className="leading-tight">
+                  <span className="text-[15px] ">{details.memberPhone}</span>
+                </div>
+                <div className="leading-tight">
+                  <span className="text-[14px] ">Sponsor Committee</span>
                 </div>
                 <div className="w-full flex justify-center gap-[30px] mt-[10px]  -mb-[35px]">
                   <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
-                    <Image
-                      src={contact_icon}
-                      alt="contact_icon"
-                      className="w-[20px] aspect-square"
-                    />
+                    <Link href={`https://wa.me/91${details.memberPhone}`} target="blank">
+                      <Image
+                        src={whatsapp}
+                        alt="whatsapp"
+                        className="w-[20px] aspect-square"
+                      />
+                    </Link>
                   </div>
                   <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
-                    <Image
-                      src={linkedin}
-                      alt="linkedin"
-                      className="w-[21px] aspect-square"
-                    />
+                    <Link href={details.memberLinkedIn} target="blank">
+                      <Image
+                        src={linkedin}
+                        alt="linkedin"
+                        className="w-[21px] aspect-square"
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -229,10 +229,22 @@ const sponsorFormFields = [
         fieldPlaceholder: 'First Name'
     },
     {
+        fieldName: 'lastName',
+        fieldLabel: 'Last name',
+        fieldType: 'text',
+        fieldPlaceholder: 'Last Name'
+    },
+    {
         fieldName: 'mobileNo',
         fieldLabel: 'Mobile No',
         fieldType: 'tel',
         fieldPlaceholder: 'Mobile No'
+    },
+    {
+        fieldName: 'email',
+        fieldLabel: 'Email ID',
+        fieldType: 'email',
+        fieldPlaceholder: 'Email ID'
     },
     {
         fieldName: 'companyName',
@@ -241,39 +253,21 @@ const sponsorFormFields = [
         fieldPlaceholder: 'Company Name'
     },
     {
-        fieldName: 'companyAddress',
-        fieldLabel: 'Company Full Address',
-        fieldType: 'text',
-        fieldPlaceholder: 'Company Full Address'
-    },
-    {
-        fieldName: 'queries',
-        fieldLabel: 'Queries',
-        fieldType: 'textarea',
-        fieldPlaceholder: 'Describe your Queries'
-    },
-    {
-        fieldName: 'lastName',
-        fieldLabel: 'Last name',
-        fieldType: 'text',
-        fieldPlaceholder: 'Last Name'
-    },
-    {
-        fieldName: 'emailID',
-        fieldLabel: 'Email ID',
-        fieldType: 'text',
-        fieldPlaceholder: 'Email ID'
-    },
-    {
         fieldName: 'designation',
         fieldLabel: 'Designation',
         fieldType: 'text',
         fieldPlaceholder: 'Designation'
     },
     {
-        fieldName: 'monetaryOption',
-        fieldLabel: 'Monetary / Non Monetary',
+        fieldName: 'companyFullAddress',
+        fieldLabel: 'Company Full Address',
         fieldType: 'text',
+        fieldPlaceholder: 'Company Full Address'
+    },
+    {
+        fieldName: 'Monetary/NonMonetary',
+        fieldLabel: 'Monetary / Non Monetary',
+        fieldType: 'dropdown',
         fieldPlaceholder: 'Monetary / Non Monetary'
     },
     {
@@ -282,32 +276,46 @@ const sponsorFormFields = [
         fieldType: 'textarea',
         fieldPlaceholder: 'Describe your Queries'
     },
+    {
+        fieldName: 'YourConsent',
+        fieldLabel: 'Your consent',
+        fieldType: 'textarea',
+        fieldPlaceholder: 'Describe here'
+    },
 ];
 
 const sponsorFormContact = [
     {
         memberName: "Devik Rathore",
         memberPhoto: jassigill,
-        memberPhone: "8000342116"
+        memberPhone: "8000342116",
+        memberLinkedIn: "https://www.linkedin.com/in/devik-rathore-a882a11b4"
+
     },
     {
         memberName: "Avantika Bansal",
         memberPhoto: jassigill,
-        memberPhone: "9571050287"
+        memberPhone: "9571050287",
+        memberLinkedIn: "https://www.linkedin.com/in/avantika-bansal-bb474924b"
+
     },
     {
         memberName: "Archi Rathore",
         memberPhoto: jassigill,
-        memberPhone: "6375061517"
+        memberPhone: "6375061517",
+        memberLinkedIn: "https://www.linkedin.com/in/aarchi-rathore-a703a7258"
+
     },
     {
         memberName: "Aman Joshi",
         memberPhoto: jassigill,
-        memberPhone: "8764401145"
+        memberPhone: "8764401145",
+        memberLinkedIn: "https://www.linkedin.com/in/aman-joshi-060340296"
+
     },
 ]
 
-// eventCategory = non_tect, tech, cultural, literary, social, esports
+// eventCategory = non_tech, tech, cultural, literary, social, esports
 // eventType = Team, Individual
 
 const eventCategoryDesc = [
@@ -338,6 +346,30 @@ const eventCategoryDesc = [
 ]
 
 const testEventDetails = [
+    {
+        eventName: "Paintball Arena",
+        eventPhotoLink: dj,
+        eventCategoryID: "non_tech",
+        eventType: "Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventCurrentParticipation: 50,
+        eventMaxParicipationLimit: 80,
+    },
+    {
+        eventName: "Paintball Arena",
+        eventPhotoLink: dj,
+        eventCategoryID: "non_tech",
+        eventType: "Team",
+        eventRegistrationFee: "200",
+        eventDate: "20th November, 2023",
+        eventTime: "06:00 PM - 08:00 PM",
+        eventVenue: "Football Ground",
+        eventCurrentParticipation: 80,
+        eventMaxParicipationLimit: 80,
+    },
     {
         eventName: "Startup Expo",
         eventPhotoLink: dj,
