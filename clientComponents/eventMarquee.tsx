@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
-import { cursor } from "@/assets/index";
+import { cursor } from "@/public";
 
 const eventName = [
   "Technical Events",

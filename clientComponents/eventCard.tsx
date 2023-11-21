@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "@/utils/motion";
-import { downarrow } from "@/assets";
+import { downarrow } from "@/public";
 
 const MajorEventCard = ({
   id,

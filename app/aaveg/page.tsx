@@ -7,7 +7,7 @@ import { aavegEventDetails } from "@/constant";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { download } from "@/assets";
+import { download } from "@/public";
 
 const AAVEG_OBJECT = () => {
   const [showText, setShowText] = useState(false);

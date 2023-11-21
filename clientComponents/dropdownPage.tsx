@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-import { dropdown } from "@/assets";
+import { dropdown } from "@/public";
 import NAVLINK from "./navlinks";
 
 const DROPDOWNPAGE = () => {

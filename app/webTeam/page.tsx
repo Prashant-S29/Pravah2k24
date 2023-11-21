@@ -7,7 +7,7 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
-import { github, linkedin, whatsapp } from "@/assets";
+import { github, linkedin, whatsapp } from "@/public";
 import { pravahWebTeam } from "@/constant";
 
 const WEBTEAM_CARD = ({ memberDetail, index }) => {

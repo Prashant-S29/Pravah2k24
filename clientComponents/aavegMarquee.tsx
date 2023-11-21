@@ -13,7 +13,7 @@ import {
   aavegFive,
   aavegSix,
   dj,
-} from "@/assets";
+} from "@/public";
 
 const aavegImages = [
   aavegOne,

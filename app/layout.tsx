@@ -5,7 +5,7 @@ import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/react";
 
-import { background } from "@/assets";
+import { background } from "@/public";
 
 import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";

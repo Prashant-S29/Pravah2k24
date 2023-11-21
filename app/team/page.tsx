@@ -13,7 +13,7 @@ import {
   ANIMATEDTEXT16,
   TYPINGTEXT,
 } from "@/clientComponents/motionDiv";
-import { contact_icon, instagram, linkedin } from "@/assets";
+import { contact_icon, instagram, linkedin } from "@/public";
 
 const TEAM_PRAVAH_CARD = ({ memberDetail, index }) => {
   return (

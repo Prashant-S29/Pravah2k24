@@ -12,7 +12,7 @@ import {
   facebook,
   whatsapp,
   youtube,
-} from "@/assets";
+} from "@/public";
 
 const FOOTER = () => {
   return (

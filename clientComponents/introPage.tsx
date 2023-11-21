@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { cursorTwo, naac_logo, skit_logo, swamiji_logo, text3 } from "@/assets";
+import { cursorTwo, naac_logo, skit_logo, swamiji_logo, text3 } from "@/public";
 import { TITLEIMAGE } from "./motionDiv";
 
 const INTROPAGE = () => {

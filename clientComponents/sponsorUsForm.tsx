@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 
 import { sponsorFormContact, sponsorFormFields } from "@/constant";
 import Image from "next/image";
-import { contact_icon, linkedin, mail, whatsapp } from "@/assets";
+import { contact_icon, linkedin, mail, whatsapp } from "@/public";
 import Link from "next/link";
 
 const SPONSORUSFORM = () => {

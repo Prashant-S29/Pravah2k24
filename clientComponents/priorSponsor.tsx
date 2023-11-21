@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
-import { sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9 } from "@/assets";
+import { sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9 } from "@/public";
 
 const priorSponsors = [sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9];
 

@@ -14,7 +14,7 @@ import {
   text8,
   text9,
   text10,
-} from "@/assets";
+} from "@/public";
 
 const TITLETEXTANIMATION = () => {
   const textImages = [
