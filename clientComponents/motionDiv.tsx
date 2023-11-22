@@ -13,6 +13,19 @@ import { TypingTextEffect } from "./customText";
 import IMAGEGALLERY from "./imageGallery";
 import TITLETEXTANIMATION from "./titleTextAnimation";
 
+
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/ywfiarxgl0tstjuouphd.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/dgfqsesshawe5omnvfmc.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/dthdv0msarutycuhjxib.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/g8hynmzbxo7enfnrnv8e.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/nxsbtdkb3fulim3el4r9.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/vqfvlklaujjcgvaiq109.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/ssthzscie5vb7oscyznw.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624759/pravah2k24/text/o6pchlfav9b6o6meyfcj.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624759/pravah2k24/text/xlbqchxl88s5celedf8g.png
+// https://res.cloudinary.com/denl2iizs/image/upload/v1700624759/pravah2k24/text/yu3j0xxd3lc8wbmdghyk.png
+
+
 const TITLEIMAGE = () => {
   return (
     <>

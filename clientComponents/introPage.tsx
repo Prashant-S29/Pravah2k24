@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { cursorTwo, naac_logo, skit_logo, swamiji_logo, text3 } from "@/public";
+import { cursorTwo, naac_logo, pravah2024, skit_logo, swamiji_logo, text3 } from "@/public";
 import { TITLEIMAGE } from "./motionDiv";
 
 const INTROPAGE = () => {
@@ -19,14 +19,14 @@ const INTROPAGE = () => {
       >
         <div className="text-center my-[20px]">
           <div className="flex justify-center">
-            <div className=" w-full sm:w-[400px]">
+            <div className=" w-full ">
               <div className=" flex justify-center items-center ">
                 <div>
                   <Link href="https://skit.ac.in" target="blank">
                     <Image
                       src={naac_logo}
                       alt="skitlogo"
-                      className="w-[70px] sm:w-[80px]"
+                      className="w-[70px] sm:w-[90px]"
                     />
                   </Link>
                 </div>
@@ -36,7 +36,7 @@ const INTROPAGE = () => {
                     <Image
                       src={skit_logo}
                       alt="skitlogo"
-                      className="w-[70px] sm:w-[80px]"
+                      className="w-[70px] sm:w-[90px]"
                     />
                   </Link>
                 </div>
@@ -46,15 +46,16 @@ const INTROPAGE = () => {
                     <Image
                       src={swamiji_logo}
                       alt="skitlogo"
-                      className="w-[55px] sm:w-[65px]"
+                      className="w-[55px] sm:w-[75px]"
                     />
                   </Link>
                 </div>
               </div>
-              <div className="leading-tight sm:leading-normal">
-                <span className="font-semibold text-[14px]   sm:text-[16px]">
-                  Swami Keshvanand Institute of Technology, Management and
-                  Gramothan, Jaipur
+              <div className="leading-tight  mx-[20px]">
+                <span className="font-semibold text-[16px]   sm:text-[18px]">
+                  Swami Keshvanand Institute of Technology,
+                  <br className="hidden sm:block" />
+                  Management and Gramothan, Jaipur
                 </span>
               </div>
             </div>
@@ -62,8 +63,15 @@ const INTROPAGE = () => {
           <div className="text-[13px] sm:text-[16px] my-[20px]">
             <span>welcomes you to</span>
           </div>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <TITLEIMAGE />
+          </div> */}
+          <div className="w-full flex justify-center px-[20px]">
+            <Image
+              src={pravah2024}
+              alt="skitlogo"
+              className="w-[450px]"
+            />
           </div>
           <div className="flex justify-center my-[50px]">
             <button

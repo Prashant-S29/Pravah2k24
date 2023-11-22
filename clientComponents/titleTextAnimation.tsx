@@ -3,18 +3,29 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-import {
-  text1,
-  text2,
-  text3,
-  text4,
-  text5,
-  text6,
-  text7,
-  text8,
-  text9,
-  text10,
-} from "@/public";
+// import {
+//   text1,
+//   text2,
+//   text3,
+//   text4,
+//   text5,
+//   text6,
+//   text7,
+//   text8,
+//   text9,
+//   text10,
+// } from "@/public";
+
+import text1 from "../public/text/text1.png"
+import text2 from "../public/text/text2.png"
+import text3 from "../public/text/text3.png"
+import text4 from "../public/text/text4.png"
+import text5 from "../public/text/text5.png"
+import text6 from "../public/text/text6.png"
+import text7 from "../public/text/text7.png"
+import text8 from "../public/text/text8.png"
+import text9 from "../public/text/text9.png"
+import text10 from "../public/text/text10.png"
 
 const TITLETEXTANIMATION = () => {
   const textImages = [

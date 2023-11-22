@@ -29,9 +29,9 @@ const NAVBAR = () => {
           <div className="hidden lg:block">
             <span>
               <NAVLINK
-                href="events"
-                navlink="EVENTS"
-                linkinfo="Variety of events from endless domains."
+                href="about"
+                navlink="ABOUT"
+                linkinfo="Know more about SKIT M&G, Jaipur."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
@@ -64,9 +64,9 @@ const NAVBAR = () => {
           <div className="hidden lg:block">
             <span>
               <NAVLINK
-                href="about"
-                navlink="ABOUT"
-                linkinfo="Know more about SKIT M&G, Jaipur."
+                href="events"
+                navlink="EVENTS"
+                linkinfo="Variety of events from endless domains."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
