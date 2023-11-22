@@ -57,7 +57,7 @@ const ImageGalleryItem = ({
           <div className="text-[20px] sm:text-[30px] pl-[20px]">
             <div
               className={`leading-none flex items-center  ${
-                index % 2 === 0 ? "animate-spin-one" : "animate-spin-two"
+                index % 2 === 0 ? "animate-spin-two" : "animate-spin-one"
               }`}
             >
               <span>&#9733;</span>

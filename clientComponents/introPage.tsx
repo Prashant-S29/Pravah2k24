@@ -26,7 +26,7 @@ const INTROPAGE = () => {
                     <Image
                       src={naac_logo}
                       alt="skitlogo"
-                      className="w-[70px] sm:w-[90px]"
+                      className="w-[70px] sm:w-[80px]"
                     />
                   </Link>
                 </div>
@@ -36,7 +36,7 @@ const INTROPAGE = () => {
                     <Image
                       src={skit_logo}
                       alt="skitlogo"
-                      className="w-[70px] sm:w-[90px]"
+                      className="w-[70px] sm:w-[80px]"
                     />
                   </Link>
                 </div>
@@ -46,13 +46,13 @@ const INTROPAGE = () => {
                     <Image
                       src={swamiji_logo}
                       alt="skitlogo"
-                      className="w-[55px] sm:w-[75px]"
+                      className="w-[55px] sm:w-[65px]"
                     />
                   </Link>
                 </div>
               </div>
               <div className="leading-tight  mx-[20px]">
-                <span className="font-semibold text-[16px]   sm:text-[18px]">
+                <span className="font-semibold text-[16px]   sm:text-[16px]">
                   Swami Keshvanand Institute of Technology,
                   <br className="hidden sm:block" />
                   Management and Gramothan, Jaipur
@@ -60,19 +60,19 @@ const INTROPAGE = () => {
               </div>
             </div>
           </div>
-          <div className="text-[13px] sm:text-[16px] my-[20px]">
+          <div className="text-[13px] sm:text-[14px] my-[20px]">
             <span>welcomes you to</span>
           </div>
-          {/* <div className="flex justify-center">
+          <div className="flex justify-center">
             <TITLEIMAGE />
-          </div> */}
-          <div className="w-full flex justify-center px-[20px]">
+          </div>
+          {/* <div className="w-full flex justify-center px-[20px]">
             <Image
               src={pravah2024}
               alt="skitlogo"
               className="w-[450px]"
             />
-          </div>
+          </div> */}
           <div className="flex justify-center my-[50px]">
             <button
               className="pr-[14px] py-[12px] pl-[24px] text-[13px] sm:text-[14px] rounded-full duration-200 shadow-[#787878] font-semibold bg-black
