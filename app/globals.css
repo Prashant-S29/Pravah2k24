@@ -10,10 +10,6 @@ html {
   user-select: none;
 }
 
-body {
-  cursor: none;
-}
-
 .navbg {
   background-image: url("../public/otherAssets/background.png");
 }
@@ -23,6 +19,7 @@ a,
 button,
 input,
 textarea {
+  /* cursor: url("../public/logo/cursor.png"); */
   cursor: none;
 }
 
