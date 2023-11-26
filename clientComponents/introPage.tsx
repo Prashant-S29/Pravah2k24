@@ -4,8 +4,17 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { cursorTwo, naac_logo, pravah2024, skit_logo, swamiji_logo, text3 } from "@/public";
+import {
+  cursorTwo,
+  naac_logo,
+  pravah2024,
+  skit_logo,
+  swamiji_logo,
+  text3,
+} from "@/public";
 import { TITLEIMAGE } from "./motionDiv";
+import INTROPAGE_CARD from "./introPageCard";
+import INTRO_MODEL from "./introPageModel";
 
 const INTROPAGE = () => {
   const [pageDisplay, setPageDisplay] = useState(false);
@@ -17,6 +26,9 @@ const INTROPAGE = () => {
         className="w-full min-h-screen fixed flex justify-center items-center z-50 top-0 left-0 bg-white duration-500 "
         style={pageDisplay ? { top: "-130%" } : { display: "top-[0px]" }}
       >
+        <div className="w-full min-h-screen fixed top-0 -z-[30]">
+          {/* <div className="w-[100px] rounded-full aspect-square bg-pink-300" ></div> */}
+        </div>
         <div className="text-center my-[20px]">
           <div className="flex justify-center">
             <div className=" w-full ">
@@ -63,17 +75,12 @@ const INTROPAGE = () => {
           <div className="text-[13px] sm:text-[14px] my-[20px]">
             <span>welcomes you to</span>
           </div>
-          <div className="flex justify-center">
-            <TITLEIMAGE />
+          <div className="flex justify-center w-full items-center   my-[20px] ">
+            <INTRO_MODEL />
+            {/* <TITLEIMAGE /> */}
+            {/* <INTROPAGE_CARD /> */}
           </div>
-          {/* <div className="w-full flex justify-center px-[20px]">
-            <Image
-              src={pravah2024}
-              alt="skitlogo"
-              className="w-[450px]"
-            />
-          </div> */}
-          <div className="flex justify-center my-[50px]">
+          <div className="flex justify-center -mt-[200px]">
             <button
               className="pr-[14px] py-[12px] pl-[24px] text-[13px] sm:text-[14px] rounded-full duration-200 shadow-[#787878] font-semibold bg-black
                text-white"

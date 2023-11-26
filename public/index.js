@@ -114,6 +114,12 @@ import gaurav from "./webTeam/gaurav.png"
 import jashan from "./webTeam/jashan.png"
 import vishal from "./webTeam/vishal.png"
 
+import imgOne from "./introPage/ONE.png"
+import imgTwo from "./introPage/TWO.png"
+import imgThree from "./introPage/THREE.png"
+import imgFour from "./introPage/FOUR.png"
+import imgFive from "./introPage/FIVE.png"
+import imgSix from "./introPage/SIX.png"
 
 export {
     background,
@@ -148,8 +154,9 @@ export {
     glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12,
     aftermovie, aaveg, logoreveal,
     help_icon, quicklink_icon, reachus_icon, contact_icon,
-    aavegOne,aavegTwo,aavegThree,aavegFour,aavegFive,aavegSix,
-    football,volleyball,basketball,chess,carrom,cricket,tabletennis,tugofwar,kabbadi,badminton,download,downarrow,
-    cosplay,bhagirath,masterchef,clashofband,paintball,kavyanjali,trailer, startupexpo, artexhi, rapbazzi, linkedin,github,
-    nora, sunil, chinmay, gaurav, prashant, jashan, vishal
+    aavegOne, aavegTwo, aavegThree, aavegFour, aavegFive, aavegSix,
+    football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow,
+    cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github,
+    nora, sunil, chinmay, gaurav, prashant, jashan, vishal,
+    imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix
 }
