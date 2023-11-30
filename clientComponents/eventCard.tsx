@@ -7,12 +7,14 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "@/utils/motion";
 import { downarrow } from "@/public";
+import Link from "next/link";
 
 const MajorEventCard = ({
   id,
   imgUrl,
   title,
   titleInfo,
+  eventLink,
   index,
   active,
   handleClick,
@@ -47,7 +49,7 @@ const MajorEventCard = ({
             }}
           >
             <span className="font-bold items-center  sm:text-[32px] flex gap-2  text-[18px] text-white">
-              {title}
+              <Link href={eventLink}>{title}</Link>
               <Image
                 src={downarrow}
                 alt="downarrow"

@@ -31,6 +31,9 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
               src={eventDetail.eventPhotoLink}
               alt="lol"
               className="object-cover object-top rounded-[17px] w-full sm:w-[300px] h-[200px]"
+              width={300}
+              height={200}
+              priority={true}
             />
           </div>
           <div className="text-center font-medium  w-full sm:w-[300px] h-[200px] bg-slate-200 flex justify-center items-center rounded-[17px]   py-[10px] ">

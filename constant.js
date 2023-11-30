@@ -1,5 +1,5 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant, jashan, vishal
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, nushrat, glimpse10, glimpse9
 } from "./public/index"
 
 const previousCelebrities = [
@@ -11,6 +11,11 @@ const previousCelebrities = [
     {
         celebrityName: "Shruti Sinha",
         celebrityPhoto: shruti,
+        celebrityYear: "",
+    },
+    {
+        celebrityName: "Nushrratt Bharuccha",
+        celebrityPhoto: nushrat,
         celebrityYear: "",
     },
     {
@@ -77,30 +82,35 @@ const majorEvents = [
         imgUrl: thirak,
         title: 'Thirak',
         titleInfo: "Colleges collide in a rhythmic battleground, an electrifying dance competition that captivates with unparalleled talent.",
+        eventLink: "/majorEvents/thirak"
     },
     {
         id: 'eventTwo',
         imgUrl: dj,
         title: 'DJ Night',
         titleInfo: "Dive into euphoria at our DJ Night—an unforgettable nocturnal symphony of beats and brilliance",
+        eventLink: "/majorEvents/dj_night"
     },
     {
         id: 'eventThree',
         imgUrl: rawaz,
         title: 'Rawaz',
         titleInfo: "A runway transformed into a poetic symphony of avant-garde elegance.",
+        eventLink: "/majorEvents/rawaj"
     },
     {
         id: 'eventFour',
         imgUrl: sur,
         title: 'Sur',
         titleInfo: "Ignite passion in a dazzling vocal symphony, as the stage transforms into an exhilarating arena for musical prowess.",
+        eventLink: "/majorEvents/sur"
     },
     {
         id: 'eventFive',
         imgUrl: celebrityNight,
         title: 'Celebrity Night',
         titleInfo: "A dazzling rendezvous with stardom, where glamour meets charisma in an electrifying spectacle.",
+        eventLink: "/majorEvents/celebrity_night"
     },
 ];
 
@@ -319,6 +329,10 @@ const sponsorFormContact = [
 // eventType = Team, Individual
 
 const eventCategoryDesc = [
+    {
+        eventCategoryName: "New / Flagship Events",
+        eventCategoryID: "whatsNew"
+    },
     {
         eventCategoryName: "Non Technical Events",
         eventCategoryID: "non_tech"
@@ -616,8 +630,109 @@ const coreTeam = [
     },
 ]
 
+const majorEventCards = [
 
-
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: nora
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: dj
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: sur
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: volleyball
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: masterchef
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: masterchef
+    },
+    {
+        cardType: "video",
+        cardID: "thirak",
+        cardItemLink: "https://res.cloudinary.com/demo/video/upload/ski_jump.mp4"
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: dj
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: sur
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: volleyball
+    },
+    {
+        cardType: "video",
+        cardID: "thirak",
+        cardItemLink: "https://res.cloudinary.com/demo/video/upload/ship.mp4"
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: masterchef
+    },
+    {
+        cardType: "video",
+        cardID: "thirak",
+        cardItemLink: "https://res.cloudinary.com/demo/video/upload/dog.mp4"
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: dj
+    },
+    {
+        cardType: "video",
+        cardID: "thirak",
+        cardItemLink: "https://res.cloudinary.com/demo/video/upload/docs/sunglasses.mp4"
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: sur
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: glimpse10
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: glimpse9
+    },
+    {
+        cardType: "image",
+        cardID: "thirak",
+        cardItemLink: volleyball
+    },
+    {
+        cardType: "video",
+        cardID: "thirak",
+        cardItemLink: "https://res.cloudinary.com/demo/video/upload/ship.mp4"
+    },
+]
 
 export {
     sponsorFormContact,
@@ -633,8 +748,7 @@ export {
     aavegEventDetails,
     pravahWebTeam,
     centralWorkingCommittee,
-    coreTeam
+    coreTeam,
+    majorEventCards
 }
-
-
 

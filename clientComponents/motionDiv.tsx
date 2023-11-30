@@ -366,7 +366,7 @@ const STATS = () => {
         <div className="p-[15px] md:p-[20px] w-[120px] md:w-[150px] bg-black text-white rounded-[20px]">
           <div>
             <span className="font-black text-[18px] md:text-[22px] lg:text-[28px]">
-              7500+
+              6500+
             </span>
           </div>
           <div>

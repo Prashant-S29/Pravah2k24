@@ -30,17 +30,17 @@ const INTROPAGE_CARD = () => {
   }, [currentIndex, pause, cardImages.length]);
   return (
     <>
-      <div className="mt-[20px] h-[150px] md:h-[250px] flex justify-center items-center ">
+      <div className="mt-[20px] h-[250px] sm:h-[300px] flex justify-center items-center ">
         {cardImages.map((image, index) => (
           <div
             key={index}
-            className="absolute w-[350px] rouned-[20px]   "
+            className="absolute w-[300px]  sm:w-[350px] rouned-[20px]   "
             // onClick={showImage}
           >
             <Image
               src={image}
               alt={index.toString()}
-              className={`w-[350px]  object-cover duration-200 object-top rounded-[20px] ${
+              className={`w-[300px] sm:w-[350px]  object-cover duration-200 object-top rounded-[20px] ${
                 index === currentIndex ? "" : "opacity-0 -rotate-12  "
               }`}
             />

@@ -4,31 +4,24 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import {
-  cursorTwo,
-  naac_logo,
-  pravah2024,
-  skit_logo,
-  swamiji_logo,
-  text3,
-} from "@/public";
+import { cursorTwo, naac_logo, skit_logo, swamiji_logo } from "@/public";
 import { TITLEIMAGE } from "./motionDiv";
 import INTROPAGE_CARD from "./introPageCard";
-import INTRO_MODEL from "./introPageModel";
 
 const INTROPAGE = () => {
   const [pageDisplay, setPageDisplay] = useState(false);
   const [buttonArrow, setButtonArrow] = useState(false);
 
+  const squareNumber: number[] = [];
+  for (let i = 0; i < 1000; i++) {
+    squareNumber.push(i);
+  }
   return (
     <>
       <div
-        className="w-full min-h-screen fixed flex justify-center items-center z-50 top-0 left-0 bg-white duration-500 "
-        style={pageDisplay ? { top: "-130%" } : { display: "top-[0px]" }}
+        className="w-full min-h-screen fixed  flex justify-center items-center z-50 top-0 left-0 bg-white duration-500 "
+        style={pageDisplay ? { top: "-130%" } : { top: "0px" }}
       >
-        <div className="w-full min-h-screen fixed top-0 -z-[30]">
-          {/* <div className="w-[100px] rounded-full aspect-square bg-pink-300" ></div> */}
-        </div>
         <div className="text-center my-[20px]">
           <div className="flex justify-center">
             <div className=" w-full ">
@@ -64,7 +57,7 @@ const INTROPAGE = () => {
                 </div>
               </div>
               <div className="leading-tight  mx-[20px]">
-                <span className="font-semibold text-[16px]   sm:text-[16px]">
+                <span className="font-semibold text-[14px]   sm:text-[16px]">
                   Swami Keshvanand Institute of Technology,
                   <br className="hidden sm:block" />
                   Management and Gramothan, Jaipur
@@ -75,12 +68,11 @@ const INTROPAGE = () => {
           <div className="text-[13px] sm:text-[14px] my-[20px]">
             <span>welcomes you to</span>
           </div>
-          <div className="flex justify-center w-full items-center   my-[20px] ">
-            <INTRO_MODEL />
+          <div className="flex justify-center items-center  w-full my-[30px] px-[20px] ">
             {/* <TITLEIMAGE /> */}
-            {/* <INTROPAGE_CARD /> */}
+            <INTROPAGE_CARD />
           </div>
-          <div className="flex justify-center -mt-[200px]">
+          <div className="flex justify-center mt-[30px]">
             <button
               className="pr-[14px] py-[12px] pl-[24px] text-[13px] sm:text-[14px] rounded-full duration-200 shadow-[#787878] font-semibold bg-black
                text-white"

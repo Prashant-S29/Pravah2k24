@@ -18,6 +18,9 @@ import download from "./logo/download.png"
 import downarrow from "./logo/downarrow.png"
 import github from "./logo/github.png"
 import linkedin from "./logo/linkedin.png"
+import pause from "./logo/pause.png"
+import resume from "./logo/resume.png"
+import crown from "./logo/crown.png"
 
 import help_icon from "./logo/help_icon.png"
 import contact_icon from "./logo/contact_icon.png"
@@ -38,6 +41,7 @@ import gajendra from "./priorCelebrity/gajendra.webp"
 import naushad from "./priorCelebrity/naushad.webp"
 import nora from "./priorCelebrity/nora.png"
 import sunil from "./priorCelebrity/sunil.png"
+import nushrat from "./priorCelebrity/nushrat.png"
 
 import sp1 from "./priorSponsors/sp1.png"
 import sp2 from "./priorSponsors/sp2.png"
@@ -158,5 +162,5 @@ export {
     football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow,
     cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github,
     nora, sunil, chinmay, gaurav, prashant, jashan, vishal,
-    imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix
+    imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat
 }
