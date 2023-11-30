@@ -5,7 +5,8 @@ const LATEST_EVENTS = () => {
   return (
     <>
       <div>
-        <EVENTLIST />
+        {/* <EVENTLIST /> */}
+        <span>HELLO</span>
       </div>
     </>
   );
