@@ -10,16 +10,17 @@ import AnimatedCursor from "react-animated-cursor";
 import { motion } from "framer-motion";
 
 const CURSOR = () => {
-
   return (
     <>
-      <Cursor
-        isGelly={true}
-        gellyAnimationAmount={80}
-        cursorSize={20}
-        sizeAnimationDuration={1}
-        textAnimationDuration={1}
-      />
+      <div>
+        <Cursor
+          isGelly={true}
+          gellyAnimationAmount={80}
+          cursorSize={20}
+          sizeAnimationDuration={1}
+          textAnimationDuration={1}
+        />{" "}
+      </div>
       {/* <AnimatedCursor
         innerSize={8}
         outerSize={8}

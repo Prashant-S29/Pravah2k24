@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const eventSchema = new Schema(
     {
         eventName: String,
-        eventPhotoLink: String,
+        eventPhoto: String,
         eventCategoryID: String,
         eventType: String,
         eventRegistrationFee: String,
@@ -12,7 +12,7 @@ const eventSchema = new Schema(
         eventDate: String,
         eventTime: String,
         eventVenue: String,
-        eventBrochureLink: String,
+        eventBrochure: String,
         eventMaxParicipationLimit: String,
         eventCurrentParticipation: String,
     }, {
@@ -20,6 +20,6 @@ const eventSchema = new Schema(
 }
 )
 
-const pravah2024_events = mongoose.models.pravah2024_events || mongoose.model("pravah2024_events", eventSchema)
+const pravah24_DB = mongoose.models.pravah24_DB || mongoose.model("pravah24_DB", eventSchema)
 
-export default pravah2024_events
+export default pravah24_DB

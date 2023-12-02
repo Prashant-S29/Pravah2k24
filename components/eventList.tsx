@@ -23,7 +23,7 @@ const EVENTLIST = async () => {
 
   return (
     <>
-      <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
+      <div className=" px-[20px] min-h-[80vh] flex gap-5 flex-wrap justify-center my-[20px]">
         {Object.keys(events["pravahEventsList"]).length === 0 ? (
           <div>
             <span>Seem like there are no events</span>

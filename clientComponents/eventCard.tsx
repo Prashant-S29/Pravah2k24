@@ -13,7 +13,6 @@ const MajorEventCard = ({
   id,
   imgUrl,
   title,
-  titleInfo,
   eventLink,
   index,
   active,
@@ -26,11 +25,9 @@ const MajorEventCard = ({
       <motion.div
         variants={fadeIn("right", "spring", index * 0.2, 0.75)}
         className={`relative ${
-          active === id ? "lg:-flex-[3.5] flex-[10]" : "lg-flex-[0.5] flex-[2]"
-        }  items-center justify-center min-w-[150px] h-[500px] transition-[flex] duration-[0.7s] ease-out flex cursor-none`}
+          active === id ? "lg:-flex-[3.5] flex-[10]  cursor-default" : "lg-flex-[0.5] flex-[2] cursor-pointer  "
+        }  items-center justify-center min-w-[150px] h-[500px] transition-[flex] duration-[0.7s] ease-out flex `}
         onClick={() => handleClick(id)}
-        data-cursor-text="view"
-        data-cursor-size="70px"
       >
         <Image
           src={imgUrl}
@@ -49,21 +46,16 @@ const MajorEventCard = ({
             }}
           >
             <span className="font-bold items-center  sm:text-[32px] flex gap-2  text-[18px] text-white">
-              <Link href={eventLink}>{title}</Link>
-              <Image
-                src={downarrow}
-                alt="downarrow"
-                className={`flex lg:hidden font-medium text-[13px] w-[15px] sm:text-[14px] duration-200  leading-tight text-white overflow-hidden ${
-                  showDetails ? "rotate-180 " : "rotate-0"
-                }`}
-              />
+              {title}
             </span>
-            <p
-              className={`font-medium pt-[5px] lg:pt-0 text-[13px] sm:text-[14px] leading-tight text-white overflow-scroll
-               duration-200 ${showDetails ? "h-[50px]" : "h-0"} lg:h-fit`}
-            >
-              {titleInfo}
-            </p>
+            <Link href={eventLink}>
+              <p
+                className={`font-medium pt-[5px] lg:pt-0 text-[13px] sm:text-[14px] leading-tight text-white overflow-scroll
+               duration-200 lg:h-fit`}
+              >
+                Explore More &rarr;
+              </p>
+            </Link>
           </div>
         )}
       </motion.div>

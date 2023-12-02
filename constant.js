@@ -1,5 +1,7 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, nushrat, glimpse10, glimpse9
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, nushrat, glimpse10, glimpse9,
+    sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17,
+    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19
 } from "./public/index"
 
 const previousCelebrities = [
@@ -81,35 +83,30 @@ const majorEvents = [
         id: 'eventOne',
         imgUrl: thirak,
         title: 'Thirak',
-        titleInfo: "Colleges collide in a rhythmic battleground, an electrifying dance competition that captivates with unparalleled talent.",
         eventLink: "/majorEvents/thirak"
     },
     {
         id: 'eventTwo',
         imgUrl: dj,
         title: 'DJ Night',
-        titleInfo: "Dive into euphoria at our DJ Night—an unforgettable nocturnal symphony of beats and brilliance",
         eventLink: "/majorEvents/dj_night"
     },
     {
         id: 'eventThree',
         imgUrl: rawaz,
         title: 'Rawaz',
-        titleInfo: "A runway transformed into a poetic symphony of avant-garde elegance.",
-        eventLink: "/majorEvents/rawaj"
+        eventLink: "/majorEvents/rawaz"
     },
     {
         id: 'eventFour',
         imgUrl: sur,
         title: 'Sur',
-        titleInfo: "Ignite passion in a dazzling vocal symphony, as the stage transforms into an exhilarating arena for musical prowess.",
         eventLink: "/majorEvents/sur"
     },
     {
         id: 'eventFive',
         imgUrl: celebrityNight,
         title: 'Celebrity Night',
-        titleInfo: "A dazzling rendezvous with stardom, where glamour meets charisma in an electrifying spectacle.",
         eventLink: "/majorEvents/celebrity_night"
     },
 ];
@@ -734,6 +731,47 @@ const majorEventCards = [
     },
 ]
 
+const surImages = [
+    sur7,
+    sur12,
+    sur9,
+    sur14,
+    sur1,
+    sur16,
+    sur6,
+    sur3,
+    sur4,
+    sur17,
+    sur11,
+    sur5,
+    sur13,
+    sur2,
+    sur8,
+    sur15,
+    sur10
+]
+
+const rawazImages = [
+    rawaz1,
+    rawaz6,
+    rawaz11,
+    rawaz15,
+    rawaz3,
+    rawaz18,
+    rawaz9,
+    rawaz12,
+    rawaz2,
+    rawaz5,
+    rawaz4,
+    rawaz8,
+    rawaz17,
+    rawaz14,
+    rawaz13,
+    rawaz16,
+    rawaz19
+
+]
+
 export {
     sponsorFormContact,
     previousCelebrities,
@@ -749,6 +787,9 @@ export {
     pravahWebTeam,
     centralWorkingCommittee,
     coreTeam,
-    majorEventCards
+    majorEventCards,
+    surImages,
+    rawazImages
+    
 }
 

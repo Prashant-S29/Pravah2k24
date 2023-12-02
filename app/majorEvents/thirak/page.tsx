@@ -1,24 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { basketball, dj, masterchef, rawaz, sur, thirak } from "@/public";
+import { thirak } from "@/public";
 import { majorEventCards } from "@/constant";
 
 const THIRAK = () => {
-  const images = [
-    dj,
-    sur,
-    rawaz,
-    basketball,
-    thirak,
-    masterchef,
-    dj,
-    sur,
-    rawaz,
-    basketball,
-    thirak,
-    masterchef,
-  ];
 
   return (
     <>
@@ -57,7 +42,7 @@ const THIRAK = () => {
                       className="bg-white  text-black text-[13px] sm:text-[14px] rounded-full font-bold 
                     px-[10px] sm:px-[15px] py-[6px] sm:py-[8px] "
                     >
-                      Explore More
+                      Register
                     </button>
                   </div>
                   <div>

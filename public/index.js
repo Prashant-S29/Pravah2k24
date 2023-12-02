@@ -33,6 +33,44 @@ import sur from "./majorEvents/sur.webp"
 import dj from "./majorEvents/dj.webp"
 import celebrityNight from "./majorEvents/celebrityNight.webp"
 
+import sur1 from "./majorEvents/sur/1.webp"
+import sur2 from "./majorEvents/sur/2.webp"
+import sur3 from "./majorEvents/sur/3.webp"
+import sur4 from "./majorEvents/sur/4.webp"
+import sur5 from "./majorEvents/sur/5.webp"
+import sur6 from "./majorEvents/sur/6.webp"
+import sur7 from "./majorEvents/sur/7.webp"
+import sur8 from "./majorEvents/sur/8.webp"
+import sur9 from "./majorEvents/sur/9.webp"
+import sur10 from "./majorEvents/sur/10.webp"
+import sur11 from "./majorEvents/sur/11.webp"
+import sur12 from "./majorEvents/sur/12.webp"
+import sur13 from "./majorEvents/sur/13.webp"
+import sur14 from "./majorEvents/sur/14.webp"
+import sur15 from "./majorEvents/sur/15.webp"
+import sur16 from "./majorEvents/sur/16.webp"
+import sur17 from "./majorEvents/sur/17.webp"
+
+import rawaz1 from "./majorEvents/rawaz/1.webp";
+import rawaz2 from "./majorEvents/rawaz/2.webp";
+import rawaz3 from "./majorEvents/rawaz/3.webp";
+import rawaz4 from "./majorEvents/rawaz/4.webp";
+import rawaz5 from "./majorEvents/rawaz/5.webp";
+import rawaz6 from "./majorEvents/rawaz/6.webp";
+import rawaz8 from "./majorEvents/rawaz/8.webp";
+import rawaz9 from "./majorEvents/rawaz/9.webp";
+import rawaz11 from "./majorEvents/rawaz/11.webp";
+import rawaz12 from "./majorEvents/rawaz/12.webp";
+import rawaz13 from "./majorEvents/rawaz/13.webp";
+import rawaz14 from "./majorEvents/rawaz/14.webp";
+import rawaz15 from "./majorEvents/rawaz/15.webp";
+import rawaz16 from "./majorEvents/rawaz/16.webp";
+import rawaz17 from "./majorEvents/rawaz/17.webp";
+import rawaz18 from "./majorEvents/rawaz/18.webp";
+import rawaz19 from "./majorEvents/rawaz/19.webp";
+
+
+
 import kumarvishwas from "./priorCelebrity/kumarvishwas.webp"
 import jassigill from "./priorCelebrity/jassigill.webp"
 import shruti from "./priorCelebrity/shruti.jpg"
@@ -162,5 +200,7 @@ export {
     football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow,
     cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github,
     nora, sunil, chinmay, gaurav, prashant, jashan, vishal,
-    imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat
+    imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat,
+    sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17,
+    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19
 }

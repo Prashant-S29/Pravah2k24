@@ -28,7 +28,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
         >
           <div>
             <Image
-              src={eventDetail.eventPhotoLink}
+              src={eventDetail.eventPhoto}
               alt="lol"
               className="object-cover object-top rounded-[17px] w-full sm:w-[300px] h-[200px]"
               width={300}
@@ -60,7 +60,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
               </div>
               {/* <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" /> */}
               <div className="w-full mt-[10px]">
-                <Link href="/">
+                <Link href={eventDetail.eventBrochure } target="blank">
                   <button className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
                     Download Brochure
                   </button>
