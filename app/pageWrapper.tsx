@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import INTROPAGE from "@/clientComponents/introPage";
 import CURSOR from "@/clientComponents/cursor";
-import AnimatedCursor from "react-animated-cursor";
 
 const PAGEWRAPPER = ({ children }) => {
   const [videoEnded, setVideoEnded] = useState(false);
