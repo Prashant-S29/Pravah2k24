@@ -60,7 +60,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
               </div>
               {/* <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" /> */}
               <div className="w-full mt-[10px]">
-                <Link href={eventDetail.eventBrochure } target="blank">
+                <Link href={eventDetail.eventBrochure} target="blank">
                   <button className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
                     Download Brochure
                   </button>
@@ -86,8 +86,8 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
         ) : (
           <div>
             <span className="text-[14px] sm:text-[16px] font-medium">
-              Slots Left: {remainingSlots}
-              /80
+              Slots Left: {remainingSlots}/
+              {eventDetail.eventMaxParicipationLimit}
             </span>
           </div>
         )}
