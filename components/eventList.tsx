@@ -2,21 +2,23 @@ import EVENT_REG_CARDS from "@/clientComponents/eventRegCard";
 import Link from "next/link";
 import React from "react";
 
-const getEventDetails = async () => {
-  try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}`, {
-      cache: "no-cache",
-    });
-    const allEventList = res.json();
+// const getEventDetails = async () => {
+//   try {
+//     const res = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}`, {
+//       cache: "no-cache",
+//     });
+//     const allEventList = res.json();
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch events");
-    }
-    return allEventList;
-  } catch (error) {
-    console.log("Error:  ", error);
-  }
-};
+//     if (!res.ok) {
+//       throw new Error("Failed to fetch events");
+//     }
+//     return allEventList;
+//   } catch (error) {
+//     console.log("Error:  ", error);
+//   }
+// };
+
+import { getEventDetails } from "@/fetchData";
 
 const EVENTLIST = async () => {
   const events = await getEventDetails();
