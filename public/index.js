@@ -21,6 +21,7 @@ import linkedin from "./logo/linkedin.png"
 import pause from "./logo/pause.png"
 import resume from "./logo/resume.png"
 import crown from "./logo/crown.png"
+import loader from "./logo/loader.png"
 
 import help_icon from "./logo/help_icon.png"
 import contact_icon from "./logo/contact_icon.png"
@@ -202,5 +203,5 @@ export {
     nora, sunil, chinmay, gaurav, prashant, jashan, vishal,
     imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat,
     sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17,
-    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19
+    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, loader
 }
