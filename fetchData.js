@@ -1,7 +1,7 @@
 export const getEventDetails = async () => {
     try {
         const res = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}`, {
-            cache: "no-cache",
+            cache: "no-store",
         });
         const allEventList = res.json();
 
