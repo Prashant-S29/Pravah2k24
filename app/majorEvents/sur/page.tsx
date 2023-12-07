@@ -30,20 +30,20 @@ const SUR = () => {
                   <div className="w-[50px] sm:w-[150px] h-[1px] bg-white rounded-full" />
                   <div>
                     <span className="text-white text-[13px] sm:text-[16px] font-bold uppercase">
-                      Dance Competition
+                      Singing Competition
                     </span>
                   </div>
                   <div className="w-[50px] sm:w-[150px]  h-[1px] bg-white rounded-full" />
                 </div>
                 <div className="flex justify-center items-center gap-[20px] mt-[15px] ">
-                  <div>
+                  {/* <div>
                     <button
                       className="bg-white  text-black text-[13px] sm:text-[14px] rounded-full font-bold 
                     px-[10px] sm:px-[15px] py-[6px] sm:py-[8px] "
                     >
                       Register
                     </button>
-                  </div>
+                  </div> */}
                   <div>
                     <button
                       className="bg-white text-black text-[13px] sm:text-[14px] rounded-full font-bold 

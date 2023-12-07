@@ -70,7 +70,22 @@ import rawaz17 from "./majorEvents/rawaz/17.webp";
 import rawaz18 from "./majorEvents/rawaz/18.webp";
 import rawaz19 from "./majorEvents/rawaz/19.webp";
 
-
+import thirak1 from "./majorEvents/thirak/1.webp";
+import thirak2 from "./majorEvents/thirak/2.webp";
+import thirak4 from "./majorEvents/thirak/4.webp";
+import thirak5 from "./majorEvents/thirak/5.webp";
+import thirak6 from "./majorEvents/thirak/6.webp";
+import thirak8 from "./majorEvents/thirak/8.webp";
+import thirak9 from "./majorEvents/thirak/9.webp";
+import thirak11 from "./majorEvents/thirak/11.webp";
+import thirak12 from "./majorEvents/thirak/12.webp";
+import thirak13 from "./majorEvents/thirak/13.webp";
+import thirak14 from "./majorEvents/thirak/14.webp";
+import thirak15 from "./majorEvents/thirak/15.webp";
+import thirak16 from "./majorEvents/thirak/16.webp";
+import thirak17 from "./majorEvents/thirak/17.webp";
+import thirak18 from "./majorEvents/thirak/18.webp";
+import thirak19 from "./majorEvents/thirak/19.webp";
 
 import kumarvishwas from "./priorCelebrity/kumarvishwas.webp"
 import jassigill from "./priorCelebrity/jassigill.webp"
@@ -164,44 +179,4 @@ import imgFour from "./introPage/FOUR.png"
 import imgFive from "./introPage/FIVE.png"
 import imgSix from "./introPage/SIX.png"
 
-export {
-    background,
-    navbarText,
-    dropdown,
-    cursor,
-    cursorTwo,
-    instagram,
-    twitter,
-    whatsapp,
-    facebook,
-    person,
-    mail,
-    youtube,
-    pravah2024,
-    rawaz,
-    thirak,
-    sur,
-    dj,
-    celebrityNight,
-    kumarvishwas,
-    jassigill,
-    sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10,
-    skit_logo,
-    naac_logo,
-    swamiji_logo,
-    gajendra,
-    shruti,
-    ravindra,
-    text1, text2, text3, text4, text5, text6, text7, text8, text9, text10,
-    naushad,
-    glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12,
-    aftermovie, aaveg, logoreveal,
-    help_icon, quicklink_icon, reachus_icon, contact_icon,
-    aavegOne, aavegTwo, aavegThree, aavegFour, aavegFive, aavegSix,
-    football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow,
-    cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github,
-    nora, sunil, chinmay, gaurav, prashant, jashan, vishal,
-    imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat,
-    sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17,
-    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, loader
-}
+export { background, navbarText, dropdown, cursor, cursorTwo, instagram, twitter, whatsapp, facebook, person, mail, youtube, pravah2024, rawaz, thirak, sur, dj, celebrityNight, kumarvishwas, jassigill, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, skit_logo, naac_logo, swamiji_logo, gajendra, shruti, ravindra, text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, naushad, glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12, aftermovie, aaveg, logoreveal, help_icon, quicklink_icon, reachus_icon, contact_icon, aavegOne, aavegTwo, aavegThree, aavegFour, aavegFive, aavegSix, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat, sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17, rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, loader, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, thirak15, thirak16, thirak17, thirak18, thirak19 };

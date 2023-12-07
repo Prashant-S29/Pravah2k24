@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { celebrityNight } from "@/public";
-import { majorEventCards } from "@/constant";
+import { rawazImages } from "@/constant";
 
 const CELEBRITY_NIGHT = () => {
   return (
@@ -13,7 +13,7 @@ const CELEBRITY_NIGHT = () => {
               <Image
                 src={celebrityNight}
                 alt="celebrityNight"
-                className="w-full h-full object-cover   rounded-[30px] opacity-70"
+                className="w-full h-full object-cover object-top   rounded-[30px] opacity-70"
               />
               <div className="absolute text-center">
                 <div>
@@ -30,20 +30,20 @@ const CELEBRITY_NIGHT = () => {
                   <div className="w-[50px] sm:w-[150px] h-[1px] bg-white rounded-full" />
                   <div>
                     <span className="text-white text-[13px] sm:text-[16px] font-bold uppercase">
-                      Night with special celebrity
+                      Dance Party Music
                     </span>
                   </div>
                   <div className="w-[50px] sm:w-[150px]  h-[1px] bg-white rounded-full" />
                 </div>
                 <div className="flex justify-center items-center gap-[20px] mt-[15px] ">
-                  <div>
+                  {/* <div>
                     <button
                       className="bg-white  text-black text-[13px] sm:text-[14px] rounded-full font-bold 
                     px-[10px] sm:px-[15px] py-[6px] sm:py-[8px] "
                     >
-                      Explore More
+                      Register
                     </button>
-                  </div>
+                  </div> */}
                   <div>
                     <button
                       className="bg-white text-black text-[13px] sm:text-[14px] rounded-full font-bold 
@@ -57,45 +57,26 @@ const CELEBRITY_NIGHT = () => {
             </div>
           </div>
           <div className=" p-[10px] sm:p-[20px] columns-2  sm:columns-3  lg:columns-4 space-y-[10px] sm:space-y-[20px]  ">
-            {majorEventCards.map((eventCardDetail, index) => (
+            {/* {rawazImages.map((image, index) => (
               <div
                 key={index}
                 className="break-inside-avoid  flex-wrap  bg-pink-300 rounded-[15px] lg:rounded-[20px]  h-fit"
               >
-                {eventCardDetail.cardType === "image" ? (
-                  <div
-                    key={index}
-                    className=" rounded-[15px] lg:rounded-[20px] h-fit "
-                  >
-                    <Image
-                      src={eventCardDetail.cardItemLink}
-                      alt="images"
-                      width={500}
-                      height={500}
-                      loading="lazy"
-                      className="object-cover rounded-[15px] lg:rounded-[20px] "
-                    />
-                  </div>
-                ) : (
-                  <div
-                    key={index}
-                    className=" h-fit rounded-[15px] lg:rounded-[20px]"
-                  >
-                    <video
-                      playsInline
-                      autoPlay
-                      muted
-                      className=" object-cover rounded-[15px] lg:rounded-[20px]"
-                    >
-                      <source
-                        src={eventCardDetail.cardItemLink.toString()}
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                )}
+                <div
+                  key={index}
+                  className=" rounded-[15px] lg:rounded-[20px] h-fit "
+                >
+                  <Image
+                    src={image}
+                    alt="images"
+                    width={500}
+                    height={500}
+                    loading="lazy"
+                    className="object-cover rounded-[15px] lg:rounded-[20px] "
+                  />
+                </div>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

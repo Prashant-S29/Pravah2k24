@@ -1,3 +1,5 @@
+"use client";
+
 import EVENTLIST from "@/components/eventList";
 import React from "react";
 

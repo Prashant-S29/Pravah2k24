@@ -1,7 +1,7 @@
 import {
     jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, nushrat, glimpse10, glimpse9,
     sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17,
-    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19
+    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, thirak15, thirak16, thirak17, thirak18, thirak19
 } from "./public/index"
 
 const previousCelebrities = [
@@ -772,6 +772,10 @@ const rawazImages = [
 
 ]
 
+const thirakImages = [
+    thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, thirak15, thirak16, thirak17, thirak18, thirak19
+]
+
 export {
     sponsorFormContact,
     previousCelebrities,
@@ -789,7 +793,8 @@ export {
     coreTeam,
     majorEventCards,
     surImages,
-    rawazImages
-    
+    rawazImages,
+    thirakImages
+
 }
 
