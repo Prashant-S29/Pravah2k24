@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { dj } from "@/public";
+import { dj, celebrityNight } from "@/public";
 import { celebrity_night } from "@/constant";
 
 const CELEBRITY_NIGHT = () => {
@@ -11,8 +11,8 @@ const CELEBRITY_NIGHT = () => {
           <div className="w-full flex justify-center px-[10px] sm:px-[20px] ">
             <div className="w-full h-[300px] flex justify-center items-center bg-black rounded-[30px] ">
               <Image
-                src={dj}
-                alt="dj"
+                src={celebrityNight}
+                alt="celebrityNight"
                 className="w-full h-full object-cover object-top   rounded-[30px] opacity-70"
               />
               <div className="absolute text-center">
