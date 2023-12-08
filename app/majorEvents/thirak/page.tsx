@@ -35,7 +35,7 @@ const THIRAK = () => {
                   </div>
                   <div className="w-[50px] sm:w-[150px]  h-[1px] bg-white rounded-full" />
                 </div>
-                <div className="flex justify-center items-center gap-[20px] mt-[15px] ">
+                {/* <div className="flex justify-center items-center gap-[20px] mt-[15px] ">
                   <div>
                     <button
                       className="bg-white  text-black text-[13px] sm:text-[14px] rounded-full font-bold 
@@ -52,7 +52,7 @@ const THIRAK = () => {
                       Browse All
                     </button>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
