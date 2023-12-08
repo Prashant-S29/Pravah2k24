@@ -24,7 +24,7 @@ const DROPDOWNPAGE = () => {
         <div>
           <span onClick={() => setDropDown(!dropDown)}>
             <NAVLINK
-              href="/"
+              href=""
               navlink="HOME"
               linkinfo="Pravah'24 Home."
               linkColor="#A2F1F4"
