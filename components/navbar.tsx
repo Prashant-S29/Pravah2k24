@@ -87,10 +87,7 @@ const NAVBAR = () => {
           </div>
         </div>
       </motion.div>
-      <div className="block lg:hidden">
-        <DROPDOWNPAGE />
-      </div>
-      {/* <DROPDOWNPAGE /> */}
+      <DROPDOWNPAGE />
     </>
   );
 };
