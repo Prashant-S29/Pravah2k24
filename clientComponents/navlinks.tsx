@@ -10,7 +10,14 @@ const NAVLINK = ({
   linkColor,
   linkInfoColor,
   lineColor,
-}: any) => {
+}: {
+  href: string;
+  navlink: string;
+  linkinfo: string;
+  linkColor: string;
+  linkInfoColor: string;
+  lineColor: string;
+}) => {
   const [lineLength, setLineLength] = useState(false);
 
   return (
@@ -24,7 +31,9 @@ const NAVLINK = ({
           <div className="flex" style={{ color: linkColor }}>
             <div>
               <div>
-                <span className="font-bold text-[14px] sm:text-[16px] leading-tight md:leading-normal ">{navlink}</span>
+                <span className="font-bold text-[14px] sm:text-[16px] leading-tight md:leading-normal ">
+                  {navlink}
+                </span>
               </div>
               <div
                 className={`h-[1.5px] rounded-full bg-[${lineColor}] duration-150`}
@@ -40,7 +49,7 @@ const NAVLINK = ({
             className="leading-tight w-full md:w-[160px] "
             style={{ color: linkInfoColor }}
           >
-            <span className="text-[12px] md:text-[14px]" >{linkinfo}</span>
+            <span className="text-[12px] md:text-[14px]">{linkinfo}</span>
           </div>
         </Link>
       </div>
