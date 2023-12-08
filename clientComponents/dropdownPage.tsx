@@ -14,11 +14,12 @@ const DROPDOWNPAGE = () => {
   return (
     <>
       <div
-        className="fixed right-[20px] -top-[20px]   duration-200 z-30"
+        className="fixed right-[20px]   duration-200 z-30"
         onClick={handleDropDown}
-        style={dropDown === false ? { top: "10px" } : { top: "30px" }}
+        // style={dropDown === false ? { top: "10px" } : { top: "30px" }}
       >
-        <Image src={dropdown} alt="dropdown" className="w-[30px] md:w-[40px]" />
+        {/* <Image src={dropdown} alt="dropdown" className="w-[30px] md:w-[40px]" /> */}
+        <span>HELLO WORLD</span>
       </div>
       <div
         className="fixed w-full h-fit bg-[#405656]  z-20 duration-200 p-[20px] rounded-b-[20px] shadow-lg  "

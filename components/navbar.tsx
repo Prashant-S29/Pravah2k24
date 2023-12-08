@@ -7,12 +7,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 
-import { naac_logo, navbarText, pravah2024, skit_logo } from "@/public";
+import { navbarText } from "@/public";
 import DROPDOWNPAGE from "@/clientComponents/dropdownPage";
 
 import NAVLINK from "@/clientComponents/navlinks";
 import LATESTNEWS from "@/components/latestNews";
-import INTROPAGE from "@/clientComponents/introPage";
 
 const NAVBAR = () => {
   return (
