@@ -94,7 +94,8 @@ const NAVBAR = () => {
       {/* dropdown */}
       <div
         className="fixed right-[20px]   duration-200 z-30"
-        onClick={handleDropDown}
+        // onClick={handleDropDown}
+        onMouseEnter={handleDropDown}
         style={dropDown === false ? { top: "10px" } : { top: "30px" }}
       >
         <Image src={dropdown} alt="dropdown" className="w-[30px] md:w-[40px]" />
