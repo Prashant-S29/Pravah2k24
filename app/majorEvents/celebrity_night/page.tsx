@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { celebrityNight } from "@/public";
-import { rawazImages } from "@/constant";
+import { dj } from "@/public";
+import { celebrity_night } from "@/constant";
 
 const CELEBRITY_NIGHT = () => {
   return (
@@ -11,8 +11,8 @@ const CELEBRITY_NIGHT = () => {
           <div className="w-full flex justify-center px-[10px] sm:px-[20px] ">
             <div className="w-full h-[300px] flex justify-center items-center bg-black rounded-[30px] ">
               <Image
-                src={celebrityNight}
-                alt="celebrityNight"
+                src={dj}
+                alt="dj"
                 className="w-full h-full object-cover object-top   rounded-[30px] opacity-70"
               />
               <div className="absolute text-center">
@@ -30,7 +30,7 @@ const CELEBRITY_NIGHT = () => {
                   <div className="w-[50px] sm:w-[150px] h-[1px] bg-white rounded-full" />
                   <div>
                     <span className="text-white text-[13px] sm:text-[16px] font-bold uppercase">
-                      Dance Party Music
+                      Party with Celebrities
                     </span>
                   </div>
                   <div className="w-[50px] sm:w-[150px]  h-[1px] bg-white rounded-full" />
@@ -57,7 +57,7 @@ const CELEBRITY_NIGHT = () => {
             </div>
           </div>
           <div className=" p-[10px] sm:p-[20px] columns-2  sm:columns-3  lg:columns-4 space-y-[10px] sm:space-y-[20px]  ">
-            {/* {rawazImages.map((image, index) => (
+            {celebrity_night.map((image, index) => (
               <div
                 key={index}
                 className="break-inside-avoid  flex-wrap  bg-pink-300 rounded-[15px] lg:rounded-[20px]  h-fit"
@@ -76,7 +76,7 @@ const CELEBRITY_NIGHT = () => {
                   />
                 </div>
               </div>
-            ))} */}
+            ))}
           </div>
         </div>
       </div>

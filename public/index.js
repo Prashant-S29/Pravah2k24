@@ -87,6 +87,32 @@ import thirak17 from "./majorEvents/thirak/17.webp";
 import thirak18 from "./majorEvents/thirak/18.webp";
 import thirak19 from "./majorEvents/thirak/19.webp";
 
+import dj1 from "./majorEvents/dj/1.webp";
+import dj2 from "./majorEvents/dj/2.webp";
+import dj3 from "./majorEvents/dj/3.webp";
+import dj4 from "./majorEvents/dj/4.webp";
+import dj5 from "./majorEvents/dj/5.webp";
+import dj6 from "./majorEvents/dj/6.webp";
+import dj7 from "./majorEvents/dj/7.webp";
+import dj8 from "./majorEvents/dj/8.webp";
+import dj9 from "./majorEvents/dj/9.webp";
+import dj10 from "./majorEvents/dj/10.webp";
+import dj11 from "./majorEvents/dj/11.webp";
+
+import cn1 from "./majorEvents/cn/1.webp";
+import cn2 from "./majorEvents/cn/2.webp";
+import cn3 from "./majorEvents/cn/3.webp";
+import cn4 from "./majorEvents/cn/4.webp";
+import cn5 from "./majorEvents/cn/5.webp";
+import cn6 from "./majorEvents/cn/6.webp";
+import cn7 from "./majorEvents/cn/7.webp";
+import cn8 from "./majorEvents/cn/8.webp";
+import cn9 from "./majorEvents/cn/9.webp";
+import cn10 from "./majorEvents/cn/10.webp";
+import cn11 from "./majorEvents/cn/11.webp";
+import cn12 from "./majorEvents/cn/12.webp";
+
+
 import kumarvishwas from "./priorCelebrity/kumarvishwas.webp"
 import jassigill from "./priorCelebrity/jassigill.webp"
 import shruti from "./priorCelebrity/shruti.jpg"
@@ -165,6 +191,7 @@ import bhagirath from "./priorEvents/bhagirath.png"
 import startupexpo from "./priorEvents/satrtupexpo.png"
 import rapbazzi from "./priorEvents/rapbazzi.png"
 import artexhi from "./priorEvents/artexhi.png"
+import marhala from "./priorEvents/marhala.png"
 
 import prashant from "./webTeam/prashant.png"
 import chinmay from "./webTeam/chinmay.png"
@@ -179,4 +206,6 @@ import imgFour from "./introPage/FOUR.png"
 import imgFive from "./introPage/FIVE.png"
 import imgSix from "./introPage/SIX.png"
 
-export { background, navbarText, dropdown, cursor, cursorTwo, instagram, twitter, whatsapp, facebook, person, mail, youtube, pravah2024, rawaz, thirak, sur, dj, celebrityNight, kumarvishwas, jassigill, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, skit_logo, naac_logo, swamiji_logo, gajendra, shruti, ravindra, text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, naushad, glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12, aftermovie, aaveg, logoreveal, help_icon, quicklink_icon, reachus_icon, contact_icon, aavegOne, aavegTwo, aavegThree, aavegFour, aavegFive, aavegSix, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat, sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17, rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, loader, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, thirak15, thirak16, thirak17, thirak18, thirak19 };
+export {
+    background, navbarText, dropdown, cursor, cursorTwo, instagram, twitter, whatsapp, facebook, person, mail, youtube, pravah2024, rawaz, thirak, sur, dj, celebrityNight, kumarvishwas, jassigill, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, skit_logo, naac_logo, swamiji_logo, gajendra, shruti, ravindra, text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, naushad, glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12, aftermovie, aaveg, logoreveal, help_icon, quicklink_icon, reachus_icon, contact_icon, aavegOne, aavegTwo, aavegThree, aavegFour, aavegFive, aavegSix, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat, sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17, rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, loader, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4, cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12,marhala
+};

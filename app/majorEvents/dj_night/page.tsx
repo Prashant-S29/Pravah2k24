@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { dj } from "@/public";
-import { rawazImages } from "@/constant";
+import { djImages } from "@/constant";
 
 const DJ_NIGHT = () => {
   return (
@@ -57,7 +57,7 @@ const DJ_NIGHT = () => {
             </div>
           </div>
           <div className=" p-[10px] sm:p-[20px] columns-2  sm:columns-3  lg:columns-4 space-y-[10px] sm:space-y-[20px]  ">
-            {/* {rawazImages.map((image, index) => (
+            {djImages.map((image, index) => (
               <div
                 key={index}
                 className="break-inside-avoid  flex-wrap  bg-pink-300 rounded-[15px] lg:rounded-[20px]  h-fit"
@@ -76,7 +76,7 @@ const DJ_NIGHT = () => {
                   />
                 </div>
               </div>
-            ))} */}
+            ))}
           </div>
         </div>
       </div>
