@@ -94,8 +94,7 @@ const NAVBAR = () => {
       {/* dropdown */}
       <div
         className="fixed right-[20px]   duration-200 z-30"
-        // onClick={handleDropDown}
-        onMouseEnter={handleDropDown}
+        onClick={handleDropDown}
         style={dropDown === false ? { top: "10px" } : { top: "30px" }}
       >
         <Image src={dropdown} alt="dropdown" className="w-[30px] md:w-[40px]" />
@@ -108,7 +107,7 @@ const NAVBAR = () => {
         <div>
           <span onClick={handleDropDown}>
             <NAVLINK
-              href="/"
+              href=""
               navlink="HOME"
               linkinfo="Pravah'24 Home."
               linkColor="#A2F1F4"
