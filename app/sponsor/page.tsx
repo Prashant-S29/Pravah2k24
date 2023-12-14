@@ -5,6 +5,8 @@ import Link from "next/link";
 
 import TRANSITION_WRAPPER from "../../clientComponents/transition";
 import PRIORSPONSORS from "@/clientComponents/priorSponsor";
+import Image from "next/image";
+import { download } from "@/public";
 
 const SPONSOR_OBJECT = () => {
   return (
@@ -33,12 +35,24 @@ const SPONSOR_OBJECT = () => {
           </div>
           <div className="px-[20px] mt-[20px]">
             <span className="font-medium">
-              Want to be a valuable sponsor of Pravah{"'"}24?<br/>
+              Want to be a valuable sponsor of Pravah{"'"}24?
+              <br />
               <Link href={"/sponsor/sponsorForm"}>
                 <span className="underline font-bold">Click Here</span>
               </Link>{" "}
               to fill the sponsorship form.
             </span>
+          </div>
+          <div className="mt-[20px] flex justify-center">
+            <Link href="https://res.cloudinary.com/denl2iizs/image/upload/v1702559789/djvgjufpbdgghhmtxdih.pdf" target="_blank">
+              <button
+                className="px-[15px] py-[8px] rounded-[10px] bg-black text-white text-[14px] font-semibold
+             flex justify-center items-center gap-2"
+              >
+                Pravah Booklet
+                <Image src={download} alt="donwload" className="w-[20px]" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
