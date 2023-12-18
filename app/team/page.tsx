@@ -44,11 +44,6 @@ const TEAM_PRAVAH_CARD = ({ memberDetail, index }) => {
             {memberDetail.memberDepartment}
           </span>
         </div>
-        {/* <div>
-                  <span className="text-[14px] sm:text-[16px]">
-                    {memberDetail.memberPhone}
-                  </span>
-                </div> */}
         <div className="w-full flex justify-center gap-[30px] mt-[10px]  -mb-[38px]">
           <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
             <Image

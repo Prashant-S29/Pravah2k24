@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 
 import { sponsorFormContact, sponsorFormFields } from "@/constant";
 import Image from "next/image";
-import { contact_icon, linkedin, mail, whatsapp } from "@/public";
+import { linkedin, whatsapp } from "@/public";
 import Link from "next/link";
 
 const SPONSORUSFORM = () => {
@@ -45,15 +45,12 @@ const SPONSORUSFORM = () => {
   };
 
   const sendEmail = () => {
+    const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID || "";
+    const templateID = process.env.NEXT_PUBLIC_MAIL_TEMPLATE_ID || "";
+    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID || "";
     emailjs
-      .send(
-        "service_kewqlt8",
-        "template_4ysfsv1",
-        formData,
-        "j8BVPFwHK0CqY3uvy"
-      )
+      .send(mailID, templateID, formData, userID)
       .then((response) => {
-        // console.log(response);
         setSuccessMessage("Mail sent successfully!");
         setMailStatus(false);
         resetForm();
@@ -67,6 +64,7 @@ const SPONSORUSFORM = () => {
         setErrorMessage("An error occurred while sending the mail.");
         setTimeout(() => {
           hideMessage();
+          setMailStatus(false);
         }, 2000);
       });
   };
@@ -191,7 +189,10 @@ const SPONSORUSFORM = () => {
                 </div>
                 <div className="w-full flex justify-center gap-[30px] mt-[10px]  -mb-[35px]">
                   <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
-                    <Link href={`https://wa.me/91${details.memberPhone}`} target="blank">
+                    <Link
+                      href={`https://wa.me/91${details.memberPhone}`}
+                      target="blank"
+                    >
                       <Image
                         src={whatsapp}
                         alt="whatsapp"

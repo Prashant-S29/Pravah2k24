@@ -11,7 +11,7 @@ import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
 import PAGEWRAPPER from "./pageWrapper";
 
-const montserrat = Montserrat({ subsets: ["cyrillic"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pravah | SKIT Jaipur",

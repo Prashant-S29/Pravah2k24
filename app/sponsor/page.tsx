@@ -49,7 +49,7 @@ const SPONSOR_OBJECT = () => {
                 className="px-[15px] py-[8px] rounded-[10px] bg-black text-white text-[14px] font-semibold
              flex justify-center items-center gap-2"
               >
-                Pravah Booklet
+                Sponsorship Proposal
                 <Image src={download} alt="donwload" className="w-[20px]" />
               </button>
             </Link>

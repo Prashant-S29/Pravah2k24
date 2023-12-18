@@ -48,11 +48,7 @@ const HOME_OBJECT = () => {
               </div>
             </div>
           </div>
-          <div
-            className="flex justify-center wx-full "
-            data-cursor-exclusion
-            data-cursor-size="80px"
-          >
+          <div className="flex justify-center w-full">
             <MARQUEEMOTION />
           </div>
         </div>

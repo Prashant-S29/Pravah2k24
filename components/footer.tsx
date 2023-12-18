@@ -188,32 +188,32 @@ const FOOTER = () => {
             <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
               <ul>
                 <li className="mt-[5px]">
-                  {/* <Link href="/"> */}
+                  <Link href="/websiteHelpDesk">
                     <div>
                       <button>Website Help Desk</button>
                     </div>
-                  {/* </Link> */}
+                  </Link>
                 </li>
                 <li className="mt-[5px]">
-                  {/* <Link href="/"> */}
+                  <Link href="/eventHelpDesk">
                     <div>
                       <button>Events Help Desk</button>
                     </div>
-                  {/* </Link> */}
+                  </Link>
                 </li>
                 <li className="mt-[5px]">
-                  {/* <Link href="/"> */}
+                  <Link href="/accomodation">
                     <div>
                       <button>Accomodation Queries</button>
                     </div>
-                  {/* </Link> */}
+                  </Link>
                 </li>
                 <li className="mt-[5px]">
-                  {/* <Link href="/"> */}
+                  <Link href="/bugReport">
                     <div>
                       <button>Bug Report</button>
                     </div>
-                  {/* </Link> */}
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -300,22 +300,6 @@ const FOOTER = () => {
                 </button>
               </div>
             </div>
-            {/* <div className="mt-[10px] text-[13px] sm:text-[14px] text-[#b8b8b8]">
-              <div>
-                <div>
-                  <span className="font-bold">Mr. Abhishek Gupta</span>
-                </div>
-                <div>
-                  <span>Associate Prof. EE Department</span>
-                </div>
-                <div>
-                  <span>Chief Coordinator, Pravah{"'"}24</span>
-                </div>
-              </div>
-              <div className="mt-[5px]">
-                <span>9462326804</span>
-              </div>
-            </div> */}
             <div className="text-[#b8b8b8]">
               <div className=" mt-[5px]">
                 <div>
@@ -323,8 +307,12 @@ const FOOTER = () => {
                     Chief Coordinator, Pravah{"'"}24
                   </span>
                 </div>
-                <div className="leading-none text-[13px] sm:text-[15px]">
-                  <span>Mr. Abhishek Gupta - 9462326804</span>
+                <div className="leading-none text-[13px] sm:text-[14px]">
+                  <Link href="https://wa.me/9462326804" target="_blank">
+                    <button>
+                      Mr. Abhishek Gupta - <u>9462326804</u>
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div className="mt-[10px]">
@@ -333,8 +321,12 @@ const FOOTER = () => {
                     Website Head
                   </span>
                 </div>
-                <div className="leading-none text-[13px] sm:text-[15px]">
-                  <span>Chinmay Bhatnagar - 7976227748</span>
+                <div className="leading-none text-[13px] sm:text-[14px]">
+                  <Link href="https://wa.me/7976227748" target="_blank">
+                    <button>
+                      Chinmay Bhatnagar - <u>7976227748</u>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
