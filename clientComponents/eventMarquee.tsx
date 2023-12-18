@@ -22,7 +22,7 @@ const EVENTMARQUEE = () => {
       <div className="whitespace-nowrap w-full  flex justify-center  ">
         <Marquee autoFill={true} speed={70}>
           {eventName.map((event, index) => (
-            <Link key={index} href={`/${event}`}>
+            <Link key={index} href={`/events`}>
               <div className="flex gap-5 items-center mr-[20px]">
                 <div className="text-[22px] md:text-[28px]  font-bold tracking-tighter py-[20px]  ">
                   <span>{event}</span>
