@@ -129,7 +129,7 @@ const glimpsesCard = [
         title: "Pravah 2024 Logo Reveal",
         displayState: true,
         thumbnail: logoreveal,
-        youtubeLink: "",
+        youtubeLink: "https://www.youtube.com/embed/DyuUx1obJ_M?si=UnMiaFsxONMeLVp0",
 
     },
     {
@@ -304,10 +304,10 @@ const sponsorFormContact = [
 
     },
     {
-        memberName: "Avantika Bansal",
+        memberName: "Ayush Agarwal",
         memberPhoto: jassigill,
-        memberPhone: "9571050287",
-        memberLinkedIn: "https://www.linkedin.com/in/avantika-bansal-bb474924b"
+        memberPhone: "9828074219",
+        memberLinkedIn: "https://www.linkedin.com/in/ayush-agarwal-038863254"
 
     },
     {

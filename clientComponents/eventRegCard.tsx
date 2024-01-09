@@ -84,12 +84,12 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
             </span>
           </div>
         ) : (
-          <div>
-            <span className="text-[14px] sm:text-[16px] font-medium">
-              Slots Left: {remainingSlots}/
-              {eventDetail.eventMaxParicipationLimit}
-            </span>
-          </div>
+          ""
+          //   <span className="text-[14px] sm:text-[16px] font-medium">
+          //     Slots Left: {remainingSlots}/
+          //     {eventDetail.eventMaxParicipationLimit}
+          //   </span>
+          // </div>
         )}
       </div>
       <div className="text-center duration-300 "></div>

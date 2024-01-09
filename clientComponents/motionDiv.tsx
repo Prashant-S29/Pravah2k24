@@ -13,7 +13,6 @@ import { TypingTextEffect } from "./customText";
 import IMAGEGALLERY from "./imageGallery";
 import TITLETEXTANIMATION from "./titleTextAnimation";
 
-
 // https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/ywfiarxgl0tstjuouphd.png
 // https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/dgfqsesshawe5omnvfmc.png
 // https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/dthdv0msarutycuhjxib.png
@@ -24,7 +23,6 @@ import TITLETEXTANIMATION from "./titleTextAnimation";
 // https://res.cloudinary.com/denl2iizs/image/upload/v1700624759/pravah2k24/text/o6pchlfav9b6o6meyfcj.png
 // https://res.cloudinary.com/denl2iizs/image/upload/v1700624759/pravah2k24/text/xlbqchxl88s5celedf8g.png
 // https://res.cloudinary.com/denl2iizs/image/upload/v1700624759/pravah2k24/text/yu3j0xxd3lc8wbmdghyk.png
-
 
 const TITLEIMAGE = () => {
   return (
@@ -76,7 +74,21 @@ const ANIMATEDTEXT1 = () => {
 
   return (
     <motion.div initial="hidden" whileInView="visible">
-      <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
+      <div className="text-center  text-[32px] md:text-[38px] lg:text-[48px] font-black leading-tight">
+        {placeholderText.map((item, index) => (
+          <AnimatedCharacters {...item} key={index} />
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+const ANIMATEDTEXT17 = () => {
+  const placeholderText = [{ type: "heading1", text: "Logo Reveal." }];
+
+  return (
+    <motion.div initial="hidden" whileInView="visible">
+      <div className="text-center  text-[32px] md:text-[38px] lg:text-[48px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
         ))}
@@ -189,7 +201,9 @@ const ANIMATEDTEXT10 = () => {
 };
 
 const ANIMATEDTEXT13 = () => {
-  const placeholderText = [{ type: "heading1", text: "Central Working Committee" }];
+  const placeholderText = [
+    { type: "heading1", text: "Central Working Committee" },
+  ];
 
   return (
     <motion.div initial="hidden" whileInView="visible">
@@ -299,22 +313,49 @@ const TYPINGTEXT = ({ title }: any) => {
 
 const VIDEOBLOCK = () => {
   return (
-    <motion.div
-    >
-      <div className="flex justify-center px-[20px]">
-        <div className="w-full md:w-[550px] h-[200px] md:h-[300px]">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/DyuUx1obJ_M?si=UnMiaFsxONMeLVp0"
-            title="YouTube video player"
-            // frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="rounded-[20px]"
-            data-cursor-text="Play"
-            data-cursor-size="80px"
-          ></iframe>
+    <motion.div>
+      <div className=" lg:flex justify-evenly  px-[20px]">
+        <div className="w-full flex justify-center">
+          <div>
+            <div>
+              <ANIMATEDTEXT1 />
+            </div>
+            <div className="w-full flex justify-center md:w-[450px] h-[200px] md:h-[260px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/DyuUx1obJ_M?si=UnMiaFsxONMeLVp0"
+                title="YouTube video player"
+                // frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="rounded-[20px]"
+                data-cursor-text="Play"
+                data-cursor-size="80px"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex justify-center mt-[30px] lg:mt-0">
+          <div>
+            <div>
+              <ANIMATEDTEXT17 />
+            </div>
+            <div className="w-full flex justify-center md:w-[450px] h-[200px] md:h-[260px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/HVL4Fgel8S4?si=ZCr7rVp4-NkMXZ6P"
+                title="YouTube video player"
+                // frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="rounded-[20px]"
+                data-cursor-text="Play"
+                data-cursor-size="80px"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>
@@ -416,5 +457,5 @@ export {
   ANIMATEDTEXT13,
   ANIMATEDTEXT14,
   ANIMATEDTEXT15,
-  ANIMATEDTEXT16
+  ANIMATEDTEXT16,
 };

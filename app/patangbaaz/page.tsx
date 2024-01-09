@@ -29,7 +29,7 @@ const PATANBAAZ = () => {
             </span>
           </div>
           <div className="mt-[20px] font-semibold  text-[16px] sm:text-[18px]">
-            <span>Date: January 13, 2023</span>
+            <span>Date: January 12, 2023</span>
           </div>
           <div className=" font-semibold  text-[16px] sm:text-[18px]">
             <span>Time: 01:30 PM Onwards</span>

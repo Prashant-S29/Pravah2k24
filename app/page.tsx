@@ -54,12 +54,12 @@ const HOME_OBJECT = () => {
         </div>
       </div>
       <div className="mt-[50px]">
-        <div>
+        {/* <div>
           <TYPINGTEXT title="Pravah 24 Trailer" />
         </div>
         <div className="text-center">
           <ANIMATEDTEXT1 />
-        </div>
+        </div> */}
         <div>
           <VIDEOBLOCK />
         </div>
