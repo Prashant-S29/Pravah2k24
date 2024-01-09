@@ -58,7 +58,7 @@ const PATANBAAZ = () => {
           </div> */}
           <div className="mt-[10px]">
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfxL9Asa4FDvThe-DwINPi56RnNFRmr2_mjLRbzgBVWn5Ft_Q/viewform"
+              href="https://res.cloudinary.com/denl2iizs/image/upload/v1704795786/tbjrrostzhusxir6zzyq.jpg"
               target="_blank"
             >
               <button className="px-[15px] py-[8px] bg-black text-white text-[14px] font-semibold rounded-[10px]">
