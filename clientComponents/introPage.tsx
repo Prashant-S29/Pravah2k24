@@ -68,9 +68,18 @@ const INTROPAGE = () => {
           <div className="text-[13px] sm:text-[14px] my-[20px]">
             <span>welcomes you to</span>
           </div>
-          <div className="flex justify-center items-center  w-full my-[30px] px-[20px] ">
+          <div className="flex justify-center items-center  w-full my-[50px] px-[20px] ">
             {/* <TITLEIMAGE /> */}
-            <INTROPAGE_CARD />
+            {/* <Image src */}
+            <Image
+              src="https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/ssthzscie5vb7oscyznw.png"
+              alt="hello"
+              className="w-[300px]  md:w-[450px]"
+              width={500}
+              height={500}
+              // style={{ display: index === currentIndex ? "block" : "none" }}
+            />
+            {/* <INTROPAGE_CARD /> */}
           </div>
           <div className="flex justify-center mt-[30px]">
             <button

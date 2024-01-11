@@ -314,8 +314,8 @@ const TYPINGTEXT = ({ title }: any) => {
 const VIDEOBLOCK = () => {
   return (
     <motion.div>
-      <div className=" lg:flex justify-evenly  px-[20px]">
-        <div className="w-full flex justify-center">
+      <div className="w-full lg:flex justify-center gap-[100px] px-[20px]">
+        <div className=" flex justify-center">
           <div>
             <div>
               <ANIMATEDTEXT1 />
@@ -336,7 +336,7 @@ const VIDEOBLOCK = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center mt-[30px] lg:mt-0">
+        <div className=" flex justify-center mt-[30px] lg:mt-0">
           <div>
             <div>
               <ANIMATEDTEXT17 />

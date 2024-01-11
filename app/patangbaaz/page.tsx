@@ -9,7 +9,7 @@ const PATANBAAZ = () => {
         <div className="flex justify-center">
           <div className="px-[20px] ">
             <Image
-              src="https://res.cloudinary.com/denl2iizs/image/upload/v1704521957/patanbaazEvent_iafxxk.jpg"
+              src="https://res.cloudinary.com/denl2iizs/image/upload/v1704795786/tbjrrostzhusxir6zzyq.jpg"
               alt="patanbazzEvent"
               width={350}
               height={500}
@@ -40,25 +40,9 @@ const PATANBAAZ = () => {
           <div className=" font-semibold  text-[16px] sm:text-[18px]">
             <span>Registration Fee: ₹60/- per team</span>
           </div>
-          {/* <div className="flex justify-center my-[15px]">
-            <div className="p-[10px] bg-white shadow-lg w-fit rounded-[15px]">
-              <div>
-                <Image
-                  src="https://res.cloudinary.com/denl2iizs/image/upload/v1704523176/patanbazzQR_hwzvht.png"
-                  alt="patanbazzEventQR"
-                  width={120}
-                  height={120}
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-          <div className=" font-semibold ">
-            <span>Scan and Register !</span>
-          </div> */}
           <div className="mt-[10px]">
             <Link
-              href="https://res.cloudinary.com/denl2iizs/image/upload/v1704795786/tbjrrostzhusxir6zzyq.jpg"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfxL9Asa4FDvThe-DwINPi56RnNFRmr2_mjLRbzgBVWn5Ft_Q/viewform"
               target="_blank"
             >
               <button className="px-[15px] py-[8px] bg-black text-white text-[14px] font-semibold rounded-[10px]">
