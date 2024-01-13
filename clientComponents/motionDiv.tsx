@@ -62,6 +62,7 @@ const MARQUEEMOTION = () => {
         initial="hidden"
         whileInView="show"
         className="w-full"
+        viewport={{ once: true, amount: 0.1 }}
       >
         <EVENTMARQUEE />
       </motion.div>
@@ -73,7 +74,11 @@ const ANIMATEDTEXT1 = () => {
   const placeholderText = [{ type: "heading1", text: "Theme Reveal." }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[32px] md:text-[38px] lg:text-[48px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -87,7 +92,11 @@ const ANIMATEDTEXT17 = () => {
   const placeholderText = [{ type: "heading1", text: "Logo Reveal." }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[32px] md:text-[38px] lg:text-[48px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -101,8 +110,12 @@ const ANIMATEDTEXT2 = () => {
   const placeholderText = [{ type: "heading1", text: "Glimpses" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
-      <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
+      <div className="text-center  text-[32px] text-white md:text-[48px] lg:text-[64px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
         ))}
@@ -116,7 +129,11 @@ const ANIMATEDTEXT3 = () => {
 
   return (
     <>
-      <motion.div initial="hidden" whileInView="visible">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
           {placeholderText.map((item, index) => (
             <AnimatedCharacters {...item} key={index} />
@@ -132,7 +149,11 @@ const ANIMATEDTEXT6 = () => {
 
   return (
     <>
-      <motion.div initial="hidden" whileInView="visible">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
           {placeholderText.map((item, index) => (
             <AnimatedCharacters {...item} key={index} />
@@ -147,7 +168,11 @@ const ANIMATEDTEXT7 = () => {
 
   return (
     <>
-      <motion.div initial="hidden" whileInView="visible">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
           {placeholderText.map((item, index) => (
             <AnimatedCharacters {...item} key={index} />
@@ -162,7 +187,11 @@ const ANIMATEDTEXT4 = () => {
   const placeholderText = [{ type: "heading1", text: "Prior Celebrities" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -176,8 +205,12 @@ const ANIMATEDTEXT8 = () => {
   const placeholderText = [{ type: "heading1", text: "Prior Sponsors" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
-      <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
+      <div className="text-center  text-[32px] md:text-[48px]  lg:text-[64px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
         ))}
@@ -190,7 +223,11 @@ const ANIMATEDTEXT10 = () => {
   const placeholderText = [{ type: "heading1", text: "Pravah" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[48px] md:text-[64px] lg:text-[72px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -206,7 +243,11 @@ const ANIMATEDTEXT13 = () => {
   ];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -219,7 +260,11 @@ const ANIMATEDTEXT14 = () => {
   const placeholderText = [{ type: "heading1", text: "Central Working " }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -232,7 +277,11 @@ const ANIMATEDTEXT15 = () => {
   const placeholderText = [{ type: "heading1", text: " Committee" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -246,7 +295,11 @@ const ANIMATEDTEXT16 = () => {
   const placeholderText = [{ type: "heading1", text: "Core Team" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -260,7 +313,11 @@ const ANIMATEDTEXT11 = () => {
   const placeholderText = [{ type: "heading1", text: "SKIT, Jaipur" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -274,7 +331,11 @@ const ANIMATEDTEXT12 = () => {
   const placeholderText = [{ type: "paragraph", text: "AAVEG'23" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[28px] md:text-[42px] lg:text-[58px] font-black leading-none">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -288,7 +349,11 @@ const ANIMATEDTEXT5 = () => {
   const placeholderText = [{ type: "heading1", text: "Major Events" }];
 
   return (
-    <motion.div initial="hidden" whileInView="visible">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="text-center  text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
         {placeholderText.map((item, index) => (
           <AnimatedCharacters {...item} key={index} />
@@ -304,7 +369,7 @@ const TYPINGTEXT = ({ title }: any) => {
       variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <TypingTextEffect title={title} textStyles="text-center" />
     </motion.div>
@@ -364,12 +429,7 @@ const VIDEOBLOCK = () => {
 
 const GALLERY = () => {
   return (
-    <motion.div
-      variants={fadeUp("tween", 0.3, 0.75)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.1 }}
-    >
+    <motion.div>
       <IMAGEGALLERY />
     </motion.div>
   );
@@ -381,7 +441,7 @@ const STATS = () => {
       variants={fadeUp("tween", 0.2, 0.75)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="flex flex-wrap text-center justify-center gap-3 md:gap-5 items-center mt-[20px]">
         <div className="p-[15px] md:p-[20px] w-[120px] md:w-[150px] bg-black text-white rounded-[20px]">

@@ -17,7 +17,7 @@ const MAJOREVENTS = () => {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className={` mx-auto flex flex-col`}
       >
         <div className="flex lg:flex-row flex-col h-[70vh] lg:h-fit gap-5 ">

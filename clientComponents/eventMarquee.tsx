@@ -19,7 +19,7 @@ const eventName = [
 const EVENTMARQUEE = () => {
   return (
     <>
-      <div className="whitespace-nowrap w-full  flex justify-center  ">
+      <div className="whitespace-nowrap w-full my-[20px]  flex justify-center  ">
         <Marquee autoFill={true} speed={70}>
           {eventName.map((event, index) => (
             <Link key={index} href={`/events`}>

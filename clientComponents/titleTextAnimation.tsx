@@ -77,8 +77,9 @@ const TITLETEXTANIMATION = () => {
             <Image
               src={image}
               alt={index.toString()}
-              className="w-[300px]  md:w-[550px]"
-              style={{ display: index === currentIndex ? "block" : "none" }}
+              className={`w-[300px]  md:w-[500px] ${
+                index === currentIndex ? "opacity-100" : "opacity-0"
+              }`}
             />
           </div>
         ))}

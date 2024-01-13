@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/utils/motion";
+import { fadeIn, fadeUp } from "@/utils/motion";
 import { glimpsesCard } from "@/constant";
 
 type ImageGalleryItemProps = {
@@ -27,19 +27,14 @@ const ImageGalleryItem = ({
   youtubeLink,
   resetDisplayState,
 }: ImageGalleryItemProps) => (
-  <motion.div
-    initial="hidden"
-    whileInView="show"
-    variants={fadeIn("up", "tween", 0.2 * (index + 1), 0.25)}
-    className="overflow-y-clip -mt-[55px] sm:-mt-[155px] border-b border-black"
-  >
+  <div className="overflow-y-clip -mt-[55px] sm:-mt-[155px] border-b border-gray-500">
     <div className="h-[55px] sm:h-[155px] bg-transparent" />
     <div
       className="h-[55px] sm:h-[90px] duration-300 "
       style={
         displayState
-          ? { backgroundColor: "black", color: "white" }
-          : { backgroundColor: "transparent", color: "black" }
+          ? { backgroundColor: "white", color: "black" }
+          : { backgroundColor: "transparent", color: "gray" }
       }
       onClick={() => resetDisplayState()}
     >
@@ -60,7 +55,11 @@ const ImageGalleryItem = ({
                 index % 2 === 0 ? "animate-spin-two" : "animate-spin-one"
               }`}
             >
-              <span>&#9733;</span>
+              <span
+                className={`  ${displayState ? "text-black" : "text-white"}`}
+              >
+                &#9733;
+              </span>
             </div>
           </div>
         </div>
@@ -113,7 +112,7 @@ const ImageGalleryItem = ({
         </div>
       </div>
     </div>
-  </motion.div>
+  </div>
 );
 
 const IMAGEGALLERY = () => {

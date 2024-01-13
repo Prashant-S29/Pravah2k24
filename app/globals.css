@@ -14,8 +14,6 @@ html {
   background-image: url("../public/otherAssets/background.png");
 }
 
-
-
 .button {
   padding: 5px 10px;
   margin-right: 10px;
@@ -142,8 +140,6 @@ html {
   }
 }
 
-
-
 .loaderCard_animation {
   background: linear-gradient(
     -45deg,
@@ -166,5 +162,19 @@ html {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.scrollDown-animation {
+  animation: upToDown 0.5s alternate infinite;
+
+}
+
+@keyframes upToDown {
+  0%{
+    padding-top: 5px;
+  }
+  100%{
+    padding-top: 25px;
   }
 }

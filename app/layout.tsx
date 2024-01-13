@@ -11,7 +11,7 @@ import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
 import PAGEWRAPPER from "./pageWrapper";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["cyrillic-ext"] });
 
 export const metadata: Metadata = {
   title: "Pravah | SKIT Jaipur",
@@ -26,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-       
         <div className="w-full min-h-screen object-cover object-center fixed -z-50">
           <Image
             src={background}
@@ -38,7 +37,6 @@ export default function RootLayout({
           <PAGEWRAPPER>
             <NAVBAR />
             {children}
-            <Analytics />
             <FOOTER />
           </PAGEWRAPPER>
         </div>
