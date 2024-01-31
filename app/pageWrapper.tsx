@@ -44,11 +44,7 @@ const PAGEWRAPPER = ({ children }) => {
             />
           </video>
         </div>
-        {videoEnded && (
-          <div>
-            {children}
-          </div>
-        )}
+        {videoEnded && <div>{children}</div>}
       </AnimatePresence>
     </>
   );

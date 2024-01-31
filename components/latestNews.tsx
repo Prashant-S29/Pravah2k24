@@ -12,7 +12,7 @@ const LATESTNEWS = () => {
             <Link href="/patangbaaz">
               <div className="px-[30px] text-[14px] sm:text-[16px]">
                 <span>
-                  Patangbaaz event is Live !!.{" "}
+                  Pravah dates are out!!.{" "}
                   <span className="underline font-bold">Click here</span> to
                   participate & witness it live at SKIT.
                 </span>
@@ -25,7 +25,7 @@ const LATESTNEWS = () => {
             <Link href="/patangbaaz">
               <div className="px-[30px] text-[14px] sm:text-[16px]">
                 <span>
-                  Patangbaaz event is Live !!.{" "}
+                Pravah dates are out!!.{" "}
                   <span className="underline font-bold">Click here</span> to
                   participate & witness it live at SKIT.
                 </span>

@@ -28,6 +28,8 @@ import TITLETEXTANIMATION from "@/clientComponents/titleTextAnimation";
 import TRIGGER from "@/clientComponents/trigger";
 import TRIGGERTWO from "@/clientComponents/triggerTwo";
 import TAG_PARA from "@/clientComponents/tagParagraph";
+import TIMERCOUNT from "@/clientComponents/countdown";
+import DATES from "@/clientComponents/dates";
 
 const HOME_OBJECT = () => {
   return (
@@ -35,9 +37,11 @@ const HOME_OBJECT = () => {
       <div className="w-full flex relative justify-center">
         <div className="mt-[50px]">
           <TITLETEXTANIMATION />
-          <div className=" p-[5px] h-[40px] mt-[30px] scrollDown-animation rounded-full border-[1px] border-gray-500">
+          {/* <div className=" p-[5px] h-[40px] mt-[30px] scrollDown-animation rounded-full border-[1px] border-gray-500">
             <div className="w-[8px]  aspect-square bg-black rounded-full" />
-          </div>
+          </div> */}
+          {/* <TIMERCOUNT/> */}
+          <DATES/>
         </div>
       </div>
       <MARQUEEMOTION />
