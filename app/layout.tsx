@@ -10,6 +10,7 @@ import { background } from "@/public";
 import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
 import PAGEWRAPPER from "./pageWrapper";
+import INTROPAGE from "@/clientComponents/introPage";
 
 const montserrat = Montserrat({ subsets: ["cyrillic-ext"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         </div>
         <div>
           <PAGEWRAPPER>
+            <INTROPAGE/>
             <NAVBAR />
             {children}
             <FOOTER />

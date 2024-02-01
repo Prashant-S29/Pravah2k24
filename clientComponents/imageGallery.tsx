@@ -31,11 +31,11 @@ const ImageGalleryItem = ({
     <div className="h-[55px] sm:h-[155px] bg-transparent" />
     <div
       className="h-[55px] sm:h-[90px] duration-300 "
-      style={
-        displayState
-          ? { backgroundColor: "white", color: "black" }
-          : { backgroundColor: "transparent", color: "gray" }
-      }
+      // style={
+      //   displayState
+      //     ? { backgroundColor: "white", color: "black" }
+      //     : { backgroundColor: "transparent", color: "gray" }
+      // }
       onClick={() => resetDisplayState()}
     >
       {/* Desktop */}
@@ -55,11 +55,7 @@ const ImageGalleryItem = ({
                 index % 2 === 0 ? "animate-spin-two" : "animate-spin-one"
               }`}
             >
-              <span
-                className={`  ${displayState ? "text-black" : "text-white"}`}
-              >
-                &#9733;
-              </span>
+              <span>&#9733;</span>
             </div>
           </div>
         </div>

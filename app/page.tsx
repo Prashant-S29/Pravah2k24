@@ -66,7 +66,9 @@ const HOME_OBJECT = () => {
         <STATS />
       </div>
       <div className="mt-[50px]">
-        <TRIGGER />
+        {/* <TRIGGER /> */}
+        <ANIMATEDTEXT2/>
+        <GALLERY/>
       </div>
       <div className="m-[20px] mt-[50px]">
         <ANIMATEDTEXT8 />
