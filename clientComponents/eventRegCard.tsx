@@ -94,7 +94,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
       </div>
       <div className="text-center duration-300 "></div>
 
-      <div className="w-full flex  justify-center gap-2 mt-[10px]">
+      {/* <div className="w-full flex  justify-center gap-2 mt-[10px]">
         {remainingSlots > 0 ? (
           <div className="w-full">
             <Link href="/">
@@ -109,7 +109,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
 
         <div className="w-full">
           <button
-            className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
+            className="w-full px  -[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
             onClick={(e) => {
               setDetailDisplay(!detailDisplay);
             }}
@@ -117,7 +117,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
             {detailDisplay ? "Hide Details" : "Show Details"}
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

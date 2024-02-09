@@ -36,7 +36,7 @@ export default function RootLayout({
         </div>
         <div>
           <PAGEWRAPPER>
-            <INTROPAGE/>
+            <INTROPAGE />
             <NAVBAR />
             {children}
             <FOOTER />

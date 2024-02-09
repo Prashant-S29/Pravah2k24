@@ -6,7 +6,7 @@ import { getEventDetails } from "@/fetchData";
 import PRELOADER_CARD from "@/clientComponents/preLoaderCard";
 import EVENT_REG_CARDS from "@/clientComponents/eventRegCard";
 
-const EVENTLIST = () => {
+const EVENTLIST = ({ eventCategoryID }: { eventCategoryID: string }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [events, setEvents] = useState<any>({});
 
@@ -18,6 +18,7 @@ const EVENTLIST = () => {
         setIsLoading(false);
       }
       setEvents(data);
+      console.log(data["pravahEventsList"]);
     };
     fetchData();
   }, []);
@@ -26,7 +27,7 @@ const EVENTLIST = () => {
     <>
       <div className="w-full min-h-screen">
         <div className="mt-[20px] text-center">
-          <span className="text-[32px] font-black">All Events</span>
+          <span className="text-[32px] font-black">{eventCategoryID}</span>
         </div>
         <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
           {isLoading ? (
@@ -48,11 +49,15 @@ const EVENTLIST = () => {
                   <>
                     {events["pravahEventsList"].map(
                       (eventDetail: any, index: number) => (
-                        <EVENT_REG_CARDS
-                          key={index}
-                          index={index}
-                          eventDetail={eventDetail}
-                        />
+                        <>
+                          {eventDetail.eventCategoryID === eventCategoryID && (
+                            <EVENT_REG_CARDS
+                              key={index}
+                              index={index}
+                              eventDetail={eventDetail}
+                            />
+                          )}
+                        </>
                       )
                     )}
                   </>

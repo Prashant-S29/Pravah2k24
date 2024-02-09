@@ -1,7 +1,13 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, nushrat, glimpse10, glimpse9,
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, 
+    celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, 
+    kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, 
+    nora, sunil, chinmay, gaurav, prashant, jashan, vishal, nushrat, glimpse10, glimpse9,
     sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17,
-    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4, cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala
+    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, 
+    rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, 
+    thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4, 
+    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto
 } from "./public/index"
 
 const previousCelebrities = [
@@ -331,12 +337,8 @@ const sponsorFormContact = [
 
 const eventCategoryDesc = [
     {
-        eventCategoryName: "New / Flagship Events",
-        eventCategoryID: "whatsNew"
-    },
-    {
         eventCategoryName: "Non Technical Events",
-        eventCategoryID: "non_tech"
+        eventCategoryID: "non-tech"
     },
     {
         eventCategoryName: "Technical Events",
@@ -353,10 +355,6 @@ const eventCategoryDesc = [
     {
         eventCategoryName: "Social Events",
         eventCategoryID: "social"
-    },
-    {
-        eventCategoryName: "Esports Events",
-        eventCategoryID: "esports"
     },
 ]
 
@@ -558,76 +556,190 @@ const pravahWebTeam = [
 const centralWorkingCommittee = [
     {
         memberName: "Mr. Abhishek Gupta",
-        memberPhoto: jassigill,
+        memberPhoto: abhishekPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "EE Department",
-        memberPhone: "9079215052"
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9079215052",
+        memberMail:"abhigupta@skit.ac.in"
     },
     {
-        memberName: "Mr. Abhishek Gupta",
-        memberPhoto: jassigill,
+        memberName: "Dr. Virendra Sangtani",
+        memberPhoto: virendraPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "EE Department",
-        memberPhone: "9079215052"
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9799884938",
+        memberMail:"virendra.sangtani@skit.ac.in"
     },
     {
-        memberName: "Mr. Abhishek Gupta",
-        memberPhoto: jassigill,
+        memberName: "Mr. Ankush Tandon",
+        memberPhoto: ankushPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "EE Department",
-        memberPhone: "9079215052"
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9460066186",
+        memberMail:"ankush@skit.ac.in"
     },
     {
-        memberName: "Mr. Abhishek Gupta",
-        memberPhoto: jassigill,
+        memberName: "Dr. Maneesha Kaushik",
+        memberPhoto: dummy,
         memberPost: "Associate Professor",
-        memberDepartment: "EE Department",
-        memberPhone: "9079215052"
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9785381999",
+        memberMail:""
     },
     {
-        memberName: "Mr. Abhishek Gupta",
-        memberPhoto: jassigill,
+        memberName: "Mrs. Deepti Arela",
+        memberPhoto: deeptiPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "EE Department",
-        memberPhone: "9079215052"
-    }
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9929417474",
+        memberMail:"deepti.arela@skit.ac.in"
+    },
+    {
+        memberName: "Mr. Nitin Goyal",
+        memberPhoto: dummy,
+        memberPost: "Associate Professor",
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9799884938",
+        memberMail:""
+    },
+    {
+        memberName: "Dr. Pooja Jain",
+        memberPhoto: poojaPhoto,
+        memberPost: "Associate Professor",
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9785050506",
+        memberMail:"pooja@skit.ac.in"
+    },
+    {
+        memberName: "Mr. Naveeen Kumar Sain",
+        memberPhoto: dummy,
+        memberPost: "Associate Professor",
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9413065501",
+        memberMail:""
+    },
+    {
+        memberName: "Mr. Anirudh Mathur",
+        memberPhoto: anirudhPhoto,
+        memberPost: "Associate Professor",
+        memberDepartment: "Civil Engineering Department",
+        memberPhone: "7891993999",
+        memberMail:"anirudh.mathur@skit.ac.in"
+    },
+    {
+        memberName: "Mr. Avadhesh Sharma",
+        memberPhoto: avadheshPhoto,
+        memberPost: "Associate Professor",
+        memberDepartment: "Electrical Engineering Department",
+        memberPhone: "9783840829",
+        memberMail:"avadhesh@skit.ac.in"
+    },
 ]
 
 const coreTeam = [
     {
-        memberName: "Prashant Singh",
-        memberPhoto: jassigill,
+        memberName: "Chinmay Bhatnagar",
+        memberPhoto: chinmayPhoto,
         memberPost: "Web Team",
         memberDepartment: "2nd Yr - CSE",
-        memberPhone: "9079215052"
+        memberPhone: "7976227748",
+        memberMail:"abhigupta@skit.ac.in"
     },
     {
-        memberName: "Prashant Singh",
-        memberPhoto: jassigill,
+        memberName: "Devik Rathore",
+        memberPhoto: devikPhoto,
         memberPost: "Web Team",
         memberDepartment: "2nd Yr - CSE",
-        memberPhone: "9079215052"
+        memberPhone: "8000342116",
+        memberMail:"abhigupta@skit.ac.in"
+    }, 
+    {
+        memberName: "Kanishk Bharadwaj",
+        memberPhoto: kanishkPhoto,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "8949294354",
+        memberMail:"abhigupta@skit.ac.in"
     },
     {
-        memberName: "Prashant Singh",
-        memberPhoto: jassigill,
+        memberName: "Paridhi Jain",
+        memberPhoto: paridhiPhoto,
         memberPost: "Web Team",
         memberDepartment: "2nd Yr - CSE",
-        memberPhone: "9079215052"
+        memberPhone: "9929425337",
+        memberMail:"abhigupta@skit.ac.in"
     },
     {
-        memberName: "Prashant Singh",
-        memberPhoto: jassigill,
+        memberName: "Akshat Tanwar",
+        memberPhoto: dummy,
         memberPost: "Web Team",
         memberDepartment: "2nd Yr - CSE",
-        memberPhone: "9079215052"
+        memberPhone: "7340062629",
+        memberMail:""
     },
     {
-        memberName: "Prashant Singh",
-        memberPhoto: jassigill,
+        memberName: "Anushka Singh",
+        memberPhoto: dummy,
         memberPost: "Web Team",
         memberDepartment: "2nd Yr - CSE",
-        memberPhone: "9079215052"
+        memberPhone: "7976971372",
+        memberMail:""
+    },
+    {
+        memberName: "Anirudh Singh",
+        memberPhoto: dummy,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "7357418512",
+        memberMail:""
+    },
+    {
+        memberName: "Aman Joshi",
+        memberPhoto: dummy,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "8764401145",
+        memberMail:""
+    },
+    {
+        memberName: "Ananya Singh",
+        memberPhoto: dummy,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "9929482611",
+        memberMail:""
+    },
+    {
+        memberName: "Archi Rathore",
+        memberPhoto: dummy,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "6375061517",
+        memberMail:""
+    },
+    {
+        memberName: "Kshitij Agarwal",
+        memberPhoto: kshitijPhoto,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "7877598110",
+        memberMail:"abhigupta@skit.ac.in"
+    },
+    {
+        memberName: "Hardik Bhatnagar",
+        memberPhoto: dummy,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "8619658589",
+        memberMail:""
+    },
+    {
+        memberName: "Rishika Bansal",
+        memberPhoto: dummy,
+        memberPost: "Web Team",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "8058654258",
+        memberMail:""
     },
 ]
 

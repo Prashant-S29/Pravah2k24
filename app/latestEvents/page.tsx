@@ -7,7 +7,7 @@ const LATEST_EVENTS = () => {
   return (
     <>
       <div>
-        <EVENTLIST />
+        <EVENTLIST eventCategoryID="Technical Event" />
         {/* <span>HELLO</span> */}
       </div>
     </>

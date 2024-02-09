@@ -13,7 +13,7 @@ import {
   ANIMATEDTEXT16,
   TYPINGTEXT,
 } from "@/clientComponents/motionDiv";
-import { contact_icon, instagram, linkedin } from "@/public";
+import { contact_icon, instagram, linkedin, mail } from "@/public";
 
 const TEAM_PRAVAH_CARD = ({ memberDetail, index }) => {
   return (
@@ -26,7 +26,7 @@ const TEAM_PRAVAH_CARD = ({ memberDetail, index }) => {
           <Image
             src={memberDetail.memberPhoto}
             alt={memberDetail.memberName}
-            className="w-[110px] sm:w-[150px] aspect-square rounded-full -mt-[75px] sm:-mt-[95px] "
+            className="w-[100px] sm:w-[130px] aspect-square rounded-full -mt-[75px] sm:-mt-[95px] "
           />
         </div>
         <div className="mt-[10px]">
@@ -45,20 +45,20 @@ const TEAM_PRAVAH_CARD = ({ memberDetail, index }) => {
           </span>
         </div>
         <div className="w-full flex justify-center gap-[30px] mt-[10px]  -mb-[38px]">
-          <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
-            <Image
-              src={contact_icon}
-              alt="contact_icon"
-              className="w-[20px] aspect-square"
-            />
-          </div>
-          <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
-            <Image
-              src={linkedin}
-              alt="linkedin"
-              className="w-[21px] aspect-square"
-            />
-          </div>
+          <Link href={`https://wa.me/91${memberDetail.memberPhone}`}>
+            <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
+              <Image
+                src={contact_icon}
+                alt="contact_icon"
+                className="w-[20px] aspect-square"
+              />
+            </div>
+          </Link>
+          <Link href={`mailto:${memberDetail.memberMail}`}>
+            <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
+              <Image src={mail} alt="mail" className="w-[24px] aspect-square" />
+            </div>
+          </Link>
         </div>
       </div>
     </>
@@ -69,10 +69,10 @@ const TEAM_OBJECT = () => {
   return (
     <>
       <div className="w-full min-h-[80vh] flex  justify-center   items-center  ">
-        <div className="text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
+        {/* <div className="text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
           <span>COMING SOON</span>
-        </div>
-        <div className="text-center hidden">
+        </div> */}
+        <div className="text-center ">
           <div className="mt-[50px]">
             <div>
               <TYPINGTEXT title="Faculty Team" />
