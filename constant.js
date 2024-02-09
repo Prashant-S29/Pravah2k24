@@ -7,7 +7,7 @@ import {
     rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, 
     rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, 
     thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4, 
-    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto
+    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, maneeshaPhoto, nitinPhoto, naveenPhoto
 } from "./public/index"
 
 const previousCelebrities = [
@@ -558,7 +558,7 @@ const centralWorkingCommittee = [
         memberName: "Mr. Abhishek Gupta",
         memberPhoto: abhishekPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9079215052",
         memberMail:"abhigupta@skit.ac.in"
     },
@@ -566,7 +566,7 @@ const centralWorkingCommittee = [
         memberName: "Dr. Virendra Sangtani",
         memberPhoto: virendraPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9799884938",
         memberMail:"virendra.sangtani@skit.ac.in"
     },
@@ -574,63 +574,63 @@ const centralWorkingCommittee = [
         memberName: "Mr. Ankush Tandon",
         memberPhoto: ankushPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9460066186",
         memberMail:"ankush@skit.ac.in"
     },
     {
         memberName: "Dr. Maneesha Kaushik",
-        memberPhoto: dummy,
+        memberPhoto: maneeshaPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberDepartment: "Department of Management Studies",
         memberPhone: "9785381999",
-        memberMail:""
+        memberMail:"maneesha.kaushik@skit.ac.in"
     },
     {
         memberName: "Mrs. Deepti Arela",
         memberPhoto: deeptiPhoto,
-        memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberPost: "Assistant Professor",
+        memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9929417474",
         memberMail:"deepti.arela@skit.ac.in"
     },
     {
         memberName: "Mr. Nitin Goyal",
-        memberPhoto: dummy,
-        memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberPhoto: nitinPhoto,
+        memberPost: "Assistant Professor",
+        memberDepartment: "Department of Mechanical Engineering ",
         memberPhone: "9799884938",
-        memberMail:""
+        memberMail:"nitin.goyal@skit.ac.in"
     },
     {
         memberName: "Dr. Pooja Jain",
         memberPhoto: poojaPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9785050506",
         memberMail:"pooja@skit.ac.in"
     },
     {
-        memberName: "Mr. Naveeen Kumar Sain",
-        memberPhoto: dummy,
-        memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberName: "Mr. Naveen Kumar Sain",
+        memberPhoto: naveenPhoto,
+        memberPost: "Assistant Professor",
+        memberDepartment: "Department of Mechanical Engineering ",
         memberPhone: "9413065501",
-        memberMail:""
+        memberMail:"naveen.sain@skit.ac.in"
     },
     {
         memberName: "Mr. Anirudh Mathur",
         memberPhoto: anirudhPhoto,
         memberPost: "Associate Professor",
-        memberDepartment: "Civil Engineering Department",
+        memberDepartment: "Department of Civil Engineering ",
         memberPhone: "7891993999",
         memberMail:"anirudh.mathur@skit.ac.in"
     },
     {
         memberName: "Mr. Avadhesh Sharma",
         memberPhoto: avadheshPhoto,
-        memberPost: "Associate Professor",
-        memberDepartment: "Electrical Engineering Department",
+        memberPost: "Assistant Professor",
+        memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9783840829",
         memberMail:"avadhesh@skit.ac.in"
     },
