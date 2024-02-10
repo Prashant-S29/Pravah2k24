@@ -94,7 +94,7 @@ const TEAM_OBJECT = () => {
               />
             ))}
           </div>
-          {/* <div className="mt-[50px]">
+          <div className="mt-[50px]">
             <div>
               <TYPINGTEXT title="Student Team" />
               <ANIMATEDTEXT16 />
@@ -108,7 +108,7 @@ const TEAM_OBJECT = () => {
                 index={index}
               />
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </>

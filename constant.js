@@ -7,7 +7,7 @@ import {
     rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, 
     rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, 
     thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4, 
-    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, maneeshaPhoto, nitinPhoto, naveenPhoto
+    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, maneeshaPhoto, nitinPhoto, naveenPhoto, kailash, akshat, rishika, archi, hardik, anirudh_core, aman, anantPhoto, ananya, anushka
 } from "./public/index"
 
 const previousCelebrities = [
@@ -571,6 +571,14 @@ const centralWorkingCommittee = [
         memberMail:"virendra.sangtani@skit.ac.in"
     },
     {
+        memberName: "Mr. Kailash Soni",
+        memberPhoto: kailash,
+        memberPost: "Associate Professor",
+        memberDepartment: "Department of Electrical Engineering ",
+        memberPhone: "9460066186",
+        memberMail:"virendra.sangtani@skit.ac.in"
+    },
+    {
         memberName: "Mr. Ankush Tandon",
         memberPhoto: ankushPhoto,
         memberPost: "Associate Professor",
@@ -640,79 +648,87 @@ const coreTeam = [
     {
         memberName: "Chinmay Bhatnagar",
         memberPhoto: chinmayPhoto,
-        memberPost: "Web Team",
-        memberDepartment: "2nd Yr - CSE",
+        memberPost: "",
+        memberDepartment: "3rd Yr - CSE",
         memberPhone: "7976227748",
         memberMail:"abhigupta@skit.ac.in"
     },
     {
         memberName: "Devik Rathore",
         memberPhoto: devikPhoto,
-        memberPost: "Web Team",
-        memberDepartment: "2nd Yr - CSE",
+        memberPost: "",
+        memberDepartment: "2nd Yr - EE",
         memberPhone: "8000342116",
         memberMail:"abhigupta@skit.ac.in"
     }, 
     {
         memberName: "Kanishk Bharadwaj",
         memberPhoto: kanishkPhoto,
-        memberPost: "Web Team",
-        memberDepartment: "2nd Yr - CSE",
+        memberPost: "",
+        memberDepartment: "2nd Yr - CE",
         memberPhone: "8949294354",
         memberMail:"abhigupta@skit.ac.in"
     },
     {
         memberName: "Paridhi Jain",
         memberPhoto: paridhiPhoto,
-        memberPost: "Web Team",
-        memberDepartment: "2nd Yr - CSE",
+        memberPost: "",
+        memberDepartment: "2nd Yr - IT",
         memberPhone: "9929425337",
         memberMail:"abhigupta@skit.ac.in"
     },
     {
         memberName: "Akshat Tanwar",
-        memberPhoto: dummy,
-        memberPost: "Web Team",
-        memberDepartment: "2nd Yr - CSE",
+        memberPhoto: akshat,
+        memberPost: "",
+        memberDepartment: "3rd Yr - IT",
         memberPhone: "7340062629",
-        memberMail:""
+        memberMail:"akshat21042004@gmail.com"
     },
     {
-        memberName: "Anushka Singh",
-        memberPhoto: dummy,
-        memberPost: "Web Team",
+        memberName: "Anushka Singh Sisodia",
+        memberPhoto: anushka,
+        memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "7976971372",
-        memberMail:""
+        memberMail:"singhanushka0605@gmail.com"
     },
     {
-        memberName: "Anirudh Singh",
-        memberPhoto: dummy,
-        memberPost: "Web Team",
+        memberName: "Anirudh Singh Naruka",
+        memberPhoto: anirudh_core,
+        memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "7357418512",
-        memberMail:""
+        memberMail:"anisingh1304@gmail.com"
     },
     {
         memberName: "Aman Joshi",
-        memberPhoto: dummy,
-        memberPost: "Web Team",
+        memberPhoto: aman,
+        memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "8764401145",
-        memberMail:""
+        memberMail:"joshiamancchs@gmail.com"
     },
     {
         memberName: "Ananya Singh",
-        memberPhoto: dummy,
-        memberPost: "Web Team",
+        memberPhoto: ananya,
+        memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "9929482611",
         memberMail:""
     },
     {
+        memberName: "Anant khandelwal",
+        memberPhoto: anantPhoto,
+        memberPost: "",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "8209172026",
+        memberMail:"anantk.k.15@gmail.com"
+    },
+    {
         memberName: "Archi Rathore",
-        memberPhoto: dummy,
-        memberPost: "Web Team",
+        memberPhoto: archi,
+        memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "6375061517",
         memberMail:""
@@ -720,24 +736,24 @@ const coreTeam = [
     {
         memberName: "Kshitij Agarwal",
         memberPhoto: kshitijPhoto,
-        memberPost: "Web Team",
-        memberDepartment: "2nd Yr - CSE",
+        memberPost: "",
+        memberDepartment: "2nd Yr - IT",
         memberPhone: "7877598110",
         memberMail:"abhigupta@skit.ac.in"
     },
     {
-        memberName: "Hardik Bhatnagar",
-        memberPhoto: dummy,
-        memberPost: "Web Team",
+        memberName: "Hardik Agarwal",
+        memberPhoto: hardik,
+        memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "8619658589",
-        memberMail:""
+        memberMail:"b220518@skit.ac.in"
     },
     {
         memberName: "Rishika Bansal",
-        memberPhoto: dummy,
-        memberPost: "Web Team",
-        memberDepartment: "2nd Yr - CSE",
+        memberPhoto: rishika,
+        memberPost: "",
+        memberDepartment: "4th Yr - CSE",
         memberPhone: "8058654258",
         memberMail:""
     },
