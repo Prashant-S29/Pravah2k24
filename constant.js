@@ -543,14 +543,14 @@ const pravahWebTeam = [
         memberLinkedIn: "https://www.linkedin.com/in/vishal-rawat-13739823a",
         memberPhone: "9376744239",
     },
-    {
-        memberName: "@GauravSharma",
-        memberPhoto: gaurav,
-        memberIntroStack: "Frontend Developer",
-        memberGithub: "https://github.com/gauravsharma25404",
-        memberLinkedIn: "https://www.linkedin.com/in/gaurav-sharma-476173229/",
-        memberPhone: "8690574054",
-    },
+    // {
+    //     memberName: "@GauravSharma",
+    //     memberPhoto: gaurav,
+    //     memberIntroStack: "Frontend Developer",
+    //     memberGithub: "https://github.com/gauravsharma25404",
+    //     memberLinkedIn: "https://www.linkedin.com/in/gaurav-sharma-476173229/",
+    //     memberPhone: "8690574054",
+    // },
 ]
 
 const centralWorkingCommittee = [
@@ -649,7 +649,7 @@ const coreTeam = [
         memberName: "Chinmay Bhatnagar",
         memberPhoto: chinmayPhoto,
         memberPost: "",
-        memberDepartment: "3rd Yr - CSE",
+        memberDepartment: "3rd Yr - IT",
         memberPhone: "7976227748",
         memberMail:"abhigupta@skit.ac.in"
     },
@@ -676,14 +676,6 @@ const coreTeam = [
         memberDepartment: "2nd Yr - IT",
         memberPhone: "9929425337",
         memberMail:"abhigupta@skit.ac.in"
-    },
-    {
-        memberName: "Akshat Tanwar",
-        memberPhoto: akshat,
-        memberPost: "",
-        memberDepartment: "3rd Yr - IT",
-        memberPhone: "7340062629",
-        memberMail:"akshat21042004@gmail.com"
     },
     {
         memberName: "Anushka Singh Sisodia",
@@ -740,6 +732,14 @@ const coreTeam = [
         memberDepartment: "2nd Yr - IT",
         memberPhone: "7877598110",
         memberMail:"abhigupta@skit.ac.in"
+    },
+    {
+        memberName: "Akshat Tanwar",
+        memberPhoto: akshat,
+        memberPost: "",
+        memberDepartment: "3rd Yr - IT",
+        memberPhone: "7340062629",
+        memberMail:"akshat21042004@gmail.com"
     },
     {
         memberName: "Hardik Agarwal",
