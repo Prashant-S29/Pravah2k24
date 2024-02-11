@@ -46,7 +46,7 @@ const NAVLINK = ({
             </div>
           </div>
           <div
-            className="leading-tight w-full md:w-[160px] "
+            className="leading-tight w-full  "
             style={{ color: linkInfoColor }}
           >
             <span className="text-[12px] md:text-[14px]">{linkinfo}</span>

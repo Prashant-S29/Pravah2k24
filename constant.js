@@ -574,7 +574,7 @@ const centralWorkingCommittee = [
         memberName: "Mr. Kailash Soni",
         memberPhoto: kailash,
         memberPost: "Associate Professor",
-        memberDepartment: "Department of Electrical Engineering ",
+        memberDepartment: "Department of Computer Science and Engineering",
         memberPhone: "9460066186",
         memberMail:"virendra.sangtani@skit.ac.in"
     },
@@ -651,7 +651,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "3rd Yr - IT",
         memberPhone: "7976227748",
-        memberMail:"abhigupta@skit.ac.in"
+        memberMail:"chinmaybhatnagar2002@gmail.com"
     },
     {
         memberName: "Devik Rathore",
@@ -659,15 +659,15 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - EE",
         memberPhone: "8000342116",
-        memberMail:"abhigupta@skit.ac.in"
+        memberMail:"devikrathore123@gmail.com"
     }, 
     {
         memberName: "Kanishk Bharadwaj",
         memberPhoto: kanishkPhoto,
         memberPost: "",
-        memberDepartment: "2nd Yr - CE",
+        memberDepartment: "3nd Yr - CE",
         memberPhone: "8949294354",
-        memberMail:"abhigupta@skit.ac.in"
+        memberMail:"kannu.sharmabtp@gmail.com"
     },
     {
         memberName: "Paridhi Jain",
@@ -675,7 +675,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - IT",
         memberPhone: "9929425337",
-        memberMail:"abhigupta@skit.ac.in"
+        memberMail:"jain04paridhi@gmail.com"
     },
     {
         memberName: "Anushka Singh Sisodia",
@@ -702,12 +702,12 @@ const coreTeam = [
         memberMail:"joshiamancchs@gmail.com"
     },
     {
-        memberName: "Ananya Singh",
+        memberName: "Ananya Singh Choudhary",
         memberPhoto: ananya,
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "9929482611",
-        memberMail:""
+        memberMail:"ananysingh268@gmail.com"
     },
     {
         memberName: "Anant khandelwal",
@@ -723,7 +723,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "6375061517",
-        memberMail:""
+        memberMail:"aarchirathore13@gmail.com"
     },
     {
         memberName: "Kshitij Agarwal",
@@ -731,7 +731,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - IT",
         memberPhone: "7877598110",
-        memberMail:"abhigupta@skit.ac.in"
+        memberMail:"kshitijagrawal53@gmail.com"
     },
     {
         memberName: "Akshat Tanwar",
@@ -755,7 +755,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "4th Yr - CSE",
         memberPhone: "8058654258",
-        memberMail:""
+        memberMail:"bansalrishika25@gmail.com"
     },
 ]
 
