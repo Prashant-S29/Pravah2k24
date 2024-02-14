@@ -25,7 +25,7 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
           >
             <Marquee
               autoFill={true}
-              speed={window.innerWidth > 650 ? 50 : 30}
+              speed={40}
               direction={index % 2 == 0 ? "right" : "left"}
             >
               <div className="px-[10px]  ">
