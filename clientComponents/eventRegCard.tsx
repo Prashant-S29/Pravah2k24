@@ -51,13 +51,13 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
             </div>
             <div className="text-center font-medium  w-full sm:w-[300px] h-[200px] bg-slate-200 flex justify-center items-center rounded-[17px]   py-[10px] ">
               <div className="px-[10px] text-[14px]  sm:text-[16px]">
-                <div>
+                {/* <div>
                   <span>
                     Registration Fee: <b>₹{eventDetail.eventRegistrationFee}</b>
                     /- {eventDetail.eventType}
                   </span>
-                </div>
-                <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" />
+                </div> */}
+                {/* <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" /> */}
                 <div>
                   <span>Date: {eventDetail.eventDate}</span>
                 </div>
@@ -75,7 +75,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                 <div className="w-full mt-[10px]">
                   <Link href={eventDetail.eventBrochure} target="blank">
                     <button className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
-                      Download Brochure
+                      View Rule Book
                     </button>
                   </Link>
                 </div>

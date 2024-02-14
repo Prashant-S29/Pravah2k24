@@ -35,12 +35,12 @@ export default function RootLayout({
           />
         </div>
         <div>
-          {/* <PAGEWRAPPER> */}
-          {/* <INTROPAGE /> */}
-          <NAVBAR />
-          {children}
-          <FOOTER />
-          {/* </PAGEWRAPPER> */}
+          <PAGEWRAPPER>
+            <INTROPAGE />
+            <NAVBAR />
+            {children}
+            <FOOTER />
+          </PAGEWRAPPER>
         </div>
       </body>
     </html>
