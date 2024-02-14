@@ -20,7 +20,7 @@ const TEAM_PRAVAH_CARD = ({ memberDetail, index }) => {
     <>
       <div
         key={index}
-        className=" w-full sm:w-[400px] border bg-white border-black  rounded-[20px] p-[20px]"
+        className=" w-full sm:w-[400px] border bg-white h-fit border-black  rounded-[20px] p-[20px]"
       >
         <div className="flex justify-center">
           <Image
@@ -29,11 +29,19 @@ const TEAM_PRAVAH_CARD = ({ memberDetail, index }) => {
             className="w-[100px] sm:w-[130px] aspect-square rounded-full -mt-[75px] sm:-mt-[95px] "
           />
         </div>
+      
         <div className="mt-[10px]">
           <span className="text-[20px] sm:text-[24px] font-black  ">
             {memberDetail.memberName}
           </span>
         </div>
+        {memberDetail.memberName === "Mr. Abhishek Gupta" && (
+          <div className="mt-[10px]">
+            <span className="text-[14px] sm:text-[16px]">
+              Chief Coordinator Pravah 2024
+            </span>
+          </div>
+        )}
         <div>
           <span className="text-[14px] sm:text-[16px]">
             {memberDetail.memberPost}

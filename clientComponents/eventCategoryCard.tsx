@@ -11,7 +11,7 @@ import {
   resume,
   crown,
 } from "@/public";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -25,27 +25,18 @@ const EVENT_CATEGORY_CRAD = ({
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [pauseImage, setPauseImage] = useState(imageState);
 
-  const imageList = [
-    celebrityNight,
-    dj,
-    imgOne,
-    imgTwo,
-    imgThree,
-    imgFour,
-    imgFive,
-    // imgSix,
-  ];
+
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (!pauseImage) {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageList.length);
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % eventCategory["eventCategoryPhoto"].length);
       }
     }, 3000);
     return () => {
       clearInterval(interval);
     };
-  }, [imageList.length, pauseImage]);
+  }, [pauseImage,eventCategory]);
 
   return (
     <>
@@ -57,7 +48,7 @@ const EVENT_CATEGORY_CRAD = ({
             : "bg-white"
         } border border-black rounded-[20px]  p-[10px]`}
       >
-        {eventCategory["eventCategoryID"] === "whatsNew" ? (
+        {/* {eventCategory["eventCategoryID"] === "whatsNew" ? (
           <div>
             <Image
               src={crown}
@@ -67,24 +58,26 @@ const EVENT_CATEGORY_CRAD = ({
           </div>
         ) : (
           ""
-        )}
+        )} */}
         <div className="flex relative justify-center overflow-hidden w-full sm:w-[300px]  h-[200px]">
-          {imageList.map((image, index) => (
-            <div
-              key={index}
-              className={`bg-pink-400   overflow-hidden duration-300    ${
-                index === currentImageIndex
-                  ? "mt-0 opacity-100"
-                  : "-mt-[200px] opacity-0"
-              }`}
-            >
-              <Image
-                src={image}
-                alt="lol"
-                className="object-cover -ml-[130px] sm:-ml-[150px]  absolute object-top rounded-[17px] w-[280px] sm:w-[300px] h-[200px]"
-              />
-            </div>
-          ))}
+          {eventCategory["eventCategoryPhoto"].map(
+            (image: StaticImageData, index: number) => (
+              <div
+                key={index}
+                className={`bg-pink-400   overflow-hidden duration-300    ${
+                  index === currentImageIndex
+                    ? "mt-0 opacity-100"
+                    : "-mt-[200px] opacity-0"
+                }`}
+              >
+                <Image
+                  src={image}
+                  alt="lol"
+                  className="object-cover -ml-[130px] sm:-ml-[150px]  absolute object-top rounded-[17px] w-[280px] sm:w-[300px] h-[200px]"
+                />
+              </div>
+            )
+          )}
         </div>
         <div className="mt-[10px]  text-center  ">
           <div>

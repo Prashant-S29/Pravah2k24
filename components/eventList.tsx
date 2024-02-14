@@ -41,10 +41,19 @@ const EVENTLIST = ({ eventCategoryID }: { eventCategoryID: string }) => {
               {events["pravahEventsList"] ? (
                 events["pravahEventsList"].length === 0 ? (
                   <div>
-                    <span className="text-[16px] sm:text-[18px] font-bold uppercase">
-                      No events available
-                    </span>
+                  <div className="text-center">
+                    <div className="leading-tight">
+                      <span className="font-black text-[28px] sm:text-[32px] md:text-[48px]">
+                        Pravah 2024
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-[16px] sm:text-[18px] font-bold uppercase">
+                        No events available
+                      </span>
+                    </div>
                   </div>
+                </div>
                 ) : (
                   <>
                     {events["pravahEventsList"].map(
@@ -67,24 +76,6 @@ const EVENTLIST = ({ eventCategoryID }: { eventCategoryID: string }) => {
               )}
             </>
           )}
-
-          {events["pravahEventsList"] &&
-            events["pravahEventsList"].length === 0 && (
-              <div>
-                <div className="text-center">
-                  <div className="leading-tight">
-                    <span className="font-black text-[28px] sm:text-[32px] md:text-[48px]">
-                      Pravah 2024
-                    </span>
-                  </div>
-                  <div>
-                    <span className="text-[16px] sm:text-[18px] font-bold uppercase">
-                      No events available
-                    </span>
-                  </div>
-                </div>
-              </div>
-            )}
         </div>
       </div>
     </>

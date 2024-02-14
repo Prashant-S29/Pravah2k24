@@ -8,7 +8,6 @@ const CULTURAL_EVENTS = () => {
     <>
       <div>
         <EVENTLIST eventCategoryID="Cultural Event" />
-        {/* <span>HELLO</span> */}
       </div>
     </>
   );

@@ -31,7 +31,7 @@ const NAVBAR = () => {
               <NAVLINK
                 href="about"
                 navlink="ABOUT"
-                linkinfo="Know more about SKIT M&G, Jaipur."
+                linkinfo="SKIT M&G"
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
@@ -41,15 +41,15 @@ const NAVBAR = () => {
           <div className="hidden lg:block">
             <span>
               <NAVLINK
-                href="aaveg"
-                navlink="AAVEG"
-                linkinfo="Sports Battle on real ground."
+                href="events"
+                navlink="EVENTS & REGISTRATION"
+                linkinfo="Variety of events from endless domains."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
               />
             </span>
-          </div>
+          </div>  
           <div className="flex gap-3 justify-center items-center">
             <div>
               <Link href="/" className="flex gap-3">
@@ -61,12 +61,13 @@ const NAVBAR = () => {
               </Link>
             </div>
           </div>
+          
           <div className="hidden lg:block">
             <span>
               <NAVLINK
-                href="events"
-                navlink="EVENTS"
-                linkinfo="Variety of events from endless domains."
+                href="aaveg"
+                navlink="AAVEG"
+                linkinfo="Sports Battle on real ground."
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
