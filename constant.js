@@ -720,7 +720,7 @@ const coreTeam = [
         memberMail:"devikrathore123@gmail.com"
     }, 
     {
-        memberName: "Archi Rathore",
+        memberName: "Aarchi Rathore",
         memberPhoto: archi,
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",

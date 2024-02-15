@@ -16,16 +16,43 @@ const eventName = [
   "E-Sports",
 ];
 
+const eventsCategory = [
+  {
+    eventName:"Technical Events",
+    eventLink:"tech"
+  },
+  {
+    eventName:"Non-Technical Events",
+    eventLink:"non-tech"
+  },
+  {
+    eventName:"Cultural Events",
+    eventLink:"cultural"
+  },
+  {
+    eventName:"Literary Events",
+    eventLink:"literary"
+  },
+  {
+    eventName:"Social Events",
+    eventLink:"social"
+  },
+  {
+    eventName:"E-Sports",
+    eventLink:"esports"
+  }
+]
+
 const EVENTMARQUEE = () => {
   return (
     <>
       <div className="whitespace-nowrap w-full my-[20px]  flex justify-center  ">
         <Marquee autoFill={true} speed={70}>
-          {eventName.map((event, index) => (
-            <Link key={index} href={`/events`}>
+          {eventsCategory.map((event, index) => (
+            <Link key={index} href={`/events/${event.eventLink}`}>
               <div className="flex gap-5 items-center mr-[20px]">
                 <div className="text-[22px] md:text-[28px]  font-bold tracking-tighter py-[20px]  ">
-                  <span>{event}</span>
+                  <span>{event.eventName}</span>
                 </div>
                 <div>
                   <Image

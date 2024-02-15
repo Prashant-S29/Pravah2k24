@@ -6,34 +6,45 @@ import Link from "next/link";
 import TRANSITION_WRAPPER from "../../clientComponents/transition";
 import PRIORSPONSORS from "@/clientComponents/priorSponsor";
 import Image from "next/image";
-import { download } from "@/public";
+import {
+  download,
+  chumbakk,
+  mother,
+  academy,
+  kalam,
+  toprankers,
+} from "@/public";
 
 const SPONSOR_OBJECT = () => {
   return (
     <>
-      <div className="mt-[50px]">
-        <div className="text-center">
-          <span className="text-[18px] sm:text-[24px] md:text-[32px] font-black">
-            Prior Sponsors
-          </span>
-        </div>
-        <div className="my-[30px]">
-          <PRIORSPONSORS />
-        </div>
-      </div>
-      <div className="w-full min-h-[350px] flex justify-center  ">
+      <div className="w-full min-h-[350px] mt-[50px] flex justify-center  ">
         <div className="text-center">
           <div className="leading-tight">
             <span className="font-black text-[38px] sm:text-[48px] md:text-[64px]">
               Pravah 2024 Sponsors
             </span>
           </div>
-          <div>
-            <span className="text-[18px] sm:text-[24px] md:text-[32px] font-black">
-              Coming Soon
-            </span>
+
+          <div className="flex justify-center items-center px-[20px] flex-wrap sm:flex-nowrap gap-[30px]">
+            <div>
+              <Image src={chumbakk} alt="chumbakk" className="w-[320px] sm:w-[450px]" />
+            </div>
+            <div>
+              <Image src={academy} alt="academy" className="w-[180px] sm:w-[300px]"  />
+            </div>
+            <div>
+              <Image src={kalam} alt="kalam" className="w-[320px] sm:w-[500px]"  />
+            </div>
+            <div>
+              <Image src={mother} alt="mother" className="w-[320px] sm:w-[450px]"  />
+            </div>
+            <div>
+              <Image src={toprankers} alt="toprankers" className="sm:w-[300px]"  />
+            </div>
           </div>
-          <div className="px-[20px] mt-[20px]">
+
+          <div className="px-[20px] mt-[30px]">
             <span className="font-medium">
               Want to be a valuable sponsor of Pravah{"'"}24?
               <br />
@@ -44,7 +55,10 @@ const SPONSOR_OBJECT = () => {
             </span>
           </div>
           <div className="mt-[20px] flex justify-center">
-            <Link href="https://res.cloudinary.com/denl2iizs/image/upload/v1702559789/djvgjufpbdgghhmtxdih.pdf" target="_blank">
+            <Link
+              href="https://res.cloudinary.com/denl2iizs/image/upload/v1702559789/djvgjufpbdgghhmtxdih.pdf"
+              target="_blank"
+            >
               <button
                 className="px-[15px] py-[8px] rounded-[10px] bg-black text-white text-[14px] font-semibold
              flex justify-center items-center gap-2"
@@ -54,6 +68,16 @@ const SPONSOR_OBJECT = () => {
               </button>
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="mt-[20px]">
+        <div className="text-center">
+          <span className="text-[18px] sm:text-[24px] md:text-[32px] font-black">
+            Prior Sponsors
+          </span>
+        </div>
+        <div className="my-[30px]">
+          <PRIORSPONSORS />
         </div>
       </div>
     </>

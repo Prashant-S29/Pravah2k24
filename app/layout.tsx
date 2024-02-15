@@ -11,8 +11,9 @@ import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
 import PAGEWRAPPER from "./pageWrapper";
 import INTROPAGE from "@/clientComponents/introPage";
+import EVENT_STATUS from "@/clientComponents/eventStatus";
 
-const montserrat = Montserrat({ subsets: ["cyrillic-ext"] });
+const montserrat = Montserrat({ subsets: ["cyrillic"] });
 
 export const metadata: Metadata = {
   title: "Pravah | SKIT Jaipur",
@@ -35,6 +36,8 @@ export default function RootLayout({
           />
         </div>
         <div>
+          {/* <EVENT_STATUS /> */}
+
           <PAGEWRAPPER>
             <INTROPAGE />
             <NAVBAR />

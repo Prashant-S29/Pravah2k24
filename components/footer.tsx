@@ -155,9 +155,9 @@ const FOOTER = () => {
                   </Link>
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="/sponsor">
+                  <Link href="/campusAmbassador">
                     <div>
-                      <button>Sponsor Us</button>
+                      <button>Campus Ambassador</button>
                     </div>
                   </Link>
                 </li>
