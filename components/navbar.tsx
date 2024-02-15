@@ -31,7 +31,7 @@ const NAVBAR = () => {
               <NAVLINK
                 href="about"
                 navlink="ABOUT"
-                linkinfo="SKIT M&G"
+                linkinfo="SKIT M & G"
                 linkColor="#000000"
                 linkInfoColor="000000"
                 lineColor="#000000"
