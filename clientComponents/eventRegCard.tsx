@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { downarrow } from "@/public";
 
 const EVENT_REG_CARDS = ({ index, eventDetail }) => {
   const remainingSlots =
@@ -21,6 +20,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
     link: "",
     price: "",
   });
+
 
   return (
     <>
@@ -73,11 +73,14 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                 </div>
                 {/* <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" /> */}
                 <div className="w-full mt-[10px]">
-                  <Link href={eventDetail.eventBrochure}>
-                    <button className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
-                      View Rule Book
-                    </button>
-                  </Link>
+                  {/* <Link href={eventDetail.eventBrochure}> */}
+                  <button
+                    onClick={eventDetail.eventBrochure}
+                    className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
+                  >
+                    View Rule Book
+                  </button>
+                  {/* </Link> */}
                 </div>
               </div>
             </div>
