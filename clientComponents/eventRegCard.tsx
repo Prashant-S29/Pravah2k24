@@ -74,6 +74,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                 <div className="w-full mt-[10px]">
                   <Link
                     href={eventDetail.eventBrochure}
+                    target="_blank"
                     className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
                   >
                     View Rule Book
