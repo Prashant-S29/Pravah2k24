@@ -318,7 +318,7 @@ const FOOTER = () => {
               <div className="mt-[5px]">
                 <div>
                   <span className="text-[13px] font-semibold">
-                    Event Quires
+                    Event Queries
                   </span>
                 </div>
                 <div className="leading-none text-[13px] sm:text-[14px]">
