@@ -26,16 +26,16 @@ const ABOUT_OBJECT = () => {
                 organized since its inception and is now gearing up to
                 commemorate 17 years of honoring creativity, vitality, and
                 aesthetics in the realms of Sports, Technical, Non-Technical,
-                and Cultural events. With a diverse array of over one hundred
-                events falling under these categories, PRAVAH serves as the
-                platform for numerous intra and inter-collegiate competitions.
-                Envisaging a significant turnout of approximately 7-8 thousand
-                students from all corners of India across various event domains,
-                PRAVAH continues to uphold its tradition of attracting talent on
-                a national scale. Keeping in line with this rich legacy, PRAVAH
-                2024 aspires to draw forth talents from different corners of
-                India, fostering growth in literary, technical, cultural, and
-                social skills.
+                Social Events and Cultural events. With a diverse array of over
+                one hundred events falling under these categories, PRAVAH serves
+                as the platform for numerous intra and inter-collegiate
+                competitions. Envisaging a significant turnout of approximately
+                6500+ students from all corners of India across various event
+                domains, PRAVAH continues to uphold its tradition of attracting
+                talent on a national scale. Keeping in line with this rich
+                legacy, PRAVAH 2024 aspires to draw forth talents from different
+                corners of India, fostering growth in literary, technical,
+                cultural, and social skills.
               </span>
             </div>
           </div>
