@@ -141,7 +141,7 @@ const WEBSITE_HELP_DESK = () => {
               </div>
               <div className="w-full flex justify-center gap-[30px] mt-[10px]  -mb-[35px]">
                 <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
-                  <Link href="https://wa.me/7976227748" target="blank">
+                  <Link href="https://wa.me/7976227748" target="_blank">
                     <Image
                       src={whatsapp}
                       alt="whatsapp"
@@ -152,7 +152,7 @@ const WEBSITE_HELP_DESK = () => {
                 <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
                   <Link
                     href="https://www.linkedin.com/in/chinmay-bhatnagar-4140a424a/"
-                    target="blank"
+                    target="_blank"
                   >
                     <Image
                       src={linkedin}

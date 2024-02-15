@@ -44,7 +44,7 @@ const FOOTER = () => {
               <button>
                 <Link
                   href="https://www.instagram.com/skitpravah/"
-                  target="blank"
+                  target="_blank"
                 >
                   <Image
                     src={instagram}
@@ -56,7 +56,7 @@ const FOOTER = () => {
             </div>
             <div className="p-[5px]">
               <button>
-                <Link href="https://twitter.com/@pravah_skit" target="blank">
+                <Link href="https://twitter.com/@pravah_skit" target="_blank">
                   <Image
                     src={twitter}
                     alt="twitter"
@@ -67,7 +67,7 @@ const FOOTER = () => {
             </div>
             <div className="p-[5px]">
               <button>
-                <Link href="https://www.facebook.com/pravah2016" target="blank">
+                <Link href="https://www.facebook.com/pravah2016" target="_blank">
                   <Image
                     src={facebook}
                     alt="facebook"
@@ -80,7 +80,7 @@ const FOOTER = () => {
               <button>
                 <Link
                   href="https://www.youtube.com/@skitpravah4946"
-                  target="blank"
+                  target="_blank"
                 >
                   <Image
                     src={youtube}
@@ -242,7 +242,7 @@ const FOOTER = () => {
                 <li className="mt-[5px]">
                   <Link
                     href="https://www.instagram.com/skitpravah/"
-                    target="blank"
+                    target="_blank"
                   >
                     <div>
                       <button>Instagram</button>
@@ -252,7 +252,7 @@ const FOOTER = () => {
                 <li className="mt-[5px]">
                   <Link
                     href="https://www.facebook.com/pravah.skit?mibextid=rS40aB7S9Ucbxw6v"
-                    target="blank"
+                    target="_blank"
                   >
                     <div>
                       <button>Facebook</button>
@@ -260,7 +260,7 @@ const FOOTER = () => {
                   </Link>
                 </li>
                 <li className="mt-[5px]">
-                  <Link href="https://twitter.com/@pravah_skit" target="blank">
+                  <Link href="https://twitter.com/@pravah_skit" target="_blank">
                     <div>
                       <button>Twitter</button>
                     </div>
@@ -269,7 +269,7 @@ const FOOTER = () => {
                 <li className="mt-[5px]">
                   <Link
                     href="https://www.youtube.com/@skitpravah4946"
-                    target="blank"
+                    target="_blank"
                   >
                     <div>
                       <button>Youtube</button>
@@ -348,7 +348,7 @@ const FOOTER = () => {
         </div>
         <div className="w-full h-[0.2px] bg-[#424242] my-[10px]" />
         <div className="text-center pb-[10px] text-[12px] text-[#b8b8b8] sm:text-[13px]">
-          <Link href="https://skit.ac.in" target="blank">
+          <Link href="https://skit.ac.in" target="_blank">
             <div className=" ">
               <button>Copyright &copy; SKIT, Jaipur</button>
             </div>

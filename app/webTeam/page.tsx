@@ -56,14 +56,14 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
               </div>
               <div className="flex justify-end">
                 <div className="bg-black px-[10px]  sm:px-[15px] py-[5px] sm:py-[8px] flex gap-2 sm:gap-3 w-fit rounded-full ">
-                  <Link href={memberDetail.memberGithub} target="blank">
+                  <Link href={memberDetail.memberGithub} target="_blank">
                     <Image
                       src={github}
                       alt="github"
                       className="w-[14px] sm:w-[18px] md:w-[25px]  aspect-square"
                     />
                   </Link>
-                  <Link href={memberDetail.memberLinkedIn} target="blank">
+                  <Link href={memberDetail.memberLinkedIn} target="_blank">
                     <Image
                       src={linkedin}
                       alt="linkedin"
@@ -72,7 +72,7 @@ const WEBTEAM_CARD = ({ memberDetail, index }) => {
                   </Link>
                   <Link
                     href={`https://wa.me/91${memberDetail.memberPhone}`}
-                    target="blank"
+                    target="_blank"
                   >
                     <Image
                       src={whatsapp}

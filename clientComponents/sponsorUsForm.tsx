@@ -191,7 +191,7 @@ const SPONSORUSFORM = () => {
                   <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
                     <Link
                       href={`https://wa.me/91${details.memberPhone}`}
-                      target="blank"
+                      target="_blank"
                     >
                       <Image
                         src={whatsapp}
@@ -201,7 +201,7 @@ const SPONSORUSFORM = () => {
                     </Link>
                   </div>
                   <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
-                    <Link href={details.memberLinkedIn} target="blank">
+                    <Link href={details.memberLinkedIn} target="_blank">
                       <Image
                         src={linkedin}
                         alt="linkedin"

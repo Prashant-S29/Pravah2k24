@@ -27,7 +27,7 @@ const INTROPAGE = () => {
             <div className=" w-full ">
               <div className=" flex justify-center items-center ">
                 <div>
-                  <Link href="https://skit.ac.in" target="blank">
+                  <Link href="https://skit.ac.in" target="_blank">
                     <Image
                       src={naac_logo}
                       alt="skitlogo"
@@ -37,7 +37,7 @@ const INTROPAGE = () => {
                 </div>
                 <div className="w-[1px] h-[20px] mx-[10px] bg-black" />
                 <div>
-                  <Link href="https://skit.ac.in" target="blank">
+                  <Link href="https://skit.ac.in" target="_blank">
                     <Image
                       src={skit_logo}
                       alt="skitlogo"
@@ -47,7 +47,7 @@ const INTROPAGE = () => {
                 </div>
                 <div className="w-[1px] h-[20px] mx-[10px] bg-black" />
                 <div>
-                  <Link href="https://skit.ac.in" target="blank">
+                  <Link href="https://skit.ac.in" target="_blank">
                     <Image
                       src={swamiji_logo}
                       alt="skitlogo"

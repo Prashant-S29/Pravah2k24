@@ -94,7 +94,7 @@ const ImageGalleryItem = ({
           <div>
             <Link
               href={youtubeLink}
-              target="blank"
+              target="_blank"
               data-cursor-text="Play"
               data-cursor-size="70px"
             >
