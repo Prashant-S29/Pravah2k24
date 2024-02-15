@@ -656,22 +656,6 @@ const centralWorkingCommittee = [
 
 const coreTeam = [
     {
-        memberName: "Chinmay Bhatnagar",
-        memberPhoto: chinmayPhoto,
-        memberPost: "",
-        memberDepartment: "3rd Yr - IT",
-        memberPhone: "7976227748",
-        memberMail:"chinmaybhatnagar2002@gmail.com"
-    },
-    {
-        memberName: "Devik Rathore",
-        memberPhoto: devikPhoto,
-        memberPost: "",
-        memberDepartment: "2nd Yr - EE",
-        memberPhone: "8000342116",
-        memberMail:"devikrathore123@gmail.com"
-    }, 
-    {
         memberName: "Kanishk Bharadwaj",
         memberPhoto: kanishkPhoto,
         memberPost: "",
@@ -688,28 +672,12 @@ const coreTeam = [
         memberMail:"jain04paridhi@gmail.com"
     },
     {
-        memberName: "Anushka Singh Sisodia",
-        memberPhoto: anushka,
+        memberName: "Chinmay Bhatnagar",
+        memberPhoto: chinmayPhoto,
         memberPost: "",
-        memberDepartment: "2nd Yr - CSE",
-        memberPhone: "7976971372",
-        memberMail:"singhanushka0605@gmail.com"
-    },
-    {
-        memberName: "Anirudh Singh Naruka",
-        memberPhoto: anirudh_core,
-        memberPost: "",
-        memberDepartment: "2nd Yr - CSE",
-        memberPhone: "7357418512",
-        memberMail:"anisingh1304@gmail.com"
-    },
-    {
-        memberName: "Aman Joshi",
-        memberPhoto: aman,
-        memberPost: "",
-        memberDepartment: "2nd Yr - CSE",
-        memberPhone: "8764401145",
-        memberMail:"joshiamancchs@gmail.com"
+        memberDepartment: "3rd Yr - IT",
+        memberPhone: "7976227748",
+        memberMail:"chinmaybhatnagar2002@gmail.com"
     },
     {
         memberName: "Ananya Singh Choudhary",
@@ -720,13 +688,37 @@ const coreTeam = [
         memberMail:"ananysingh268@gmail.com"
     },
     {
-        memberName: "Anant khandelwal",
-        memberPhoto: anantPhoto,
+        memberName: "Anirudh Singh Naruka",
+        memberPhoto: anirudh_core,
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
-        memberPhone: "8209172026",
-        memberMail:"anantk.k.15@gmail.com"
+        memberPhone: "7357418512",
+        memberMail:"anisingh1304@gmail.com"
     },
+    {
+        memberName: "Anushka Singh Sisodia",
+        memberPhoto: anushka,
+        memberPost: "",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "7976971372",
+        memberMail:"singhanushka0605@gmail.com"
+    },
+    {
+        memberName: "Akshat Tanwar",
+        memberPhoto: akshat,
+        memberPost: "",
+        memberDepartment: "3rd Yr - IT",
+        memberPhone: "7340062629",
+        memberMail:"akshat21042004@gmail.com"
+    },
+    {
+        memberName: "Devik Rathore",
+        memberPhoto: devikPhoto,
+        memberPost: "",
+        memberDepartment: "2nd Yr - EE",
+        memberPhone: "8000342116",
+        memberMail:"devikrathore123@gmail.com"
+    }, 
     {
         memberName: "Archi Rathore",
         memberPhoto: archi,
@@ -736,20 +728,20 @@ const coreTeam = [
         memberMail:"aarchirathore13@gmail.com"
     },
     {
+        memberName: "Aman Joshi",
+        memberPhoto: aman,
+        memberPost: "",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "8764401145",
+        memberMail:"joshiamancchs@gmail.com"
+    },
+    {
         memberName: "Kshitij Agrawal",
         memberPhoto: kshitijPhoto,
         memberPost: "",
         memberDepartment: "2nd Yr - IT",
         memberPhone: "7877598110",
         memberMail:"kshitijagrawal53@gmail.com"
-    },
-    {
-        memberName: "Akshat Tanwar",
-        memberPhoto: akshat,
-        memberPost: "",
-        memberDepartment: "3rd Yr - IT",
-        memberPhone: "7340062629",
-        memberMail:"akshat21042004@gmail.com"
     },
     {
         memberName: "Hardik Agarwal",
@@ -766,6 +758,14 @@ const coreTeam = [
         memberDepartment: "4th Yr - CSE",
         memberPhone: "8058654258",
         memberMail:"bansalrishika25@gmail.com"
+    },
+    {
+        memberName: "Anant Khandelwal",
+        memberPhoto: anantPhoto,
+        memberPost: "",
+        memberDepartment: "2nd Yr - CSE",
+        memberPhone: "8209172026",
+        memberMail:"anantk.k.15@gmail.com"
     },
 ]
 

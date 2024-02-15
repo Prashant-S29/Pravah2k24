@@ -315,7 +315,21 @@ const FOOTER = () => {
                   </Link>
                 </div>
               </div>
-              <div className="mt-[10px]">
+              <div className="mt-[5px]">
+                <div>
+                  <span className="text-[13px] font-semibold">
+                    Event Quires
+                  </span>
+                </div>
+                <div className="leading-none text-[13px] sm:text-[14px]">
+                  <Link href="https://wa.me/9929425337" target="_blank">
+                    <button>
+                      Paridhi Jain - <u>9929425337</u>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+              <div className="mt-[5px]">
                 <div>
                   <span className="text-[13px] font-semibold">
                     Website Head
