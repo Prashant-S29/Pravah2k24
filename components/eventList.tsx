@@ -18,7 +18,7 @@ const EVENTLIST = ({ eventCategoryID }: { eventCategoryID: string }) => {
         setIsLoading(false);
       }
       setEvents(data);
-      console.log(data["pravahEventsList"]);
+      // console.log(data["pravahEventsList"]);
     };
     fetchData();
   }, []);

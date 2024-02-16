@@ -153,6 +153,19 @@ html {
   animation: loader 1.5s infinite;
 }
 
+.loaderCard_animation_two {
+  background: linear-gradient(
+    -45deg,
+    #dcdcdc,
+    #898989,
+    #676767,
+    #b3b3b3,
+    #d6d6d6
+  );
+  background-size: 600% 600%;
+  animation: loader 1.5s infinite;
+}
+
 @keyframes loader {
   0% {
     background-position: 0% 50%;
@@ -167,14 +180,13 @@ html {
 
 .scrollDown-animation {
   animation: upToDown 0.5s alternate infinite;
-
 }
 
 @keyframes upToDown {
-  0%{
+  0% {
     padding-top: 5px;
   }
-  100%{
+  100% {
     padding-top: 25px;
   }
 }

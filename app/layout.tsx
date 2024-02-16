@@ -3,15 +3,12 @@ import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-import { Analytics } from "@vercel/analytics/react";
-
 import { background } from "@/public";
 
 import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
 import PAGEWRAPPER from "./pageWrapper";
 import INTROPAGE from "@/clientComponents/introPage";
-import EVENT_STATUS from "@/clientComponents/eventStatus";
 
 const montserrat = Montserrat({ subsets: ["cyrillic"] });
 
@@ -36,8 +33,6 @@ export default function RootLayout({
           />
         </div>
         <div>
-          {/* <EVENT_STATUS /> */}
-
           <PAGEWRAPPER>
             <INTROPAGE />
             <NAVBAR />

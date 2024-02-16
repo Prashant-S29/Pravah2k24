@@ -43,6 +43,8 @@ const HOME_OBJECT = () => {
           </div> */}
           {/* <TIMERCOUNT/> */}
           <DATES />
+          <EVENT_STATUS />
+
         </div>
       </div>
       <MARQUEEMOTION />
