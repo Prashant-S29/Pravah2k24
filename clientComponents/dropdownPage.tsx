@@ -66,7 +66,7 @@ const DROPDOWNPAGE = () => {
           <span onClick={() => setDropDown(!dropDown)}>
             <NAVLINK
               href="events"
-              navlink="EVENTS"
+              navlink="EVENTS & REGISTRATION"
               linkinfo="Variety of events from endless domains."
               linkColor="#A2F1F4"
               linkInfoColor="#ffffff"

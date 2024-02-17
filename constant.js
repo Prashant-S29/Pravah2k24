@@ -581,7 +581,7 @@ const centralWorkingCommittee = [
         memberMail:"virendra.sangtani@skit.ac.in"
     },
     {
-        memberName: "Mr. Ankush Tandon",
+        memberName: "Dr. Ankush Tandon",
         memberPhoto: ankushPhoto,
         memberPost: "Associate Professor",
         memberDepartment: "Department of Electrical Engineering ",

@@ -4,62 +4,90 @@ import AAVEG_EVENT_REG_CARDS from "@/clientComponents/aavegEventCard";
 import { ANIMATEDTEXT12, TYPINGTEXT } from "@/clientComponents/motionDiv";
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
 import { aavegEventDetails } from "@/constant";
-import React, { useState } from "react";
-import Link from "next/link";
+import { aavegLoadingAnimation } from "@/public";
 import Image from "next/image";
-import { download } from "@/public";
+import React, { useState } from "react";
 
 const AAVEG_OBJECT = () => {
   const [showText, setShowText] = useState(false);
+  const [showLoadingAniamtion, setShowLoadingAniamtion] = useState(true);
+
+  setTimeout(() => {
+    setShowLoadingAniamtion(false);
+  }, 5000);
 
   return (
     <>
-      <div className=" w-full min-h-[80vh]  rounded-[20px] flex justify-center mt-[30px] text-center ">
-        <div>
+      {showLoadingAniamtion && (
+        <div className="w-full min-h-[70vh] flex justify-center items-center">
+          {/* <video
+            playsInline
+            autoPlay
+            muted
+            // className="w-[100px]"
+          >
+            <source
+              src="https://lottie.host/embed/cba9348e-a3bf-49bf-9cfb-2eacfce858fd/KsPC4f9j5h.json"
+              type="video/mp4"
+            />
+          </video> */}
+          <Image
+            src={aavegLoadingAnimation}
+            alt="aavegLoadingAnimation"
+            className="w-[100px]"
+          />
+        </div>
+      )}
+      {showLoadingAniamtion === false && (
+        <div className=" w-full min-h-[80vh]   rounded-[20px]  justify-center mt-[30px] text-center ">
           <div>
-            <TYPINGTEXT title="Sports Event" />
-            <ANIMATEDTEXT12 />
-            {/* <div>
+            <div>
+              <TYPINGTEXT title="Sports Event" />
+              <ANIMATEDTEXT12 />
+              {/* <div>
               <span className="font-bold">17th - 19th April, 2023</span>
             </div> */}
-          </div>
-          <div className="mx-[20px]  lg:mx-[200px]   text-[14px] sm:text-[16px] mt-[10px]">
-            <span>
-              One of the biggest fests in Jaipur, {'"'}AAVEG{'"'}, is back with
-              its glamour this April. The annual sports event of SKIT Jaipur,
-              since its inception, has been a stage for teams to showcase their
-              talent by competing against the region{"'"}s best players.
-              <span className="hidden sm:flex">
-                The event is all set to witness excitement and competitiveness,
-                being an addition and no doubt a browsing success; the first
-                will be fenced with a lot of glory. So get ready to feel the
-                adrenaline rush in this thrilling face, prepare, and train
-                yourself to prove your mettle at the sports extravaganza.
+            </div>
+            <div className="mx-[20px]  lg:mx-[200px]   text-[14px] sm:text-[16px] mt-[10px]">
+              <span>
+                One of the biggest fests in Jaipur, {'"'}AAVEG{'"'}, is back
+                with its glamour this April. The annual sports event of SKIT
+                Jaipur, since its inception, has been a stage for teams to
+                showcase their talent by competing against the region{"'"}s best
+                players.
+                <span className="hidden sm:flex">
+                  The event is all set to witness excitement and
+                  competitiveness, being an addition and no doubt a browsing
+                  success; the first will be fenced with a lot of glory. So get
+                  ready to feel the adrenaline rush in this thrilling face,
+                  prepare, and train yourself to prove your mettle at the sports
+                  extravaganza.
+                </span>
+                <div
+                  className={`flex sm:hidden overflow-hidden duration-200 ${
+                    showText ? "max-[350px]:h-[170px] h-[130px]" : "h-0"
+                  }`}
+                >
+                  The event is all set to witness excitement and
+                  competitiveness, being an addition and no doubt a browsing
+                  success; the first will be fenced with a lot of glory. So get
+                  ready to feel the adrenaline rush in this thrilling face,
+                  prepare, and train yourself to prove your mettle at the sports
+                  extravaganza.
+                </div>
               </span>
-              <div
-                className={`flex sm:hidden overflow-hidden duration-200 ${
-                  showText ? "max-[350px]:h-[170px] h-[130px]" : "h-0"
-                }`}
+            </div>
+            <div className="block sm:hidden">
+              <span
+                className="font-semibold text-[15px] duration-300"
+                onClick={() => {
+                  setShowText(!showText);
+                }}
               >
-                The event is all set to witness excitement and competitiveness,
-                being an addition and no doubt a browsing success; the first
-                will be fenced with a lot of glory. So get ready to feel the
-                adrenaline rush in this thrilling face, prepare, and train
-                yourself to prove your mettle at the sports extravaganza.
-              </div>
-            </span>
-          </div>
-          <div className="block sm:hidden">
-            <span
-              className="font-semibold text-[15px] duration-300"
-              onClick={() => {
-                setShowText(!showText);
-              }}
-            >
-              ...read {showText ? "less" : "more"}
-            </span>
-          </div>
-          {/* <div className=" my-[20px] flex justify-center">
+                ...read {showText ? "less" : "more"}
+              </span>
+            </div>
+            {/* <div className=" my-[20px] flex justify-center">
             <Link href="/">
               <button className=" px-[20px] flex items-center gap-1  py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
                 AAVEG Schedule
@@ -71,22 +99,23 @@ const AAVEG_OBJECT = () => {
               </button>
             </Link>
           </div> */}
-          {/* <div className="mt-[10px] text-[28px] md:text-[36px] lg:text-[42px] font-black px-[20px] leading-tight ">
+            {/* <div className="mt-[10px] text-[28px] md:text-[36px] lg:text-[42px] font-black px-[20px] leading-tight ">
             <span>GAMES & ACTIVITIES</span>
           </div> */}
-          <div>
-            <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
-              {aavegEventDetails.map((eventDetail, index) => (
-                <AAVEG_EVENT_REG_CARDS
-                  key={index}
-                  index={index}
-                  eventDetail={eventDetail}
-                />
-              ))}
+            <div>
+              <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
+                {aavegEventDetails.map((eventDetail, index) => (
+                  <AAVEG_EVENT_REG_CARDS
+                    key={index}
+                    index={index}
+                    eventDetail={eventDetail}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 };

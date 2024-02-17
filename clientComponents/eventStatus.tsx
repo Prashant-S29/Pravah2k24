@@ -5,6 +5,7 @@ import { downarrow } from "@/public";
 import Image from "next/image";
 import Link from "next/link";
 import React, { use, useEffect, useState } from "react";
+import FutureDateTimer from "./remainingDays";
 
 const EVENT_STATUS = () => {
   const [showLiveEventList, setShowLiveEventList] = useState(true);
@@ -75,6 +76,8 @@ const EVENT_STATUS = () => {
 
     fetchData();
   }, []);
+
+  const pravahStartingDate = new Date("2024-03-11T00:00:00");
 
   return (
     <>
@@ -194,10 +197,9 @@ const EVENT_STATUS = () => {
                       {!isAnyEventLive && (
                         <div className="text-center leading-tight mt-4 bg-gray-200 py-4 rounded-[10px]">
                           <div>
-                            <span className="text-[13px] font-semibold">
-                              No Live Events Found
-                            </span>
+                            <span className="font-bold">Pravah 2024 is about it hit</span>
                           </div>
+                          <FutureDateTimer futureDate={pravahStartingDate} />
                         </div>
                       )}
                       {events["pravahEventsList"].map(
