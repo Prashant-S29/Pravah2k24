@@ -79,7 +79,7 @@ const EVENT_STATUS = () => {
   return (
     <>
       <div
-        className={`fixed  duration-300
+        className={`fixed  duration-300 shadow-xl
         ${
           showLiveEventList ? "w-[280px] sm:w-[300px]" : "w-[120px] -mr-[88px]"
         }  bottom-0 right-0 z-[30] m-[10px] bg-white border border-black  rounded-[10px]`}
