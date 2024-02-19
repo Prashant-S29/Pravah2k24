@@ -106,19 +106,30 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
         <div className="w-full flex  justify-center gap-2 mt-[10px]">
           {remainingSlots > 0 ? (
             <div className="w-full">
-              <button
-                className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
-                tabIndex={-1}
-                onClick={() => {
-                  setRegistrationConfirmation(true);
-                  setRegistrationLinkAndPrice({
-                    link: eventDetail.eventRegistrationLinkOne,
-                    price: eventDetail.eventRegistrationFeeOne,
-                  });
-                }}
-              >
-                Register
-              </button>
+              {eventDetail.eventRegistrationFeeOne === "0" ? (
+                <Link href={eventDetail.eventRegistrationLinkOne}>
+                  <div
+                    className="w-full px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
+                    tabIndex={-1}
+                  >
+                    <span>Register - Free</span>
+                  </div>
+                </Link>
+              ) : (
+                <button
+                  className="w-full px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
+                  tabIndex={-1}
+                  onClick={() => {
+                    setRegistrationConfirmation(true);
+                    setRegistrationLinkAndPrice({
+                      link: eventDetail.eventRegistrationLinkOne,
+                      price: eventDetail.eventRegistrationFeeOne,
+                    });
+                  }}
+                >
+                  Register
+                </button>
+              )}
             </div>
           ) : (
             ""
@@ -476,7 +487,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                       setRegistrationConfirmation(false);
                     }}
                   >
-                    cancle and return
+                    cancel and return
                   </button>
                 </div>
               </div>

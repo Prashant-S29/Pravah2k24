@@ -93,7 +93,7 @@ const DROPDOWNPAGE = () => {
             <NAVLINK
               href="about"
               navlink="ABOUT"
-              linkinfo="Know more about SKIT, Jaipur."
+              linkinfo="Know more about SKIT M & G, Jaipur."
               linkColor="#A2F1F4"
               linkInfoColor="#ffffff"
               lineColor="#ffffff"

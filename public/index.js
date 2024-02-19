@@ -252,6 +252,29 @@ import bgmi from "@/public/eventsThumbnail/esports/bgmi.png"
 
 import aavegLoadingAnimation from "@/public/logo/aavegAnimation.gif"
 
+import bhagirathOne from "@/public/socialEvents/imgOne.png";
+import bhagirathTwo from "@/public/socialEvents/imgTwo.png";
+import bhagirathThree from "@/public/socialEvents/imgThree.png";
+import bhagirathFour from "@/public/socialEvents/imgFour.png";
+import bhagirathFive from "@/public/socialEvents/imgFive.png";
+import bhagirathSix from "@/public/socialEvents/imgSix.png";
+import bhagirathSeven from "@/public/socialEvents/imgSeven.png";
+import bhagirathEight from "@/public/socialEvents/imgEight.png";
+
+import nukkadOne from "@/public/socialEvents/1.png";
+import nukkadTwo from "@/public/socialEvents/2.png";
+import nukkadThree from "@/public/socialEvents/3.png";
+import nukkadFour from "@/public/socialEvents/4.png";
+import nukkadFive from "@/public/socialEvents/5.png";
+import nukkadSix from "@/public/socialEvents/6.png";
+import nukkadSeven from "@/public/socialEvents/7.png";
+import nukkadEight from "@/public/socialEvents/8.png";
+
+
+
+
 export {
-    background, navbarText, dropdown, cursor, cursorTwo, instagram, twitter, whatsapp, facebook, person, mail, youtube, pravah2024, rawaz, thirak, sur, dj, celebrityNight, kumarvishwas, jassigill, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, skit_logo, naac_logo, swamiji_logo, gajendra, shruti, ravindra, text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, naushad, glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12, aftermovie, aaveg, logoreveal, help_icon, quicklink_icon, reachus_icon, contact_icon, aavegOne, aavegTwo, aavegThree, aavegFour, aavegFive, aavegSix, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat, sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17, rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, loader, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4, cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, anantPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, naveenPhoto, maneeshaPhoto, nitinPhoto, kailash, akshat, rishika, archi, hardik, anirudh_core, aman, ananya,anushka,escaperoom,screamandchill,cubecraze,essaywriting,youthtalk,vstock,bytechase, circuit,bgmi, chumbakk, mother, academy, kalam, toprankers,aavegLoadingAnimation
+    background, navbarText, dropdown, cursor, cursorTwo, instagram, twitter, whatsapp, facebook, person, mail, youtube, pravah2024, rawaz, thirak, sur, dj, celebrityNight, kumarvishwas, jassigill, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, skit_logo, naac_logo, swamiji_logo, gajendra, shruti, ravindra, text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, naushad, glimpse1, glimpse2, glimpse3, glimpse4, glimpse5, glimpse6, glimpse7, glimpse8, glimpse9, glimpse10, glimpse11, glimpse12, aftermovie, aaveg, logoreveal, help_icon, quicklink_icon, reachus_icon, contact_icon, aavegOne, aavegTwo, aavegThree, aavegFour, aavegFive, aavegSix, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, kabbadi, badminton, download, downarrow, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, startupexpo, artexhi, rapbazzi, linkedin, github, nora, sunil, chinmay, gaurav, prashant, jashan, vishal, imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix, resume, pause, crown, nushrat, sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17, rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, rawaz17, rawaz18, rawaz19, loader, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4, cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, anantPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, naveenPhoto, maneeshaPhoto, nitinPhoto, kailash, akshat, rishika, archi, hardik, anirudh_core, aman, ananya,anushka,escaperoom,screamandchill,cubecraze,essaywriting,youthtalk,vstock,bytechase, circuit,bgmi, chumbakk, mother, academy, kalam, toprankers,aavegLoadingAnimation,bhagirathOne, bhagirathTwo, bhagirathThree, bhagirathFour, bhagirathFive, bhagirathSix, bhagirathSeven, bhagirathEight,nukkadOne, nukkadTwo, nukkadThree, nukkadFour, nukkadFive, nukkadSix, nukkadSeven, nukkadEight
+
+
 }

@@ -26,21 +26,57 @@ const SPONSOR_OBJECT = () => {
             </span>
           </div>
 
-          <div className="flex justify-center items-center px-[20px] flex-wrap sm:flex-nowrap gap-[30px]">
-            <div>
-              <Image src={chumbakk} alt="chumbakk" className="w-[320px] sm:w-[450px]" />
+          <div className="text-center mt-[50px] ">
+            <div className="leading-none">
+              <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[48px]">
+                Food Partner
+              </span>
             </div>
-            <div>
-              <Image src={academy} alt="academy" className="w-[180px] sm:w-[300px]"  />
+            <div className="flex justify-center -mt-3">
+              <Image
+                src={chumbakk}
+                alt="chumbakk"
+                className="w-[300px] sm:w-[380px]"
+              />
             </div>
-            <div>
-              <Image src={kalam} alt="kalam" className="w-[320px] sm:w-[500px]"  />
+          </div>
+
+          <div className="text-center mt-[50px] ">
+            <div className="leading-none">
+              <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[48px]">
+                Sopnsors
+              </span>
             </div>
-            <div>
-              <Image src={mother} alt="mother" className="w-[320px] sm:w-[450px]"  />
-            </div>
-            <div>
-              <Image src={toprankers} alt="toprankers" className="sm:w-[300px]"  />
+
+            <div className="flex justify-center items-center px-[20px]  flex-wrap sm:flex-nowrap gap-[30px]">
+              <div className=" sm:mt-0 mt-3">
+                <Image
+                  src={academy}
+                  alt="academy"
+                  className="w-[180px] sm:w-[300px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={kalam}
+                  alt="kalam"
+                  className="w-[320px] sm:w-[300px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={mother}
+                  alt="mother"
+                  className="w-[320px] sm:w-[300px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={toprankers}
+                  alt="toprankers"
+                  className="sm:w-[400px]"
+                />
+              </div>
             </div>
           </div>
 

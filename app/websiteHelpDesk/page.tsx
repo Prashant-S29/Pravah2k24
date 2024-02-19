@@ -128,7 +128,7 @@ const WEBSITE_HELP_DESK = () => {
               </div>
             </div>
           </form>
-          <div className="flex justify-center mt-[20px]">
+          <div className="flex justify-center gap-x-[50px] gap-y-[20px] mt-[20px]">
             <div className="p-[15px] border border-black rounded-[15px] text-center w-[300px] bg-white">
               <div>
                 <span className="font-bold">Chinmay Bhatnagar</span>
@@ -152,6 +152,40 @@ const WEBSITE_HELP_DESK = () => {
                 <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
                   <Link
                     href="https://www.linkedin.com/in/chinmay-bhatnagar-4140a424a/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={linkedin}
+                      alt="linkedin"
+                      className="w-[21px] aspect-square"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="p-[15px] border border-black rounded-[15px] text-center w-[300px] bg-white">
+              <div>
+                <span className="font-bold">Prashant Singh</span>
+              </div>
+              <div className="leading-tight">
+                <span className="text-[15px] ">9079215052</span>
+              </div>
+              <div className="leading-tight">
+                <span className="text-[14px] ">Website Team</span>
+              </div>
+              <div className="w-full flex justify-center gap-[30px] mt-[10px]  -mb-[35px]">
+                <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
+                  <Link href="https://wa.me/9079215052" target="_blank">
+                    <Image
+                      src={whatsapp}
+                      alt="whatsapp"
+                      className="w-[20px] aspect-square"
+                    />
+                  </Link>
+                </div>
+                <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
+                  <Link
+                    href="https://www.linkedin.com/in/prashant-singh-529391250/"
                     target="_blank"
                   >
                     <Image

@@ -5,17 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { cursorTwo, naac_logo, skit_logo, swamiji_logo } from "@/public";
-import { TITLEIMAGE } from "./motionDiv";
-import INTROPAGE_CARD from "./introPageCard";
-
 const INTROPAGE = () => {
   const [pageDisplay, setPageDisplay] = useState(false);
   const [buttonArrow, setButtonArrow] = useState(false);
 
-  const squareNumber: number[] = [];
-  for (let i = 0; i < 1000; i++) {
-    squareNumber.push(i);
-  }
   return (
     <>
       <div
@@ -31,8 +24,13 @@ const INTROPAGE = () => {
                     <Image
                       src={naac_logo}
                       alt="skitlogo"
-                      className="w-[70px] sm:w-[80px]"
+                      className="w-[60px] sm:w-[70px]"
                     />
+                    <div className="-mt-2">
+                      <span className="text-[14px] font-semibold">
+                        3.67 / 4.00
+                      </span>
+                    </div>
                   </Link>
                 </div>
                 <div className="w-[1px] h-[20px] mx-[10px] bg-black" />
@@ -56,7 +54,7 @@ const INTROPAGE = () => {
                   </Link>
                 </div>
               </div>
-              <div className="leading-tight  mx-[20px]">
+              <div className="leading-tight  mx-[20px] mt-4">
                 <span className="font-semibold text-[14px]   sm:text-[16px]">
                   Swami Keshvanand Institute of Technology,
                   <br className="hidden sm:block" />
@@ -69,18 +67,15 @@ const INTROPAGE = () => {
             <span>welcomes you to</span>
           </div>
           <div className="flex justify-center items-center  w-full my-[50px] px-[20px] ">
-            {/* <TITLEIMAGE /> */}
-            {/* <Image src */}
             <Image
               src="https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/ssthzscie5vb7oscyznw.png"
               alt="hello"
               className="w-[300px]  md:w-[450px]"
               width={500}
               height={500}
-              // style={{ display: index === currentIndex ? "block" : "none" }}
             />
-            {/* <INTROPAGE_CARD /> */}
           </div>
+
           <div className="flex justify-center mt-[30px]">
             <button
               className="pr-[14px] py-[12px] pl-[24px] text-[13px] sm:text-[14px] rounded-full duration-200 shadow-[#787878] font-semibold bg-black

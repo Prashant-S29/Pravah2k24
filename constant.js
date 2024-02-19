@@ -1,12 +1,12 @@
 import {
-    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur, 
-    celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar, 
-    kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo, 
+    jassigill, kumarvishwas, instagram, youtube, twitter, facebook, gajendra, shruti, ravindra, naushad, rawaz, thirak, dj, sur,
+    celebrityNight, aaveg, aftermovie, logoreveal, football, volleyball, basketball, chess, carrom, cricket, tabletennis, tugofwar,
+    kabbadi, badminton, cosplay, bhagirath, masterchef, clashofband, paintball, kavyanjali, trailer, artexhi, rapbazzi, startupexpo,
     nora, sunil, chinmay, gaurav, prashant, jashan, vishal, nushrat, glimpse10, glimpse9,
     sur1, sur2, sur3, sur4, sur5, sur6, sur7, sur8, sur9, sur10, sur11, sur12, sur13, sur14, sur15, sur16, sur17,
-    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16, 
-    rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14, 
-    thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4, 
+    rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16,
+    rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14,
+    thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4,
     cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, maneeshaPhoto, nitinPhoto, naveenPhoto, kailash, akshat, rishika, archi, hardik, anirudh_core, aman, anantPhoto, ananya, anushka, escaperoom, screamandchill, cubecraze, essaywriting, youthtalk, circuit, bytechase, vstock, bgmi
 } from "./public/index"
 
@@ -339,32 +339,32 @@ const eventCategoryDesc = [
     {
         eventCategoryName: "Cultural Events",
         eventCategoryID: "cultural",
-        eventCategoryPhoto:[sur, rawaz, clashofband, thirak]
+        eventCategoryPhoto: [sur, rawaz, clashofband, thirak]
     },
     {
         eventCategoryName: "Technical Events",
         eventCategoryID: "tech",
-        eventCategoryPhoto:[vstock,bytechase, circuit,startupexpo]
+        eventCategoryPhoto: [vstock, bytechase, circuit, startupexpo]
     },
     {
         eventCategoryName: "Non Technical Events",
         eventCategoryID: "non-tech",
-        eventCategoryPhoto:[tugofwar,escaperoom,screamandchill,cubecraze]
+        eventCategoryPhoto: [tugofwar, escaperoom, screamandchill, cubecraze]
     },
     {
         eventCategoryName: "Literary Events",
         eventCategoryID: "literary",
-        eventCategoryPhoto:[essaywriting,kavyanjali,youthtalk]
+        eventCategoryPhoto: [essaywriting, kavyanjali, youthtalk]
     },
     {
         eventCategoryName: "Social Events",
         eventCategoryID: "social",
-        eventCategoryPhoto:[bhagirath, marhala]
+        eventCategoryPhoto: [bhagirath, marhala]
     },
     {
-        eventCategoryName: "Esports Events",
+        eventCategoryName: "Esports",
         eventCategoryID: "esports",
-        eventCategoryPhoto:[bgmi]
+        eventCategoryPhoto: [bgmi]
     },
 ]
 
@@ -570,7 +570,7 @@ const centralWorkingCommittee = [
         memberPost: "Associate Professor",
         memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9079215052",
-        memberMail:"abhigupta@skit.ac.in"
+        memberMail: "abhigupta@skit.ac.in"
     },
     {
         memberName: "Dr. Virendra Sangtani",
@@ -578,7 +578,7 @@ const centralWorkingCommittee = [
         memberPost: "Associate Professor",
         memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9799884938",
-        memberMail:"virendra.sangtani@skit.ac.in"
+        memberMail: "virendra.sangtani@skit.ac.in"
     },
     {
         memberName: "Dr. Ankush Tandon",
@@ -586,7 +586,7 @@ const centralWorkingCommittee = [
         memberPost: "Associate Professor",
         memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9460066186",
-        memberMail:"ankush@skit.ac.in"
+        memberMail: "ankush@skit.ac.in"
     },
     {
         memberName: "Mr. Kailash Soni",
@@ -594,7 +594,7 @@ const centralWorkingCommittee = [
         memberPost: "Associate Professor",
         memberDepartment: "Department of Computer Science and Engineering",
         memberPhone: "9460066186",
-        memberMail:"virendra.sangtani@skit.ac.in"
+        memberMail: "virendra.sangtani@skit.ac.in"
     },
     {
         memberName: "Dr. Maneesha Kaushik",
@@ -602,7 +602,7 @@ const centralWorkingCommittee = [
         memberPost: "Associate Professor",
         memberDepartment: "Department of Management Studies",
         memberPhone: "9785381999",
-        memberMail:"maneesha.kaushik@skit.ac.in"
+        memberMail: "maneesha.kaushik@skit.ac.in"
     },
     {
         memberName: "Mrs. Deepti Arela",
@@ -610,7 +610,7 @@ const centralWorkingCommittee = [
         memberPost: "Assistant Professor",
         memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9929417474",
-        memberMail:"deepti.arela@skit.ac.in"
+        memberMail: "deepti.arela@skit.ac.in"
     },
     {
         memberName: "Mr. Nitin Goyal",
@@ -618,7 +618,7 @@ const centralWorkingCommittee = [
         memberPost: "Assistant Professor",
         memberDepartment: "Department of Mechanical Engineering ",
         memberPhone: "9799884938",
-        memberMail:"nitin.goyal@skit.ac.in"
+        memberMail: "nitin.goyal@skit.ac.in"
     },
     {
         memberName: "Dr. Pooja Jain",
@@ -626,7 +626,7 @@ const centralWorkingCommittee = [
         memberPost: "Associate Professor",
         memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9785050506",
-        memberMail:"pooja@skit.ac.in"
+        memberMail: "pooja@skit.ac.in"
     },
     {
         memberName: "Mr. Naveen Kumar Sain",
@@ -634,7 +634,7 @@ const centralWorkingCommittee = [
         memberPost: "Assistant Professor",
         memberDepartment: "Department of Mechanical Engineering ",
         memberPhone: "9413065501",
-        memberMail:"naveen.sain@skit.ac.in"
+        memberMail: "naveen.sain@skit.ac.in"
     },
     {
         memberName: "Mr. Anirudh Mathur",
@@ -642,7 +642,7 @@ const centralWorkingCommittee = [
         memberPost: "Associate Professor",
         memberDepartment: "Department of Civil Engineering ",
         memberPhone: "7891993999",
-        memberMail:"anirudh.mathur@skit.ac.in"
+        memberMail: "anirudh.mathur@skit.ac.in"
     },
     {
         memberName: "Mr. Avadhesh Sharma",
@@ -650,7 +650,7 @@ const centralWorkingCommittee = [
         memberPost: "Assistant Professor",
         memberDepartment: "Department of Electrical Engineering ",
         memberPhone: "9783840829",
-        memberMail:"avadhesh@skit.ac.in"
+        memberMail: "avadhesh@skit.ac.in"
     },
 ]
 
@@ -661,7 +661,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "3rd Yr - CE",
         memberPhone: "8949294354",
-        memberMail:"kannu.sharmabtp@gmail.com"
+        memberMail: "kannu.sharmabtp@gmail.com"
     },
     {
         memberName: "Paridhi Jain",
@@ -669,7 +669,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - IT",
         memberPhone: "9929425337",
-        memberMail:"jain04paridhi@gmail.com"
+        memberMail: "jain04paridhi@gmail.com"
     },
     {
         memberName: "Chinmay Bhatnagar",
@@ -677,7 +677,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "3rd Yr - IT",
         memberPhone: "7976227748",
-        memberMail:"chinmaybhatnagar2002@gmail.com"
+        memberMail: "chinmaybhatnagar2002@gmail.com"
     },
     {
         memberName: "Ananya Singh Choudhary",
@@ -685,7 +685,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "9929482611",
-        memberMail:"ananysingh268@gmail.com"
+        memberMail: "ananysingh268@gmail.com"
     },
     {
         memberName: "Anirudh Singh Naruka",
@@ -693,7 +693,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "7357418512",
-        memberMail:"anisingh1304@gmail.com"
+        memberMail: "anisingh1304@gmail.com"
     },
     {
         memberName: "Anushka Singh Sisodia",
@@ -701,7 +701,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "7976971372",
-        memberMail:"singhanushka0605@gmail.com"
+        memberMail: "singhanushka0605@gmail.com"
     },
     {
         memberName: "Akshat Tanwar",
@@ -709,7 +709,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "3rd Yr - IT",
         memberPhone: "7340062629",
-        memberMail:"akshat21042004@gmail.com"
+        memberMail: "akshat21042004@gmail.com"
     },
     {
         memberName: "Devik Rathore",
@@ -717,15 +717,15 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - EE",
         memberPhone: "8000342116",
-        memberMail:"devikrathore123@gmail.com"
-    }, 
+        memberMail: "devikrathore123@gmail.com"
+    },
     {
         memberName: "Aarchi Rathore",
         memberPhoto: archi,
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "6375061517",
-        memberMail:"aarchirathore13@gmail.com"
+        memberMail: "aarchirathore13@gmail.com"
     },
     {
         memberName: "Aman Joshi",
@@ -733,7 +733,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "8764401145",
-        memberMail:"joshiamancchs@gmail.com"
+        memberMail: "joshiamancchs@gmail.com"
     },
     {
         memberName: "Kshitij Agrawal",
@@ -741,7 +741,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - IT",
         memberPhone: "7877598110",
-        memberMail:"kshitijagrawal53@gmail.com"
+        memberMail: "kshitijagrawal53@gmail.com"
     },
     {
         memberName: "Hardik Agarwal",
@@ -749,7 +749,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "8619658589",
-        memberMail:"b220518@skit.ac.in"
+        memberMail: "b220518@skit.ac.in"
     },
     {
         memberName: "Rishika Bansal",
@@ -757,7 +757,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "4th Yr - CSE",
         memberPhone: "8058654258",
-        memberMail:"bansalrishika25@gmail.com"
+        memberMail: "bansalrishika25@gmail.com"
     },
     {
         memberName: "Anant Khandelwal",
@@ -765,7 +765,7 @@ const coreTeam = [
         memberPost: "",
         memberDepartment: "2nd Yr - CSE",
         memberPhone: "8209172026",
-        memberMail:"anantk.k.15@gmail.com"
+        memberMail: "anantk.k.15@gmail.com"
     },
 ]
 
@@ -926,6 +926,93 @@ const celebrity_night = [
     cn1, cn2, cn3, cn4, cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12
 ]
 
+const socialEventsCoordinator = [
+    {
+        eventName: "Bhagirath",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Kiran Rathi",
+                coordinatorContact: "+91 90575 74362"
+            }
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Ujjawal Sharma",
+                coordinatorContact: "7877963600"
+            },
+            {
+                coordinatorName: "Shreya Jha",
+                coordinatorContact: "8955251718"
+            },
+            {
+                coordinatorName: "Darsh Agrawal",
+                coordinatorContact: "9928449434"
+            },
+            {
+                coordinatorName: "Manish Singh",
+                coordinatorContact: "8302325942"
+            },
+        ]
+    },
+    {
+        eventName: "Umang",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Kiran Rathi",
+                coordinatorContact: "+91 90575 74362"
+            }
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Aravi Sharma",
+                coordinatorContact: "6377669254"
+            },
+            {
+                coordinatorName: "Arya Negi",
+                coordinatorContact: "8949859785"
+            }
+        ]
+    },
+    {
+        eventName: "Nukkad Naatak",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Meenakshi Nawal",
+                coordinatorContact: "8890905366"
+            }
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Darshan Suwalka",
+                coordinatorContact: "6378549305"
+            },
+            {
+                coordinatorName: "Kirti Sharma",
+                coordinatorContact: "8764081457"
+            }
+        ]
+    },
+    {
+        eventName: "Slogan Camp",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Meenakshi Nawal",
+                coordinatorContact: "8890905366"
+            }
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Atharv Paliwala",
+                coordinatorContact: "9521846123"
+            },
+            {
+                coordinatorName: "Ruchi Singh",
+                coordinatorContact: "6377851038"
+            }
+        ]
+    }
+]
+
 export {
     sponsorFormContact,
     previousCelebrities,
@@ -946,6 +1033,7 @@ export {
     rawazImages,
     thirakImages,
     djImages,
-    celebrity_night
+    celebrity_night,
+    socialEventsCoordinator
 }
 
