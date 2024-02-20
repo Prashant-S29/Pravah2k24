@@ -44,7 +44,7 @@ const SPONSOR_OBJECT = () => {
           <div className="text-center mt-[50px] ">
             <div className="leading-none">
               <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[48px]">
-                Sopnsors
+                Sponsors
               </span>
             </div>
 

@@ -28,7 +28,7 @@ const INTROPAGE = () => {
                     />
                     <div className="-mt-2">
                       <span className="text-[14px] font-semibold">
-                        3.67 / 4.00
+                        3.67/4
                       </span>
                     </div>
                   </Link>
