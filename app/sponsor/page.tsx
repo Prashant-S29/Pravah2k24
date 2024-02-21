@@ -13,6 +13,7 @@ import {
   academy,
   kalam,
   toprankers,
+  property,
 } from "@/public";
 
 const SPONSOR_OBJECT = () => {
@@ -75,6 +76,13 @@ const SPONSOR_OBJECT = () => {
                   src={toprankers}
                   alt="toprankers"
                   className="sm:w-[400px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={property}
+                  alt="property"
+                  className="w-[100px] sm:w-[200px]"
                 />
               </div>
             </div>

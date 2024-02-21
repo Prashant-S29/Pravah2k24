@@ -361,11 +361,6 @@ const eventCategoryDesc = [
         eventCategoryID: "social",
         eventCategoryPhoto: [bhagirath, marhala]
     },
-    {
-        eventCategoryName: "Esports",
-        eventCategoryID: "esports",
-        eventCategoryPhoto: [bgmi]
-    },
 ]
 
 const testEventDetails = [

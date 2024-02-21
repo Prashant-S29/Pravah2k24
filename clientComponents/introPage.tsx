@@ -21,14 +21,16 @@ const INTROPAGE = () => {
               <div className=" flex justify-center items-center ">
                 <div>
                   <Link href="https://skit.ac.in" target="_blank">
-                    <Image
-                      src={naac_logo}
-                      alt="skitlogo"
-                      className="w-[60px] sm:w-[70px]"
-                    />
+                    <div className="flex justify-center">
+                      <Image
+                        src={naac_logo}
+                        alt="skitlogo"
+                        className="w-[60px] sm:w-[70px]"
+                      />
+                    </div>
                     <div className="-mt-2">
                       <span className="text-[14px] font-semibold">
-                        3.67/4
+                        CGPA 3.67/4.00
                       </span>
                     </div>
                   </Link>
