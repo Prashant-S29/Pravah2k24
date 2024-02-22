@@ -57,7 +57,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                   </span>
                 </div> */}
                 {/* <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" /> */}
-                <div>
+                <div >
                   <span>Date: {eventDetail.eventDate}</span>
                 </div>
                 <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" />
@@ -85,7 +85,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
           </div>
         </div>
         <div className="mt-[10px]  text-center  ">
-          <div>
+          <div className="w-[300px] whitespace-nowrap overflow-x-scroll">
             <span className="text-[20px] font-extrabold">
               {eventDetail.eventName}
             </span>
