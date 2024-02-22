@@ -55,9 +55,9 @@ const TITLETEXTANIMATION = () => {
 
         setTimeout(() => {
           setPause(false);
-        }, 800); // Pause timer for the main image. don't change it.
+        }, 900); // Pause timer for the main image. don't change it.
       }
-    }, 200); // Repetation timer
+    }, 300); // Repetation timer
 
     return () => {
       clearInterval(interval);

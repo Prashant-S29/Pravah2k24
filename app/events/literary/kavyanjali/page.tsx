@@ -80,7 +80,7 @@ const KAVYANJALI = () => {
         <div className="flex flex-wrap  justify-center w-full text-center mt-[40px] gap-y-[30px]">
           {socialEventsCoordinator.map((coordinatorDetail, index) => (
             <div key={index}>
-              {coordinatorDetail.eventName === "kav" && (
+              {coordinatorDetail.eventName === "Kavyanjali" && (
                 <>
                   <div>
                     <span className="text-[16px] sm:text-[18px] font-bold">

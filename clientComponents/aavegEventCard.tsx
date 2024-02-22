@@ -31,7 +31,7 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
               />
             </div>
           </div>
-          <div className="text-center font-medium  w-full sm:w-[300px] h-[200px] bg-slate-200 flex justify-center items-center rounded-[17px]   py-[10px] ">
+          {/* <div className="text-center font-medium  w-full sm:w-[300px] h-[200px] bg-slate-200 flex justify-center items-center rounded-[17px]   py-[10px] ">
             <div className="px-[10px] text-[14px]  sm:text-[16px]">
               <div>
                 <span>For more details</span>
@@ -44,7 +44,7 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="mt-[10px]  text-center  ">
@@ -57,18 +57,22 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
       <div className="text-center duration-300 "></div>
 
       <div className="w-full flex  justify-center gap-2 mt-[10px]">
-        {eventDetail.eventRegStatus === "upcoming" ? ("") : (
+        {eventDetail.eventRegStatus === "upcoming" ? (
+          ""
+        ) : (
           <>
             {eventDetail.eventRegStatus == "live" ? (
               <>
                 <div className="w-full">
-                  <Link href="/">
+                  <Link href={eventDetail.eventRegLink} target="_blank">
                     <button className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
-                      Register
+                      {eventDetail.eventRegLink === ""
+                        ? "Opening Soon"
+                        : "Register"}
                     </button>
                   </Link>
                 </div>
-                <div className="w-full">
+                {/* <div className="w-full">
                   <button
                     className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
                     onClick={(e) => {
@@ -77,7 +81,7 @@ const AAVEG_EVENT_REG_CARDS = ({ index, eventDetail }) => {
                   >
                     {detailDisplay ? "Hide Details" : "Show Details"}
                   </button>
-                </div>
+                </div> */}
               </>
             ) : (
               <div className="w-full">

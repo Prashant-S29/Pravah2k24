@@ -455,62 +455,62 @@ const aavegEventDetails = [
     {
         eventName: "Badminton",
         eventPhotoLink: badminton,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/RzjCGts1RbKuQvsN8",
     },
     {
         eventName: "Basketball",
         eventPhotoLink: basketball,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/qdCpZBBTqyVno9Rp6",
     },
     {
         eventName: "Chess",
         eventPhotoLink: chess,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/wxrNhcSZBqo9nXMD7",
     },
     {
         eventName: "Carrom",
         eventPhotoLink: carrom,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/Xy1nGxBu7nLDqJcd7",
     },
     {
         eventName: "Football",
         eventPhotoLink: football,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/p4y1dvg2AaFLjGK56",
     },
     {
         eventName: "Gully Circket",
         eventPhotoLink: cricket,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/2QkPFzwEWP1ndrT37",
     },
     {
         eventName: "Table Tennis",
         eventPhotoLink: tabletennis,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/hdXsEzuPHwjjHNj26",
     },
     {
         eventName: "Tug of War",
         eventPhotoLink: tugofwar,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/wfTbnMpFjktwqaRP9",
     },
     {
         eventName: "Volleyball",
         eventPhotoLink: volleyball,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "https://forms.gle/X6DogmXWqMgYTghU9",
     },
     {
         eventName: "Kabaddi",
         eventPhotoLink: kabbadi,
-        eventRegStatus: "upcoming",
-        eventBrochureLink: "/",
+        eventRegStatus: "live",
+        eventRegLink: "",
     }
 
 ]
@@ -1026,6 +1026,29 @@ const socialEventsCoordinator = [
             {
                 coordinatorName: "Shelja kanwar",
                 coordinatorContact: "9588042384"
+            }
+        ]
+    },
+    {
+        eventName: "Kavyanjali",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Pallav Rawal",
+                coordinatorContact: "9413287953"
+            },
+            {
+                coordinatorName: "Mr. Vivek Sharma",
+                coordinatorContact: "9413824677"
+            }
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Abhijeet Agarwal",
+                coordinatorContact: "8306969412"
+            },
+            {
+                coordinatorName: "Anmol Gupta",
+                coordinatorContact: "8825053562"
             }
         ]
     }

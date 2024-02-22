@@ -14,7 +14,7 @@ const AAVEG_OBJECT = () => {
 
   setTimeout(() => {
     setShowLoadingAniamtion(false);
-  }, 5000);
+  }, 2000);
 
   return (
     <>
@@ -50,31 +50,16 @@ const AAVEG_OBJECT = () => {
             </div>
             <div className="mx-[20px]  lg:mx-[200px]   text-[14px] sm:text-[16px] mt-[10px]">
               <span>
-                One of the biggest fests in Jaipur, {'"'}AAVEG{'"'}, is back
-                with its glamour this April. The annual sports event of SKIT
-                Jaipur, since its inception, has been a stage for teams to
-                showcase their talent by competing against the region{"'"}s best
-                players.
-                <span className="hidden sm:flex">
-                  The event is all set to witness excitement and
-                  competitiveness, being an addition and no doubt a browsing
-                  success; the first will be fenced with a lot of glory. So get
-                  ready to feel the adrenaline rush in this thrilling face,
-                  prepare, and train yourself to prove your mettle at the sports
-                  extravaganza.
-                </span>
-                <div
-                  className={`flex sm:hidden overflow-hidden duration-200 ${
-                    showText ? "max-[350px]:h-[170px] h-[130px]" : "h-0"
-                  }`}
-                >
-                  The event is all set to witness excitement and
-                  competitiveness, being an addition and no doubt a browsing
-                  success; the first will be fenced with a lot of glory. So get
-                  ready to feel the adrenaline rush in this thrilling face,
-                  prepare, and train yourself to prove your mettle at the sports
-                  extravaganza.
-                </div>
+                Welcome to AAVEG {"'"}24 !! one of the largest sports event in
+                Jaipur is back with its 24th edition this march, that unites the
+                vibrant spirit of the students through the thrill of sports. The
+                annual sports fest of SKIT signifies a platform which encourage
+                its participants to face challenges with courage, unwavering
+                determination, perseverance and showcasing their sportsmanship.
+                With an addition of celebrating the triumphs over setbacks. So
+                get ready to feel the adrenaline rush over the thrilling faces
+                and to prove yourself mettle at the sports extravaganza
+                
               </span>
             </div>
             <div className="block sm:hidden">
