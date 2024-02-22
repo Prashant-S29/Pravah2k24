@@ -1005,6 +1005,29 @@ const socialEventsCoordinator = [
                 coordinatorContact: "6377851038"
             }
         ]
+    },
+    {
+        eventName: "Blossoms",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Palika Jajoo",
+                coordinatorContact: "9414499507"
+            },
+            {
+                coordinatorName: "Dr. Jyoti shukla",
+                coordinatorContact: "6350116578"
+            }
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Sakshi Bhaskar",
+                coordinatorContact: "9672959642"
+            },
+            {
+                coordinatorName: "Shelja kanwar",
+                coordinatorContact: "9588042384"
+            }
+        ]
     }
 ]
 
