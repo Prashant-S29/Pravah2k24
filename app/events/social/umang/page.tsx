@@ -39,7 +39,7 @@ const NUKKAD = () => {
               <span>Date: 15th March, 2024</span>
             </div>
             <div className="mt-2">
-              <span>Time: 09:00 AM - 03:00 PM at Canteen Parking</span>
+              <span>Time: 09:00 AM - 12:00 Noon at Girls Hostel Garden</span>
             </div>
           </div>
         </div>
@@ -74,11 +74,6 @@ const NUKKAD = () => {
             <Image
               src={umangSix}
               alt="umangSix"
-              className="w-[300px] rounded-md"
-            />
-            <Image
-              src={umangSeven}
-              alt="umangSeven"
               className="w-[300px] rounded-md"
             />
           </div>
