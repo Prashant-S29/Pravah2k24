@@ -73,11 +73,11 @@ const HOME_OBJECT = () => {
         <ANIMATEDTEXT2 />
         <GALLERY />
       </div>
-      <div className="m-[20px] mt-[50px]">
+      {/* <div className="m-[20px] mt-[50px]">
         <ANIMATEDTEXT8 />
         <PRIORSPONSORS />
-      </div>
-      <div className="px-[20px]">
+      </div> */}
+      <div className="px-[20px] mt-[30px]">
         <ANIMATEDTEXT5 />
         <MAJOREVENTS />
       </div>
