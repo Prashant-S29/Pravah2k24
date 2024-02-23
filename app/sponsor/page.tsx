@@ -14,6 +14,7 @@ import {
   kalam,
   toprankers,
   property,
+  salt,
 } from "@/public";
 
 const SPONSOR_OBJECT = () => {
@@ -49,7 +50,7 @@ const SPONSOR_OBJECT = () => {
               </span>
             </div>
 
-            <div className="flex justify-center items-center px-[20px]  flex-wrap sm:flex-nowrap gap-[30px]">
+            <div className="flex justify-center items-center px-[20px] flex-wrap gap-[30px]">
               <div className=" sm:mt-0 mt-3">
                 <Image
                   src={academy}
@@ -82,6 +83,13 @@ const SPONSOR_OBJECT = () => {
                 <Image
                   src={property}
                   alt="property"
+                  className="w-[100px] sm:w-[200px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={salt}
+                  alt="salt"
                   className="w-[100px] sm:w-[200px]"
                 />
               </div>

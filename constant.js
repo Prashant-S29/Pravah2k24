@@ -7,7 +7,7 @@ import {
     rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16,
     rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14,
     thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4,
-    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, maneeshaPhoto, nitinPhoto, naveenPhoto, kailash, akshat, rishika, archi, hardik, anirudh_core, aman, anantPhoto, ananya, anushka, escaperoom, screamandchill, cubecraze, essaywriting, youthtalk, circuit, bytechase, vstock, bgmi, lawnTennis
+    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, maneeshaPhoto, nitinPhoto, naveenPhoto, kailash, akshat, rishika, archi, hardik, anirudh_core, aman, anantPhoto, ananya, anushka, escaperoom, screamandchill, cubecraze, essaywriting, youthtalk, circuit, bytechase, vstock, bgmi, lawnTennis, umangOne
 } from "./public/index"
 
 const previousCelebrities = [
@@ -359,7 +359,7 @@ const eventCategoryDesc = [
     {
         eventCategoryName: "Social Events",
         eventCategoryID: "social",
-        eventCategoryPhoto: [bhagirath, marhala]
+        eventCategoryPhoto: [bhagirath, umangOne]
     },
 ]
 
