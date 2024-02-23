@@ -9,6 +9,7 @@ import {
   umangFive,
   umangSix,
   umangSeven,
+  umangEight,
 } from "@/public";
 import Image from "next/image";
 
@@ -74,6 +75,11 @@ const NUKKAD = () => {
             <Image
               src={umangSix}
               alt="umangSix"
+              className="w-[300px] rounded-md"
+            />
+            <Image
+              src={umangEight}
+              alt="umangEight"
               className="w-[300px] rounded-md"
             />
           </div>
