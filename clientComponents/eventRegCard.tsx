@@ -57,7 +57,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                   </span>
                 </div> */}
                 {/* <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" /> */}
-                <div >
+                <div>
                   <span>Date: {eventDetail.eventDate}</span>
                 </div>
                 <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" />
@@ -107,7 +107,10 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
           {remainingSlots > 0 ? (
             <div className="w-full">
               {eventDetail.eventRegistrationFeeOne === "0" ? (
-                <Link href={eventDetail.eventRegistrationLinkOne}>
+                <Link
+                  href={eventDetail.eventRegistrationLinkOne}
+                  target="_blank"
+                >
                   <div
                     className="w-full px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
                     tabIndex={-1}
@@ -474,7 +477,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
               </div>
               <div className="block sm:flex gap-[15px] ">
                 <div className="w-full">
-                  <Link href={registrationLinkAndPrice.link}>
+                  <Link href={registrationLinkAndPrice.link} target="_blank"  >
                     <button className="w-full mt-3 px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[13px] font-semibold text-white bg-black rounded-[8px]">
                       Register - ₹{registrationLinkAndPrice.price}/-
                     </button>
