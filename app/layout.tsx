@@ -33,12 +33,12 @@ export default function RootLayout({
           />
         </div>
         <div>
-          <PAGEWRAPPER>
-            <INTROPAGE />
+          {/* <PAGEWRAPPER> */}
+            {/* <INTROPAGE /> */}
             <NAVBAR />
             {children}
             <FOOTER />
-          </PAGEWRAPPER>
+          {/* </PAGEWRAPPER> */}
         </div>
       </body>
     </html>

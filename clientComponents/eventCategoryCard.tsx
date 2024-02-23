@@ -25,18 +25,19 @@ const EVENT_CATEGORY_CRAD = ({
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [pauseImage, setPauseImage] = useState(imageState);
 
-
-
   useEffect(() => {
     const interval = setInterval(() => {
-      if (!pauseImage) {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % eventCategory["eventCategoryPhoto"].length);
+      if (pauseImage || !pauseImage) {
+        setCurrentImageIndex(
+          (prevIndex) =>
+            (prevIndex + 1) % eventCategory["eventCategoryPhoto"].length
+        );
       }
     }, 3000);
     return () => {
       clearInterval(interval);
     };
-  }, [pauseImage,eventCategory]);
+  }, [pauseImage, eventCategory]);
 
   return (
     <>
@@ -47,18 +48,7 @@ const EVENT_CATEGORY_CRAD = ({
             `
             : "bg-white"
         } border border-black rounded-[20px]  p-[10px]`}
-      >
-        {/* {eventCategory["eventCategoryID"] === "whatsNew" ? (
-          <div>
-            <Image
-              src={crown}
-              alt="crown"
-              className="absolute z-20 w-[100px] -rotate-[30deg] -mt-[50px] -ml-[46px] "
-            />
-          </div>
-        ) : (
-          ""
-        )} */}
+      > 
         <div className="flex relative justify-center overflow-hidden w-full sm:w-[300px]  h-[200px]">
           {eventCategory["eventCategoryPhoto"].map(
             (image: StaticImageData, index: number) => (
@@ -96,7 +86,7 @@ const EVENT_CATEGORY_CRAD = ({
               </button>
             </Link>
           </div>
-          <div className="w-[50px]">
+          {/* <div className="w-[50px]">
             <button
               className="w-full flex justify-center items-center p-[11px] text-[12px]  sm:text-[14px] font-semibold text-white bg-black
                  rounded-full"
@@ -105,12 +95,12 @@ const EVENT_CATEGORY_CRAD = ({
               }}
             >
               <Image
-                src={pauseImage ? pause : resume}
+                src={pauseImage ? pause : pause}
                 alt="lol"
                 className="w-[20px] aspect-square  rounded-full"
               />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
