@@ -57,7 +57,7 @@ const WEBSITE_HELP_DESK = () => {
   const sendEmail = () => {
     const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID_WHD || "";
     const templateID = process.env.NEXT_PUBLIC_MAIL_TEMPLATE_ID_WHD || "";
-    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID || "";
+    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_WEB || "";
     emailjs
       .send(mailID, templateID, formData, userID)
       .then((response) => {
@@ -131,7 +131,7 @@ const WEBSITE_HELP_DESK = () => {
                   </div>
                 ))}
               </div>
-              <div className="w-full md:w-[350px] mt-[10px] flex justify-center">
+              <div className="w-full md:w-[350px] mt-5 flex justify-center">
                 <button
                   type="submit"
                   className="w-full px-[15px] py-[8px] rounded-[8px] bg-black text-white text-[13px] font-semibold  "

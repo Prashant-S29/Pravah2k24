@@ -10,7 +10,15 @@ import { linkedin, whatsapp } from "@/public";
 
 const formField = [
   {
-    fieldName: "eventIssue",
+    fieldName: "Name",
+    fieldPlaceholder: "Name",
+  },
+  {
+    fieldName: "email",
+    fieldPlaceholder: "Email",
+  },
+  {
+    fieldName: "Queries",
     fieldPlaceholder: "Describe your quires",
   },
 ];
@@ -47,9 +55,9 @@ const EVENT_HELP_DESK = () => {
   };
 
   const sendEmail = () => {
-    const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID || "";
-    const templateID = process.env.NEXT_PUBLIC_MAIL_TEMPLATE_ID || "";
-    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID || "";
+    const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID_EHD || "";
+    const templateID = process.env.NEXT_PUBLIC_MAIL_TEMPLATE_ID_EHD || "";
+    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_BUG_AND_EVENT || "";
     emailjs
       .send(mailID, templateID, formData, userID)
       .then((response) => {
@@ -96,29 +104,34 @@ const EVENT_HELP_DESK = () => {
             className="w-full flex justify-center mt-[30px]  px-[20px]"
             onSubmit={handleSubmit}
           >
-            <div>
+            <div className="sm:w-fit w-full">
               <div className="w-full md:w-[350px] mt-[10px]">
                 {formField.map((formFieldData, index) => (
-                  <div key={index}>
-                    <textarea
-                      placeholder="Describe your quires"
+                  <div key={index} className="mt-2">
+                    <div>
+                      <span className="text-[14px] font-semibold">
+                        {formFieldData.fieldPlaceholder}
+                      </span>
+                    </div>
+                    <input
+                      placeholder={formFieldData.fieldPlaceholder}
                       name={formFieldData.fieldName}
                       onChange={handleInputChange}
                       value={formData[formFieldData.fieldName]}
                       required
                       disabled={mailStatus}
-                      className={`outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full  h-[100px] focus:bg-white  duration-200
+                      className={`outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full focus:bg-white  duration-200
                        `}
                       style={
                         formData[formFieldData.fieldName] === ""
                           ? {}
                           : { backgroundColor: "white" }
                       }
-                    ></textarea>
+                    ></input>
                   </div>
                 ))}
               </div>
-              <div className="w-full md:w-[350px] mt-[10px] flex justify-center">
+              <div className="w-full md:w-[350px] mt-5 flex justify-center">
                 <button
                   type="submit"
                   className="w-full px-[15px] py-[8px] rounded-[8px] bg-black text-white text-[13px] font-semibold  "
