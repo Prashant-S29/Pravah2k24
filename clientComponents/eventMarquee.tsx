@@ -39,7 +39,7 @@ const eventsCategory = [
   },
   {
     eventName:"E-Sports",
-    eventLink:"esports"
+    eventLink:"tech"
   }
 ]
 
