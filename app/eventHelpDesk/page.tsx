@@ -18,8 +18,8 @@ const formField = [
     fieldPlaceholder: "Email",
   },
   {
-    fieldName: "Queries",
-    fieldPlaceholder: "Describe your quires",
+    fieldName: "Describequeries",
+    fieldPlaceholder: "Describe your queries",
   },
 ];
 
@@ -57,7 +57,7 @@ const EVENT_HELP_DESK = () => {
   const sendEmail = () => {
     const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID_EHD || "";
     const templateID = process.env.NEXT_PUBLIC_MAIL_TEMPLATE_ID_EHD || "";
-    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_BUG_AND_EVENT || "";
+    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_EHD || "";
     emailjs
       .send(mailID, templateID, formData, userID)
       .then((response) => {

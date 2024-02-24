@@ -19,7 +19,7 @@ const formField = [
   },
   {
     fieldName: "Queries",
-    fieldPlaceholder: "Describe your quires",
+    fieldPlaceholder: "Describe your queries",
   },
 ];
 
@@ -57,7 +57,7 @@ const WEBSITE_HELP_DESK = () => {
   const sendEmail = () => {
     const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID_WHD || "";
     const templateID = process.env.NEXT_PUBLIC_MAIL_TEMPLATE_ID_WHD || "";
-    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_WEB || "";
+    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_WHD || "";
     emailjs
       .send(mailID, templateID, formData, userID)
       .then((response) => {
@@ -71,6 +71,7 @@ const WEBSITE_HELP_DESK = () => {
         }, 2000);
       })
       .catch((error) => {
+        console.log(error);
         setErrorMessage("An error occurred while sending the mail.");
         setTimeout(() => {
           hideMessage();

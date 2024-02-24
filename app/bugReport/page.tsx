@@ -18,11 +18,11 @@ const formField = [
     fieldPlaceholder: "Email",
   },
   {
-    fieldName: "bugDesc",
+    fieldName: "Describebug",
     fieldPlaceholder: "Describe bug",
   },
   {
-    fieldName: "bugLocation",
+    fieldName: "Buglocation",
     fieldPlaceholder: "Bug location",
   },
 ];
@@ -60,10 +60,11 @@ const BUG_REPORT = () => {
   const sendEmail = () => {
     const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID_BR || "";
     const templateID = process.env.NEXT_PUBLIC_MAIL_TEMPLATE_ID_BR || "";
-    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_BUG_AND_EVENT || "";
+    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_BR || "";
     emailjs
       .send(mailID, templateID, formData, userID)
       .then((response) => {
+        console.log(response);
         setSuccessMessage("Mail sent successfully!");
         setMailStatus(false);
         resetForm();
@@ -74,6 +75,7 @@ const BUG_REPORT = () => {
         }, 2000);
       })
       .catch((error) => {
+        console.log(error);
         setErrorMessage("An error occurred while sending the mail.");
         setTimeout(() => {
           hideMessage();
@@ -122,7 +124,6 @@ const BUG_REPORT = () => {
                       onChange={handleInputChange}
                       value={formData[formFieldData.fieldName]}
                       required
-                      disabled={mailStatus}
                       className={`outline-none bg-transparent border  text-black font-medium border-black p-[10px] text-[14px] rounded-[10px] placeholder:text-black w-full focus:bg-white  duration-200
                        `}
                       style={

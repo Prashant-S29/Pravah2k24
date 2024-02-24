@@ -98,7 +98,7 @@ const ABOUT_OBJECT = () => {
                   a canvas where talents across diverse fields converge to
                   embark on a shared journey of learning and collective growth.
                   Through an array of captivating cultural, technical,
-                  non-technical, sports, and social events, PRAVAH seeks to
+                  non-technical, sports, literary and social events, PRAVAH seeks to
                   curate an unforgettable experience, leaving participants with
                   memories that resonate for a lifetime.
                 </span>
