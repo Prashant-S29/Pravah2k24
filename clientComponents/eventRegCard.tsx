@@ -85,10 +85,12 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
           </div>
         </div>
         <div className="mt-[10px]  text-center  ">
-          <div className="w-[300px] whitespace-nowrap overflow-scroll">
-            <span className="text-[20px] font-extrabold">
-              {eventDetail.eventName}
-            </span>
+          <div className="w-full flex justify-center">
+            <div className="w-[300px] whitespace-nowrap text-center overflow-scroll">
+              <span className="text-[20px] font-extrabold">
+                {eventDetail.eventName}
+              </span>
+            </div>
           </div>
 
           {remainingSlots <= 0 ? (
@@ -477,7 +479,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
               </div>
               <div className="block sm:flex gap-[15px] ">
                 <div className="w-full">
-                  <Link href={registrationLinkAndPrice.link} target="_blank"  >
+                  <Link href={registrationLinkAndPrice.link} target="_blank">
                     <button className="w-full mt-3 px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[13px] font-semibold text-white bg-black rounded-[8px]">
                       Register - ₹{registrationLinkAndPrice.price}/-
                     </button>
