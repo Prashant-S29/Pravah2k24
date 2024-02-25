@@ -85,7 +85,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
           </div>
         </div>
         <div className="mt-[10px]  text-center  ">
-          <div className="w-[300px] whitespace-nowrap overflow-x-scroll">
+          <div className="w-[300px] whitespace-nowrap overflow-scroll">
             <span className="text-[20px] font-extrabold">
               {eventDetail.eventName}
             </span>
@@ -103,7 +103,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
         </div>
         <div className="text-center duration-300 "></div>
 
-        <div className="w-full flex -mt-2  justify-center gap-2">
+        <div className="w-full flex mt-2  justify-center gap-2">
           {remainingSlots > 0 ? (
             <div className="w-full">
               {eventDetail.eventRegistrationFeeOne === "0" ? (
