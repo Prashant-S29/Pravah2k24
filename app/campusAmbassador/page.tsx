@@ -100,9 +100,9 @@ const CAMPUS_AMBASSADOR = () => {
   };
 
   const sendEmail = () => {
-    const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID || "";
-    const templateID = process.env.NEXT_PUBLIC_MAIL_CA_TEMPLATE_ID || "";
-    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID || "";
+    const mailID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID_CA || "";
+    const templateID = process.env.NEXT_PUBLIC_MAIL_TEMPLATE_ID_CA || "";
+    const userID = process.env.NEXT_PUBLIC_MAIL_USER_ID_CA || "";
     emailjs
       .send(mailID, templateID, formData, userID)
       .then((response) => {

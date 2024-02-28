@@ -3,6 +3,7 @@
 import AAVEG_EVENT_REG_CARDS from "@/clientComponents/aavegEventCard";
 import { ANIMATEDTEXT12, TYPINGTEXT } from "@/clientComponents/motionDiv";
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
+import EVENT_COORDINATOR_CARD from "@/components/eventCoordinatorCard";
 import { aavegEventDetails } from "@/constant";
 import { aavegLoadingAnimation } from "@/public";
 import Image from "next/image";
@@ -59,7 +60,6 @@ const AAVEG_OBJECT = () => {
                 With an addition of celebrating the triumphs over setbacks. So
                 get ready to feel the adrenaline rush over the thrilling faces
                 and to prove yourself mettle at the sports extravaganza
-                
               </span>
             </div>
             <div className="block sm:hidden">
@@ -101,6 +101,10 @@ const AAVEG_OBJECT = () => {
           </div>
         </div>
       )}
+
+      <div className="flex justify-center flex-wrap gap-[20px] px-[20px]">
+
+      </div>
     </>
   );
 };

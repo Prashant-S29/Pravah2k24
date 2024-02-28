@@ -108,7 +108,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
         <div className="w-full flex mt-2  justify-center gap-2">
           {remainingSlots > 0 ? (
             <div className="w-full">
-              {eventDetail.eventRegistrationFeeOne === "0" ? (
+              {eventDetail.eventRegistrationFeeOne.split("-")[0] === "0" ? (
                 <Link
                   href={eventDetail.eventRegistrationLinkOne}
                   target="_blank"
@@ -128,7 +128,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                     setRegistrationConfirmation(true);
                     setRegistrationLinkAndPrice({
                       link: eventDetail.eventRegistrationLinkOne,
-                      price: eventDetail.eventRegistrationFeeOne,
+                      price: eventDetail.eventRegistrationFeeOne.split("-")[0],
                     });
                   }}
                 >
@@ -182,7 +182,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
 
                         setRegistrationLinkAndPrice({
                           link: eventDetail.eventRegistrationLinkOne,
-                          price: eventDetail.eventRegistrationFeeOne,
+                          price: eventDetail.eventRegistrationFeeOne.split("-")[0],
                         });
                       }}
                     >
@@ -208,7 +208,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                       <div>
                         <span>
                           Registration Fee - ₹
-                          {eventDetail.eventRegistrationFeeOne}/-
+                          {eventDetail.eventRegistrationFeeOne.split("-")[0]}/-
                         </span>
                       </div>
                     </div>

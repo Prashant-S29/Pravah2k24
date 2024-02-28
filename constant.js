@@ -7,7 +7,7 @@ import {
     rawaz1, rawaz2, rawaz3, rawaz4, rawaz5, rawaz6, rawaz8, rawaz9, rawaz10, rawaz11, rawaz12, rawaz13, rawaz14, rawaz15, rawaz16,
     rawaz17, rawaz18, rawaz19, thirak1, thirak2, thirak4, thirak5, thirak6, thirak8, thirak9, thirak11, thirak12, thirak13, thirak14,
     thirak15, thirak16, thirak17, thirak18, thirak19, dj1, dj2, dj3, dj4, dj5, dj6, dj7, dj8, dj9, dj10, dj11, cn1, cn2, cn3, cn4,
-    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, maneeshaPhoto, nitinPhoto, naveenPhoto, kailash, akshat, rishika, archi, hardik, anirudh_core, aman, anantPhoto, ananya, anushka, escaperoom, screamandchill, cubecraze, essaywriting, youthtalk, circuit, bytechase, vstock, bgmi, lawnTennis, umangOne
+    cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, marhala, dummy, chinmayPhoto, devikPhoto, kanishkPhoto, kshitijPhoto, paridhiPhoto, abhishekPhoto, virendraPhoto, ankushPhoto, deeptiPhoto, poojaPhoto, avadheshPhoto, anirudhPhoto, maneeshaPhoto, nitinPhoto, naveenPhoto, kailash, akshat, rishika, archi, hardik, anirudh_core, aman, anantPhoto, ananya, anushka, escaperoom, screamandchill, cubecraze, essaywriting, youthtalk, circuit, bytechase, vstock, bgmi, lawnTennis, umangOne, ishan
 } from "./public/index"
 
 const previousCelebrities = [
@@ -1060,6 +1060,245 @@ const socialEventsCoordinator = [
     }
 ]
 
+const aavegEventCoordinator = [
+    {
+        coordinatorPhoto: ishan,
+        coordinatorName: "Ishan",
+        coordinatorType: "student",
+        coordinatorPost: "",
+        coordinatorContact: "",
+    },
+    {
+        coordinatorPhoto: ishan,
+        coordinatorName: "Yogesh Kumar",
+        coordinatorType: "student",
+        coordinatorPost: "",
+        coordinatorContact: "",
+    },
+    {
+        coordinatorPhoto: ishan,
+        coordinatorName: "Mr. MK Beniwal",
+        coordinatorType: "",
+        coordinatorPost: "",
+        coordinatorContact: "",
+    },
+    {
+        coordinatorPhoto: ishan,
+        coordinatorName: "Mr. Ajeet",
+        coordinatorType: "",
+        coordinatorPost: "",
+        coordinatorContact: "",
+    },
+    {
+        coordinatorPhoto: ishan,
+        coordinatorName: "Mrs. Amrita",
+        coordinatorType: "",
+        coordinatorPost: "",
+        coordinatorContact: "",
+    }
+]
+
+const committeeHeads = [
+    {
+        category: "cultural",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Suman Sharma ECE",
+                coordinatorContact: "9785132891"
+            },
+            {
+                coordinatorName: "Mr. Deepak Saini",
+                coordinatorContact: "9024879584"
+            }
+
+
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Garvit Saini",
+                coordinatorContact: "7357579074"
+            },
+            {
+                coordinatorName: "Devansh Bharadwaj",
+                coordinatorContact: "8005843243"
+            },
+            {
+                coordinatorName: "Aayushman Sharma",
+                coordinatorContact: "6376835787"
+            },
+            {
+                coordinatorName: "Poorvanshi Kulshrestha",
+                coordinatorContact: "8306058850"
+            },
+        ]
+
+    },
+    {
+        category: "cultural",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Suman Sharma ECE",
+                coordinatorContact: "9785132891"
+            },
+            {
+                coordinatorName: "Mr. Deepak Saini",
+                coordinatorContact: "9024879584"
+            }
+
+
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Garvit Saini",
+                coordinatorContact: "7357579074"
+            },
+            {
+                coordinatorName: "Devansh Bharadwaj",
+                coordinatorContact: "8005843243"
+            },
+            {
+                coordinatorName: "Aayushman Sharma",
+                coordinatorContact: "6376835787"
+            },
+            {
+                coordinatorName: "Poorvanshi Kulshrestha",
+                coordinatorContact: "8306058850"
+            },
+        ]
+
+    },
+    {
+        category: "non-tech",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Mr. Loveleen Kumar",
+                coordinatorContact: "9460826889"
+            },
+            {
+                coordinatorName: "Mr. Rajesh Rajaan",
+                coordinatorContact: "9887507364"
+            },
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Anushka Gupta",
+                coordinatorContact: "7427082215"
+            },
+            {
+                coordinatorName: "Raghav Sharma",
+                coordinatorContact: "8306699261"
+            },
+            {
+                coordinatorName: "Nitesh Singh",
+                coordinatorContact: "9983643777"
+            },
+            {
+                coordinatorName: "Aesha Suthar",
+                coordinatorContact: "9119185299"
+            }
+        ]
+
+    },
+    {
+        category: "tech",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Sharda Soni",
+                coordinatorContact: "9414443474"
+            },
+            {
+                coordinatorName: "Dr. Neelam Choudhary",
+                coordinatorContact: "9829803880"
+            },
+        ],
+        studentCoorinators: [
+
+            {
+                coordinatorName: "Anant Khandelwal",
+                coordinatorContact: "8209172026"
+            },
+            {
+                coordinatorName: "Prashant Singh",
+                coordinatorContact: "6306530955"
+            },
+            {
+                coordinatorName: "Aditya Bhatnagar",
+                coordinatorContact: "89499 64736"
+            },
+            {
+                coordinatorName: "Nupur Agarwal",
+                coordinatorContact: "8209753424"
+            }
+        ]
+
+    },
+    {
+        category: "literary",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Dr. Shikha Agarwal",
+                coordinatorContact: "9610731569"
+            },
+            {
+                coordinatorName: "Mr. Amit Jhalani",
+                coordinatorContact: "9887501755"
+            },
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Kshitij Agarwal",
+                coordinatorContact: "7877598110"
+            },
+            {
+                coordinatorName: "Aman Vijay",
+                coordinatorContact: "9887829505"
+            },
+            {
+                coordinatorName: "Devansh Chalana",
+                coordinatorContact: "8905482680"
+            },
+            {
+                coordinatorName: "Rucha Kukreti",
+                coordinatorContact: "7357276222"
+            }
+        ]
+
+    },
+    {
+        category: "social",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Ms. Kiran Rathi",
+                coordinatorContact: "8058555540"
+            },
+            {
+                coordinatorName: "Dr. Meenakshi Nawal",
+                coordinatorContact: "8890905366"
+            },
+        ],
+        studentCoorinators: [
+
+            {
+                coordinatorName: "Aravi Sharma",
+                coordinatorContact: "6377669254"
+            },
+            {
+                coordinatorName: "Arya Negi",
+                coordinatorContact: "8949859785"
+            },
+            {
+                coordinatorName: "Ujjawal Sharma",
+                coordinatorContact: "7877963600"
+            },
+            {
+                coordinatorName: "Shreya Jha",
+                coordinatorContact: "8955251718"
+            }
+        ]
+
+    }
+]
+
 export {
     sponsorFormContact,
     previousCelebrities,
@@ -1081,6 +1320,8 @@ export {
     thirakImages,
     djImages,
     celebrity_night,
-    socialEventsCoordinator
+    socialEventsCoordinator,
+    aavegEventCoordinator,
+    committeeHeads
 }
 

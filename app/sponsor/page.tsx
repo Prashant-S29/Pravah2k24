@@ -28,24 +28,40 @@ const SPONSOR_OBJECT = () => {
             </span>
           </div>
 
-          <div className="text-center mt-[50px] ">
-            <div className="leading-none">
-              <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[48px]">
-                Food Partner
-              </span>
+          <div className="text-center flex justify-evenly mt-[50px] ">
+            <div>
+              <div className="leading-none">
+                <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[40px]">
+                  Food Partner
+                </span>
+              </div>
+              <div className="flex justify-center -mt-3">
+                <Image
+                  src={chumbakk}
+                  alt="chumbakk"
+                  className="w-[300px] sm:w-[380px]"
+                />
+              </div>
             </div>
-            <div className="flex justify-center -mt-3">
-              <Image
-                src={chumbakk}
-                alt="chumbakk"
-                className="w-[300px] sm:w-[380px]"
-              />
+            <div>
+              <div className="leading-none">
+                <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[40px]">
+                  Education Partner
+                </span>
+              </div>
+              <div className="flex justify-center items-center mt-[50px]">
+                <Image
+                  src={kalam}
+                  alt="kalam"
+                  className="w-[300px] sm:w-[400px]"
+                />
+              </div>
             </div>
           </div>
 
           <div className="text-center mt-[50px] ">
             <div className="leading-none">
-              <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[48px]">
+              <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[40px]">
                 Sponsors
               </span>
             </div>
@@ -58,13 +74,7 @@ const SPONSOR_OBJECT = () => {
                   className="w-[180px] sm:w-[300px]"
                 />
               </div>
-              <div>
-                <Image
-                  src={kalam}
-                  alt="kalam"
-                  className="w-[320px] sm:w-[300px]"
-                />
-              </div>
+
               <div>
                 <Image
                   src={mother}
