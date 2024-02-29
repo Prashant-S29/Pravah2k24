@@ -146,6 +146,12 @@ const CAMPUS_AMBASSADOR = () => {
           <div className="text-center  text-[20px] md:text-[28px] lg:text-[28px] font-bold uppercase ">
             <span>Campus Ambassador Program</span>
           </div>
+          <div className="text-center font-semibold text-[15px] sm:text-[16px]">
+            <span>
+              Only available for non SKIT students. Students of SKIT are
+              requested not to fill the form.
+            </span>
+          </div>
         </div>
         <form
           className="w-full flex justify-center mt-[30px]  px-[20px]"

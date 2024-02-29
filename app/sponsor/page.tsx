@@ -15,6 +15,7 @@ import {
   toprankers,
   property,
   salt,
+  kiddie,
 } from "@/public";
 
 const SPONSOR_OBJECT = () => {
@@ -28,10 +29,10 @@ const SPONSOR_OBJECT = () => {
             </span>
           </div>
 
-          <div className="text-center flex justify-evenly mt-[50px] ">
+          <div className="text-center flex flex-wrap justify-evenly mt-[50px] ">
             <div>
               <div className="leading-none">
-                <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[40px]">
+                <span className="font-extrabold text-[28px] sm:text-[36px] md:text-[40px]">
                   Food Partner
                 </span>
               </div>
@@ -45,7 +46,7 @@ const SPONSOR_OBJECT = () => {
             </div>
             <div>
               <div className="leading-none">
-                <span className="font-extrabold text-[32px] sm:text-[38px] md:text-[40px]">
+                <span className="font-extrabold text-[28px] sm:text-[36px] md:text-[40px]">
                   Education Partner
                 </span>
               </div>
@@ -101,6 +102,13 @@ const SPONSOR_OBJECT = () => {
                   src={salt}
                   alt="salt"
                   className="w-[100px] sm:w-[200px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={kiddie}
+                  alt="kiddie"
+                  className="w-[200px] sm:w-[400px]"
                 />
               </div>
             </div>

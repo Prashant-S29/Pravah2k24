@@ -1119,41 +1119,7 @@ const committeeHeads = [
                 coordinatorContact: "7357579074"
             },
             {
-                coordinatorName: "Devansh Bharadwaj",
-                coordinatorContact: "8005843243"
-            },
-            {
-                coordinatorName: "Aayushman Sharma",
-                coordinatorContact: "6376835787"
-            },
-            {
-                coordinatorName: "Poorvanshi Kulshrestha",
-                coordinatorContact: "8306058850"
-            },
-        ]
-
-    },
-    {
-        category: "cultural",
-        facultyCoorinators: [
-            {
-                coordinatorName: "Dr. Suman Sharma ECE",
-                coordinatorContact: "9785132891"
-            },
-            {
-                coordinatorName: "Mr. Deepak Saini",
-                coordinatorContact: "9024879584"
-            }
-
-
-        ],
-        studentCoorinators: [
-            {
-                coordinatorName: "Garvit Saini",
-                coordinatorContact: "7357579074"
-            },
-            {
-                coordinatorName: "Devansh Bharadwaj",
+                coordinatorName: "Devansh Bhardwaj",
                 coordinatorContact: "8005843243"
             },
             {

@@ -1,7 +1,7 @@
 import { socialEventsCoordinator } from "@/constant";
 import React from "react";
 
-import { blFour, blOne, blTwo, blThree } from "@/public";
+import { blFour, blOne, blTwo, blThree,blFive, blSix,blSeven,blEight,blNine, blTen,blEleven } from "@/public";
 import Image from "next/image";
 
 const BLOSSOMS = () => {
@@ -31,7 +31,7 @@ const BLOSSOMS = () => {
               <span>Date: 14th March, 2024</span>
             </div>
             <div className="mt-2">
-              <span>Time: 09:00 AM - 11:00 AM at OAT, CS Block</span>
+              <span>Time: 09:00 AM - 12:00 Noon at OAT, CS Block</span>
             </div>
           </div>
         </div>
@@ -56,6 +56,41 @@ const BLOSSOMS = () => {
             <Image
               src={blFour}
               alt="blFour"
+              className="w-[300px] rounded-md"
+            />
+            <Image
+              src={blFive}
+              alt="blFive"
+              className="w-[300px] rounded-md"
+            />
+            <Image
+              src={blSix}
+              alt="blSix"
+              className="w-[300px] rounded-md"
+            />
+            <Image
+              src={blSeven}
+              alt="blSeven"
+              className="w-[300px] rounded-md"
+            />
+            <Image
+              src={blEight}
+              alt="blEight"
+              className="w-[300px] rounded-md"
+            />
+            <Image
+              src={blNine}
+              alt="blNine"
+              className="w-[300px] rounded-md"
+            />
+            <Image
+              src={blTen}
+              alt="blTen"
+              className="w-[300px] rounded-md"
+            />
+            <Image
+              src={blEleven}
+              alt="blEleven"
               className="w-[300px] rounded-md"
             />
           </div>
