@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const EVENT_REG_CARDS = ({ index, eventDetail }) => {
   const remainingSlots =
-    eventDetail.eventMaxParicipationLimit -
+    eventDetail.eventMaxParicipationLimit.split("-")[0] -
     eventDetail.eventCurrentParticipation;
 
   const [detailDisplay, setDetailDisplay] = useState(false);
@@ -70,12 +70,23 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                 <div>
                   <span>Venue: {eventDetail.eventVenue}</span>
                 </div>
-                {/* <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" /> */}
-                <div className="w-full mt-[10px]">
+                {eventDetail.eventMaxParicipationLimit.split("-")[1] && (
+                  <div>
+                    <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" />
+                    <div className="w-[250px] whitespace-nowrap overflow-x-scroll">
+                      <span>
+                        Queries: +91{" "}
+                        {eventDetail.eventMaxParicipationLimit.split("-")[1]} -{" "}
+                        {eventDetail.eventMaxParicipationLimit.split("-")[2]}
+                      </span>
+                    </div>  
+                  </div>
+                )}
+                <div className="mt-3">
                   <Link
                     href={eventDetail.eventBrochure.replace("http", "https")}
                     target="_blank"
-                    className="w-full px-[20px] py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
+                    className="w-full flex justify-center px-[20px] py-[5px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
                   >
                     View Rule Book
                   </Link>
@@ -92,16 +103,6 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
               </span>
             </div>
           </div>
-
-          {remainingSlots <= 0 ? (
-            <div>
-              <span className="text-[14px] sm:text-[16px] font-medium">
-                Registration Full
-              </span>
-            </div>
-          ) : (
-            ""
-          )}
         </div>
         <div className="text-center duration-300 "></div>
 
@@ -182,7 +183,8 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
 
                         setRegistrationLinkAndPrice({
                           link: eventDetail.eventRegistrationLinkOne,
-                          price: eventDetail.eventRegistrationFeeOne.split("-")[0],
+                          price:
+                            eventDetail.eventRegistrationFeeOne.split("-")[0],
                         });
                       }}
                     >

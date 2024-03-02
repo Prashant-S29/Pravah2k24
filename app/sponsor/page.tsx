@@ -16,6 +16,13 @@ import {
   property,
   salt,
   kiddie,
+  teaconnect,
+  jjsh,
+  tcc,
+  fastpizza,
+  gameful,
+  padit,
+  kingqueen,
 } from "@/public";
 
 const SPONSOR_OBJECT = () => {
@@ -109,6 +116,57 @@ const SPONSOR_OBJECT = () => {
                   src={kiddie}
                   alt="kiddie"
                   className="w-[200px] sm:w-[400px]"
+                />
+              </div>
+              <div>
+                <Image
+                  src={padit}
+                  alt="padit"
+                  className="w-[150px] sm:w-[200px]"
+                />
+              </div>
+
+              <div>
+                <Image
+                  src={teaconnect}
+                  alt="teaconnect"
+                  className="w-[150px] sm:w-[200px]"
+                />
+              </div>
+
+              <div>
+                <Image
+                  src={jjsh}
+                  alt="jjsh"
+                  className="w-[150px] sm:w-[200px]"
+                />
+              </div>
+
+              <div>
+                <Image src={tcc} alt="tcc" className="w-[150px] sm:w-[200px]" />
+              </div>
+
+              <div>
+                <Image
+                  src={fastpizza}
+                  alt="fastpizza"
+                  className="w-[150px] sm:w-[200px]"
+                />
+              </div>
+
+              <div>
+                <Image
+                  src={gameful}
+                  alt="gameful"
+                  className="w-[150px] sm:w-[200px]"
+                />
+              </div>
+
+              <div>
+                <Image
+                  src={kingqueen}
+                  alt="kingqueen"
+                  className="w-[150px] sm:w-[200px]"
                 />
               </div>
             </div>

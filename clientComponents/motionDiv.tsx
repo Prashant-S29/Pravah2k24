@@ -144,6 +144,28 @@ const ANIMATEDTEXT3 = () => {
   );
 };
 
+
+const ANIMATEDTEXT18 = () => {
+  const placeholderText = [{ type: "heading1", text: "Celebrity Night" }];
+
+  return (
+    <>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
+        <div className="text-center   text-[32px] md:text-[48px] lg:text-[64px] font-black leading-tight">
+          {placeholderText.map((item, index) => (
+            <AnimatedCharacters {...item} key={index} />
+          ))}
+        </div>
+      </motion.div>
+    </>
+  );
+};
+
+
 const ANIMATEDTEXT6 = () => {
   const placeholderText = [{ type: "heading1", text: "Pravah'23" }];
 
@@ -518,4 +540,5 @@ export {
   ANIMATEDTEXT14,
   ANIMATEDTEXT15,
   ANIMATEDTEXT16,
+  ANIMATEDTEXT18
 };

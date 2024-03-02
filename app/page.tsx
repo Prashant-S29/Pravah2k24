@@ -31,6 +31,7 @@ import TAG_PARA from "@/clientComponents/tagParagraph";
 import TIMERCOUNT from "@/clientComponents/countdown";
 import DATES from "@/clientComponents/dates";
 import EVENT_STATUS from "@/clientComponents/eventStatus";
+import CELEBRITY from "@/components/celebrity";
 
 const HOME_OBJECT = () => {
   return (
@@ -44,10 +45,13 @@ const HOME_OBJECT = () => {
           {/* <TIMERCOUNT/> */}
           <DATES />
           {/* <EVENT_STATUS /> */}
-
         </div>
       </div>
       <MARQUEEMOTION />
+      <div>
+        <CELEBRITY />
+          
+      </div>
       <div className="mt-[50px]">
         <div>
           <VIDEOBLOCK />
