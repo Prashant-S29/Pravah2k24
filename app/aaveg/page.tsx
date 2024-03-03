@@ -4,7 +4,7 @@ import AAVEG_EVENT_REG_CARDS from "@/clientComponents/aavegEventCard";
 import { ANIMATEDTEXT12, TYPINGTEXT } from "@/clientComponents/motionDiv";
 import TRANSITION_WRAPPER from "@/clientComponents/transition";
 import EVENT_COORDINATOR_CARD from "@/components/eventCoordinatorCard";
-import { aavegEventDetails } from "@/constant";
+import { aavegEventDetails, committeeHeads } from "@/constant";
 import { aavegLoadingAnimation } from "@/public";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -21,17 +21,6 @@ const AAVEG_OBJECT = () => {
     <>
       {showLoadingAniamtion && (
         <div className="w-full min-h-[70vh] flex justify-center items-center">
-          {/* <video
-            playsInline
-            autoPlay
-            muted
-            // className="w-[100px]"
-          >
-            <source
-              src="https://lottie.host/embed/cba9348e-a3bf-49bf-9cfb-2eacfce858fd/KsPC4f9j5h.json"
-              type="video/mp4"
-            />
-          </video> */}
           <Image
             src={aavegLoadingAnimation}
             alt="aavegLoadingAnimation"
@@ -45,9 +34,6 @@ const AAVEG_OBJECT = () => {
             <div>
               <TYPINGTEXT title="Sports Event" />
               <ANIMATEDTEXT12 />
-              {/* <div>
-              <span className="font-bold">17th - 19th April, 2023</span>
-            </div> */}
             </div>
             <div className="mx-[20px]  lg:mx-[200px]   text-[14px] sm:text-[16px] mt-[10px]">
               <span>
@@ -72,21 +58,6 @@ const AAVEG_OBJECT = () => {
                 ...read {showText ? "less" : "more"}
               </span>
             </div>
-            {/* <div className=" my-[20px] flex justify-center">
-            <Link href="/">
-              <button className=" px-[20px] flex items-center gap-1  py-[8px] text-[12px] sm:text-[14px] font-semibold text-white bg-black rounded-[8px]">
-                AAVEG Schedule
-                <Image
-                  src={download}
-                  alt="download"
-                  className="w-[20px] sm:w-[25px] aspect-square"
-                />
-              </button>
-            </Link>
-          </div> */}
-            {/* <div className="mt-[10px] text-[28px] md:text-[36px] lg:text-[42px] font-black px-[20px] leading-tight ">
-            <span>GAMES & ACTIVITIES</span>
-          </div> */}
             <div>
               <div className=" px-[20px] flex gap-5 flex-wrap justify-center my-[20px]">
                 {aavegEventDetails.map((eventDetail, index) => (
@@ -102,8 +73,63 @@ const AAVEG_OBJECT = () => {
         </div>
       )}
 
-      <div className="flex justify-center flex-wrap gap-[20px] px-[20px]">
-
+      <div className="mt-[50px] w-full">
+        {committeeHeads.map((heads, index) => (
+          <div key={index} className="w-full">
+            {heads.category === "aaveg" && (
+              <div>
+                <div>
+                  <div className="text-center font-black text-[24px] my-5">
+                    <span>Faculty Coordinator</span>
+                  </div>
+                  <div className="flex justify-center  gap-[20px] flex-wrap px-5">
+                    {heads.facultyCoorinators.map((coordinator, index) => (
+                      <div
+                        key={index}
+                        className=" p-5 bg-white w-full sm:w-[280px] border text-center border-black rounded-[15px]"
+                      >
+                        <div className="leading-tight">
+                          <span className="text-[16px] font-semibold">
+                            {coordinator.coordinatorName}
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-[14px] text-gray-500">
+                            {coordinator.coordinatorContact}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-center font-black text-[24px] my-5">
+                    <span>Student Coordinator</span>
+                  </div>
+                  <div className="flex justify-center  gap-[20px] flex-wrap px-5">
+                    {heads.studentCoorinators.map((coordinator, index) => (
+                      <div
+                        key={index}
+                        className=" p-5 bg-white w-full sm:w-[280px] border text-center border-black rounded-[15px]"
+                      >
+                        <div className="leading-tight">
+                          <span className="text-[16px] font-semibold">
+                            {coordinator.coordinatorName}
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-[14px] text-gray-500">
+                            {coordinator.coordinatorContact}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </>
   );

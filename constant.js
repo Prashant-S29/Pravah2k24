@@ -1262,6 +1262,41 @@ const committeeHeads = [
             }
         ]
 
+    },
+
+    {
+        category: "aaveg",
+        facultyCoorinators: [
+            {
+                coordinatorName: "M.K. Beniwal",
+                coordinatorContact: "9414201634"
+            },
+            {
+                coordinatorName: "Abhishek Gupta",
+                coordinatorContact: "9462326804"
+            },
+            {
+                coordinatorName: "Ajeet Sihag",
+                coordinatorContact: "9680190888"
+            },
+            {
+                coordinatorName: "Amrita Bhandari",
+                coordinatorContact: "8619438737"
+            }
+
+        ],
+        studentCoorinators: [
+
+            {
+                coordinatorName: "Ishan Yadav",
+                coordinatorContact: "9784837056"
+            },
+            {
+                coordinatorName: "Yogesh Kumar",
+                coordinatorContact: "9079888790"
+            },
+        ]
+
     }
 ]
 
