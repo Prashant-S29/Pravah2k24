@@ -24,6 +24,7 @@ import {
   padit,
   kingqueen,
   treasure,
+  ehcc,
 } from "@/public";
 
 const SPONSOR_OBJECT = () => {
@@ -61,6 +62,20 @@ const SPONSOR_OBJECT = () => {
               <div className="flex justify-center items-center mt-[50px]">
                 <Image
                   src={kalam}
+                  alt="kalam"
+                  className="w-[300px] sm:w-[400px]"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="leading-none">
+                <span className="font-extrabold text-[28px] sm:text-[36px] md:text-[40px]">
+                  Health Partner
+                </span>
+              </div>
+              <div className="flex justify-center items-center mt-[50px]">
+                <Image
+                  src={ehcc}
                   alt="kalam"
                   className="w-[300px] sm:w-[400px]"
                 />
