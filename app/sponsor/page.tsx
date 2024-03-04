@@ -23,6 +23,7 @@ import {
   gameful,
   padit,
   kingqueen,
+  treasure,
 } from "@/public";
 
 const SPONSOR_OBJECT = () => {
@@ -167,6 +168,14 @@ const SPONSOR_OBJECT = () => {
                   src={kingqueen}
                   alt="kingqueen"
                   className="w-[150px] sm:w-[200px]"
+                />
+              </div>
+
+              <div>
+                <Image
+                  src={treasure}
+                  alt="treasure"
+                  className="w-[200px] sm:w-[250px]"
                 />
               </div>
             </div>
