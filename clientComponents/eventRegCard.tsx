@@ -50,13 +50,6 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
             </div>
             <div className="text-center font-medium  w-full sm:w-[300px] h-[200px] bg-slate-200 flex justify-center items-center rounded-[17px]   py-[10px] ">
               <div className="px-[10px] text-[14px]  sm:text-[16px]">
-                {/* <div>
-                  <span>
-                    Registration Fee: <b>₹{eventDetail.eventRegistrationFee}</b>
-                    /- {eventDetail.eventType}
-                  </span>
-                </div> */}
-                {/* <div className="w-full h-[0.5px] bg-black rounded-full my-[5px]" /> */}
                 <div>
                   <span>Date: {eventDetail.eventDate}</span>
                 </div>
@@ -205,21 +198,28 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                           }
                         </span>
                       </div>
+                      {eventDetail.eventRegistrationTeamTypeOne.split("-")[1] !=
+                        "0" && (
+                        <div>
+                          <span>
+                            Team Size -{" "}
+                            {
+                              eventDetail.eventRegistrationTeamTypeOne.split(
+                                "-"
+                              )[1]
+                            }
+                          </span>
+                        </div>
+                      )}
                       <div>
-                        <span>
-                          Team Size -{" "}
-                          {
-                            eventDetail.eventRegistrationTeamTypeOne.split(
-                              "-"
-                            )[1]
-                          }
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          Registration Fee - ₹
-                          {eventDetail.eventRegistrationFeeOne.split("-")[0]}/-
-                        </span>
+                        {eventDetail.eventRegistrationFeeOne === "Free" ? (
+                          <span>Registration Fee - Free</span>
+                        ) : (
+                          <span>
+                            Registration Fee - ₹
+                            {eventDetail.eventRegistrationFeeOne}/-
+                          </span>
+                        )}
                       </div>
                     </div>
                   )}
@@ -248,21 +248,28 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                           }
                         </span>
                       </div>
+                      {eventDetail.eventRegistrationTeamTypeTwo.split("-")[1] !=
+                        "0" && (
+                        <div>
+                          <span>
+                            Team Size -{" "}
+                            {
+                              eventDetail.eventRegistrationTeamTypeTwo.split(
+                                "-"
+                              )[1]
+                            }
+                          </span>
+                        </div>
+                      )}
                       <div>
-                        <span>
-                          Team Size -{" "}
-                          {
-                            eventDetail.eventRegistrationTeamTypeTwo.split(
-                              "-"
-                            )[1]
-                          }
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          Registration Fee - ₹
-                          {eventDetail.eventRegistrationFeeTwo}/-
-                        </span>
+                        {eventDetail.eventRegistrationFeeTwo === "Free" ? (
+                          <span>Registration Fee - Free</span>
+                        ) : (
+                          <span>
+                            Registration Fee - ₹
+                            {eventDetail.eventRegistrationFeeTwo}/-
+                          </span>
+                        )}
                       </div>
                     </div>
                   )}
@@ -291,21 +298,29 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                           }
                         </span>
                       </div>
+                      {eventDetail.eventRegistrationTeamTypeThree.split(
+                        "-"
+                      )[1] != "0" && (
+                        <div>
+                          <span>
+                            Team Size -{" "}
+                            {
+                              eventDetail.eventRegistrationTeamTypeThree.split(
+                                "-"
+                              )[1]
+                            }
+                          </span>
+                        </div>
+                      )}
                       <div>
-                        <span>
-                          Team Size -{" "}
-                          {
-                            eventDetail.eventRegistrationTeamTypeThree.split(
-                              "-"
-                            )[1]
-                          }
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          Registration Fee - ₹
-                          {eventDetail.eventRegistrationFeeThree}/-
-                        </span>
+                        {eventDetail.eventRegistrationFeeThree === "Free" ? (
+                          <span>Registration Fee - Free</span>
+                        ) : (
+                          <span>
+                            Registration Fee - ₹
+                            {eventDetail.eventRegistrationFeeThree}/-
+                          </span>
+                        )}
                       </div>
                     </div>
                   )}
@@ -335,21 +350,29 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                           }
                         </span>
                       </div>
+                      {eventDetail.eventRegistrationTeamTypeFour.split(
+                        "-"
+                      )[1] != "0" && (
+                        <div>
+                          <span>
+                            Team Size -{" "}
+                            {
+                              eventDetail.eventRegistrationTeamTypeFour.split(
+                                "-"
+                              )[1]
+                            }
+                          </span>
+                        </div>
+                      )}
                       <div>
-                        <span>
-                          Team Size -{" "}
-                          {
-                            eventDetail.eventRegistrationTeamTypeFour.split(
-                              "-"
-                            )[1]
-                          }
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          Registration Fee - ₹
-                          {eventDetail.eventRegistrationFeeFour}/-
-                        </span>
+                        {eventDetail.eventRegistrationFeeFour === "Free" ? (
+                          <span>Registration Fee - Free</span>
+                        ) : (
+                          <span>
+                            Registration Fee - ₹
+                            {eventDetail.eventRegistrationFeeFour}/-
+                          </span>
+                        )}
                       </div>
                     </div>
                   )}
@@ -379,21 +402,29 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                           }
                         </span>
                       </div>
+                      {eventDetail.eventRegistrationTeamTypeFive.split(
+                        "-"
+                      )[1] != "0" && (
+                        <div>
+                          <span>
+                            Team Size -{" "}
+                            {
+                              eventDetail.eventRegistrationTeamTypeFive.split(
+                                "-"
+                              )[1]
+                            }
+                          </span>
+                        </div>
+                      )}
                       <div>
-                        <span>
-                          Team Size -{" "}
-                          {
-                            eventDetail.eventRegistrationTeamTypeFive.split(
-                              "-"
-                            )[1]
-                          }
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          Registration Fee - ₹
-                          {eventDetail.eventRegistrationFeeFive}/-
-                        </span>
+                        {eventDetail.eventRegistrationFeeFive === "Free" ? (
+                          <span>Registration Fee - Free</span>
+                        ) : (
+                          <span>
+                            Registration Fee - ₹
+                            {eventDetail.eventRegistrationFeeFive}/-
+                          </span>
+                        )}
                       </div>
                     </div>
                   )}
@@ -423,21 +454,28 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                           }
                         </span>
                       </div>
+                      {eventDetail.eventRegistrationTeamTypeSix.split("-")[1] !=
+                        "0" && (
+                        <div>
+                          <span>
+                            Team Size -{" "}
+                            {
+                              eventDetail.eventRegistrationTeamTypeSix.split(
+                                "-"
+                              )[1]
+                            }
+                          </span>
+                        </div>
+                      )}
                       <div>
-                        <span>
-                          Team Size -{" "}
-                          {
-                            eventDetail.eventRegistrationTeamTypeSix.split(
-                              "-"
-                            )[1]
-                          }
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          Registration Fee - ₹
-                          {eventDetail.eventRegistrationFeeSix}/-
-                        </span>
+                        {eventDetail.eventRegistrationFeeSix === "Free" ? (
+                          <span>Registration Fee - Free</span>
+                        ) : (
+                          <span>
+                            Registration Fee - ₹
+                            {eventDetail.eventRegistrationFeeSix}/-
+                          </span>
+                        )}
                       </div>
                     </div>
                   )}
@@ -467,21 +505,29 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                           }
                         </span>
                       </div>
+                      {eventDetail.eventRegistrationTeamTypeSeven.split(
+                        "-"
+                      )[1] != "0" && (
+                        <div>
+                          <span>
+                            Team Size -{" "}
+                            {
+                              eventDetail.eventRegistrationTeamTypeSeven.split(
+                                "-"
+                              )[1]
+                            }
+                          </span>
+                        </div>
+                      )}
                       <div>
-                        <span>
-                          Team Size -{" "}
-                          {
-                            eventDetail.eventRegistrationTeamTypeSeven.split(
-                              "-"
-                            )[1]
-                          }
-                        </span>
-                      </div>
-                      <div>
-                        <span>
-                          Registration Fee - ₹
-                          {eventDetail.eventRegistrationFeeSeven}/-
-                        </span>
+                        {eventDetail.eventRegistrationFeeSeven === "Free" ? (
+                          <span>Registration Fee - Free</span>
+                        ) : (
+                          <span>
+                            Registration Fee - ₹
+                            {eventDetail.eventRegistrationFeeSeven}/-
+                          </span>
+                        )}
                       </div>
                     </div>
                   )}
@@ -489,11 +535,17 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
               </div>
               <div className="block sm:flex gap-[15px] ">
                 <div className="w-full">
-                  <Link href={registrationLinkAndPrice.link} target="_blank">
+                  {registrationLinkAndPrice.price === "Free" ? (
                     <button className="w-full mt-3 px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[13px] font-semibold text-white bg-black rounded-[8px]">
-                      Register - ₹{registrationLinkAndPrice.price}/-
+                      Register - Free
                     </button>
-                  </Link>
+                  ) : (
+                    <Link href={registrationLinkAndPrice.link} target="_blank">
+                      <button className="w-full mt-3 px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[13px] font-semibold text-white bg-black rounded-[8px]">
+                        Register - ₹{registrationLinkAndPrice.price}/-
+                      </button>
+                    </Link>
+                  )}
                 </div>
                 <div className="w-full">
                   <button
