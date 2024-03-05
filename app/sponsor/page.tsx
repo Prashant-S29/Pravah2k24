@@ -25,7 +25,14 @@ import {
   kingqueen,
   treasure,
   ehcc,
+  whatsapp,
+  linkedin,
+  tos,
+  sm,
+  dreamcafe,
+  foodGallery,
 } from "@/public";
+import { sponsorFormContact } from "@/constant";
 
 const SPONSOR_OBJECT = () => {
   return (
@@ -149,7 +156,6 @@ const SPONSOR_OBJECT = () => {
                   className="w-[150px] sm:w-[200px]"
                 />
               </div>
-
               <div>
                 <Image
                   src={jjsh}
@@ -193,6 +199,30 @@ const SPONSOR_OBJECT = () => {
                   className="w-[200px] sm:w-[250px]"
                 />
               </div>
+
+              <div>
+                <Image src={sm} alt="sm" className="w-[150px] sm:w-[200px]" />
+              </div>
+
+              <div>
+                <Image src={tos} alt="tos" className="w-[150px] sm:w-[200px]" />
+              </div>
+
+              <div>
+                <Image
+                  src={dreamcafe}
+                  alt="dreamcafe"
+                  className="w-[150px] sm:w-[200px]"
+                />
+              </div>
+
+              <div>
+                <Image
+                  src={foodGallery}
+                  alt="foodGallery"
+                  className="w-[150px] sm:w-[200px]"
+                />
+              </div>
             </div>
           </div>
 
@@ -230,6 +260,52 @@ const SPONSOR_OBJECT = () => {
         </div>
         <div className="my-[30px]">
           <PRIORSPONSORS />
+        </div>
+      </div>
+      <div className="text-center">
+        <span className="font-semibold">For more information contact</span>
+      </div>
+      <div className="flex flex-wrap mt-[10px] justify-center gap-[20px]">
+        <div className="flex flex-wrap justify-evenly w-full text-center mt-[10px] gap-y-[30px]">
+          {sponsorFormContact.map((details, index) => (
+            <div
+              key={index}
+              className="p-[15px] border border-black rounded-[15px] w-[300px] bg-white"
+            >
+              <div>
+                <span className="font-bold">{details.memberName}</span>
+              </div>
+              <div className="leading-tight">
+                <span className="text-[15px] ">{details.memberPhone}</span>
+              </div>
+              <div className="leading-tight">
+                <span className="text-[14px] ">Sponsor Committee</span>
+              </div>
+              <div className="w-full flex justify-center gap-[30px] mt-[10px]  -mb-[35px]">
+                <div className="p-[8px] rounded-full w-fit flex justify-center bg-black ">
+                  <Link
+                    href={`https://wa.me/91${details.memberPhone}`}
+                    target="_blank"
+                  >
+                    <Image
+                      src={whatsapp}
+                      alt="whatsapp"
+                      className="w-[20px] aspect-square"
+                    />
+                  </Link>
+                </div>
+                <div className="p-[7px] rounded-full w-fit flex justify-center bg-black ">
+                  <Link href={details.memberLinkedIn} target="_blank">
+                    <Image
+                      src={linkedin}
+                      alt="linkedin"
+                      className="w-[21px] aspect-square"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -79,7 +79,7 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                         {eventDetail.eventMaxParicipationLimit.split("-")[1]} -{" "}
                         {eventDetail.eventMaxParicipationLimit.split("-")[2]}
                       </span>
-                    </div>  
+                    </div>
                   </div>
                 )}
                 <div className="mt-3">
@@ -122,19 +122,27 @@ const EVENT_REG_CARDS = ({ index, eventDetail }) => {
                   </div>
                 </Link>
               ) : (
-                <button
-                  className="w-full px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
-                  tabIndex={-1}
-                  onClick={() => {
-                    setRegistrationConfirmation(true);
-                    setRegistrationLinkAndPrice({
-                      link: eventDetail.eventRegistrationLinkOne,
-                      price: eventDetail.eventRegistrationFeeOne.split("-")[0],
-                    });
-                  }}
-                >
-                  Register
-                </button>
+                <div>
+                  {eventDetail.eventMaxParicipationLimit.split("-")[0] ===
+                  "0" ? (
+                    ""
+                  ) : (
+                    <button
+                      className="w-full px-[20px] py-[8px] text-[12px] whitespace-nowrap sm:text-[14px] font-semibold text-white bg-black rounded-[8px]"
+                      tabIndex={-1}
+                      onClick={() => {
+                        setRegistrationConfirmation(true);
+                        setRegistrationLinkAndPrice({
+                          link: eventDetail.eventRegistrationLinkOne,
+                          price:
+                            eventDetail.eventRegistrationFeeOne.split("-")[0],
+                        });
+                      }}
+                    >
+                      Register
+                    </button>
+                  )}
+                </div>
               )}
             </div>
           ) : (
