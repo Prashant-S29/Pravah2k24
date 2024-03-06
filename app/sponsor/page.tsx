@@ -135,7 +135,7 @@ const SPONSOR_OBJECT = () => {
                 <Image
                   src={vision}
                   alt="vision"
-                  className="w-[150px] sm:w-[250px]"
+                  className="w-[150px] sm:w-[280px]"
                 />
               </div>
               <div>
