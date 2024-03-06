@@ -31,6 +31,9 @@ import {
   sm,
   dreamcafe,
   foodGallery,
+  ace,
+  vision,
+  hurricane,
 } from "@/public";
 import { sponsorFormContact } from "@/constant";
 
@@ -45,7 +48,7 @@ const SPONSOR_OBJECT = () => {
             </span>
           </div>
 
-          <div className="text-center flex flex-wrap justify-evenly mt-[50px] ">
+          <div className="text-center flex gap-[20px] flex-wrap justify-evenly mt-[50px] ">
             <div>
               <div className="leading-none">
                 <span className="font-extrabold text-[28px] sm:text-[36px] md:text-[40px]">
@@ -77,6 +80,20 @@ const SPONSOR_OBJECT = () => {
             <div>
               <div className="leading-none">
                 <span className="font-extrabold text-[28px] sm:text-[36px] md:text-[40px]">
+                  Drink Partner
+                </span>
+              </div>
+              <div className="flex justify-center mt-3">
+                <Image
+                  src={hurricane}
+                  alt="hurricane"
+                  className="w-[300px] sm:w-[350px]"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="leading-none">
+                <span className="font-extrabold text-[28px] sm:text-[36px] md:text-[40px]">
                   Health Partner
                 </span>
               </div>
@@ -97,12 +114,12 @@ const SPONSOR_OBJECT = () => {
               </span>
             </div>
 
-            <div className="flex justify-center items-center px-[20px] flex-wrap gap-[30px]">
+            <div className="flex justify-center mt-5 items-center px-[20px] flex-wrap gap-[30px]">
               <div className=" sm:mt-0 mt-3">
                 <Image
                   src={academy}
                   alt="academy"
-                  className="w-[180px] sm:w-[300px]"
+                  className="w-[180px] sm:w-[280px]"
                 />
               </div>
 
@@ -110,7 +127,15 @@ const SPONSOR_OBJECT = () => {
                 <Image
                   src={mother}
                   alt="mother"
-                  className="w-[320px] sm:w-[300px]"
+                  className="w-[320px] sm:w-[280px]"
+                />
+              </div>
+
+              <div>
+                <Image
+                  src={vision}
+                  alt="vision"
+                  className="w-[150px] sm:w-[250px]"
                 />
               </div>
               <div>
@@ -222,6 +247,9 @@ const SPONSOR_OBJECT = () => {
                   alt="foodGallery"
                   className="w-[150px] sm:w-[200px]"
                 />
+              </div>
+              <div>
+                <Image src={ace} alt="ace" className="w-[150px] sm:w-[200px]" />
               </div>
             </div>
           </div>
