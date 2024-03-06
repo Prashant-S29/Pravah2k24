@@ -33,6 +33,10 @@ import {
   foodGallery,
   ace,
   vision,
+  sia,
+  hff,
+  sansi,
+  royal,
   hurricane,
 } from "@/public";
 import { sponsorFormContact } from "@/constant";
@@ -250,6 +254,20 @@ const SPONSOR_OBJECT = () => {
               </div>
               <div>
                 <Image src={ace} alt="ace" className="w-[150px] sm:w-[200px]" />
+              </div>
+
+              <div>
+                <Image src={sansi} alt="sansi" className="w-[150px] sm:w-[200px]" />
+              </div>
+
+              <div>
+                <Image src={hff} alt="hff" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={royal} alt="ace" className="w-[150px] sm:w-[250px]" />
+              </div>
+              <div>
+                <Image src={sia} alt="sia" className="w-[150px] sm:w-[200px]" />
               </div>
             </div>
           </div>
