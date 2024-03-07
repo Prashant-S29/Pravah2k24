@@ -1098,6 +1098,29 @@ const aavegEventCoordinator = [
     }
 ]
 
+const eventCoordinators = [
+    {
+        eventName: "gamegarage",
+        facultyCoorinators: [
+            {
+                coordinatorName: "Arun Beniwal",
+                coordinatorContact: "9887102200"
+            },
+        ],
+        studentCoorinators: [
+            {
+                coordinatorName: "Sachin Singh Rathore",
+                coordinatorContact: "7372998003"
+            },
+            {
+                coordinatorName: "Nitish Gupta",
+                coordinatorContact: "8000870996"
+            },
+        ]
+
+    },
+]
+
 const committeeHeads = [
     {
         category: "cultural",
@@ -1323,6 +1346,7 @@ export {
     celebrity_night,
     socialEventsCoordinator,
     aavegEventCoordinator,
-    committeeHeads
+    committeeHeads,
+    eventCoordinators
 }
 

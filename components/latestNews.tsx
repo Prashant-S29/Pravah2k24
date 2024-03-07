@@ -12,9 +12,9 @@ const LATESTNEWS = () => {
             <Link href="https://forms.gle/KLhpA2XTeYGnX5SK7" target="_blank">
               <div className="px-[30px] text-[14px] sm:text-[16px]">
                 <span>
-                  Vibes check for Pravah. T-Shirts are out{" "}
-                  <span className="underline font-bold">Click here</span> to get
-                  one for you.
+                  Pravah 2024 is about to hit. Have you registed in any event?{" "}
+                  <span className="underline font-bold">Click here</span> for
+                  event registration.
                 </span>
               </div>
             </Link>
@@ -25,9 +25,9 @@ const LATESTNEWS = () => {
             <Link href="https://forms.gle/KLhpA2XTeYGnX5SK7" target="_blank">
               <div className="px-[30px] text-[14px] sm:text-[16px]">
                 <span>
-                  Vibes check for Pravah. T-Shirts are out{" "}
-                  <span className="underline font-bold">Click here</span> to get
-                  one for you.
+                  Pravah 2024 is about to hit. Have you registed in any event?{" "}
+                  <span className="underline font-bold">Click here</span> for
+                  event registration.
                 </span>
               </div>
             </Link>
