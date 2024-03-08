@@ -47,36 +47,16 @@ const GAME_GARAGE = () => {
 
         <div className="w-full">
           <div className="w-full flex flex-wrap gap-x-[50px] gap-y-4 mt-5 px-[20px] sm:px-[10%] lg:px-[15%] justify-center items-center">
-            <Image
-              src={ggOne}
-              alt="ggOne"
-              className="w-[300px] rounded-md"
-            />
-            <Image
-              src={ggTwo}
-              alt="ggTwo"
-              className="w-[300px] rounded-md"
-            />
+            <Image src={ggOne} alt="ggOne" className="w-[300px] rounded-md" />
+            <Image src={ggTwo} alt="ggTwo" className="w-[300px] rounded-md" />
             <Image
               src={ggThree}
               alt="ggThree"
               className="w-[300px] rounded-md"
             />
-            <Image
-              src={ggFour}
-              alt="ggFour"
-              className="w-[300px] rounded-md"
-            />
-            <Image
-              src={ggFive}
-              alt="ggFive"
-              className="w-[300px] rounded-md"
-            />
-            <Image
-              src={ggSix}
-              alt="ggSix"
-              className="w-[300px] rounded-md"
-            />
+            <Image src={ggFour} alt="ggFour" className="w-[300px] rounded-md" />
+            <Image src={ggFive} alt="ggFive" className="w-[300px] rounded-md" />
+            <Image src={ggSix} alt="ggSix" className="w-[300px] rounded-md" />
           </div>
         </div>
         <div className="flex flex-wrap  justify-center w-full text-center mt-[40px] gap-y-[30px]">

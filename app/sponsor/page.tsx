@@ -37,7 +37,13 @@ import {
   hff,
   sansi,
   royal,
-  hurricane,
+  hurricane,nameless,
+  tyc,
+  lord,
+  classes,
+  leaf,
+  motion,
+  mdf
 } from "@/public";
 import { sponsorFormContact } from "@/constant";
 
@@ -84,7 +90,7 @@ const SPONSOR_OBJECT = () => {
             <div>
               <div className="leading-none">
                 <span className="font-extrabold text-[28px] sm:text-[36px] md:text-[40px]">
-                  Drink Partner
+                 Energy Drink Partner
                 </span>
               </div>
               <div className="flex justify-center mt-3">
@@ -268,6 +274,28 @@ const SPONSOR_OBJECT = () => {
               </div>
               <div>
                 <Image src={sia} alt="sia" className="w-[150px] sm:w-[200px]" />
+              </div>
+              
+              <div>
+                <Image src={nameless} alt="nameless" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={tyc} alt="tyc" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={lord} alt="lord" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={classes} alt="classes" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={leaf} alt="leaf" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={motion} alt="motion" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={mdf} alt="mdf" className="w-[150px] sm:w-[200px]" />
               </div>
             </div>
           </div>
