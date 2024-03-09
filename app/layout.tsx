@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-import { background } from "@/public";
+import { background, websitebackground } from "@/public";
 
 import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
@@ -27,9 +27,11 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <div className="w-full min-h-screen object-cover object-center fixed -z-50">
           <Image
-            src={background}
+            src={websitebackground}
             alt="background"
             className="w-full min-h-screen opacity-30 "
+            width={500}
+            height={500}
           />
         </div>
         <div>

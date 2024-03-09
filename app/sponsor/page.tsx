@@ -43,7 +43,7 @@ import {
   classes,
   leaf,
   motion,
-  mdf
+  mdf,tcoe,bm,kidz,kitchen,allokdone,mps
 } from "@/public";
 import { sponsorFormContact } from "@/constant";
 
@@ -296,6 +296,25 @@ const SPONSOR_OBJECT = () => {
               </div>
               <div>
                 <Image src={mdf} alt="mdf" className="w-[150px] sm:w-[200px]" />
+              </div>
+              
+              <div>
+                <Image src={tcoe} alt="tcoe" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={mps} alt="mps" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={kitchen} alt="kitchen" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={allokdone} alt="allokdone" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={kidz} alt="kidz" className="w-[150px] sm:w-[200px]" />
+              </div>
+              <div>
+                <Image src={bm} alt="bm" className="w-[150px] sm:w-[200px]" />
               </div>
             </div>
           </div>

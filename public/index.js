@@ -1,5 +1,8 @@
 import background from "./otherAssets/background.png"
 
+const websitebackground = "https://res.cloudinary.com/dzfsxpblt/image/upload/v1709978074/pravah2024/otherAssets/mrabkvofq0tar2htgerd.png";
+
+
 import dropdown from "./logo/dropdown.png"
 import cursor from "./logo/cursor.png"
 import cursorTwo from "./logo/cursorTwo.png"
@@ -64,6 +67,12 @@ import classes from "@/public/logo/classes.png"
 import leaf from "@/public/logo/leaf.png"
 import motion from "@/public/logo/motion.png"
 import mdf from "@/public/logo/mdf.png"
+import tcoe  from "@/public/logo/tcoe.png"
+import bm from "@/public/logo/bm.png"
+import kitchen from "@/public/logo/kitchen.png"
+import mps from "@/public/logo/mps.png"
+import allokdone from "@/public/logo/allokdone.png"
+import kidz from "@/public/logo/kidz.png"
 
 
 import rawaz from "./majorEvents/rawaz.webp"
@@ -352,5 +361,6 @@ export {
     classes,
     leaf,
     motion,
-    mdf
+    mdf,
+    websitebackground,tcoe,bm,kidz,kitchen,allokdone,mps
 }
