@@ -32,6 +32,15 @@ const GAME_GARAGE = () => {
           </span>
         </div>
 
+      <div className="flex justify-center my-2">
+      <div className="bg-white  p-5 rounded-[20px] w-full sm:w-[50%] border  font-medium">
+          <span>
+            Game Garage event registration is completely free. However, game fee
+            will be changed on the spot of the event duration
+          </span>
+        </div>
+      </div>
+
         <div className=" flex justify-center my-8">
           <div className="bg-white  p-5 rounded-[20px]  font-medium">
             <div>

@@ -17,7 +17,7 @@ const CELEBRITY = () => {
           className="flex justify-center w-fit"
         >
           <Image
-            src="https://res.cloudinary.com/denl2iizs/image/upload/v1709362583/hr6cxocc5la3pii5knlg.png"
+            src="https://res.cloudinary.com/da7mz2ivn/image/upload/v1710054591/upload_pravahAssets/celebrity.png"
             alt="celebrity"
             width={500}
             height={500}
