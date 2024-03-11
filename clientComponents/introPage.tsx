@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { cursorTwo, naac_logo, skit_logo, swamiji_logo } from "@/public";
+import { cursorTwo, naac_logo, skit_logo, swamiji_logo, text3 } from "@/public";
 const INTROPAGE = () => {
   const [pageDisplay, setPageDisplay] = useState(false);
   const [buttonArrow, setButtonArrow] = useState(false);
@@ -70,7 +70,7 @@ const INTROPAGE = () => {
           </div>
           <div className="flex justify-center items-center  w-full my-[50px] px-[20px] ">
             <Image
-              src="https://res.cloudinary.com/denl2iizs/image/upload/v1700624760/pravah2k24/text/ssthzscie5vb7oscyznw.png"
+              src={text3}
               alt="hello"
               className="w-[300px]  md:w-[450px]"
               width={500}
