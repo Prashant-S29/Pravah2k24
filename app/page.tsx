@@ -39,10 +39,6 @@ const HOME_OBJECT = () => {
       <div className="w-full   flex relative justify-center">
         <div className="mt-[50px]">
           <TITLETEXTANIMATION />
-          {/* <div className=" p-[5px] h-[40px] mt-[30px] scrollDown-animation rounded-full border-[1px] border-gray-500">
-            <div className="w-[8px]  aspect-square bg-black rounded-full" />
-          </div> */}
-          {/* <TIMERCOUNT/> */}
           <DATES />
           {/* <EVENT_STATUS /> */}
         </div>
