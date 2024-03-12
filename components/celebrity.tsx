@@ -7,7 +7,7 @@ import React from "react";
 const CELEBRITY = () => {
   return (
     <>
-      <div>
+      <div className="mt-[30px]">
         <ANIMATEDTEXT18 />
       </div>
       <div className="p-6 pt-0 flex justify-center">

@@ -32,6 +32,7 @@ import TIMERCOUNT from "@/clientComponents/countdown";
 import DATES from "@/clientComponents/dates";
 import EVENT_STATUS from "@/clientComponents/eventStatus";
 import CELEBRITY from "@/components/celebrity";
+import DAY_WISE_SCHEDULE from "@/components/daywiseschedule";
 
 const HOME_OBJECT = () => {
   return (
@@ -45,8 +46,8 @@ const HOME_OBJECT = () => {
       </div>
       <MARQUEEMOTION />
       <div>
+        <DAY_WISE_SCHEDULE />
         <CELEBRITY />
-          
       </div>
       <div className="mt-[50px]">
         <div>

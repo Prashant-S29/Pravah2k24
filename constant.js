@@ -1323,6 +1323,377 @@ const committeeHeads = [
     }
 ]
 
+const dayWiseEvents = [
+    {
+        day: "1",
+        events: [
+            {
+                eventName: "Inaugural Ceremony",
+                eventTime: "09:00 AM - 11:00 AM",
+                eventVenue: "Gyan Mandir"
+            },
+            {
+                eventName: "Startup Expo",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "Girls Hostel Ground"
+            },
+            {
+                eventName: "Reel Rapture Gala",
+                eventTime: "11:00 AM Onwards",
+                eventVenue: "Online Event"
+            },
+            {
+                eventName: "Nukkad Natak",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "Civil Block Front Side"
+            },
+            {
+                eventName: "Earthen Elegance",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "2F1, Civil Block"
+            },
+            {
+                eventName: "Byte Chase",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "Kabaddi Ground"
+            },
+            {
+                eventName: "IPL Auction",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "4FL5, Civil Block"
+            },
+            {
+                eventName: "Painting Competition",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "1F1, Civil Block"
+            },
+            {
+                eventName: "Mad 4 CAD",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "CAD Lab 1, Mechanical Block"
+            },
+            {
+                eventName: "Brain Mine",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "5FL1, Civil Block"
+            },
+            {
+                eventName: "Essay Writing",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "5F1, Civil Block"
+            },
+            {
+                eventName: "Sur",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "Gyan Mandir"
+            },
+            {
+                eventName: "Treasure Hunt",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "Civil Block"
+            },
+            {
+                eventName: "BGMI",
+                eventTime: "01:00 PM - 02:00 PM",
+                eventVenue: "IAI Lab & CL-01, CS Block"
+            },
+            {
+                eventName: "Cube Craze",
+                eventTime: "01:00 PM - 02:00 PM",
+                eventVenue: "1F3, Civil Block"
+            },
+            {
+                eventName: "Brain Mine",
+                eventTime: "01:00 PM - 02:00 PM",
+                eventVenue: "Meghnad Saha Hall"
+            },
+            {
+                eventName: "Youth Talk",
+                eventTime: "02:00 PM - 04:00 PM",
+                eventVenue: "JC Bose Auditorium"
+            },
+            {
+                eventName: "Musical Chair",
+                eventTime: "02:00 PM - 04:00 PM",
+                eventVenue: "Canteen Parking"
+            },
+            {
+                eventName: "Raparazzi",
+                eventTime: "04:00 PM - 06:00 PM",
+                eventVenue: "Gyan Mandir"
+            },
+            {
+                eventName: "Thirak",
+                eventTime: "06:00 PM - 10:00 PM",
+                eventVenue: "OAT, CS Block"
+            },
+        ]
+
+    },
+    {
+        day: "2",
+        events: [
+            {
+                eventName: "Skit Roadies",
+                eventTime: "09:00 AM - 11:00 AM",
+                eventVenue: "Football Ground"
+            },
+            {
+                eventName: "Marhala",
+                eventTime: "09:00 AM - 11:00 AM",
+                eventVenue: "Gyan Mandir"
+            },
+            {
+                eventName: "Blossoms",
+                eventTime: "09:00 AM - 11:00 PM",
+                eventVenue: "OAT, CS Block"
+            },
+            {
+                eventName: "Sack Race",
+                eventTime: "09:00 AM - 12:00 Noon",
+                eventVenue: "Boys Hostel Front"
+            },
+            {
+                eventName: "Lemon Spoon Race",
+                eventTime: "09:00 AM - 12:00 Noon",
+                eventVenue: "Boys Hostel Front"
+            },
+            {
+                eventName: "Tri-legathon",
+                eventTime: "09:00 AM - 12:00 Noon",
+                eventVenue: "Boys Hostel Front"
+            },
+            {
+                eventName: "Bhagirath",
+                eventTime: "09:00 AM - 04:00 PM",
+                eventVenue: "Girls Hostel Garden"
+            },
+            {
+                eventName: "Story Telling",
+                eventTime: "09:00 AM - 11:00 AM",
+                eventVenue: "5F1, Civil Block"
+            },
+            {
+                eventName: "How I Met Your Murderer",
+                eventTime: "09:00 AM - 11:00 AM",
+                eventVenue: "IAI Lab, CS Block"
+            },
+            {
+                eventName: "Circuit-A-Thon",
+                eventTime: "10:00 AM - 12:00 Noon",
+                eventVenue: "101, CS Block"
+            },
+            {
+                eventName: "Valorant",
+                eventTime: "10:00 AM - 12:00 Noon",
+                eventVenue: "CL-11, CS Block"
+            },
+            {
+                eventName: "Makeup Mania",
+                eventTime: "10:00 AM - 12:00 Noon",
+                eventVenue: "2F1. Civil Block"
+            },
+            {
+                eventName: "Meme Mania",
+                eventTime: "10:00 AM - 12:00 Noon",
+                eventVenue: "CL-1, Civil Block"
+            },
+            {
+                eventName: "Cosplay",
+                eventTime: "11:30 AM - 01:30 PM",
+                eventVenue: "Gyan Mandir"
+            },
+            {
+                eventName: "Escape Room",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "CS Block"
+            },
+            {
+                eventName: "Digitronics",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "ECL-3, CS Block"
+            },
+            {
+                eventName: "Novel Notion",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "1F1, Civil Block"
+            },
+            {
+                eventName: "Doodle Art",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "2F2 & 2F3, Civil Block"
+            },
+            {
+                eventName: "V Stock Market",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "IAI Lab, CS Block"
+            },
+            {
+                eventName: "Code Kraker",
+                eventTime: "01:00 PM - 04:00 PM",
+                eventVenue: "CAD Lab-1"
+            },
+            {
+                eventName: "Gully Cricket",
+                eventTime: "01:00 PM - 02:00 PM",
+                eventVenue: "Football Ground"
+            },
+            {
+                eventName: "Bhagirath",
+                eventTime: "02:00 PM - 04:00 PM",
+                eventVenue: "JC Bose Auditorium"
+            },
+            {
+                eventName: "Kavyanjali",
+                eventTime: "02:00 PM - 04:00 PM",
+                eventVenue: "Gyan Mandir"
+            },
+            {
+                eventName: "Bell The CAT",
+                eventTime: "02:00 PM - 04:00 PM",
+                eventVenue: "201 & 202, CS Block"
+            },
+            {
+                eventName: "Clash of Bands",
+                eventTime: "07:00 PM - 10:00 PM",
+                eventVenue: "OAT, CS Block"
+            },
+            {
+                eventName: "RAWAZ",
+                eventTime: "07:00 PM - 10:00 PM",
+                eventVenue: "OAT, CS Block"
+            }
+        ]
+        
+    },
+    {
+        day: "3",
+        events: [
+            {
+                eventName: "Gully Cricket",
+                eventTime: "09:00 AM - 12:00 PM",
+                eventVenue: "Football Ground"
+            },
+            {
+                eventName: "Scream And Chill",
+                eventTime: "09:00 AM - 11:00 PM",
+                eventVenue: "JC Bose"
+            },
+            {
+                eventName: "Snap-A-Thon",
+                eventTime: "11:00 AM Onwards",
+                eventVenue: "Online Event"
+            },
+            {
+                eventName: "Digital poster & logo making",
+                eventTime: "09:00 AM - 12:00 PM",
+                eventVenue: "IAI Lab (CS Block)"
+            },
+            {
+                eventName: "UMANG",
+                eventTime: "09:00 AM - 12:00 PM",
+                eventVenue: "Girls Hostel Garden"
+            },
+            {
+                eventName: "Electro-tech Challenge",
+                eventTime: "09:00 AM - 11:00 AM",
+                eventVenue: "201 (CS Block)"
+            },
+            {
+                eventName: "Arm Wrestling",
+                eventTime: "10:00 AM - 12:00 Noon",
+                eventVenue: "Badminton Court"
+            },
+            {
+                eventName: "FACULTY ANTAKSHARI",
+                eventTime: "10:00 AM - 12:00 Noon",
+                eventVenue: "Gyan Mandir"
+            },
+            {
+                eventName: "Tune-ties-here",
+                eventTime: "10:00 AM - 12:00 Noon",
+                eventVenue: "Meghnad Saha Hall"
+            },
+            {
+                eventName: "TinkerCad Triumph",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "ECL-01 (CS Block)"
+            },
+            {
+                eventName: "Titan Snake Steps",
+                eventTime: "10:00 AM - 12:00 PM",
+                eventVenue: "Canteen Parking"
+            },
+            {
+                eventName: "Lazy Paddle",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "Boys Hostel Front"
+            },
+            {
+                eventName: "Artistic Needles",
+                eventTime: "11:00 AM - 01:00 PM",
+                eventVenue: "2F1, 2F2 (CS Block)"
+            },
+            {
+                eventName: "Round Table",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "Soft Skills Lab"
+            },
+            {
+                eventName: "Tug Of War",
+                eventTime: "12:00 PM - 01:00 PM",
+                eventVenue: "Girls Hostel Garden"
+            },
+            {
+                eventName: "Chef Mania",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "Civil Block Lift Area"
+            },
+            {
+                eventName: "Clash Of Coders",
+                eventTime: "12:00 Noon - 02:00 PM",
+                eventVenue: "IAI Lab (CS Block)"
+            },
+            {
+                eventName: "Khabardar",
+                eventTime: "01:00 PM - 03:00 PM",
+                eventVenue: "Meghnad Saha Hall"
+            },
+            {
+                eventName: "Slogan Camp",
+                eventTime: "01:00 PM - 03:00 PM",
+                eventVenue: "Communication Lab"
+            },
+            {
+                eventName: "Brainy Bowl",
+                eventTime: "01:00 PM - 03:00 PM",
+                eventVenue: "JC Bose"
+            },
+            {
+                eventName: "Abhivyakti",
+                eventTime: "01:00 PM - 04:00 PM",
+                eventVenue: "Gyan Mandir"
+            },
+            {
+                eventName: "AUTO EXPO",
+                eventTime: "01:00 PM - 03:00 PM",
+                eventVenue: "Canteen Parking"
+            },
+            {
+                eventName: "RANG",
+                eventTime: "01:00 PM - 04:00 PM",
+                eventVenue: "Girls Hostel Garden"
+            },
+            {
+                eventName: "CELEBRITY NIGHT",
+                eventTime: "06:00 PM - 10:00 PM",
+                eventVenue: "Football Ground"
+            }
+        ]
+        
+    },
+]
+
 export {
     sponsorFormContact,
     previousCelebrities,
@@ -1347,6 +1718,7 @@ export {
     socialEventsCoordinator,
     aavegEventCoordinator,
     committeeHeads,
-    eventCoordinators
+    eventCoordinators,
+    dayWiseEvents
 }
 
