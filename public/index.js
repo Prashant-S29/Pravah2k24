@@ -73,6 +73,10 @@ import kitchen from "@/public/logo/kitchen.png"
 import mps from "@/public/logo/mps.png"
 import allokdone from "@/public/logo/allokdone.png"
 import kidz from "@/public/logo/kidz.png"
+import bycep from "@/public/logo/bycep.png"
+import shiled from "@/public/logo/shield.png"
+import picsart from "@/public/logo/picsart.png"
+import purvi from "@/public/logo/purvi.png"
 
 
 import rawaz from "./majorEvents/rawaz.webp"
@@ -362,5 +366,5 @@ export {
     leaf,
     motion,
     mdf,
-    websitebackground,tcoe,bm,kidz,kitchen,allokdone,mps
+    websitebackground,tcoe,bm,kidz,kitchen,allokdone,mps, bycep, purvi, picsart,shiled
 }
