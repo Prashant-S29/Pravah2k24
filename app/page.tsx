@@ -97,12 +97,12 @@ const TEMP_HOME_OBJ = () => {
         <div>
           <div>
             <span className="text-[18px] sm:text-[24px] font-black">
-              See you in Pravah 202____?
+              This site is no longer available
             </span>
           </div>
           <div>
             <span className="text-[14px] sm:text-[16px] font-medium">
-              Regards from{" "}
+              meanwhile checkout{" "}
               <Link
                 href="https://code-prashant.vercel.app"
                 target="_blank"
