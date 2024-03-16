@@ -33,6 +33,7 @@ import DATES from "@/clientComponents/dates";
 import EVENT_STATUS from "@/clientComponents/eventStatus";
 import CELEBRITY from "@/components/celebrity";
 import DAY_WISE_SCHEDULE from "@/components/daywiseschedule";
+import Link from "next/link";
 
 const HOME_OBJECT = () => {
   return (
@@ -46,7 +47,7 @@ const HOME_OBJECT = () => {
       </div>
       <MARQUEEMOTION />
       <div>
-        <DAY_WISE_SCHEDULE />
+        {/* <DAY_WISE_SCHEDULE /> */}
         <CELEBRITY />
       </div>
       <div className="mt-[50px]">
@@ -89,8 +90,36 @@ const HOME_OBJECT = () => {
   );
 };
 
+const TEMP_HOME_OBJ = () => {
+  return (
+    <>
+      <div className="w-full min-h-screen flex justify-center items-center px-4 text-center">
+        <div>
+          <div>
+            <span className="text-[18px] sm:text-[24px] font-black">
+              See you in Pravah 202____?
+            </span>
+          </div>
+          <div>
+            <span className="text-[14px] sm:text-[16px] font-medium">
+              Regards from{" "}
+              <Link
+                href="https://code-prashant.vercel.app"
+                target="_blank"
+                className="text-blue-500 underline"
+              >
+                Code-Prashant
+              </Link>
+            </span>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
 const HOME = () => {
-  return TRANSITION_WRAPPER(HOME_OBJECT);
+  return TRANSITION_WRAPPER(TEMP_HOME_OBJ);
 };
 
 export default HOME;

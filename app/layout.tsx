@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="w-full min-h-screen object-cover object-center fixed -z-50">
+        {/* <div className="w-full min-h-screen object-cover object-center fixed -z-50">
           <Image
             src={websitebackground}
             alt="background"
@@ -33,13 +33,13 @@ export default function RootLayout({
             width={500}
             height={500}
           />
-        </div>
+        </div> */}
         <div>
           {/* <PAGEWRAPPER> */}
-            <INTROPAGE />
-            <NAVBAR />
+            {/* <INTROPAGE /> */}
+            {/* <NAVBAR /> */}
             {children}
-            <FOOTER />
+            {/* <FOOTER /> */}
           {/* </PAGEWRAPPER> */}
         </div>
       </body>
