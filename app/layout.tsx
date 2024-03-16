@@ -7,7 +7,7 @@ import { background, websitebackground } from "@/public";
 
 import NAVBAR from "@/components/navbar";
 import FOOTER from "@/components/footer";
-import PAGEWRAPPER from "./pageWrapper";
+// import PAGEWRAPPER from "./pageWrapper";
 import INTROPAGE from "@/clientComponents/introPage";
 
 const montserrat = Montserrat({ subsets: ["cyrillic"] });
